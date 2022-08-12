@@ -1,0 +1,1 @@
+execute if entity @s[scores={cdHook=-1}] run tag @s remove hasCooldown

@@ -1,0 +1,6 @@
+{
+  "values": [
+      "pudge:tick",
+      "entity_hit_matching:tick"
+  ]
+}
