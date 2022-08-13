@@ -11,6 +11,8 @@ function pudge:game/inventory/delayed_cooldown_display
 execute as @a[scores={crossbow=1..}] run function pudge:game/ability/detect/use_crossbow
 #late shop item detection (place after all inventory updates) (runs only if player did not have an alternate inventory update this tick)
 execute as @a[tag=shopInteractDetect] run advancement grant @s only pudge:inv_change
+#dead players
+execute as @a[tag=dead] run function pudge:general/death/while_dead
 
 #border check?
 execute at @e[type=marker,tag=gameSpectatorSpawn] as @a[gamemode=spectator,distance=20..] run tp @s ~ ~ ~
@@ -20,5 +22,7 @@ execute as @a[scores={hookTimer=1..}] run function pudge:game/ability/hook/move
 #effects
 effect give @a minecraft:saturation 999999 255 true
 effect give @a minecraft:resistance 999999 255 true
+#tick damage check
+scoreboard players set @a resist 0
 #arrows
 execute as @e[type=arrow] unless entity @s[nbt={pickup:0b}] run data modify entity @s pickup set value 0

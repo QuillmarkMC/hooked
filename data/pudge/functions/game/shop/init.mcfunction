@@ -1,8 +1,5 @@
-#summon shops
-summon marker 5 -59 31 {Tags:["gameMarker","redShop"]}
-execute at @e[type=marker,tag=redShop,limit=1] run setblock ~ ~ ~ ender_chest[facing=north]
-summon marker 12 -59 22 {Tags:["gameMarker","blueShop"]}
-execute at @e[type=marker,tag=blueShop,limit=1] run setblock ~ ~ ~ ender_chest[facing=south]
+#init based on map
+execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/shop_init
 #set cost of shop items
 function pudge:game/shop/set_default_costs
 #reset player shop scoreboards

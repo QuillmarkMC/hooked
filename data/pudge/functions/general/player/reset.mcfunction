@@ -8,6 +8,9 @@ function pudge:general/player/remove_game_tags
 scoreboard players set @s hotbar.1.ID 0
 scoreboard players set @s hotbar.2.ID 0
 scoreboard players set @s hotbar.3.ID 0
+scoreboard players set @s hotbar.4.ID 0
+scoreboard players set @s hotbar.5.ID 0
+scoreboard players set @s hotbar.6.ID 0
 
 tag @s add initSpawned
 tp @s @e[type=marker,tag=lobbySpawn,limit=1]

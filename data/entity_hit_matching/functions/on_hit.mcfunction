@@ -1,3 +1,5 @@
 # @s = player that was attacked
-execute if entity @s[advancements={ctf:fisherman/hooked=true}] run tag @s add tempHookHitTag
-advancement revoke @s only ctf:fisherman/hooked
+tag @s add tempReceiverTag
+
+#determine what item was used to attack, deal damage accordingly
+execute if data entity @a[tag=tempAttackerTag,limit=1] SelectedItem.tag.Melee run function pudge:game/ability/melee/check_swing

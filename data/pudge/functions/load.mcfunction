@@ -4,6 +4,13 @@ execute unless score $State var matches 1.. run scoreboard players set $State va
 scoreboard objectives add health dummy
 scoreboard players set $MaxHealth health 20
 scoreboard objectives setdisplay belowName health
+scoreboard objectives add resist minecraft.custom:minecraft.damage_resisted
+scoreboard objectives add math dummy
+scoreboard players set #2 math 2
+scoreboard players set #3 math 3
+scoreboard objectives add death deathCount
+scoreboard objectives add deathTimer dummy
+scoreboard players set $RespawnDelay var 100
 
 ##Game Scoreboards
 #durability
@@ -19,6 +26,8 @@ execute unless score $Global abilityVar matches 1.. run function pudge:game/cool
 #ability
 scoreboard objectives add hookID dummy
 scoreboard objectives add hookTimer dummy
+scoreboard objectives add meleeDamage dummy
+scoreboard players set $MeleeInitDamage abilityVar 1
 #item use
 scoreboard objectives add crossbow minecraft.used:crossbow
 scoreboard objectives add click minecraft.used:warped_fungus_on_a_stick
@@ -31,6 +40,13 @@ scoreboard objectives add shopItem.Grass dummy
 scoreboard objectives add shopItem.Axe dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
 scoreboard objectives setdisplay list gold
+#kill bounty
+scoreboard objectives add bounty dummy
+scoreboard players set $BaseBounty var 10
+#killstreak
+scoreboard objectives add killstreak dummy
+#armor stand ids
+scoreboard objectives add armorStand.ID dummy
 
 #weird inventory stuff
 scoreboard objectives add numUpgrades dummy
@@ -41,12 +57,16 @@ scoreboard players set $ItemID shopItem.Axe 3
 scoreboard objectives add hotbar.1.ID dummy
 scoreboard objectives add hotbar.2.ID dummy
 scoreboard objectives add hotbar.3.ID dummy
+scoreboard objectives add hotbar.4.ID dummy
+scoreboard objectives add hotbar.5.ID dummy
+scoreboard objectives add hotbar.6.ID dummy
 
 #Game Bossbar
 bossbar add score {"text":""}
 
-##Forceload lobby
-forceload add -8 23 9 7
+##Forceload
+#lobby
+#forceload add -8 23 9 7
 
 ##NPC datapack setup
 
@@ -84,7 +104,7 @@ gamerule doDaylightCycle false
 gamerule doEntityDrops false
 gamerule doFireTick false
 gamerule doInsomnia false
-gamerule doImmediateRespawn false
+gamerule doImmediateRespawn true
 gamerule doLimitedCrafting true
 gamerule doMobLoot false
 gamerule doMobSpawning false
