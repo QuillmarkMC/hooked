@@ -942,6 +942,9 @@
             "not_target"
         ],
         [
+            "hookarrow"
+        ],
+        [
             "bit0",
             "!bit0"
         ],
