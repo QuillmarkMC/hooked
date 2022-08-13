@@ -1,3 +1,6 @@
+#debug message
+execute if score $Debug var matches 1.. run say entity_hit_matching/find_entity1.mcfunction
+
 scoreboard players set $hit entityid 0
 execute if entity @s[advancements={entity_hit_matching:on_hurt={bit0=true}}] run scoreboard players add $hit entityid 1
 execute if entity @s[advancements={entity_hit_matching:on_hurt={bit1=true}}] run scoreboard players add $hit entityid 2
