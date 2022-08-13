@@ -18,3 +18,5 @@ gamemode spectator
 tag @s add dead
 scoreboard players operation @s deathTimer = $RespawnDelay var
 advancement grant @s only pudge:inv_change
+#clear actionbar health display
+title @s actionbar ""

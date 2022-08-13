@@ -15,7 +15,7 @@ execute as @a[tag=shopInteractDetect] run advancement grant @s only pudge:inv_ch
 execute as @a[tag=dead] run function pudge:general/death/while_dead
 
 #border check?
-execute at @e[type=marker,tag=gameSpectatorSpawn] as @a[gamemode=spectator,distance=20..] run tp @s ~ ~ ~
+execute at @e[type=marker,tag=gameSpectatorSpawn] as @a[gamemode=spectator,distance=60..,tag=!dead] run tp @s ~ ~ ~
 #ability effects
 execute as @a[scores={hookTimer=1..}] run function pudge:game/ability/hook/move
 #tutorial book
@@ -26,3 +26,4 @@ effect give @a minecraft:resistance 999999 255 true
 scoreboard players set @a resist 0
 #arrows
 execute as @e[type=arrow] unless entity @s[nbt={pickup:0b}] run data modify entity @s pickup set value 0
+execute as @e[type=arrow,nbt={inGround:0b}] run particle crit ~ ~ ~ 0 0 0 0 1 normal
