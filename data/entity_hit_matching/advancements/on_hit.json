@@ -4,7 +4,7 @@
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "type": "minecraft:player"
+                    "type": "#entity_hit_matching:targets"
                 }
             }
         },
@@ -23,6 +23,20 @@
                         }
                     }
                 ]
+            }
+        },
+        "hookarrow": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "minecraft:arrow",
+                            "nbt": "{Tags:[\"hookArrow\"]}"
+                            
+                        }
+                    }
+                }
             }
         },
         "bit0": {

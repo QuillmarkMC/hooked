@@ -1,6 +1,7 @@
 #debug message
 execute if score $Debug var matches 1.. run say game/ability/hook/begin.mcfunction
 
+# @s = attacker
 #tag hit target with ID of source player
 scoreboard players operation @a[tag=tempReceiverTag,limit=1] hookID = @s entityid
 #summon marker and tag it with ID of source player

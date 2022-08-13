@@ -1,5 +1,6 @@
 #summon arrow
 execute at @s run summon arrow ~ ~ ~ {Tags:["tempArrowTag","arrowInit"]}
+execute at @s run data modify entity @e[type=arrow,tag=tempArrowTag,sort=nearest,limit=1] Owner set from entity @s Owner
 execute at @s run data modify entity @e[type=arrow,tag=tempArrowTag,sort=nearest,limit=1] Motion set from entity @s Motion
 
 #tag arrow depending on ability
