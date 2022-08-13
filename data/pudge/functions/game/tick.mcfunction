@@ -14,6 +14,9 @@ execute as @a[tag=shopInteractDetect] run advancement grant @s only pudge:inv_ch
 #dead players
 execute as @a[tag=dead] run function pudge:general/death/while_dead
 
+#tick map effects
+execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/tick
+
 #border check?
 execute at @e[type=marker,tag=gameSpectatorSpawn] as @a[gamemode=spectator,distance=80..,tag=!dead] run tp @s ~ ~ ~
 #ability effects

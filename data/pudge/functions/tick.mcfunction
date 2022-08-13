@@ -11,8 +11,7 @@ execute if score $State var matches 1 run function pudge:team_select/tick
 execute if score $State var matches 2 run function pudge:game/tick
 
 #health
-execute as @a[gamemode=adventure] run function pudge:general/health/display
-execute as @a[scores={health=..0}] run function pudge:general/death/on_death
+function pudge:general/health/update
 
 #dropped items
 kill @e[type=item]
