@@ -20,7 +20,7 @@ execute as @e[type=marker,tag=tempHookTag,limit=1] at @s facing entity @a[tag=te
 #execute at @e[type=marker,tag=tempHookTag,limit=1] unless block ~ ~ ~ #ctf:empty run scoreboard players set @s hookTimer -1
 execute at @e[type=marker,tag=tempHookTag,limit=1] unless block ~ ~1 ~ #pudge:empty run scoreboard players set @s hookTimer -1
 #if both blocks air, rotate marker as target then teleport target to marker
-execute unless score @s hookTimer matches ..-1 rotated as @s run tp @e[type=marker,tag=tempHookTag,limit=1] ~ ~ ~
+execute unless score @s hookTimer matches ..-1 at @e[type=marker,tag=tempHookTag,limit=1] rotated as @s run tp @e[type=marker,tag=tempHookTag,limit=1] ~ ~ ~
 execute unless score @s hookTimer matches ..-1 run tp @s @e[type=marker,tag=tempHookTag,limit=1]
 #render particles using raycasting to look like a line pulling the player
 execute unless score @s hookTimer matches ..-1 at @s positioned ~ ~1 ~ run function pudge:game/ability/hook/particles/raycast
