@@ -39,7 +39,6 @@ scoreboard objectives add shopItem.Beacon dummy
 scoreboard objectives add shopItem.Grass dummy
 scoreboard objectives add shopItem.Axe dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
-scoreboard objectives setdisplay list gold
 #kill bounty
 scoreboard objectives add bounty dummy
 scoreboard players set $BaseBounty var 10
