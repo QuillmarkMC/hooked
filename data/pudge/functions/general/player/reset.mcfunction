@@ -20,3 +20,6 @@ effect clear @s
 xp set @s 0 points
 xp set @s 0 levels
 scoreboard players operation @s health = $MaxHealth health
+
+#state-based reset
+#execute if score $State var matches 2 run bossbar set score players @a
