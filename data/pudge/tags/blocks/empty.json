@@ -43,6 +43,7 @@
         "#signs",
         "#pudge:carpets",
         "#stairs",
-        "#slabs"
+        "#slabs",
+        "#buttons"
     ]
 }

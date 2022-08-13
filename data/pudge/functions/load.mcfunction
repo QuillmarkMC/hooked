@@ -10,6 +10,8 @@ scoreboard objectives add resist minecraft.custom:minecraft.damage_resisted
 scoreboard objectives add math dummy
 scoreboard players set #2 math 2
 scoreboard players set #3 math 3
+scoreboard players set #4 math 4
+scoreboard players set #20 math 20
 scoreboard objectives add death deathCount
 scoreboard objectives add deathTimer dummy
 scoreboard players set $RespawnDelay var 100
@@ -28,6 +30,8 @@ execute unless score $Global abilityVar matches 1.. run function pudge:game/cool
 #ability
 scoreboard objectives add hookID dummy
 scoreboard objectives add hookTimer dummy
+scoreboard objectives add hookDamage dummy
+scoreboard players set $HookInitDamage abilityVar 4
 scoreboard objectives add meleeDamage dummy
 scoreboard players set $MeleeInitDamage abilityVar 1
 #item use
@@ -37,9 +41,14 @@ scoreboard objectives add click minecraft.used:warped_fungus_on_a_stick
 scoreboard objectives add arrowOwner dummy
 #shops
 scoreboard objectives add shop dummy
+scoreboard objectives add enderClick minecraft.custom:minecraft.open_enderchest
+scoreboard objectives add shopState dummy
 scoreboard objectives add shopItem.Beacon dummy
 scoreboard objectives add shopItem.Grass dummy
 scoreboard objectives add shopItem.Axe dummy
+scoreboard objectives add shopItem.Hook.CD dummy
+scoreboard objectives add shopItem.Hook.Damage dummy
+scoreboard objectives add shopItem.Melee.Damage dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
 #kill bounty
 scoreboard objectives add bounty dummy

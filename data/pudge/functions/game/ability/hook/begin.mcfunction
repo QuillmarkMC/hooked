@@ -11,4 +11,11 @@ scoreboard players operation @a[tag=tempReceiverTag,limit=1] hookTimer = $HookLe
 #apply stun (attribute movementspeed)
 attribute @a[tag=tempReceiverTag,limit=1] generic.movement_speed base set 0
 
+#deal damage to receiver
+tag @s add teamCheckPlayer1
+tag @a[tag=tempReceiverTag,limit=1] add teamCheckPlayer2
+function pudge:general/teams/check_teams
+execute if score #TempTeams var matches 0 run scoreboard players operation @a[tag=tempReceiverTag,limit=1] health -= @s hookDamage
+execute if score #TempTeams var matches 0 if score @a[tag=tempReceiverTag,limit=1] health matches ..0 run function pudge:general/death/count_kill
+
 tag @e[type=marker,tag=tempHookMarkerTag,limit=1] remove tempHookMarkerTag
