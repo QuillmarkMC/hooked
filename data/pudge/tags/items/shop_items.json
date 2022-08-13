@@ -2,6 +2,11 @@
     "values" : [
         "beacon",
         "grass_block",
-        "netherite_axe"
+        "netherite_axe",
+        "book",
+        "sculk",
+        "crossbow",
+        "potion",
+        "golden_apple"
     ]
 }

@@ -21,6 +21,9 @@ execute if score $TempState3 shop matches 1.. run scoreboard players set @s shop
 execute if score $TempBeacon shop matches 1.. run function pudge:game/shop/click_logic/abilities/beacon/click
 execute if score $TempGrass shop matches 1.. run function pudge:game/shop/click_logic/abilities/grass/click
 execute if score $TempAxe shop matches 1.. run function pudge:game/shop/click_logic/abilities/axe/click
+execute if score $TempHeal shop matches 1.. run function pudge:game/shop/click_logic/consumes/heal/click
+execute if score $TempHookCD shop matches 1.. run function pudge:game/shop/click_logic/stats/hook_cd/click
+execute if score $TempHookDamage shop matches 1.. run function pudge:game/shop/click_logic/stats/hook_damage/click
 
 #update ender chest inventory
 function pudge:game/shop/inventory/update
