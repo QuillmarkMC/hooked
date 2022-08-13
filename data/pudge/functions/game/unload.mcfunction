@@ -3,5 +3,4 @@ kill @e[type=armor_stand,tag=deathSpectate]
 tag @a add playerReset
 bossbar set score players
 #schedule clear pudge:game/inventory/queue_update
-
-forceload remove 22 25 89 23
+execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/uninit
