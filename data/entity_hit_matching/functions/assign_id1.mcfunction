@@ -1,3 +1,4 @@
+#currently not called, kept for debugging
 execute if score @s entityid.0 matches 0 run tag @s add entityhit.nbit0
 execute if score @s entityid.0 matches 1 run tag @s add entityhit.bit0
 execute if score @s entityid.1 matches 0 run tag @s add entityhit.nbit1

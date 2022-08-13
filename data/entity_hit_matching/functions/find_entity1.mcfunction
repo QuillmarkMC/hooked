@@ -1,3 +1,4 @@
+#currently not called, kept for debugging
 #debug message
 execute if score $Debug var matches 1.. run say entity_hit_matching/find_entity1.mcfunction
 

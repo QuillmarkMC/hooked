@@ -39,6 +39,28 @@
                 }
             }
         },
+        "not_hookarrow": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:damage_source_properties",
+                            "predicate": {
+                                "type": {
+                                    "direct_entity": {
+                                        "type": "minecraft:arrow",
+                                        "nbt": "{Tags:[\"hookArrow\"]}"
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        },
         "bit0": {
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
@@ -942,7 +964,8 @@
             "not_target"
         ],
         [
-            "hookarrow"
+            "hookarrow",
+            "not_hookarrow"
         ],
         [
             "bit0",

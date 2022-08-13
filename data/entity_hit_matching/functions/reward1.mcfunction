@@ -1,3 +1,4 @@
+#currently not called, kept for debugging
 # @s is the player that got hit by an arrow
 #debug message
 execute if score $Debug var matches 1.. run say entity_hit_matching/reward1.mcfunction

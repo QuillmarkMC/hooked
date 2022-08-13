@@ -132,4 +132,4 @@ scoreboard players operation @s entityid.31 %= 2 const
 
 scoreboard players operation @s entityid = $highest entityid
 
-function entity_hit_matching:assign_id1
+#function entity_hit_matching:assign_id1
