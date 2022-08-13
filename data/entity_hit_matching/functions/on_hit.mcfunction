@@ -1,4 +1,7 @@
 # @s = player that was attacked
+#debug message
+execute if score $Debug var matches 1.. run say entity_hit_matching/on_hit.mcfunction
+
 tag @s add tempReceiverTag
 
 #determine what item was used to attack, deal damage accordingly
