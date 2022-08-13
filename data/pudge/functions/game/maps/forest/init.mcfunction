@@ -7,3 +7,7 @@ summon marker 56 37 19 {Tags:["deathArmorStandSpawn","gameMarker"]}
 
 #marker for healing fountain
 summon marker 56 60 19 {Tags:["forestHealingFountain","gameMarker"]}
+#fountain particle effects
+summon marker 56.5 59.0 19.5 {Tags:["forestHealingFountainBase","gameMarker"],Rotation:[0.0f,0.0f]}
+summon marker 56.5 64.0 19.5 {Tags:["forestHealingFountainTop","gameMarker"]}
+execute at @e[type=marker,tag=forestHealingFountainBase,limit=1] run summon marker ~ ~ ~ {Tags:["forestHealingFountainParticle","gameMarker"],Rotation:[0.0f,0.0f]}

@@ -1,7 +1,7 @@
 #teleport receiver death armor stand to current location
 scoreboard players operation #Temp death = @s entityid
 execute as @e[type=armor_stand,tag=deathSpectate] if score @s armorStand.ID = #Temp death run tag @s add tempArmorStandTPTag
-execute at @s run tp @e[type=armor_stand,tag=tempArmorStandTPTag,limit=1] ~ ~ ~
+execute if score $LoadMap var matches 1 at @s run tp @e[type=armor_stand,tag=tempArmorStandTPTag,limit=1] ~ ~ ~ facing entity @e[type=marker,tag=forestHealingFountain,limit=1]
 tag @e[type=armor_stand,tag=tempArmorStandTPTag,limit=1] remove tempArmorStandTPTag
 
 execute unless score @s death matches 1.. run kill @s

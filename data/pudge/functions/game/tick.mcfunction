@@ -24,7 +24,7 @@ execute as @a[scores={hookTimer=1..}] run function pudge:game/ability/hook/move
 #tutorial book
 #effects
 effect give @a minecraft:saturation 999999 255 true
-effect give @a minecraft:resistance 999999 255 true
+effect give @a minecraft:resistance 999999 10 true
 #tick damage check
 scoreboard players set @a resist 0
 #arrows

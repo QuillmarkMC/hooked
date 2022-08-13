@@ -8,4 +8,8 @@ execute as @e[type=armor_stand,tag=tempArmorStandTPTag,limit=1] at @s run tp @s 
 spectate @e[type=armor_stand,tag=tempArmorStandTPTag,limit=1]
 tag @e[type=armor_stand,tag=tempArmorStandTPTag,limit=1] remove tempArmorStandTPTag
 
+title @s times 0 10 0
+title @s subtitle {"text": "You will respawn shortly.","color": "white"}
+title @s title {"text": "You died.","color": "dark_red"}
+
 execute if score @s deathTimer matches ..0 run function pudge:general/death/revive

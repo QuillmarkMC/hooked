@@ -1,4 +1,8 @@
 # @s is the player that got hit by an arrow
+#debug message
+execute if score $Debug var matches 1.. run say entity_hit_matching/reward1.mcfunction
+
+# attacker = tempAttackerTag, receiver = tempReceiverTag
 execute if entity @s[advancements={entity_hit_matching:on_hurt={target=true}}] run function entity_hit_matching:find_entity1
 tag @s add tempReceiverTag
 execute if score $Temp var matches 1 as @a[tag=tempAttackerTag,limit=1] run function pudge:game/ability/hook/begin
