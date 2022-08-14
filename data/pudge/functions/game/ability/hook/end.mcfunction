@@ -8,6 +8,7 @@ execute as @e[type=marker,tag=hookMovementMarker] if score @s hookID = $Temp_Mar
 kill @e[type=marker,tag=tempHookTag,limit=1]
 #remove tags and reset scoreboards on attacker and target
 scoreboard players reset @s hookTimer
+scoreboard players reset @s hookID
 #remove stun (attribute movementspeed)
 attribute @s generic.movement_speed base set 0.1
 #get player out of ground

@@ -12,6 +12,8 @@ scoreboard players set @s death 0
 scoreboard players operation @s bounty = $BaseBounty var
 #reset kill streak
 function pudge:game/killstreak/reset
+#ability effects
+execute if score @s hookID matches 0.. run function pudge:game/ability/hook/end
 #spectator armor stand
 gamemode spectator
 #tag player
