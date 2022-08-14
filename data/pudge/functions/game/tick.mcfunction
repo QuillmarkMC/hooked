@@ -9,6 +9,7 @@ execute as @a[tag=hasCooldown] run function pudge:game/cooldowns/update
 function pudge:game/inventory/delayed_cooldown_display
 #ability detection
 execute as @a[scores={crossbow=1..}] run function pudge:game/ability/detect/use_crossbow
+execute as @a[scores={snowball=1..}] run function pudge:game/ability/detect/use_snowball
 #late shop item detection (place after all inventory updates) (runs only if player did not have an alternate inventory update this tick)
 execute as @a[tag=shopInteractDetect] run advancement grant @s only pudge:inv_change
 #dead players
@@ -31,5 +32,4 @@ scoreboard players set @a resist 0
 execute as @e[type=arrow] unless entity @s[nbt={pickup:0b}] run data modify entity @s pickup set value 0
 #execute as @e[type=arrow,nbt={inGround:0b}] at @s run particle crit ~ ~ ~ 0 0 0 0 1 normal
 #snowballs
-#execute as @a[scores={snowball=1..}] run function pudge:game/ability/snowball_generic/tag
 function pudge:game/ability/snowball_generic/tick
