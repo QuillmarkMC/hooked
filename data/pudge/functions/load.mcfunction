@@ -30,7 +30,7 @@ scoreboard objectives add cdHook dummy
 scoreboard objectives add cdHookCurrent dummy
 scoreboard objectives add cdCreeper dummy
 scoreboard objectives add cdCreeperCurrent dummy
-execute unless score $Global abilityVar matches 1.. run function pudge:game/cooldowns/set_default
+execute unless score $CDDefaultTriggered abilityVar matches 1.. run function pudge:game/cooldowns/set_default
 #ability
 scoreboard objectives add hookID dummy
 scoreboard objectives add hookTimer dummy
@@ -38,7 +38,7 @@ scoreboard objectives add hookDamage dummy
 scoreboard objectives add meleeDamage dummy
 scoreboard objectives add creeperDamage dummy
 scoreboard objectives add creeperExplosion dummy
-execute unless score $Global abilityVar matches 1.. run function pudge:game/ability/set_default
+execute unless score $AbilityDefaultTriggered abilityVar matches 1.. run function pudge:game/ability/set_default
 #item use
 scoreboard objectives add crossbow minecraft.used:crossbow
 scoreboard objectives add snowball minecraft.used:minecraft.snowball
