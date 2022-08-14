@@ -19,9 +19,10 @@ execute as @a[tag=dead] run function pudge:general/death/while_dead
 execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/tick
 
 #border check?
-execute at @e[type=marker,tag=gameSpectatorSpawn] as @a[gamemode=spectator,distance=80..,tag=!dead] run tp @s ~ ~ ~
+execute at @e[type=marker,tag=gameSpectatorSpawn,limit=1] as @a[gamemode=spectator,distance=80..,tag=!dead] run tp @s ~ ~ ~
 #ability effects
 execute as @a[scores={hookTimer=1..}] run function pudge:game/ability/hook/move
+execute as @e[type=arrow,scores={bounceCount=1..}] run function pudge:game/ability/bounce/arrow_tick
 #tutorial book
 #effects
 effect give @a minecraft:saturation 999999 255 true

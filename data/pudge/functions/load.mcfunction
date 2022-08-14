@@ -30,6 +30,7 @@ scoreboard objectives add cdHook dummy
 scoreboard objectives add cdHookCurrent dummy
 scoreboard objectives add cdCreeper dummy
 scoreboard objectives add cdCreeperCurrent dummy
+scoreboard objectives add cdBounce dummy
 execute unless score $CDDefaultTriggered abilityVar matches 1.. run function pudge:game/cooldowns/set_default
 #ability
 scoreboard objectives add hookID dummy
@@ -38,6 +39,7 @@ scoreboard objectives add hookDamage dummy
 scoreboard objectives add meleeDamage dummy
 scoreboard objectives add creeperDamage dummy
 scoreboard objectives add creeperExplosion dummy
+scoreboard objectives add bounceCount dummy
 execute unless score $AbilityDefaultTriggered abilityVar matches 1.. run function pudge:game/ability/set_default
 #item use
 scoreboard objectives add crossbow minecraft.used:crossbow
@@ -46,10 +48,15 @@ scoreboard objectives add click minecraft.used:warped_fungus_on_a_stick
 #used by arrows to determine who shot them
 scoreboard objectives add arrowOwner dummy
 scoreboard objectives add snowballOwner dummy
+#used by arrows for bounce ability
+scoreboard objectives add x.Motion dummy
+scoreboard objectives add y.Motion dummy
+scoreboard objectives add z.Motion dummy
 #shops
 scoreboard objectives add shop dummy
 scoreboard objectives add enderClick minecraft.custom:minecraft.open_enderchest
 scoreboard objectives add shopState dummy
+scoreboard objectives add shopItem.Bounce dummy
 scoreboard objectives add shopItem.Creeper dummy
 scoreboard objectives add shopItem.Hook.CD dummy
 scoreboard objectives add shopItem.Hook.Damage dummy
@@ -69,6 +76,7 @@ scoreboard objectives add armorStand.ID dummy
 scoreboard objectives add numUpgrades dummy
 scoreboard players set $MaxInventoryUpgrades var 3
 scoreboard players set $ItemID shopItem.Creeper 1
+scoreboard players set $ItemID shopItem.Bounce 2
 #skip hotbars 0 and 1 because hook and melee will always occupy those slots
 scoreboard objectives add hotbar.2.ID dummy
 scoreboard objectives add hotbar.3.ID dummy
@@ -138,6 +146,6 @@ gamerule naturalRegeneration true
 gamerule playersSleepingPercentage 101
 # ?
 gamerule reducedDebugInfo false
-gamerule showDeathMessages true
+gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks true
 #gamerule sendCommandFeedback false

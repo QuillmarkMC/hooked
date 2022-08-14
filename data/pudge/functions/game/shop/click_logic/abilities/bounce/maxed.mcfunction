@@ -1,0 +1,1 @@
+tellraw @s {"text": "You can't buy any more of those!","color": "red"}

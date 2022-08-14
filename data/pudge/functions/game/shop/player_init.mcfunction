@@ -3,6 +3,7 @@ scoreboard players set @s gold 0
 
 #item levels
 scoreboard players set @s shopItem.Creeper 0
+scoreboard players set @s shopItem.Bounce 0
 scoreboard players set @s shopItem.Hook.CD 0
 scoreboard players set @s shopItem.Hook.Damage 0
 scoreboard players set @s shopItem.Melee.Damage 0
