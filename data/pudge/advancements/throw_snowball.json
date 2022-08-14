@@ -1,12 +1,14 @@
 {
   "criteria": {
     "requirement": {
-      "trigger": "minecraft:summoned_entity",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "entity": {
-          "type": "minecraft:snowball",
-          "nbt": "{Item:{tag:{CustomSnowball:1b}}}"
-        }
+        "items": [
+          {
+            "item": "minecraft:snowball",
+            "nbt": "{CustomSnowball:1b}"
+          }
+        ]
       }
     }
   },
