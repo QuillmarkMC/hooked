@@ -5,7 +5,7 @@
       "conditions": {
         "item": {
           "items": ["snowball"],
-          "nbt": "{Tags:[\"SnowballInitThrow\"]}"
+          "nbt": "{CustomSnowball:1b}"
         }
       }
     }

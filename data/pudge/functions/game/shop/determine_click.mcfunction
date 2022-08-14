@@ -7,7 +7,7 @@ execute store success score $TempBackPage shop run clear @s bedrock{BackPage:1} 
 execute store success score $TempState1 shop run clear @s bedrock{Stats:1} 1
 execute store success score $TempState2 shop run clear @s bedrock{Abilities:1} 1
 execute store success score $TempState3 shop run clear @s bedrock{Consumes:1} 1
-execute store success score $TempHeal shop run clear @s bedrock{HealConsumes:1} 1
+execute store success score $TempHeal shop run clear @s potion{HealConsumes:1} 1
 execute store success score $TempHookCD shop run clear @s bedrock{HookCDStats:1} 1
 execute store success score $TempHookDamage shop run clear @s bedrock{HookDamageStats:1} 1
 execute store success score $TempMeleeDamage shop run clear @s bedrock{MeleeDamageStats:1} 1
@@ -21,6 +21,7 @@ execute if score $TempCreeper shop matches 1.. run function pudge:game/shop/clic
 execute if score $TempHeal shop matches 1.. run function pudge:game/shop/click_logic/consumes/heal/click
 execute if score $TempHookCD shop matches 1.. run function pudge:game/shop/click_logic/stats/hook_cd/click
 execute if score $TempHookDamage shop matches 1.. run function pudge:game/shop/click_logic/stats/hook_damage/click
+execute if score $TempMeleeDamage shop matches 1.. run function pudge:game/shop/click_logic/stats/melee_damage/click
 
 #update ender chest inventory
 function pudge:game/shop/inventory/update
