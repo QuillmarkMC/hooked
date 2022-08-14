@@ -4,8 +4,8 @@
       "trigger": "minecraft:summoned_entity",
       "conditions": {
         "entity": {
-          "type": "snowball",
-          "nbt": "{CustomSnowball:1b}"
+          "type": "minecraft:snowball",
+          "nbt": "{Item:{tag:{CustomSnowball:1b}}}"
         }
       }
     }
