@@ -1,7 +1,6 @@
 {
   "replace": false,
   "values": [
-    "minecraft:player",
-    "wither_skeleton"
+    "minecraft:player"
   ]
 }

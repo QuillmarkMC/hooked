@@ -1,0 +1,16 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:consume_item",
+      "conditions": {
+        "item": {
+          "items": ["snowball"],
+          "nbt": "{Tags:[\"SnowballInitThrow\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "pudge:game/ability/snowball_generic/tag"
+  }
+}

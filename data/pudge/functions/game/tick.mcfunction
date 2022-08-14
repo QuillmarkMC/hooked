@@ -30,3 +30,6 @@ scoreboard players set @a resist 0
 #arrows
 execute as @e[type=arrow] unless entity @s[nbt={pickup:0b}] run data modify entity @s pickup set value 0
 #execute as @e[type=arrow,nbt={inGround:0b}] at @s run particle crit ~ ~ ~ 0 0 0 0 1 normal
+#snowballs
+#execute as @a[scores={snowball=1..}] run function pudge:game/ability/snowball_generic/tag
+function pudge:game/ability/snowball_generic/tick

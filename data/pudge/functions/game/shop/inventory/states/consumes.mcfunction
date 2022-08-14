@@ -26,4 +26,4 @@ item replace entity @s enderchest.22 with air
 item replace entity @s enderchest.23 with air
 item replace entity @s enderchest.24 with air
 item replace entity @s enderchest.25 with air
-execute unless data entity @s EnderItems[{Slot:26b,id:"minecraft:barrier",tag:{BackPage:1}}] run item replace entity @s enderchest.26 with barrier{BackPage:1,Shop:1,display:{Name:'{"text":"Previous Page","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"Go back to the previous page.","color":"gray","italic":false}']},HideFlags:127}
+execute unless data entity @s EnderItems[{Slot:26b,id:"minecraft:bedrock",tag:{BackPage:1}}] run item replace entity @s enderchest.26 with bedrock{BackPage:1,Shop:1,display:{Name:'{"text":"Previous Page","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"Go back to the previous page.","color":"gray","italic":false}']},HideFlags:127,CustomModelData:7}

@@ -8,6 +8,8 @@ scoreboard objectives add healthRegen dummy
 scoreboard players set $RegenTime healthRegen 200
 scoreboard objectives add resist minecraft.custom:minecraft.damage_resisted
 scoreboard objectives add math dummy
+scoreboard players set #SnowballFix math 1
+scoreboard players set #-1 math -1
 scoreboard players set #2 math 2
 scoreboard players set #3 math 3
 scoreboard players set #4 math 4
@@ -26,30 +28,35 @@ scoreboard players set $shears_max durability 238
 scoreboard objectives add abilityVar dummy
 scoreboard objectives add cdHook dummy
 scoreboard objectives add cdHookCurrent dummy
+scoreboard objectives add cdCreeper dummy
+scoreboard objectives add cdCreeperCurrent dummy
 execute unless score $Global abilityVar matches 1.. run function pudge:game/cooldowns/set_default
 #ability
 scoreboard objectives add hookID dummy
 scoreboard objectives add hookTimer dummy
 scoreboard objectives add hookDamage dummy
-scoreboard players set $HookInitDamage abilityVar 4
 scoreboard objectives add meleeDamage dummy
-scoreboard players set $MeleeInitDamage abilityVar 1
+scoreboard objectives add creeperDamage dummy
+scoreboard objectives add creeperExplosion dummy
+execute unless score $Global abilityVar matches 1.. run function pudge:game/ability/set_default
 #item use
 scoreboard objectives add crossbow minecraft.used:crossbow
+scoreboard objectives add snowball minecraft.used:minecraft.snowball
 scoreboard objectives add click minecraft.used:warped_fungus_on_a_stick
 #used by arrows to determine who shot them
 scoreboard objectives add arrowOwner dummy
+scoreboard objectives add snowballOwner dummy
 #shops
 scoreboard objectives add shop dummy
 scoreboard objectives add enderClick minecraft.custom:minecraft.open_enderchest
 scoreboard objectives add shopState dummy
-scoreboard objectives add shopItem.Beacon dummy
-scoreboard objectives add shopItem.Grass dummy
-scoreboard objectives add shopItem.Axe dummy
+scoreboard objectives add shopItem.Creeper dummy
 scoreboard objectives add shopItem.Hook.CD dummy
 scoreboard objectives add shopItem.Hook.Damage dummy
 scoreboard objectives add shopItem.Melee.Damage dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
+scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
+scoreboard objectives add dropPotion minecraft.dropped:minecraft.potion
 #kill bounty
 scoreboard objectives add bounty dummy
 scoreboard players set $BaseBounty var 10
@@ -60,16 +67,15 @@ scoreboard objectives add armorStand.ID dummy
 
 #weird inventory stuff
 scoreboard objectives add numUpgrades dummy
-scoreboard players set $MaxInventoryUpgrades var 2
-scoreboard players set $ItemID shopItem.Beacon 1
-scoreboard players set $ItemID shopItem.Grass 2
-scoreboard players set $ItemID shopItem.Axe 3
-scoreboard objectives add hotbar.1.ID dummy
+scoreboard players set $MaxInventoryUpgrades var 3
+scoreboard players set $ItemID shopItem.Creeper 1
+#skip hotbars 0 and 1 because hook and melee will always occupy those slots
 scoreboard objectives add hotbar.2.ID dummy
 scoreboard objectives add hotbar.3.ID dummy
 scoreboard objectives add hotbar.4.ID dummy
 scoreboard objectives add hotbar.5.ID dummy
 scoreboard objectives add hotbar.6.ID dummy
+scoreboard objectives add hotbar.7.ID dummy
 
 #Game Bossbar
 bossbar add score {"text":""}
