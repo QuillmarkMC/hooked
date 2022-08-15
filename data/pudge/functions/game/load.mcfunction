@@ -6,6 +6,7 @@ scoreboard players set $State var 2
 #init map
 execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/init
 function pudge:game/bossbar/init
+scoreboard players operation $Income gold = $IncomeCycle var
 
 #players
 tag @a[team=red] add isGamer

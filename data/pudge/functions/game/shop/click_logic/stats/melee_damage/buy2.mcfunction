@@ -2,4 +2,4 @@ tellraw @s {"text": "You bought the Melee Damage Upgrade level 2!","color": "gre
 scoreboard players set @s shopItem.Melee.Damage 2
 scoreboard players operation @s gold -= $MeleeDamageCost shop
 function pudge:game/gold/update_display
-scoreboard players add @s meleeDamage 2
+scoreboard players add @s meleeDamage 1

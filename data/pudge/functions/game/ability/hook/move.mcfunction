@@ -1,7 +1,7 @@
 #debug message
 execute if score $Debug var matches 1.. run say game/ability/hook/move.mcfunction
 
-#this function is executed every tick as a player who has been hooked by an angler
+#this function is executed every tick as a player who has been hooked
 #progress timer
 scoreboard players remove @s hookTimer 1
 #tag source of hook
@@ -12,9 +12,11 @@ scoreboard players operation $Temp_Marker hookID = @s entityid
 execute as @e[type=marker,tag=hookMovementMarker] if score @s hookID = $Temp_Marker hookID run tag @s add tempHookTag
 #if target died in last tick, end effect
 execute if score @s deaths matches 1.. run scoreboard players set @s hookTimer -1
-#if within 1.5 blocks of angler, end effect
-execute at @s if entity @a[tag=tempHookTag,distance=..1.5] run scoreboard players set @s hookTimer -1
-#face marker towards angler, tp small distance towards them
+#if source player is dead, end effect
+execute if entity @a[tag=tempHookTag,tag=dead,limit=1] run scoreboard players set @s hookTimer -1
+#if within 1.5 blocks of source, end effect
+execute at @s if entity @a[tag=tempHookTag,distance=..1.5,limit=1] run scoreboard players set @s hookTimer -1
+#face marker towards source, tp small distance towards them
 execute as @e[type=marker,tag=tempHookTag,limit=1] at @s facing entity @a[tag=tempHookTag,limit=1] feet run tp @s ^ ^ ^0.5 facing entity @a[tag=tempHookTag,limit=1]
 #check if current block ~ ~ ~ and ~ ~1 ~ are air, if not then end effect immediately
 #execute at @e[type=marker,tag=tempHookTag,limit=1] unless block ~ ~ ~ #ctf:empty run scoreboard players set @s hookTimer -1

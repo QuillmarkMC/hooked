@@ -1,5 +1,6 @@
 #gold
-scoreboard players set @s gold 0
+scoreboard players operation @s gold = $StartingGold gold
+function pudge:game/gold/update_display
 
 #item levels
 scoreboard players set @s shopItem.Creeper 0

@@ -62,6 +62,9 @@ scoreboard objectives add shopItem.Hook.CD dummy
 scoreboard objectives add shopItem.Hook.Damage dummy
 scoreboard objectives add shopItem.Melee.Damage dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
+scoreboard players set $IncomeCycle gold 20
+scoreboard players set $IncomeAmount gold 1
+scoreboard players set $StartingGold gold 30
 scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
 scoreboard objectives add dropPotion minecraft.dropped:minecraft.potion
 #kill bounty

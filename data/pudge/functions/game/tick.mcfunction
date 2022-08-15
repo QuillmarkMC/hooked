@@ -1,5 +1,4 @@
 #all the game logic
-
 #shop item detection (place before all inventory updates)
 execute at @e[type=marker,tag=redShop] as @a[tag=isGamer,distance=..8] run function pudge:game/shop/check
 execute at @e[type=marker,tag=blueShop] as @a[tag=isGamer,distance=..8] run function pudge:game/shop/check
@@ -18,6 +17,9 @@ execute as @a[tag=dead] run function pudge:general/death/while_dead
 #tick map effects
 execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/tick
 
+#gold tick function
+function pudge:game/gold/tick
+
 #border check?
 execute at @e[type=marker,tag=gameSpectatorSpawn,limit=1] as @a[gamemode=spectator,distance=80..,tag=!dead] run tp @s ~ ~ ~
 #ability effects
@@ -31,6 +33,5 @@ effect give @a minecraft:resistance 999999 10 true
 scoreboard players set @a resist 0
 #arrows
 execute as @e[type=arrow] unless entity @s[nbt={pickup:0b}] run data modify entity @s pickup set value 0
-#execute as @e[type=arrow,nbt={inGround:0b}] at @s run particle crit ~ ~ ~ 0 0 0 0 1 normal
 #snowballs
 function pudge:game/ability/snowball_generic/tick
