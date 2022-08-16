@@ -12,4 +12,4 @@ scoreboard players reset @s hookID
 #remove stun (attribute movementspeed)
 attribute @s generic.movement_speed base set 0.1
 #get player out of ground
-execute at @s unless block ~ ~ ~ #pudge:ignore_teleport run tp @s ~ ~1 ~
+execute at @s unless block ~ ~ ~ #pudge:ignore_teleport positioned ~ ~1 ~ align y run tp @s ~ ~ ~

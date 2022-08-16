@@ -9,6 +9,7 @@ scoreboard players set @s shopItem.Hook.CD 0
 scoreboard players set @s shopItem.Hook.Damage 0
 scoreboard players set @s shopItem.Melee.Damage 0
 scoreboard players set @s shopItem.Knockback 0
+scoreboard players set @s shopItem.Grapple 0
 
 #upgrade count
 scoreboard players set @s numUpgrades 0

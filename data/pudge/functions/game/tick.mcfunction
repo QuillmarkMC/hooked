@@ -28,6 +28,7 @@ execute at @e[type=marker,tag=gameSpectatorSpawn,limit=1] as @a[gamemode=spectat
 #ability effects
 execute as @a[scores={hookTimer=1..}] run function pudge:game/ability/hook/move
 execute as @e[type=arrow,scores={bounceCount=1..}] run function pudge:game/ability/bounce/arrow_tick
+execute as @e[type=arrow,tag=grappleArrow,nbt={inGround:true}] run function pudge:game/ability/grapple/tag_player
 #tutorial book
 #effects
 effect give @a minecraft:saturation 999999 255 true

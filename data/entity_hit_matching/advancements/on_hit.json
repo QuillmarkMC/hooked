@@ -62,6 +62,43 @@
                 ]
             }
         },
+        "grapplearrow": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "type": "minecraft:arrow",
+                            "nbt": "{Tags:[\"grappleArrow\"]}"
+                            
+                        }
+                    }
+                }
+            }
+        },
+        "not_grapplearrow": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:damage_source_properties",
+                            "entity": "this",
+                            "predicate": {
+                                
+                                    "direct_entity": {
+                                        "type": "minecraft:arrow",
+                                        "nbt": "{Tags:[\"grappleArrow\"]}"
+                                        
+                                    }
+                                
+                            }
+                        }
+                    }
+                ]
+            }
+        },
         "bit0": {
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
@@ -967,6 +1004,10 @@
         [
             "hookarrow",
             "not_hookarrow"
+        ],
+        [
+            "grapplearrow",
+            "not_grapplearrow"
         ],
         [
             "bit0",

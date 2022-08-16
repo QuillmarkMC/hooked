@@ -5,3 +5,4 @@ scoreboard players set $HookLength abilityVar 100
 scoreboard players set $CreeperCD abilityVar 300
 scoreboard players set $BounceCD abilityVar -1
 scoreboard players set $KnockbackCD abilityVar -1
+scoreboard players set $GrappleCD abilityVar 240

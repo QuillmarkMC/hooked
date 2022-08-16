@@ -13,6 +13,7 @@ execute store success score $TempHookCD shop run clear @s bedrock{HookCDStats:1}
 execute store success score $TempHookDamage shop run clear @s bedrock{HookDamageStats:1} 1
 execute store success score $TempMeleeDamage shop run clear @s bedrock{MeleeDamageStats:1} 1
 execute store success score $TempKnockback shop run clear @s bedrock{KnockbackAbility:1} 1
+execute store success score $TempGrapple shop run clear @s bedrock{GrappleAbility:1} 1
 
 #run logic based on what item was selected
 execute if score $TempBackPage shop matches 1.. run scoreboard players set @s shopState 0
@@ -26,6 +27,7 @@ execute if score $TempHookCD shop matches 1.. run function pudge:game/shop/click
 execute if score $TempHookDamage shop matches 1.. run function pudge:game/shop/click_logic/stats/hook_damage/click
 execute if score $TempMeleeDamage shop matches 1.. run function pudge:game/shop/click_logic/stats/melee_damage/click
 execute if score $TempKnockback shop matches 1.. run function pudge:game/shop/click_logic/abilities/knockback/click
+execute if score $TempGrapple shop matches 1.. run function pudge:game/shop/click_logic/abilities/grapple/click
 
 #update ender chest inventory
 function pudge:game/shop/inventory/update

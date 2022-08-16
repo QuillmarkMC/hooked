@@ -9,3 +9,6 @@ execute if score @s cdBounce matches 0 run function pudge:game/cooldowns/bounce/
 
 execute if score @s cdKnockback matches 1.. run scoreboard players remove @s cdKnockback 1
 execute if score @s cdKnockback matches 0 run function pudge:game/cooldowns/knockback/end_cd
+
+execute if score @s cdGrapple matches 1.. run scoreboard players remove @s cdGrapple 1
+execute if score @s cdGrapple matches 0 run function pudge:game/cooldowns/grapple/end_cd

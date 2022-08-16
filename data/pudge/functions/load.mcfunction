@@ -35,6 +35,8 @@ scoreboard objectives add cdCreeper dummy
 scoreboard objectives add cdCreeperCurrent dummy
 scoreboard objectives add cdBounce dummy
 scoreboard objectives add cdKnockback dummy
+scoreboard objectives add cdGrapple dummy
+scoreboard objectives add cdGrappleCurrent dummy
 #execute unless score $CDDefaultTriggered abilityVar matches 1.. run function pudge:game/cooldowns/set_default
 function pudge:game/cooldowns/set_default
 #ability
@@ -46,6 +48,8 @@ scoreboard objectives add creeperDamage dummy
 scoreboard objectives add creeperExplosion dummy
 scoreboard objectives add bounceCount dummy
 scoreboard objectives add knockbackLevel dummy
+scoreboard objectives add grappleID dummy
+scoreboard objectives add grappleTimer dummy
 #execute unless score $AbilityDefaultTriggered abilityVar matches 1.. run function pudge:game/ability/set_default
 function pudge:game/ability/set_default
 #item use
@@ -69,8 +73,9 @@ scoreboard objectives add shopItem.Hook.CD dummy
 scoreboard objectives add shopItem.Hook.Damage dummy
 scoreboard objectives add shopItem.Melee.Damage dummy
 scoreboard objectives add shopItem.Knockback dummy
+scoreboard objectives add shopItem.Grapple dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
-scoreboard players set $IncomeCycle gold 40
+scoreboard players set $IncomeCycle gold 100
 scoreboard players set $IncomeAmount gold 1
 scoreboard players set $StartingGold gold 30
 scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
@@ -93,6 +98,7 @@ scoreboard players set $MaxInventoryUpgrades var 3
 scoreboard players set $ItemID shopItem.Creeper 1
 scoreboard players set $ItemID shopItem.Bounce 2
 scoreboard players set $ItemID shopItem.Knockback 3
+scoreboard players set $ItemID shopItem.Grapple 4
 #skip hotbars 0 and 1 because hook and melee will always occupy those slots
 scoreboard objectives add hotbar.2.ID dummy
 scoreboard objectives add hotbar.3.ID dummy
