@@ -27,6 +27,7 @@ execute as @a[scores={comboTimer=1..}] run function pudge:game/killstreak/combo/
 execute at @e[type=marker,tag=gameSpectatorSpawn,limit=1] as @a[gamemode=spectator,distance=80..,tag=!dead] run tp @s ~ ~ ~
 #ability effects
 execute as @a[scores={hookTimer=1..}] run function pudge:game/ability/hook/move
+execute as @a[scores={grappleTimer=1..}] run function pudge:game/ability/grapple/move
 execute as @e[type=arrow,scores={bounceCount=1..}] run function pudge:game/ability/bounce/arrow_tick
 execute as @e[type=arrow,tag=grappleArrow,nbt={inGround:true}] run function pudge:game/ability/grapple/tag_player
 #tutorial book
