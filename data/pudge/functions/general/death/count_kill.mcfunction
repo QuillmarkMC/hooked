@@ -24,3 +24,6 @@ scoreboard players operation #Temp math += $BlueScore var
 execute if score #Temp math matches 1 run scoreboard players set $Temp killstreak 100
 #global kill announce (sound and tellraw)
 execute if score $Temp killstreak matches 1.. run function pudge:game/killstreak/announce
+
+#check win
+function pudge:game/end/check_win
