@@ -35,7 +35,8 @@ scoreboard objectives add cdCreeper dummy
 scoreboard objectives add cdCreeperCurrent dummy
 scoreboard objectives add cdBounce dummy
 scoreboard objectives add cdKnockback dummy
-execute unless score $CDDefaultTriggered abilityVar matches 1.. run function pudge:game/cooldowns/set_default
+#execute unless score $CDDefaultTriggered abilityVar matches 1.. run function pudge:game/cooldowns/set_default
+function pudge:game/cooldowns/set_default
 #ability
 scoreboard objectives add hookID dummy
 scoreboard objectives add hookTimer dummy
@@ -45,7 +46,8 @@ scoreboard objectives add creeperDamage dummy
 scoreboard objectives add creeperExplosion dummy
 scoreboard objectives add bounceCount dummy
 scoreboard objectives add knockbackLevel dummy
-execute unless score $AbilityDefaultTriggered abilityVar matches 1.. run function pudge:game/ability/set_default
+#execute unless score $AbilityDefaultTriggered abilityVar matches 1.. run function pudge:game/ability/set_default
+function pudge:game/ability/set_default
 #item use
 scoreboard objectives add crossbow minecraft.used:crossbow
 scoreboard objectives add snowball minecraft.used:minecraft.snowball
@@ -68,7 +70,7 @@ scoreboard objectives add shopItem.Hook.Damage dummy
 scoreboard objectives add shopItem.Melee.Damage dummy
 scoreboard objectives add shopItem.Knockback dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
-scoreboard players set $IncomeCycle gold 20
+scoreboard players set $IncomeCycle gold 40
 scoreboard players set $IncomeAmount gold 1
 scoreboard players set $StartingGold gold 30
 scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock

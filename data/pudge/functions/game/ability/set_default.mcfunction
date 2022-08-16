@@ -5,4 +5,4 @@ scoreboard players set $MeleeInitDamage abilityVar 2
 scoreboard players set $CreeperInitDamage abilityVar 1
 scoreboard players set $CreeperInitExplosion abilityVar 1
 scoreboard players set $BounceCountInit abilityVar 0
-scoreboard players set $KnockbackInitLevel abilityVar 1
+scoreboard players set $KnockbackInitLevel abilityVar 2
