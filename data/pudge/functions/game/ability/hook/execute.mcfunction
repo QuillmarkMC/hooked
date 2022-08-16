@@ -11,5 +11,5 @@ execute unless score #TempTeams var matches 0 run function pudge:general/death/o
 #playsound
 execute as @a at @s run playsound minecraft:game.headshot ambient @s ~ ~ ~ 0.75
 #tellraw
-execute if score #TempTeams var matches 0 run tellraw @a [{"text":"","extra":[{"selector":"@s"}]},{"text":" just got owned by ","color":"white"},{"text":"","extra":[{"selector":"@a[tag=tempAttackerTag,limit=1]"}]},{"text":"!"}]
+execute if score #TempTeams var matches 0 run tellraw @a [{"text":"","extra":[{"selector":"@s"}]},{"text":" just got pwned by ","color":"white"},{"text":"","extra":[{"selector":"@a[tag=tempAttackerTag,limit=1]"}]},{"text":"!"}]
 execute unless score #TempTeams var matches 0 run tellraw @a [{"text":"","extra":[{"selector":"@s"}]},{"text":" was just denied by ","color":"white"},{"text":"","extra":[{"selector":"@a[tag=tempAttackerTag,limit=1]"}]},{"text":"!"}]

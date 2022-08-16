@@ -7,6 +7,8 @@ scoreboard players set $State var 2
 execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/init
 function pudge:game/bossbar/init
 scoreboard players operation $Income gold = $IncomeCycle var
+scoreboard objectives setdisplay list playerKills
+function pudge:game/killstreak/combo/init_times
 
 #players
 tag @a[team=red] add isGamer
@@ -18,7 +20,6 @@ tp @a[team=blue] @e[type=marker,tag=gameBlueSpawn,limit=1]
 tp @a[gamemode=spectator] @e[type=marker,tag=gameSpectatorSpawn,limit=1]
 execute at @e[type=marker,tag=gameRedSpawn,limit=1] run spawnpoint @a[team=red] ~ ~ ~
 execute at @e[type=marker,tag=gameBlueSpawn,limit=1] run spawnpoint @a[team=blue] ~ ~ ~
-execute at @e[type=marker,tag=gameSpectatorSpawn,limit=1] run spawnpoint @a[team=spectator] ~ ~ ~
 tag @a[tag=isGamer] add hasHook
 tag @a[tag=isGamer] add hasMelee
 execute as @a[tag=isGamer] run function pudge:game/cooldowns/init

@@ -16,6 +16,8 @@ scoreboard players set #4 math 4
 scoreboard players set #20 math 20
 scoreboard objectives add death deathCount
 scoreboard objectives add deathTimer dummy
+scoreboard objectives add totalDeaths dummy
+scoreboard objectives add playerKills dummy {"text": "Individual Kills","color": "gold"}
 scoreboard players set $RespawnDelay var 100
 
 ##Game Scoreboards
@@ -31,6 +33,7 @@ scoreboard objectives add cdHookCurrent dummy
 scoreboard objectives add cdCreeper dummy
 scoreboard objectives add cdCreeperCurrent dummy
 scoreboard objectives add cdBounce dummy
+scoreboard objectives add cdKnockback dummy
 execute unless score $CDDefaultTriggered abilityVar matches 1.. run function pudge:game/cooldowns/set_default
 #ability
 scoreboard objectives add hookID dummy
@@ -40,6 +43,7 @@ scoreboard objectives add meleeDamage dummy
 scoreboard objectives add creeperDamage dummy
 scoreboard objectives add creeperExplosion dummy
 scoreboard objectives add bounceCount dummy
+scoreboard objectives add knockbackLevel dummy
 execute unless score $AbilityDefaultTriggered abilityVar matches 1.. run function pudge:game/ability/set_default
 #item use
 scoreboard objectives add crossbow minecraft.used:crossbow
@@ -61,6 +65,7 @@ scoreboard objectives add shopItem.Creeper dummy
 scoreboard objectives add shopItem.Hook.CD dummy
 scoreboard objectives add shopItem.Hook.Damage dummy
 scoreboard objectives add shopItem.Melee.Damage dummy
+scoreboard objectives add shopItem.Knockback dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
 scoreboard players set $IncomeCycle gold 20
 scoreboard players set $IncomeAmount gold 1
@@ -69,9 +74,13 @@ scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
 scoreboard objectives add dropPotion minecraft.dropped:minecraft.potion
 #kill bounty
 scoreboard objectives add bounty dummy
-scoreboard players set $BaseBounty var 10
+scoreboard players set $BaseBounty var 20
 #killstreak
 scoreboard objectives add killstreak dummy
+#kill combos
+scoreboard objectives add combo dummy
+scoreboard objectives add comboTimer dummy
+
 #armor stand ids
 scoreboard objectives add armorStand.ID dummy
 
@@ -80,6 +89,7 @@ scoreboard objectives add numUpgrades dummy
 scoreboard players set $MaxInventoryUpgrades var 3
 scoreboard players set $ItemID shopItem.Creeper 1
 scoreboard players set $ItemID shopItem.Bounce 2
+scoreboard players set $ItemID shopItem.Knockback 3
 #skip hotbars 0 and 1 because hook and melee will always occupy those slots
 scoreboard objectives add hotbar.2.ID dummy
 scoreboard objectives add hotbar.3.ID dummy

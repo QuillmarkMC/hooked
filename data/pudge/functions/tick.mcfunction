@@ -3,7 +3,7 @@ execute as @a[scores={leave=1..}] run function pudge:general/player/check_dc
 
 #handle player resets
 execute as @a[tag=!initSpawned] run tag @s add playerReset
-execute as @a if entity @s[tag=playerReset] run function pudge:general/player/reset
+execute as @a[tag=playerReset] run function pudge:general/player/reset
 
 #States: 0 = lobby, 1 = team select, 2 = game
 execute if score $State var matches 0 run function pudge:lobby/tick

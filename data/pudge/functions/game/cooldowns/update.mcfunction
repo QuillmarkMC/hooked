@@ -6,3 +6,6 @@ execute if score @s cdCreeper matches 0 run function pudge:game/cooldowns/creepe
 
 execute if score @s cdBounce matches 1.. run scoreboard players remove @s cdBounce 1
 execute if score @s cdBounce matches 0 run function pudge:game/cooldowns/bounce/end_cd
+
+execute if score @s cdKnockback matches 1.. run scoreboard players remove @s cdKnockback 1
+execute if score @s cdKnockback matches 0 run function pudge:game/cooldowns/knockback/end_cd

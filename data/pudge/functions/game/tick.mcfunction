@@ -20,6 +20,9 @@ execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/tick
 #gold tick function
 function pudge:game/gold/tick
 
+#combo tick function
+execute as @a[scores={comboTimer=1..}] run function pudge:game/killstreak/combo/tick
+
 #border check?
 execute at @e[type=marker,tag=gameSpectatorSpawn,limit=1] as @a[gamemode=spectator,distance=80..,tag=!dead] run tp @s ~ ~ ~
 #ability effects
