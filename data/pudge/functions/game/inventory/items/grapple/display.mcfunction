@@ -1,5 +1,5 @@
-scoreboard players operation $my_cooldown durability = @s cdHook
-scoreboard players operation $max_cooldown durability = @s cdHookCurrent
+scoreboard players operation $my_cooldown durability = @s cdGrapple
+scoreboard players operation $max_cooldown durability = @s cdGrappleCurrent
 scoreboard players operation $max_durability durability = $crossbow_max durability
 function pudge:game/inventory/items/calculate_damage
 #execute if score @s cdCreeper matches 0.. run item modify entity @s hotbar.1 pudge:damage_shears

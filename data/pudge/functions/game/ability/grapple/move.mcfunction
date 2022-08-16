@@ -21,7 +21,7 @@ execute if score @s hookTimer matches 1.. run scoreboard players set @s grappleT
 #if within 1.5 blocks of source, end effect
 execute at @s if entity @e[tag=tempGrappleTag,distance=..1.5,limit=1] run scoreboard players set @s grappleTimer -1
 #face marker towards source, tp small distance towards them
-execute as @e[type=marker,tag=tempGrappleMarkerTag,limit=1] at @s facing entity @e[tag=tempGrappleTag,limit=1] feet run tp @s ^ ^ ^0.5 facing entity @a[tag=tempGrappleTag,limit=1]
+execute as @e[type=marker,tag=tempGrappleMarkerTag,limit=1] at @s facing entity @e[tag=tempGrappleTag,limit=1] feet run tp @s ^ ^ ^0.5 facing entity @e[tag=tempGrappleTag,limit=1]
 #check if current block ~ ~ ~ and ~ ~1 ~ are air, if not then end effect immediately
 #execute at @e[type=marker,tag=tempGrappleTag,limit=1] unless block ~ ~ ~ #ctf:empty run scoreboard players set @s grappleTimer -1
 execute at @e[type=marker,tag=tempGrappleMarkerTag,limit=1] unless block ~ ~1 ~ #pudge:empty run scoreboard players set @s grappleTimer -1
