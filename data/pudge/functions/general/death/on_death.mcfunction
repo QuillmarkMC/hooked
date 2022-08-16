@@ -9,9 +9,15 @@ execute unless score @s death matches 1.. run kill @s
 scoreboard players operation @s health = $MaxHealth health
 scoreboard players set @s death 0
 scoreboard players add @s totalDeaths 1
+#check teams
+tag @s add teamCheckPlayer1
+tag @a[tag=tempAttackerTag,limit=1] add teamCheckPlayer2
+function pudge:general/teams/check_teams
 
 #display death message to receiver
-tellraw @s [{"text": "(-)","color": "red"},{"text": "You were killed by ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempAttackerTag,limit=1]"}]},{"text": " and gave ","color": "white"},{"score":{"name":"@s","objective":"bounty"},"color": "gold"},{"text": " gold.","color": "gold"}]
+execute if score #TempTeams var matches 0 run tellraw @s [{"text": "(-)","color": "red"},{"text": "You were killed by ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempAttackerTag,limit=1]"}]},{"text": " and gave ","color": "white"},{"score":{"name":"@s","objective":"bounty"},"color": "gold"},{"text": " gold.","color": "gold"}]
+execute if score #TempTeams var matches 1 run tellraw @s [{"text": "(-)","color": "red"},{"text": "You died!","color": "white"}]
+execute if score #TempTeams var matches 2 run tellraw @s [{"text": "(-)","color": "red"},{"text": "You were killed by ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempAttackerTag,limit=1]"}]}]
 
 #reset kill bounty
 scoreboard players operation @s bounty = $BaseBounty var

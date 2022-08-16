@@ -51,3 +51,6 @@ execute if score $Temp killstreak matches 16 as @a at @s run playsound game.godl
 execute if score $Temp killstreak matches 100 run tellraw @a [{"text": "[!] ","color": "yellow","bold": true},{"text":"","extra":[{"selector":"@s"}],"bold": false},{"text": " has killed ","color": "white","bold": false},{"text":"","extra":[{"selector":"@a[tag=tempReceiverTag,limit=1]"}],"bold": false},{"text": ", drawing the first blood!","color": "white","bold": false}]
 execute if score $Temp killstreak matches 100 as @a at @s run playsound game.firstblood ambient @s ~ ~ ~
 
+#ownage
+execute if score $Temp killstreak matches 17 run tellraw @a [{"text": "[!] ","color": "yellow","bold": true},{"text":"","extra":[{"selector":"@s"}],"bold": false},{"text": " just owned ","color": "white","bold": false},{"text":"","extra":[{"selector":"@a[tag=tempReceiverTag,limit=1]"}],"bold": false},{"text": ", ending their kill streak!","color": "white","bold": false}]
+execute if score $Temp killstreak matches 17 as @a at @s run playsound game.ownage ambient @s ~ ~ ~

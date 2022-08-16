@@ -1,3 +1,5 @@
+# @s = attacker
+
 scoreboard players set $Temp killstreak 0
 
 #grant gold for kill
@@ -13,8 +15,15 @@ scoreboard players add @s playerKills 1
 function pudge:game/killstreak/add
 #combo tracking
 function pudge:game/killstreak/combo/add
+#check teams
+tag @s add teamCheckPlayer1
+tag @a[tag=tempReceiverTag,limit=1] add teamCheckPlayer2
+function pudge:general/teams/check_teams
 #display kill message to attacker
-tellraw @s [{"text": "(+)","color": "green"},{"text": "You just killed ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempReceiverTag,limit=1]"}]},{"text": " and got ","color": "white"},{"score":{"name":"@a[tag=tempReceiverTag,limit=1]","objective":"bounty"},"color": "gold"},{"text": " gold!","color": "gold"}]
+execute if score #TempTeams var matches 0 run tellraw @s [{"text": "(+)","color": "green"},{"text": "You just killed ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempReceiverTag,limit=1]"}]},{"text": " and got ","color": "white"},{"score":{"name":"@a[tag=tempReceiverTag,limit=1]","objective":"bounty"},"color": "gold"},{"text": " gold!","color": "gold"}]
+execute unless score #TempTeams var matches 0 run tellraw @s [{"text": "(+)","color": "green"},{"text": "You just killed ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempReceiverTag,limit=1]"}]}]
+#check receiver's kill streak, set variable if ending streak
+execute if score @a[tag=tempReceiverTag,limit=1] killstreak matches 3.. run scoreboard players set $Temp killstreak 17
 
 #kill receiver
 execute as @a[tag=tempReceiverTag,limit=1] run function pudge:general/death/on_death

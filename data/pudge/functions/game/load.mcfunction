@@ -11,8 +11,7 @@ scoreboard objectives setdisplay list playerKills
 function pudge:game/killstreak/combo/init_times
 
 #players
-tag @a[team=red] add isGamer
-tag @a[team=blue] add isGamer
+tag @a[team=!spectator] add isGamer
 gamemode spectator @a[team=spectator]
 effect clear @a
 tp @a[team=red] @e[type=marker,tag=gameRedSpawn,limit=1]

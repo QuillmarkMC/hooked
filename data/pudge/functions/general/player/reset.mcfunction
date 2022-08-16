@@ -1,3 +1,7 @@
+#end any in progress abilities
+execute if score @s hookID matches 1.. run function pudge:game/ability/hook/end
+execute if score @s grappleID matches 1.. run function pudge:game/ability/grapple/end
+
 #reset state of player
 gamemode adventure
 team leave @s
