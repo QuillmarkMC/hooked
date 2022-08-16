@@ -42,8 +42,9 @@
         "wither_rose",
         "#signs",
         "#pudge:carpets",
-        "#stairs",
-        "#slabs",
-        "#buttons"
+        "#pudge:stairs",
+        "#pudge:slabs",
+        "#buttons",
+        "ender_chest"
     ]
 }

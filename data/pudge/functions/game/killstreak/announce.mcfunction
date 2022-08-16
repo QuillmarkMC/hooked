@@ -35,8 +35,8 @@ execute if score $Temp killstreak matches 12 as @a at @s run playsound game.mega
 execute if score $Temp killstreak matches 13 run tellraw @a [{"text": "[!] ","color": "yellow","bold": true},{"text":"","extra":[{"selector":"@s"}],"bold": false},{"text": " is unstoppable!","color": "white","bold": false}]
 execute if score $Temp killstreak matches 13 as @a at @s run playsound game.unstoppable ambient @s ~ ~ ~
 
-#whicked sick
-execute if score $Temp killstreak matches 14 run tellraw @a [{"text": "[!] ","color": "yellow","bold": true},{"text":"","extra":[{"selector":"@s"}],"bold": false},{"text": " is whicked sick!","color": "white","bold": false}]
+#wicked sick
+execute if score $Temp killstreak matches 14 run tellraw @a [{"text": "[!] ","color": "yellow","bold": true},{"text":"","extra":[{"selector":"@s"}],"bold": false},{"text": " is wicked sick!","color": "white","bold": false}]
 execute if score $Temp killstreak matches 14 as @a at @s run playsound game.whickedsick ambient @s ~ ~ ~
 
 #monster kill

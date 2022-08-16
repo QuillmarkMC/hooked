@@ -7,6 +7,8 @@ function pudge:game/gold/update_display
 execute if entity @s[team=red] run scoreboard players add $RedScore var 1
 execute if entity @s[team=blue] run scoreboard players add $BlueScore var 1
 function pudge:game/bossbar/update
+#count individual kill
+scoreboard players add @s playerKills 1
 #add 1 to killstreak
 function pudge:game/killstreak/add
 #combo tracking

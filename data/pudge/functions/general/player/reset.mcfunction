@@ -23,6 +23,7 @@ xp set @s 0 levels
 scoreboard players operation @s health = $MaxHealth health
 scoreboard players reset @s playerKills
 scoreboard players reset @s totalDeaths
+scoreboard players reset @s killstreak
 
 #state-based reset
 execute if score $State var matches 2 run bossbar set score players @a
