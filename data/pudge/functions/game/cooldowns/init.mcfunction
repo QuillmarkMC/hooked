@@ -13,3 +13,6 @@ scoreboard players operation @s cdKnockback = $KnockbackCD abilityVar
 
 scoreboard players operation @s cdGrappleCurrent = $GrappleCD abilityVar
 scoreboard players set @s cdGrapple -1
+
+#lifesteal has no cd currently
+scoreboard players operation @s cdLifesteal = $LifestealCD abilityVar

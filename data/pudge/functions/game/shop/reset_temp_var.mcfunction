@@ -9,3 +9,4 @@ scoreboard players set $TempCreeper shop 0
 scoreboard players set $TempBounce shop 0
 scoreboard players set $TempKnockback shop 0
 scoreboard players set $TempGrapple shop 0
+scoreboard players set $TempLifesteal shop 0

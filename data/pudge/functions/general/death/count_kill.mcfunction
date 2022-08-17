@@ -24,6 +24,8 @@ execute if score #TempTeams var matches 0 run tellraw @s [{"text": "(+)","color"
 execute unless score #TempTeams var matches 0 run tellraw @s [{"text": "(+)","color": "green"},{"text": "You just killed ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempReceiverTag,limit=1]"}]}]
 #check receiver's kill streak, set variable if ending streak
 execute if score @a[tag=tempReceiverTag,limit=1] killstreak matches 3.. run scoreboard players set $Temp killstreak 17
+#handle lifesteal ability's regen effect
+execute if score @s lifestealAmount matches 1.. if score #TempTeams var matches 0 run function pudge:game/ability/lifesteal/regen
 
 #kill receiver
 execute as @a[tag=tempReceiverTag,limit=1] run function pudge:general/death/on_death

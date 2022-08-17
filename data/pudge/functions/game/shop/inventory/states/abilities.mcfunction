@@ -4,7 +4,7 @@ execute unless data entity @s EnderItems[{Slot:0b,id:"minecraft:bedrock",tag:{Cr
 execute unless data entity @s EnderItems[{Slot:1b,id:"minecraft:bedrock",tag:{BounceAbility:1}}] run function pudge:game/shop/inventory/items/abilities/bounce
 execute unless data entity @s EnderItems[{Slot:2b,id:"minecraft:bedrock",tag:{KnockbackAbility:1}}] run function pudge:game/shop/inventory/items/abilities/knockback
 execute unless data entity @s EnderItems[{Slot:3b,id:"minecraft:bedrock",tag:{GrappleAbility:1}}] run function pudge:game/shop/inventory/items/abilities/grapple
-item replace entity @s enderchest.4 with air
+execute unless data entity @s EnderItems[{Slot:4b,id:"minecraft:bedrock",tag:{LifestealAbility:1}}] run function pudge:game/shop/inventory/items/abilities/lifesteal
 item replace entity @s enderchest.5 with air
 item replace entity @s enderchest.6 with air
 item replace entity @s enderchest.7 with air
