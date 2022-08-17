@@ -1,4 +1,4 @@
-scoreboard players set #TempTeams var 0
+scoreboard players set #TempTeams1 var 0
 #check if 2 players are on the same team
 execute if entity @a[tag=teamCheckPlayer1,limit=1,team=red] run scoreboard players add #TempTeams1 var 1
 execute if entity @a[tag=teamCheckPlayer1,limit=1,team=blue] run scoreboard players remove #TempTeams1 var 1
