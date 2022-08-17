@@ -28,5 +28,5 @@ execute unless score @s hookTimer matches ..-1 at @s positioned ~ ~1 ~ run funct
 
 tag @e[tag=tempHookTag] remove tempHookTag
 
-#if lasted longer than 3 seconds (or any other checks in this function failed), end effect
+#if lasted longer than allowed time (or any other checks in this function failed), end effect
 execute if score @s hookTimer matches ..0 run function pudge:game/ability/hook/end
