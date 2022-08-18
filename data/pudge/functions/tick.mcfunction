@@ -14,7 +14,7 @@ execute if score $State var matches 2 run function pudge:game/tick
 function pudge:general/health/update
 
 #dropped items
-kill @e[type=item]
+kill @e[type=item,tag=!riverPower]
 
 #debug tool: show location of all Marker entities
 execute if score $Debug var matches 2.. at @e[type=marker] run particle glow ~ ~1 ~ 0.1 0.3 0.1 0 10 force
