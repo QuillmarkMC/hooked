@@ -14,3 +14,6 @@ execute at @e[type=marker,tag=forestHealingFountainBase,limit=1] run summon mark
 execute at @e[type=marker,tag=forestHealingFountainBase,limit=1] run summon marker ~ ~ ~ {Tags:["forestHealingFountainParticle","gameMarker"],Rotation:[120.0f,0.0f]}
 execute at @e[type=marker,tag=forestHealingFountainBase,limit=1] run summon marker ~ ~ ~ {Tags:["forestHealingFountainParticle","gameMarker"],Rotation:[240.0f,0.0f]}
 function pudge:game/maps/forest/fountain_particles_up
+
+#river power ups
+scoreboard players set $RiverPowerSpawnDelay river 1200

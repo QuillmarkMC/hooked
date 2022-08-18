@@ -98,6 +98,9 @@ scoreboard objectives add comboTimer dummy
 #armor stand ids
 scoreboard objectives add armorStand.ID dummy
 
+#map effects
+scoreboard objectives add river dummy
+
 #weird inventory stuff
 scoreboard objectives add numUpgrades dummy
 scoreboard players set $MaxInventoryUpgrades var 3
@@ -113,6 +116,10 @@ scoreboard objectives add hotbar.4.ID dummy
 scoreboard objectives add hotbar.5.ID dummy
 scoreboard objectives add hotbar.6.ID dummy
 scoreboard objectives add hotbar.7.ID dummy
+
+#RNG
+scoreboard objectives add rng dummy
+function pudge:general/rng/reset_seed
 
 #Game Bossbar
 bossbar add score {"text":""}
@@ -147,6 +154,9 @@ team add spectator
 team modify spectator color dark_gray
 team modify spectator friendlyFire false
 #team modify spectator prefix {"text":"[Spectator] ","color":"dark_gray"}
+#extra teams used by river powerups for glowing effect
+team add gold
+team modify gold color gold
 
 ##Gamerules
 difficulty easy
