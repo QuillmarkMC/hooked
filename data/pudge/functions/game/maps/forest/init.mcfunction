@@ -17,3 +17,4 @@ function pudge:game/maps/forest/fountain_particles_up
 
 #river power ups
 scoreboard players set $RiverPowerSpawnDelay river 1200
+scoreboard players operation $RiverPowerSpawn river = $RiverPowerSpawnDelay river
