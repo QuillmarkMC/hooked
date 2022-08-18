@@ -5,7 +5,7 @@ function pudge:general/rng/rand
 
 #summon powerup based on rng output
 #hell
-execute if score $out rng matches 0 positioned ~ ~ ~ rotated ~ ~ run summon armor_stand ~ ~ ~ {Marker:1,Invisible:1,Passengers:[{id:"item",Item:{id:"blaze_powder",Count:1b},Glowing:1,Age:-32768s,PickupDelay:32767,Tags:["riverPower"]},{id:"slime",Size:1,ActiveEffects:[{Id:14,Duration:999999,Amplifier:0,ShowParticles:false},{Id:11,Duration:999999,Amplifier:10,ShowParticles:false}],Silent:1b,Tags:["riverPower","hellPower"],NoAI:1b},{id:"armor_stand",CustomNameVisible:1b,CustomName:"{\"text\":\"Hell\",\"color\": \"dark_red\",\"bold\": true}",Invisible:1,Marker:1,Tags:["riverPower"],Small:true,DisabledSlots:4128768}],Tags:["riverAEC","riverPower"]}
+execute if score $out rng matches 0 positioned ~ ~ ~ rotated ~ ~ run summon armor_stand ~ ~ ~ {Marker:1,Invisible:1,Passengers:[{id:"item",Item:{id:"blaze_powder",Count:1b},Glowing:1,Age:-32768s,PickupDelay:32767,Tags:["riverPower"]},{id:"slime",Size:1,ActiveEffects:[{Id:14,Duration:999999,Amplifier:0,ShowParticles:false},{Id:11,Duration:999999,Amplifier:10,ShowParticles:false}],Silent:1b,Tags:["riverPower","hellPower"],NoAI:1b},{id:"armor_stand",CustomNameVisible:1b,CustomName:"{\"text\":\"Hell\",\"color\": \"dark_red\",\"bold\": true}",Invisible:1,Tags:["riverPower"],Small:true,DisabledSlots:4128768}],Tags:["riverAEC","riverPower"]}
 execute if score $out rng matches 0 positioned ~ ~ ~ rotated ~ ~ positioned ^ ^ ^102 run summon marker ~ ~ ~ {Tags:["gameMarker","riverEndMarker"]}
 execute if score $out rng matches 0 run team join red @e[type=item,tag=riverPower,limit=1]
 execute if score $Debug var matches 1.. if score $out rng matches 0 run say Hell powerup spawned!
