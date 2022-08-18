@@ -1,4 +1,5 @@
 forceload add 22 25 89 23
+forceload add 57 -43 56 73
 #marker for spawn location
 summon marker 25 61 19 {Tags:["gameRedSpawn","gameMarker"],Rotation:[-90.0f,0.0f]}
 summon marker 87 61 19 {Tags:["gameBlueSpawn","gameMarker"],Rotation:[90.0f,0.0f]}

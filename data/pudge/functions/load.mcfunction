@@ -126,7 +126,7 @@ bossbar add score {"text":""}
 
 ##Forceload
 #lobby
-#forceload add -8 23 9 7
+forceload add 185 -39 218 -71
 
 ##NPC datapack setup
 
