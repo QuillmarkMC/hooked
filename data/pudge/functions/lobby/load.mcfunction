@@ -14,5 +14,9 @@ execute at @e[type=villager,tag=blueTeamSelect,limit=1] run summon minecraft:arm
 summon villager 190.0 63.0 -53.0 {Tags:["teamSelect","lobbyVillager","redTeamSelect"],Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,VillagerData:{level:99,profession:"minecraft:fletcher",type:"minecraft:taiga"},Rotation:[-90.0f,0.0f]}
 execute at @e[type=villager,tag=redTeamSelect,limit=1] run summon minecraft:armor_stand ~ ~2 ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"Join Red Team!\",\"color\":\"red\"}",CustomNameVisible:1b,Tags:["teamSelect"]}
 
+#tip display
+scoreboard players set $TipTimer lobbyvar 1200
+
 #default config options
 scoreboard players set $LoadMap var 1
+scoreboard players set $LastTip lobbyvar -1
