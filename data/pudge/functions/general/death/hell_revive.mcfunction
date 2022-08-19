@@ -1,0 +1,1 @@
+execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/river/power/hell/death_wait

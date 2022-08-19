@@ -5,3 +5,4 @@ tag @s remove hasGrass
 tag @s remove hasAxe
 tag @s remove isGamer
 tag @s remove dead
+tag @s remove deadHell

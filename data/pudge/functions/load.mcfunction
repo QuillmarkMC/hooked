@@ -6,7 +6,7 @@ scoreboard players set $MaxHealth health 20
 scoreboard objectives setdisplay belowName health
 scoreboard objectives add healthRegen dummy
 scoreboard players set $RegenTime healthRegen 200
-scoreboard players set $TotalRequiredKills var 100
+scoreboard players set $TotalRequiredKills var 60
 scoreboard objectives add resist minecraft.custom:minecraft.damage_resisted
 scoreboard objectives add math dummy
 scoreboard players set #SnowballFix math 1
@@ -15,6 +15,7 @@ scoreboard players set #2 math 2
 scoreboard players set #3 math 3
 scoreboard players set #4 math 4
 scoreboard players set #20 math 20
+scoreboard players set #100 math 100
 scoreboard objectives add death deathCount
 scoreboard objectives add deathTimer dummy
 scoreboard objectives add totalDeaths dummy
