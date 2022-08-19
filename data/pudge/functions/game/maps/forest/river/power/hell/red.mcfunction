@@ -14,4 +14,4 @@ execute if score #Temp math matches 0 run scoreboard players remove @a[gamemode=
 execute store result score #Temp river if entity @a[gamemode=adventure,tag=isGamer]
 execute if score #Temp river matches ..1 run function pudge:game/maps/forest/river/power/hell/end
 
-schedule function pudge:game/maps/forest/river/power/hell/red 1t
+execute if score #Temp river matches 2.. run schedule function pudge:game/maps/forest/river/power/hell/red 1t
