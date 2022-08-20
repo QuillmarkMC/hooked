@@ -1,7 +1,7 @@
 #triggers for game settings
 
-#border check?
-#execute as @a[predicate=!pudge:lobby/lobby,gamemode=adventure] run tp @s @e[type=marker,tag=lobbySpawn,limit=1]
+#border check
+execute as @a[predicate=!pudge:lobby/lobby,gamemode=adventure] run tp @s @e[type=marker,tag=lobbySpawn,limit=1]
 
 #gameplay tips
 function pudge:lobby/tips/timer

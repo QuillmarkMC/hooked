@@ -162,6 +162,8 @@ team modify spectator friendlyFire false
 #extra teams used by river powerups for glowing effect
 team add gold
 team modify gold color gold
+team add light_purple
+team modify light_purple color light_purple
 
 ##Gamerules
 difficulty easy

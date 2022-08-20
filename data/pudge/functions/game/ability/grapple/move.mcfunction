@@ -18,6 +18,9 @@ execute if entity @e[tag=tempGrappleTag,tag=dead,limit=1] run scoreboard players
 #if player is hooked, end effect
 execute if score @s hookTimer matches 1.. run scoreboard players set @s grappleTimer -1
 
+#if player starts sneaking, end effect
+execute if entity @s[predicate=pudge:sneaking] run scoreboard players set @s grappleTimer -1
+
 #if within 1.5 blocks of source, end effect
 execute at @s if entity @e[tag=tempGrappleTag,distance=..1.5,limit=1] run scoreboard players set @s grappleTimer -1
 #face marker towards source, tp small distance towards them

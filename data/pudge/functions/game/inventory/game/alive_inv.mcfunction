@@ -7,7 +7,7 @@ item replace entity @s armor.head with air
 #chest
 execute unless score @s elytraTimer matches 1.. if entity @s[team=red] run item replace entity @s armor.chest with leather_chestplate{Unbreakable:true,display:{color: 16725044},AttributeModifiers:[]}
 execute unless score @s elytraTimer matches 1.. if entity @s[team=blue] run item replace entity @s armor.chest with leather_chestplate{Unbreakable:true,display:{color: 3618047},AttributeModifiers:[]}
-execute if score @s elytraTimer matches 1.. run item replace entity @s armor.chest with elytra{Unbreakable:true,AttributeModifiers:[],display:{Name:'{"text":"Elytra","color": "light_purple","bold": true}'}}
+execute if score @s elytraTimer matches 1.. run item replace entity @s armor.chest with elytra{Unbreakable:true,AttributeModifiers:[],display:{Name:'{"text":"Elytra","color": "light_purple","bold": true,"italic": false}'}}
 #legs
 item replace entity @s armor.legs with air
 #boots
