@@ -14,8 +14,8 @@ function pudge:game/killstreak/combo/init_times
 tag @a[team=!spectator] add isGamer
 gamemode spectator @a[team=spectator]
 effect clear @a
-tp @a[team=red] @e[type=marker,tag=gameRedSpawn,limit=1]
-tp @a[team=blue] @e[type=marker,tag=gameBlueSpawn,limit=1]
+execute as @a[team=red] run tp @s @e[type=marker,tag=gameRedSpawn,limit=1,sort=random]
+execute as @a[team=blue] run tp @s @e[type=marker,tag=gameBlueSpawn,limit=1,sort=random]
 tp @a[gamemode=spectator] @e[type=marker,tag=gameSpectatorSpawn,limit=1]
 execute at @e[type=marker,tag=gameRedSpawn,limit=1] run spawnpoint @a[team=red] ~ ~ ~
 execute at @e[type=marker,tag=gameBlueSpawn,limit=1] run spawnpoint @a[team=blue] ~ ~ ~

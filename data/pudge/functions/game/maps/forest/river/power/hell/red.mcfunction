@@ -2,7 +2,8 @@ scoreboard players add $HellTimer river 1
 
 execute if score $HellTimer river matches ..100 run title @a[gamemode=adventure] subtitle "Kill or be killed!"
 execute unless score $HellTimer river matches ..100 run title @a[gamemode=adventure] subtitle ""
-title @a[gamemode=spectator] subtitle "You cannot respawn during Deathmatch"
+title @a[gamemode=spectator,tag=isGamer] subtitle "You cannot respawn during Deathmatch"
+title @a[gamemode=spectator,tag=!isGamer] subtitle ""
 title @a times 0 100 0
 title @a title "\uE009"
 
