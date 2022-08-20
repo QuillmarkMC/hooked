@@ -6,8 +6,8 @@ scoreboard players set $Temp killstreak 0
 scoreboard players operation @s gold += @a[tag=tempReceiverTag,limit=1] bounty
 function pudge:game/gold/update_display
 #count kill on scoreboard
-execute if entity @s[team=red] run scoreboard players add $RedScore var 1
-execute if entity @s[team=blue] run scoreboard players add $BlueScore var 1
+execute if entity @s[team=red] unless entity @a[tag=tempReceiverTag,team=red] run scoreboard players add $RedScore var 1
+execute if entity @s[team=blue] unless entity @a[tag=tempReceiverTag,team=blue] run scoreboard players add $BlueScore var 1
 function pudge:game/bossbar/update
 #count individual kill
 scoreboard players add @s playerKills 1

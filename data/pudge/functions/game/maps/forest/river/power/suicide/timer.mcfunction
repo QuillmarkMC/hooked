@@ -3,7 +3,7 @@ scoreboard players remove @s suicideTimer 1
 title @s times 2 10 3
 title @s subtitle ""
 
-execute if score @s suicideTimer matches 200 run title @s title {"text": "10","color": "dark_red"}
+execute if score @s suicideTimer matches 199 run title @s title {"text": "10","color": "dark_red"}
 execute if score @s suicideTimer matches 180 run title @s title {"text": "9","color": "dark_red"}
 execute if score @s suicideTimer matches 160 run title @s title {"text": "8","color": "dark_red"}
 execute if score @s suicideTimer matches 140 run title @s title {"text": "7","color": "dark_red"}
