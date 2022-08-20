@@ -5,8 +5,9 @@ function pudge:game/inventory/default_clear
 #head
 item replace entity @s armor.head with air
 #chest
-execute if entity @s[team=red] run item replace entity @s armor.chest with leather_chestplate{Unbreakable:true,display:{color: 16725044},AttributeModifiers:[]}
-execute if entity @s[team=blue] run item replace entity @s armor.chest with leather_chestplate{Unbreakable:true,display:{color: 3618047},AttributeModifiers:[]}
+execute unless score @s elytraTimer matches 1.. if entity @s[team=red] run item replace entity @s armor.chest with leather_chestplate{Unbreakable:true,display:{color: 16725044},AttributeModifiers:[]}
+execute unless score @s elytraTimer matches 1.. if entity @s[team=blue] run item replace entity @s armor.chest with leather_chestplate{Unbreakable:true,display:{color: 3618047},AttributeModifiers:[]}
+execute if score @s elytraTimer matches 1.. run item replace entity @s armor.chest with elytra{Unbreakable:true,AttributeModifiers:[],display:{Name:'{"text":"Elytra","color": "light_purple","bold": true}'}}
 #legs
 item replace entity @s armor.legs with air
 #boots
@@ -35,4 +36,5 @@ item replace entity @s hotbar.7 with air
 #hotbar 8
 item replace entity @s hotbar.8 with air
 #off hand
-item replace entity @s weapon.offhand with air
+execute unless score @s elytraTimer matches 1.. run item replace entity @s weapon.offhand with air
+execute if score @s elytraTimer matches 1.. run item replace entity @s weapon.offhand with firework_rocket 64

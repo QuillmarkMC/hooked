@@ -102,6 +102,9 @@ scoreboard objectives add armorStand.ID dummy
 
 #map effects
 scoreboard objectives add river dummy
+scoreboard players set $InstantGold river 50
+scoreboard objectives add elytraTimer dummy
+scoreboard players set $ElytraLength river 400
 
 #weird inventory stuff
 scoreboard objectives add numUpgrades dummy

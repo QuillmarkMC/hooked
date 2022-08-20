@@ -28,6 +28,7 @@ scoreboard players operation @s health = $MaxHealth health
 scoreboard players reset @s playerKills
 scoreboard players reset @s totalDeaths
 scoreboard players reset @s killstreak
+scoreboard players reset @s elytraTimer
 
 #state-based reset
 execute if score $State var matches 2 run bossbar set score players @a
