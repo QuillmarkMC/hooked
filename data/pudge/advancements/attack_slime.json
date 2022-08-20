@@ -199,7 +199,57 @@
                     }
                   ]
                 }
-              }
+              },
+              "suicide": {
+                  "trigger": "minecraft:player_hurt_entity",
+                  "conditions": {
+                      "damage": {
+                          "type": {
+                              "direct_entity": {
+                                  "type": "minecraft:arrow",
+                                  "nbt": "{Tags:[\"hookArrow\"]}"
+                                  
+                              }
+                          }
+                      },
+                      "entity": {
+                          "type": "slime",
+                          "nbt": "{Tags:[\"suicidePower\"]}"
+                      }
+                  }
+              },
+              "not_suicide": {
+                  "trigger": "minecraft:player_hurt_entity",
+                  "conditions": {
+                    "player": [
+                      {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                          "condition": "minecraft:damage_source_properties",
+                          "predicate": {
+                            "direct_entity": {
+                              "type": "minecraft:arrow",
+                              "nbt": "{Tags:[\"hookArrow\"]}"
+                            }
+                          }
+                        }
+                      }
+                    ],
+                    "entity": [
+                      {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                          "condition": "minecraft:entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                            "type": "minecraft:slime",
+                            "nbt": "{Tags:[\"suicidePower\"]}"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
         },
     "requirements": [
         [
@@ -217,6 +267,10 @@
         [
             "elytra",
             "not_elytra"
+        ],
+        [
+            "suicide",
+            "not_suicide"
         ]
     ],
     "rewards": {

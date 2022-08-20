@@ -105,6 +105,8 @@ scoreboard objectives add river dummy
 scoreboard players set $InstantGold river 50
 scoreboard objectives add elytraTimer dummy
 scoreboard players set $ElytraLength river 400
+scoreboard objectives add suicideTimer dummy
+scoreboard players set $SuicideTime river 200
 
 #weird inventory stuff
 scoreboard objectives add numUpgrades dummy
@@ -164,6 +166,8 @@ team add gold
 team modify gold color gold
 team add light_purple
 team modify light_purple color light_purple
+team add dark_gray
+team modify dark_gray color dark_gray
 
 ##Gamerules
 difficulty easy
