@@ -6,4 +6,4 @@ scoreboard players set $MeleeDamageCost shop 35
 scoreboard players set $BounceCost shop 25
 scoreboard players set $KnockbackCost shop 45
 scoreboard players set $GrappleCost shop 60
-scoreboard players set $LifestealCost shop 50
+scoreboard players set $LifestealCost shop 80
