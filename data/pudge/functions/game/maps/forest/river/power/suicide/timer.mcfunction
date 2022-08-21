@@ -1,4 +1,5 @@
 scoreboard players remove @s suicideTimer 1
+execute at @s run particle dust 0.325 0.325 0.325 0.75 ~ ~1 ~ .5 1 .5 0 5 force
 
 scoreboard players operation $Num1 math = @s suicideTimer
 scoreboard players operation $Num1 math %= #20 math
