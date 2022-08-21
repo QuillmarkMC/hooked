@@ -6,8 +6,6 @@ scoreboard players set $Temp killstreak 0
 execute if entity @s[team=red] unless entity @a[tag=tempReceiverTag,team=red] run scoreboard players add $RedScore var 1
 execute if entity @s[team=blue] unless entity @a[tag=tempReceiverTag,team=blue] run scoreboard players add $BlueScore var 1
 function pudge:game/bossbar/update
-#count individual kill
-scoreboard players add @s playerKills 1
 #add 1 to killstreak
 function pudge:game/killstreak/add
 #combo tracking
@@ -26,6 +24,8 @@ execute if score @s lifestealAmount matches 1.. if score #TempTeams var matches 
 #grant gold for kill
 execute if score #TempTeams var matches 0 run scoreboard players operation @s gold += @a[tag=tempReceiverTag,limit=1] bounty
 function pudge:game/gold/update_display
+#count individual kill
+execute if score #TempTeams var matches 0 run scoreboard players add @s playerKills 1
 
 #kill receiver
 execute unless score #SkipDeath death matches 1 as @a[tag=tempReceiverTag,limit=1] run function pudge:general/death/on_death
