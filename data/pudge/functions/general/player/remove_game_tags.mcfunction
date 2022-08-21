@@ -6,3 +6,6 @@ tag @s remove hasAxe
 tag @s remove isGamer
 tag @s remove dead
 tag @s remove deadHell
+tag @s remove tempAttackerTag
+tag @s remove tempReceiverTag
+tag @s remove tempSelfDeathAttackerTag

@@ -24,6 +24,7 @@ scoreboard players set $RespawnDelay var 100
 scoreboard objectives add regenTimer dummy
 scoreboard players set $RegenTick regenTimer 20
 scoreboard objectives add lobbyvar dummy
+scoreboard objectives add lastDamagedBy dummy
 
 ##Game Scoreboards
 #durability
