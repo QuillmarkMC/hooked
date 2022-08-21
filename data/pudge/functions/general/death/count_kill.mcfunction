@@ -24,7 +24,7 @@ execute if score @a[tag=tempReceiverTag,limit=1] killstreak matches 3.. run scor
 #handle lifesteal ability's regen effect
 execute if score @s lifestealAmount matches 1.. if score #TempTeams var matches 0 run function pudge:game/ability/lifesteal/regen
 #grant gold for kill
-execute unless score #TempTeams var matches 0 run scoreboard players operation @s gold += @a[tag=tempReceiverTag,limit=1] bounty
+execute if score #TempTeams var matches 0 run scoreboard players operation @s gold += @a[tag=tempReceiverTag,limit=1] bounty
 function pudge:game/gold/update_display
 
 #kill receiver
