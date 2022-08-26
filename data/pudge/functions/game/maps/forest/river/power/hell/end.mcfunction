@@ -27,3 +27,4 @@ tag @a remove hellWinner
 
 function pudge:game/maps/forest/river/power/hell/black
 #schedule new song
+schedule function pudge:game/music/generate 17t

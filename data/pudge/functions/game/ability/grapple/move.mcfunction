@@ -1,7 +1,7 @@
 #debug message
 execute if score $Debug var matches 1.. run say game/ability/grapple/move.mcfunction
 
-#this function is executed every tick as a player who has been grappleed
+#this function is executed every tick as a player who has been grappled
 #progress timer
 scoreboard players remove @s grappleTimer 1
 #tag source of grapple
@@ -10,8 +10,8 @@ execute as @e if score @s entityid = $Temp_Player grappleID run tag @s add tempG
 #tag marker belonging to grappleed player
 scoreboard players operation $Temp_Marker grappleID = @s entityid
 execute as @e[type=marker,tag=grappleMovementMarker] if score @s grappleID = $Temp_Marker grappleID run tag @s add tempGrappleMarkerTag
-#if target died in last tick, end effect
-execute if score @s deaths matches 1.. run scoreboard players set @s grappleTimer -1
+#if target is dead, end effect
+execute if entity @s[tag=dead] run scoreboard players set @s grappleTimer -1
 #if source is dead, end effect
 execute if entity @e[tag=tempGrappleTag,tag=dead,limit=1] run scoreboard players set @s grappleTimer -1
 

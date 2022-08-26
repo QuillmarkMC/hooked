@@ -4,8 +4,8 @@ function pudge:game/music/stop_all
 #play song based on rng
 execute if score $out rng matches 0 as @a at @s run playsound game.music.sandstorm record @s
 execute if score $out rng matches 1 as @a at @s run playsound game.music.sandstorm record @s
-execute if score $out rng matches 2 as @a at @s run playsound game.music.sandstorm record @s
-execute if score $out rng matches 3 as @a at @s run playsound game.music.sandstorm record @s
+execute if score $out rng matches 2 as @a at @s run playsound game.music.flame record @s
+execute if score $out rng matches 3 as @a at @s run playsound game.music.flame record @s
 
 #advancement display
 function pudge:game/music/display

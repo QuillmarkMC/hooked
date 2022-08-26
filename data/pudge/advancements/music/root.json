@@ -3,13 +3,12 @@
       "icon": {
         "item": "minecraft:music_disc_otherside"
       },
-      "title": "Sandstorm",
-      "description": "by Darude",
-      "show_toast": true,
+      "title": "",
+      "description": "",
+      "show_toast": false,
       "announce_to_chat": false,
       "hidden": true
     },
-    "parent": "pudge:music/root",
     "criteria": {
       "requirement": {
         "trigger": "minecraft:impossible"

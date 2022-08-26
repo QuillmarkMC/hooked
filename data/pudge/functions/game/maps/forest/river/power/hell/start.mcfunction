@@ -1,5 +1,7 @@
 function pudge:game/maps/forest/river/kill_power
 function pudge:game/maps/forest/river/power/hell/black
+schedule clear pudge:game/music/generate
+function pudge:game/music/stop_all
 
 schedule function pudge:game/maps/forest/river/power/hell/start_delayed 17t
 
