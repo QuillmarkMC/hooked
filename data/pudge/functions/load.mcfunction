@@ -112,6 +112,10 @@ scoreboard players set $ElytraLength river 400
 scoreboard objectives add suicideTimer dummy
 scoreboard players set $SuicideTime river 200
 scoreboard players set $HellReward river 100
+scoreboard objectives add rapidFireTimer dummy
+scoreboard objectives add rapidFireChargeTimer dummy
+scoreboard players set $RapidFireCharge river 60
+scoreboard players set $RapidFireLength river 20
 
 #weird inventory stuff
 scoreboard objectives add numUpgrades dummy
