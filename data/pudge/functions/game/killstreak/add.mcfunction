@@ -29,4 +29,4 @@ execute if score @s killstreak matches 5 run scoreboard players set $Temp killst
 execute if score @s killstreak matches 6 run scoreboard players set $Temp killstreak 13
 execute if score @s killstreak matches 7 run scoreboard players set $Temp killstreak 14
 execute if score @s killstreak matches 8 run scoreboard players set $Temp killstreak 15
-execute if score @s killstreak matches 9 run scoreboard players set $Temp killstreak 16
+execute if score @s killstreak matches 9.. run scoreboard players set $Temp killstreak 16

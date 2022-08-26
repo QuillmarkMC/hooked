@@ -1,0 +1,17 @@
+{
+    "display": {
+      "icon": {
+        "item": "minecraft:music_disc_otherside"
+      },
+      "title": "Now Playing:",
+      "description": "Sandstorm",
+      "show_toast": true,
+      "announce_to_chat": false,
+      "hidden": true
+    },
+    "criteria": {
+      "requirement": {
+        "trigger": "minecraft:impossible"
+      }
+    }
+  }

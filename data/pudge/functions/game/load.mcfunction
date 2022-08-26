@@ -32,5 +32,5 @@ scoreboard players operation @a matchID = $Global matchID
 scoreboard players operation $CooldownDisplayUpdate var = $DisplayUpdateInterval abilityVar
 #shops
 function pudge:game/shop/init
-#schedule functions
-#function pudge:game/inventory/queue_update
+#music
+function pudge:game/music/init

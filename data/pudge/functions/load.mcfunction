@@ -15,6 +15,9 @@ scoreboard players set #2 math 2
 scoreboard players set #3 math 3
 scoreboard players set #4 math 4
 scoreboard players set #20 math 20
+scoreboard players set #40 math 40
+scoreboard players set #60 math 60
+scoreboard players set #80 math 80
 scoreboard players set #100 math 100
 scoreboard objectives add death deathCount
 scoreboard objectives add deathTimer dummy
@@ -108,6 +111,7 @@ scoreboard objectives add elytraTimer dummy
 scoreboard players set $ElytraLength river 400
 scoreboard objectives add suicideTimer dummy
 scoreboard players set $SuicideTime river 200
+scoreboard players set $HellReward river 100
 
 #weird inventory stuff
 scoreboard objectives add numUpgrades dummy
@@ -124,6 +128,9 @@ scoreboard objectives add hotbar.4.ID dummy
 scoreboard objectives add hotbar.5.ID dummy
 scoreboard objectives add hotbar.6.ID dummy
 scoreboard objectives add hotbar.7.ID dummy
+
+#background music
+scoreboard objectives add music dummy
 
 #RNG
 scoreboard objectives add rng dummy

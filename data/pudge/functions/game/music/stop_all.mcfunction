@@ -1,0 +1,1 @@
+stopsound @a record game.music.sandstorm

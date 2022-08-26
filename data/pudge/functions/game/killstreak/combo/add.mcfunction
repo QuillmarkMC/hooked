@@ -17,4 +17,4 @@ execute if score @s combo matches 4 run scoreboard players set $Temp killstreak 
 #rampage
 execute if score @s combo matches 5 run scoreboard players set $Temp killstreak 4
 #combo whore
-execute if score @s combo matches 6 run scoreboard players set $Temp killstreak 5
+execute if score @s combo matches 6.. run scoreboard players set $Temp killstreak 5
