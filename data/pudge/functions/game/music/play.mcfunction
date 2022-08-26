@@ -24,3 +24,8 @@ function pudge:game/music/queue_next
 
 #dont create infinite loop in generate function
 scoreboard players set #Temp music 1
+
+#enable song skipping
+scoreboard players enable @a skip
+scoreboard players set $SkipVotes music 0
+function pudge:game/music/skip/get_needed_votes

@@ -43,3 +43,6 @@ scoreboard players set @a resist 0
 execute as @e[type=arrow] unless entity @s[nbt={pickup:0b}] run data modify entity @s pickup set value 0
 #snowballs
 function pudge:game/ability/snowball_generic/tick
+
+#trigger
+execute as @a[scores={skip=1..}] run function pudge:game/music/skip/vote_skip

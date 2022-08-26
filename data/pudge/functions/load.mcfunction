@@ -131,6 +131,7 @@ scoreboard objectives add hotbar.7.ID dummy
 
 #background music
 scoreboard objectives add music dummy
+scoreboard objectives add skip trigger
 
 #RNG
 scoreboard objectives add rng dummy

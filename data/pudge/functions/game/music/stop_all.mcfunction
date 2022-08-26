@@ -6,3 +6,5 @@ stopsound @a record game.music.avast
 stopsound @a record game.music.megalovania
 stopsound @a record game.music.crypteque
 stopsound @a record game.music.dota
+
+scoreboard players reset @a skip

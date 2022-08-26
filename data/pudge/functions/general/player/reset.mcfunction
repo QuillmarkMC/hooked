@@ -30,6 +30,7 @@ scoreboard players reset @s totalDeaths
 scoreboard players reset @s killstreak
 scoreboard players reset @s elytraTimer
 scoreboard players reset @s lastDamagedBy
+scoreboard players reset @s skip
 advancement revoke @s from pudge:music/root
 
 #state-based reset
