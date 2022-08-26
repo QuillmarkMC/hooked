@@ -211,4 +211,4 @@ gamerule playersSleepingPercentage 101
 gamerule reducedDebugInfo false
 gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks true
-#gamerule sendCommandFeedback false
+gamerule sendCommandFeedback false
