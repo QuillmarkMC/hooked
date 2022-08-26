@@ -3,8 +3,8 @@
       "icon": {
         "item": "minecraft:music_disc_otherside"
       },
-      "title": "Cool Guy!",
-      "description": "by Devin Montes",
+      "title": "Megalovania",
+      "description": "Undertale",
       "show_toast": true,
       "announce_to_chat": false,
       "hidden": true
