@@ -3,5 +3,6 @@ execute if score $out rng matches 0 run advancement grant @a only pudge:music/sa
 execute if score $out rng matches 1 run advancement grant @a only pudge:music/cool_guy
 execute if score $out rng matches 2 run advancement grant @a only pudge:music/flame
 execute if score $out rng matches 3 run advancement grant @a only pudge:music/rave_a
+execute if score $out rng matches 4 run advancement grant @a only pudge:music/avast
 
-schedule function pudge:game/music/display_delay 1t
+schedule function pudge:game/music/display_delay 2t

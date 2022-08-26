@@ -6,6 +6,7 @@ execute if score $out rng matches 0 as @a at @s run playsound game.music.sandsto
 execute if score $out rng matches 1 as @a at @s run playsound game.music.cool_guy record @s
 execute if score $out rng matches 2 as @a at @s run playsound game.music.flame record @s
 execute if score $out rng matches 3 as @a at @s run playsound game.music.rave_a record @s
+execute if score $out rng matches 4 as @a at @s run playsound game.music.avast record @s
 
 #advancement display
 function pudge:game/music/display
