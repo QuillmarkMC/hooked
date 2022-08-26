@@ -115,7 +115,7 @@ scoreboard players set $HellReward river 100
 scoreboard objectives add rapidFireTimer dummy
 scoreboard objectives add rapidFireChargeTimer dummy
 scoreboard players set $RapidFireCharge river 60
-scoreboard players set $RapidFireLength river 20
+scoreboard players set $RapidFireLength river 40
 
 #weird inventory stuff
 scoreboard objectives add numUpgrades dummy
