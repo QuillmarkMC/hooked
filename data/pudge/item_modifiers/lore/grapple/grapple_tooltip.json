@@ -5,14 +5,19 @@
       "lore": [
         [
           {
-            "text": "All arrows you shoot will ricochet off",
+            "text": "Will latch onto the ground or a player,",
             "color": "gray",
             "italic": true
           }          
         ],
         {
-          "text": "of walls.",
+          "text": "pulling you toward its location.",
           "color": "gray",
+          "italic": true
+        },
+        {
+          "text": "Does not ricochet!",
+          "color": "dark_red",
           "italic": true
         },
         {

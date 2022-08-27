@@ -5,13 +5,18 @@
       "lore": [
         [
           {
-            "text": "All arrows you shoot will ricochet off",
+            "text": "Your hookshot will heal you when it deals",
             "color": "gray",
             "italic": true
           }          
         ],
         {
-          "text": "of walls.",
+          "text": "damage and you will gain regeneration when",
+          "color": "gray",
+          "italic": true
+        },
+        {
+          "text": "you kill an enemy.",
           "color": "gray",
           "italic": true
         },

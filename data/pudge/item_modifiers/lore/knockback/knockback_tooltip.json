@@ -5,16 +5,11 @@
       "lore": [
         [
           {
-            "text": "All arrows you shoot will ricochet off",
+            "text": "Hit people to send them flying!",
             "color": "gray",
             "italic": true
           }          
         ],
-        {
-          "text": "of walls.",
-          "color": "gray",
-          "italic": true
-        },
         {
           "text": ""
         }

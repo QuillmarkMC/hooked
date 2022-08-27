@@ -1,0 +1,36 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+      {
+        "text": "Stick of Suffering",
+        "color": "#C69B6D",
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": " (lvl ",
+        "color": "gray",
+        "bold": false,
+        "italic": true
+      },
+      {
+        "score": {
+          "name": "@s",
+          "objective": "shopItem.Knockback"
+        },
+        "color": "gray",
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": ")",
+        "color": "gray",
+        "bold": false,
+        "italic": true
+      }
+    ]
+  }
+]
+  

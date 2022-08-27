@@ -7,7 +7,7 @@
 item replace entity @s hotbar.1 with wooden_axe{Melee:1,display:{Name:'{"text":"Hatchet","color":"yellow","bold":true,"italic":false}',Lore:[]},HideFlags:127,Unbreakable:true,AttributeModifiers:[{Slot:"mainhand",AttributeName:"generic.attack_damage",Name:"generic.attack_damage",Amount:10.0,Operation:0,UUID:[I;-110663, 103297, -1423577, 206238]},{Slot:"mainhand",AttributeName:"generic.attack_speed",Name:"generic.attack_speed",Amount:-2.4,Operation:0,UUID:[I;996793602, -44875368, -1074425218, -1118230169]}]}
 
 #dynamic item lore
-item modify entity @s hotbar.1 pudge:lore/hook_tooltip
+item modify entity @s hotbar.1 pudge:lore/melee_tooltip
 scoreboard players operation $Num1 math = @s meleeDamage
 function pudge:general/math/convert_to_lore
 item modify entity @s hotbar.1 pudge:lore/damage

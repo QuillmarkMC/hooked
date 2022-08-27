@@ -1,0 +1,51 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Health restored on hit: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "$Num.1",
+              "objective": "math"
+            },
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": ".",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "$Num.2",
+              "objective": "math"
+            },
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "$Num.3",
+              "objective": "math"
+            },
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": " hearts",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "replace": false
+    }
+  ]
+  
