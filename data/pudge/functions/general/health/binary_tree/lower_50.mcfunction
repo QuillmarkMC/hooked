@@ -1,0 +1,2 @@
+execute if score @s health matches 100..199 run function pudge:general/health/binary_tree/layer2_bottom/upper_50
+execute if score @s health matches ..99 run function pudge:general/health/binary_tree/layer2_bottom/lower_50

@@ -1,6 +1,6 @@
 tellraw @s {"text": "You bought Lifesteal level 1!","color": "green"}
 scoreboard players set @s shopItem.Lifesteal 1
-scoreboard players set @s lifestealAmount 1
+scoreboard players set @s lifestealAmount 10
 scoreboard players set @s lifestealRegen 20
 scoreboard players operation @s gold -= $LifestealCost shop
 function pudge:game/gold/update_display

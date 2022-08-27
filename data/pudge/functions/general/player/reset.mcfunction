@@ -24,7 +24,8 @@ clear @s
 effect clear @s
 xp set @s 0 points
 xp set @s 0 levels
-scoreboard players operation @s health = $MaxHealth health
+scoreboard players operation @s maxHealth = $Default maxHealth
+scoreboard players operation @s health = @s maxHealth
 scoreboard players reset @s playerKills
 scoreboard players reset @s totalDeaths
 scoreboard players reset @s killstreak

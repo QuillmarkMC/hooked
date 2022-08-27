@@ -14,7 +14,7 @@ execute if score $HellTimer river matches 201..400 run scoreboard players operat
 execute if score $HellTimer river matches 401..600 run scoreboard players operation #Temp math %= #60 math
 execute if score $HellTimer river matches 601..800 run scoreboard players operation #Temp math %= #40 math
 execute if score $HellTimer river matches 801.. run scoreboard players operation #Temp math %= #20 math
-execute if score #Temp math matches 0 run scoreboard players remove @a[gamemode=adventure,tag=isGamer] health 1
+execute if score #Temp math matches 0 run scoreboard players remove @a[gamemode=adventure,tag=isGamer] health 10
 
 execute store result score #Temp1 river if entity @a[gamemode=adventure,tag=isGamer,team=red]
 execute store result score #Temp2 river if entity @a[gamemode=adventure,tag=isGamer,team=blue]

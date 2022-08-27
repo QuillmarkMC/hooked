@@ -2,10 +2,12 @@
 scoreboard objectives add var dummy
 execute unless score $State var matches 1.. run scoreboard players set $State var 0
 scoreboard objectives add health dummy
-scoreboard players set $MaxHealth health 20
-scoreboard objectives setdisplay belowName health
+scoreboard objectives add maxHealth dummy
+scoreboard objectives add displayHealth dummy
+scoreboard players set $Default maxHealth 200
+scoreboard objectives setdisplay belowName displayHealth
 scoreboard objectives add healthRegen dummy
-scoreboard players set $RegenTime healthRegen 200
+scoreboard players set $RegenTime healthRegen 20
 scoreboard players set $TotalRequiredKills var 60
 scoreboard objectives add resist minecraft.custom:minecraft.damage_resisted
 scoreboard objectives add math dummy

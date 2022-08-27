@@ -6,7 +6,7 @@ tag @e[type=armor_stand,tag=tempArmorStandTPTag,limit=1] remove tempArmorStandTP
 
 execute unless score @s death matches 1.. run kill @s
 #handle death
-scoreboard players operation @s health = $MaxHealth health
+scoreboard players operation @s health = @s maxHealth
 scoreboard players set @s death 0
 scoreboard players add @s totalDeaths 1
 #check teams
