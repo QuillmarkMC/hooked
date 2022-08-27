@@ -1,0 +1,36 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+      {
+        "text": "Ricochet Arrows",
+        "color": "#FCC272",
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": " (passive: lvl ",
+        "color": "gray",
+        "bold": false,
+        "italic": true
+      },
+      {
+        "score": {
+          "name": "@s",
+          "objective": "shopItem.Bounce"
+        },
+        "color": "gray",
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": ")",
+        "color": "gray",
+        "bold": false,
+        "italic": true
+      }
+    ]
+  }
+]
+  

@@ -1,0 +1,22 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Crit Multiplier: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "x1.5",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "replace": false
+    }
+  ]
+  

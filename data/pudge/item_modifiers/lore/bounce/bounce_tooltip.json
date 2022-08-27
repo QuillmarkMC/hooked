@@ -5,16 +5,16 @@
       "lore": [
         [
           {
-            "text": "Launches an arrow that attaches",
+            "text": "All arrows you shoot will ricochet off",
+            "color": "gray",
+            "italic": true
+          },
+          {
+            "text": "of walls.",
             "color": "gray",
             "italic": true
           }
         ],
-        {
-          "text": "to a player, pulling them towards you.",
-          "color": "gray",
-          "italic": true
-        },
         {
           "text": ""
         }

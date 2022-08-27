@@ -1,0 +1,22 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Attack Speed: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "1.6",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "replace": false
+    }
+  ]
+  
