@@ -15,4 +15,4 @@ execute as @a[tag=dead] run function pudge:general/death/revive
 
 scoreboard players set $HellActive river 1
 scoreboard players set $HellTimer river 0
-scoreboard players operation @a health = $MaxHealth health
+scoreboard players operation @a health = @s maxHealth
