@@ -14,3 +14,4 @@ execute if score $out rng matches 11 run schedule function pudge:game/music/gene
 execute if score $out rng matches 12 run schedule function pudge:game/music/generate 3588t
 execute if score $out rng matches 13 run schedule function pudge:game/music/generate 1337t
 execute if score $out rng matches 14 run schedule function pudge:game/music/generate 6967t
+execute if score $out rng matches 15 run schedule function pudge:game/music/generate 3068t

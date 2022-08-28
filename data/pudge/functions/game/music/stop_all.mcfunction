@@ -13,5 +13,6 @@ stopsound @a record game.music.crab_rave
 stopsound @a record game.music.elite_four
 stopsound @a record game.music.leviathan
 stopsound @a record game.music.space_invaders
+stopsound @a record game.music.bomberman
 
 scoreboard players reset @a skip
