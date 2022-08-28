@@ -7,3 +7,4 @@ scoreboard players set $BounceCost shop 25
 scoreboard players set $KnockbackCost shop 45
 scoreboard players set $GrappleCost shop 60
 scoreboard players set $LifestealCost shop 80
+scoreboard players set $TotemCost shop 60
