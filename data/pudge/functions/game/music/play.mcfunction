@@ -10,11 +10,20 @@ execute if score $out rng matches 4 as @a at @s run playsound game.music.avast r
 execute if score $out rng matches 5 as @a at @s run playsound game.music.megalovania record @s
 execute if score $out rng matches 6 as @a at @s run playsound game.music.crypteque record @s
 execute if score $out rng matches 7 as @a at @s run playsound game.music.dota record @s
+execute if score $out rng matches 8 as @a at @s run playsound game.music.abandon_ship record @s
+execute if score $out rng matches 9 as @a at @s run playsound game.music.all_night record @s
+execute if score $out rng matches 10 as @a at @s run playsound game.music.can_you_feel_my_heart record @s
+execute if score $out rng matches 11 as @a at @s run playsound game.music.crab_rave record @s
+execute if score $out rng matches 12 as @a at @s run playsound game.music.elite_four record @s
+execute if score $out rng matches 13 as @a at @s run playsound game.music.leviathan record @s
+execute if score $out rng matches 14 as @a at @s run playsound game.music.space_invaders record @s
 
 #advancement display
 function pudge:game/music/display
 
 #update last played variables
+scoreboard players operation $LastPlayed5 music = $LastPlayed4 music
+scoreboard players operation $LastPlayed4 music = $LastPlayed3 music
 scoreboard players operation $LastPlayed3 music = $LastPlayed2 music
 scoreboard players operation $LastPlayed2 music = $LastPlayed1 music
 scoreboard players operation $LastPlayed1 music = $out rng

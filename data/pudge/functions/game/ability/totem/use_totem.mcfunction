@@ -13,4 +13,4 @@ tag @s add hasCooldown
 scoreboard players set @s clearTotemEffects 1
 effect give @s minecraft:resistance 999999 10 true
 tag @s remove hasTotem
-#advancement grant @s only pudge:inv_change
+advancement grant @s only pudge:inv_change
