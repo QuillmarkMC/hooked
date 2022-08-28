@@ -6,6 +6,10 @@ advancement grant @s only pudge:inv_change
 effect clear @s resistance
 effect give @s instant_damage 1 10 true
 
+#put item on cooldown
+scoreboard players operation @s cdTotem = @s cdTotemCurrent
+tag @s add hasCooldown
+
 scoreboard players set @s clearTotemEffects 1
 effect give @s minecraft:resistance 999999 10 true
 tag @s remove hasTotem

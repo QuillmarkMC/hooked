@@ -3,3 +3,4 @@ execute if score @s hotbar.3.ID matches 2 run function pudge:game/inventory/item
 execute if score @s hotbar.3.ID matches 3 run function pudge:game/inventory/items/knockback/give3
 execute if score @s hotbar.3.ID matches 4 run function pudge:game/inventory/items/grapple/give3
 execute if score @s hotbar.3.ID matches 5 run function pudge:game/inventory/items/lifesteal/give3
+execute if score @s hotbar.3.ID matches 6 run function pudge:game/inventory/items/totem/give3

@@ -1,0 +1,30 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Success chance: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "@s",
+              "objective": "totemChance"
+            },
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": "%",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "replace": false
+    }
+  ]
+  

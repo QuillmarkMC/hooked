@@ -18,4 +18,7 @@ tag @a[tag=tempReceiverTag,limit=1] add teamCheckPlayer2
 function pudge:general/teams/check_teams
 execute unless score #TempTeams var matches 0 run scoreboard players set #TotemTest totemChance 0
 
+#automatically fail if totem on cooldown
+execute if score @s cdTotem matches 1.. run scoreboard players set #TotemTest totemChance 0
+
 execute if score #TotemTest totemChance matches 1 run function pudge:game/ability/totem/use_totem

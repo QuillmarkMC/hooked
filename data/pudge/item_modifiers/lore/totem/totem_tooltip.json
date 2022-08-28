@@ -1,0 +1,25 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "You have a chance to avoid incoming",
+            "color": "gray",
+            "italic": true
+          }          
+        ],
+        {
+          "text": "enemy hooks.",
+          "color": "gray",
+          "italic": true
+        },
+        {
+          "text": ""
+        }
+      ],
+      "replace": true
+    }
+  ]
+  
