@@ -36,5 +36,6 @@ item replace entity @s hotbar.7 with air
 #hotbar 8
 item replace entity @s hotbar.8 with air
 #off hand
-execute unless score @s elytraTimer matches 1.. run item replace entity @s weapon.offhand with air
-execute if score @s elytraTimer matches 1.. run item replace entity @s weapon.offhand with firework_rocket 64
+execute unless score @s elytraTimer matches 1.. unless entity @s[tag=hasTotem] run item replace entity @s weapon.offhand with air
+execute if score @s elytraTimer matches 1.. unless entity @s[tag=hasTotem] run item replace entity @s weapon.offhand with firework_rocket 64
+execute if entity @s[tag=hasTotem] run item replace entity @s weapon.offhand with totem_of_undying

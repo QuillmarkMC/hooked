@@ -50,6 +50,8 @@ scoreboard objectives add cdKnockback dummy
 scoreboard objectives add cdGrapple dummy
 scoreboard objectives add cdGrappleCurrent dummy
 scoreboard objectives add cdLifesteal dummy
+scoreboard objectives add cdTotem dummy
+scoreboard objectives add cdTotemCurrent dummy
 #execute unless score $CDDefaultTriggered abilityVar matches 1.. run function pudge:game/cooldowns/set_default
 function pudge:game/cooldowns/set_default
 #ability
@@ -65,6 +67,8 @@ scoreboard objectives add grappleID dummy
 scoreboard objectives add grappleTimer dummy
 scoreboard objectives add lifestealAmount dummy
 scoreboard objectives add lifestealRegen dummy
+scoreboard objectives add totemChance dummy
+scoreboard objectives add clearTotemEffects dummy
 #execute unless score $AbilityDefaultTriggered abilityVar matches 1.. run function pudge:game/ability/set_default
 function pudge:game/ability/set_default
 #item use
@@ -90,6 +94,7 @@ scoreboard objectives add shopItem.Melee.Damage dummy
 scoreboard objectives add shopItem.Knockback dummy
 scoreboard objectives add shopItem.Grapple dummy
 scoreboard objectives add shopItem.Lifesteal dummy
+scoreboard objectives add shopItem.Totem dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
 scoreboard players set $IncomeCycle gold 100
 scoreboard players set $IncomeAmount gold 1
@@ -129,6 +134,7 @@ scoreboard players set $ItemID shopItem.Bounce 2
 scoreboard players set $ItemID shopItem.Knockback 3
 scoreboard players set $ItemID shopItem.Grapple 4
 scoreboard players set $ItemID shopItem.Lifesteal 5
+scoreboard players set $ItemID shopItem.Totem 6
 #skip hotbars 0 and 1 because hook and melee will always occupy those slots
 scoreboard objectives add hotbar.2.ID dummy
 scoreboard objectives add hotbar.3.ID dummy

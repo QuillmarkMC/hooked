@@ -11,5 +11,6 @@ item modify entity @s hotbar.0 pudge:lore/damage
 scoreboard players operation $Num1 math = @s cdHookCurrent
 function pudge:general/math/convert_to_lore
 item modify entity @s hotbar.0 pudge:lore/cooldown
+item modify entity @s hotbar.0 pudge:lore/bounce/bounce_count
 
 execute if score @s cdHook matches 1.. run function pudge:game/inventory/items/hook/display

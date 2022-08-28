@@ -15,6 +15,7 @@ execute store success score $TempMeleeDamage shop run clear @s bedrock{MeleeDama
 execute store success score $TempKnockback shop run clear @s bedrock{KnockbackAbility:1} 1
 execute store success score $TempGrapple shop run clear @s bedrock{GrappleAbility:1} 1
 execute store success score $TempLifesteal shop run clear @s bedrock{LifestealAbility:1} 1
+execute store success score $TempTotem shop run clear @s bedrock{TotemAbility:1} 1
 
 #run logic based on what item was selected
 execute if score $TempBackPage shop matches 1.. run scoreboard players set @s shopState 0
@@ -22,7 +23,7 @@ execute if score $TempState1 shop matches 1.. run scoreboard players set @s shop
 execute if score $TempState2 shop matches 1.. run scoreboard players set @s shopState 2
 execute if score $TempState3 shop matches 1.. run scoreboard players set @s shopState 3
 execute if score $TempCreeper shop matches 1.. run function pudge:game/shop/click_logic/abilities/creeper/click
-execute if score $TempBounce shop matches 1.. run function pudge:game/shop/click_logic/abilities/bounce/click
+execute if score $TempBounce shop matches 1.. run function pudge:game/shop/click_logic/stats/bounce/click
 execute if score $TempHeal shop matches 1.. run function pudge:game/shop/click_logic/consumes/heal/click
 execute if score $TempHookCD shop matches 1.. run function pudge:game/shop/click_logic/stats/hook_cd/click
 execute if score $TempHookDamage shop matches 1.. run function pudge:game/shop/click_logic/stats/hook_damage/click
@@ -30,6 +31,7 @@ execute if score $TempMeleeDamage shop matches 1.. run function pudge:game/shop/
 execute if score $TempKnockback shop matches 1.. run function pudge:game/shop/click_logic/abilities/knockback/click
 execute if score $TempGrapple shop matches 1.. run function pudge:game/shop/click_logic/abilities/grapple/click
 execute if score $TempLifesteal shop matches 1.. run function pudge:game/shop/click_logic/abilities/lifesteal/click
+execute if score $TempTotem shop matches 1.. run function pudge:game/shop/click_logic/abilities/totem/click
 
 #update ender chest inventory
 function pudge:game/shop/inventory/update

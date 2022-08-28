@@ -16,3 +16,6 @@ scoreboard players set @s cdGrapple -1
 
 #lifesteal has no cd currently
 scoreboard players operation @s cdLifesteal = $LifestealCD abilityVar
+
+scoreboard players operation @s cdTotemCurrent = $TotemCD abilityVar
+scoreboard players set @s cdTotem -1

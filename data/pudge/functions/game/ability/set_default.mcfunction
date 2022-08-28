@@ -8,3 +8,4 @@ scoreboard players set $BounceCountInit abilityVar 0
 scoreboard players set $KnockbackInitLevel abilityVar 2
 scoreboard players set $LifestealInitAmount abilityVar 0
 scoreboard players set $LifestealInitRegen abilityVar 0
+scoreboard players set $TotemInitChance abilityVar 10

@@ -7,3 +7,4 @@ scoreboard players set $BounceCD abilityVar -1
 scoreboard players set $KnockbackCD abilityVar -1
 scoreboard players set $GrappleCD abilityVar 240
 scoreboard players set $LifestealCD abilityVar -1
+scoreboard players set $TotemCD abilityVar 600

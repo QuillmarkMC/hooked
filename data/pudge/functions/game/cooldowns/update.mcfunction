@@ -15,3 +15,6 @@ execute if score @s cdGrapple matches 0 run function pudge:game/cooldowns/grappl
 
 execute if score @s cdLifesteal matches 1.. run scoreboard players remove @s cdLifesteal 1
 execute if score @s cdLifesteal matches 0 run function pudge:game/cooldowns/lifesteal/end_cd
+
+execute if score @s cdTotem matches 1.. run scoreboard players remove @s cdTotem 1
+execute if score @s cdTotem matches 0 run function pudge:game/cooldowns/totem/end_cd

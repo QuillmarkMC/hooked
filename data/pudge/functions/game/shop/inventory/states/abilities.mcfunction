@@ -1,7 +1,7 @@
 #update the state of all items in the ender chest inventory for @s (player)
 #execute unless slot is correct run function reset_slot (repeat for every item in shop)
 execute unless data entity @s EnderItems[{Slot:0b,id:"minecraft:bedrock",tag:{CreeperAbility:1}}] run function pudge:game/shop/inventory/items/abilities/creeper
-execute unless data entity @s EnderItems[{Slot:1b,id:"minecraft:bedrock",tag:{BounceAbility:1}}] run function pudge:game/shop/inventory/items/abilities/bounce
+execute unless data entity @s EnderItems[{Slot:1b,id:"minecraft:bedrock",tag:{TotemAbility:1}}] run function pudge:game/shop/inventory/items/abilities/totem
 execute unless data entity @s EnderItems[{Slot:2b,id:"minecraft:bedrock",tag:{KnockbackAbility:1}}] run function pudge:game/shop/inventory/items/abilities/knockback
 execute unless data entity @s EnderItems[{Slot:3b,id:"minecraft:bedrock",tag:{GrappleAbility:1}}] run function pudge:game/shop/inventory/items/abilities/grapple
 execute unless data entity @s EnderItems[{Slot:4b,id:"minecraft:bedrock",tag:{LifestealAbility:1}}] run function pudge:game/shop/inventory/items/abilities/lifesteal

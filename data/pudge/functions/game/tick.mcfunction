@@ -37,6 +37,7 @@ execute as @e[type=arrow,tag=grappleArrow,nbt={inGround:true}] run function pudg
 #effects
 effect give @a minecraft:saturation 999999 255 true
 effect give @a minecraft:resistance 999999 10 true
+execute as @a[scores={clearTotemEffects=1..}] run function pudge:game/ability/totem/clear_effects
 #tick damage check
 scoreboard players set @a resist 0
 #arrows
