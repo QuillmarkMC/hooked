@@ -4,7 +4,7 @@ execute as @e[type=armor_stand,tag=deathSpectate] if score @s armorStand.ID = #T
 execute if score $LoadMap var matches 1 at @s run tp @e[type=armor_stand,tag=tempArmorStandTPTag,limit=1] ~ ~1 ~ facing entity @e[type=marker,tag=forestHealingFountain,limit=1]
 tag @e[type=armor_stand,tag=tempArmorStandTPTag,limit=1] remove tempArmorStandTPTag
 
-execute unless score @s death matches 1.. run kill @s
+#execute unless score @s death matches 1.. run kill @s
 #handle death
 scoreboard players operation @s health = @s maxHealth
 scoreboard players set @s death 0
@@ -22,13 +22,14 @@ execute if score #TempTeams var matches 2 unless entity @s[tag=tempAttackerTag] 
 #if player killed themselves, give kill credit to last attacker
 execute if entity @s[tag=tempAttackerTag,scores={lastDamagedBy=-2147483648..2147483647}] run function pudge:general/death/handle_self_kill
 
-#reset kill bounty
-scoreboard players operation @s bounty = $BaseBounty var
+#calculate new kill bounty
+execute if score #TempTeams var matches 0 run function pudge:general/death/bounty/reduced_bounty
 #reset kill streak
 function pudge:game/killstreak/reset
 #ability effects
 execute if score @s hookID matches 0.. run function pudge:game/ability/hook/end
 scoreboard players reset @s suicideTimer
+
 #spectator armor stand
 gamemode spectator
 #tag player

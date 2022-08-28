@@ -24,6 +24,7 @@ scoreboard players set #80 math 80
 scoreboard players set #100 math 100
 scoreboard objectives add death deathCount
 scoreboard objectives add deathTimer dummy
+scoreboard objectives add deathStreak dummy
 scoreboard objectives add totalDeaths dummy
 scoreboard objectives add playerKills dummy {"text": "Individual Kills","color": "gold"}
 scoreboard players set $RespawnDelay var 100

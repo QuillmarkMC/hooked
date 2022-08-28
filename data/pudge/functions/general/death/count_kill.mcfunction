@@ -26,6 +26,8 @@ execute if score #TempTeams var matches 0 run scoreboard players add @s playerKi
 execute if score #TempTeams var matches 0 run function pudge:game/killstreak/add
 #combo tracking
 execute if score #TempTeams var matches 0 run function pudge:game/killstreak/combo/add
+#reduced bounty tracking
+execute if score #TempTeams var matches 0 if score @s deathStreak matches 1.. run function pudge:general/death/bounty/on_kill_deathstreak
 
 #kill receiver
 execute unless score #SkipDeath death matches 1 as @a[tag=tempReceiverTag,limit=1] run function pudge:general/death/on_death
