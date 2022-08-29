@@ -4,7 +4,7 @@ execute unless data entity @s EnderItems[{Slot:0b,id:"minecraft:bedrock",tag:{Ho
 execute unless data entity @s EnderItems[{Slot:1b,id:"minecraft:bedrock",tag:{HookDamageStats:1}}] run function pudge:game/shop/inventory/items/stats/hook_damage
 execute unless data entity @s EnderItems[{Slot:2b,id:"minecraft:bedrock",tag:{BounceAbility:1}}] run function pudge:game/shop/inventory/items/stats/bounce
 execute unless data entity @s EnderItems[{Slot:3b,id:"minecraft:bedrock",tag:{MeleeDamageStats:1}}] run function pudge:game/shop/inventory/items/stats/melee_damage
-item replace entity @s enderchest.4 with air
+execute unless data entity @s EnderItems[{Slot:4b,id:"minecraft:bedrock",tag:{ExtraHealthStats:1}}] run function pudge:game/shop/inventory/items/stats/extra_health
 item replace entity @s enderchest.5 with air
 item replace entity @s enderchest.6 with air
 item replace entity @s enderchest.7 with air

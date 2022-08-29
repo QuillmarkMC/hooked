@@ -102,6 +102,7 @@ scoreboard objectives add shopItem.Knockback dummy
 scoreboard objectives add shopItem.Grapple dummy
 scoreboard objectives add shopItem.Lifesteal dummy
 scoreboard objectives add shopItem.Totem dummy
+scoreboard objectives add shopItem.ExtraHealth dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
 scoreboard players set $IncomeCycle gold 80
 scoreboard players set $IncomeAmount gold 1

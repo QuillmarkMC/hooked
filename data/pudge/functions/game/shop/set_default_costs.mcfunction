@@ -10,3 +10,4 @@ scoreboard players set $LifestealCost shop 80
 scoreboard players set $TotemCost shop 60
 scoreboard players set $HasteCost shop 20
 scoreboard players set $RangedAPCost shop 30
+scoreboard players set $ExtraHealthCost shop 70
