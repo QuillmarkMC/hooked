@@ -69,6 +69,7 @@ scoreboard objectives add lifestealAmount dummy
 scoreboard objectives add lifestealRegen dummy
 scoreboard objectives add totemChance dummy
 scoreboard objectives add clearTotemEffects dummy
+scoreboard objectives add stupidTotemFix dummy
 #execute unless score $AbilityDefaultTriggered abilityVar matches 1.. run function pudge:game/ability/set_default
 function pudge:game/ability/set_default
 #item use
