@@ -18,7 +18,7 @@ execute store success score $TempLifesteal shop run clear @s bedrock{LifestealAb
 execute store success score $TempTotem shop run clear @s bedrock{TotemAbility:1} 1
 execute store success score $TempHaste shop run clear @s potion{HasteConsumes:1} 1
 execute store success score $TempRangedAP shop run clear @s potion{RangedAPConsumes:1} 1
-execute store success score $TempExtraHealth shop run clear @s potion{ExtraHealthStats:1} 1
+execute store success score $TempExtraHealth shop run clear @s bedrock{ExtraHealthStats:1} 1
 
 #run logic based on what item was selected
 execute if score $TempBackPage shop matches 1.. run scoreboard players set @s shopState 0
