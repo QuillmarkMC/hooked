@@ -72,6 +72,10 @@ scoreboard objectives add clearTotemEffects dummy
 scoreboard objectives add stupidTotemFix dummy
 #execute unless score $AbilityDefaultTriggered abilityVar matches 1.. run function pudge:game/ability/set_default
 function pudge:game/ability/set_default
+#consumables
+scoreboard objectives add consumeVar dummy
+scoreboard objectives add hasteTimer dummy
+function pudge:game/consume/set_default
 #item use
 scoreboard objectives add crossbow minecraft.used:crossbow
 scoreboard objectives add snowball minecraft.used:minecraft.snowball

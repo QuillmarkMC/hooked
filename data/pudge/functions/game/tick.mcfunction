@@ -34,7 +34,8 @@ execute as @a[scores={grappleTimer=1..}] run function pudge:game/ability/grapple
 execute as @e[type=arrow,scores={bounceCount=1..}] run function pudge:game/ability/bounce/arrow_tick
 execute as @e[type=arrow,tag=grappleArrow,nbt={inGround:true}] run function pudge:game/ability/grapple/tag_player
 execute as @a[scores={stupidTotemFix=0..}] run function pudge:game/ability/totem/delay_use
-#tutorial book
+#consumables
+execute as @a[scores={hasteTimer=1..}] run function pudge:game/consume/haste/update
 #effects
 effect give @a minecraft:saturation 999999 255 true
 execute as @a unless score @s clearTotemEffects matches 2.. run effect give @s minecraft:resistance 999999 10 true
