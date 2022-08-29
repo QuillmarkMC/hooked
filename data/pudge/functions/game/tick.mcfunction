@@ -36,6 +36,7 @@ execute as @e[type=arrow,tag=grappleArrow,nbt={inGround:true}] run function pudg
 execute as @a[scores={stupidTotemFix=0..}] run function pudge:game/ability/totem/delay_use
 #consumables
 execute as @a[scores={hasteTimer=1..}] run function pudge:game/consume/haste/update
+execute as @a[scores={rangedAPTimer=1..}] run function pudge:game/consume/ranged_ap/update
 #effects
 effect give @a minecraft:saturation 999999 255 true
 execute as @a unless score @s clearTotemEffects matches 2.. run effect give @s minecraft:resistance 999999 10 true

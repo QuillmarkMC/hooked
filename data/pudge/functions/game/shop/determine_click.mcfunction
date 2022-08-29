@@ -17,6 +17,7 @@ execute store success score $TempGrapple shop run clear @s bedrock{GrappleAbilit
 execute store success score $TempLifesteal shop run clear @s bedrock{LifestealAbility:1} 1
 execute store success score $TempTotem shop run clear @s bedrock{TotemAbility:1} 1
 execute store success score $TempHaste shop run clear @s potion{HasteConsumes:1} 1
+execute store success score $TempRangedAP shop run clear @s potion{RangedAPConsumes:1} 1
 
 #run logic based on what item was selected
 execute if score $TempBackPage shop matches 1.. run scoreboard players set @s shopState 0
@@ -34,6 +35,7 @@ execute if score $TempGrapple shop matches 1.. run function pudge:game/shop/clic
 execute if score $TempLifesteal shop matches 1.. run function pudge:game/shop/click_logic/abilities/lifesteal/click
 execute if score $TempTotem shop matches 1.. run function pudge:game/shop/click_logic/abilities/totem/click
 execute if score $TempHaste shop matches 1.. run function pudge:game/shop/click_logic/consumes/haste/click
+execute if score $TempRangedAP shop matches 1.. run function pudge:game/shop/click_logic/consumes/ranged_ap/click
 
 #update ender chest inventory
 function pudge:game/shop/inventory/update

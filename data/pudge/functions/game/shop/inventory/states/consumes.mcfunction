@@ -2,7 +2,7 @@
 #execute unless slot is correct run function reset_slot (repeat for every item in shop)
 execute unless data entity @s EnderItems[{Slot:0b,id:"minecraft:potion",tag:{HealConsumes:1}}] run function pudge:game/shop/inventory/items/consumes/heal
 execute unless data entity @s EnderItems[{Slot:1b,id:"minecraft:potion",tag:{HasteConsumes:1}}] run function pudge:game/shop/inventory/items/consumes/haste
-item replace entity @s enderchest.2 with air
+execute unless data entity @s EnderItems[{Slot:2b,id:"minecraft:potion",tag:{RangedAPConsumes:1}}] run function pudge:game/shop/inventory/items/consumes/ranged_ap
 item replace entity @s enderchest.3 with air
 item replace entity @s enderchest.4 with air
 item replace entity @s enderchest.5 with air

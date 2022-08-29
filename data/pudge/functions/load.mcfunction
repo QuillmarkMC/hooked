@@ -3,7 +3,7 @@ scoreboard objectives add var dummy
 execute unless score $State var matches 1.. run scoreboard players set $State var 0
 scoreboard objectives add health dummy
 scoreboard objectives add maxHealth dummy
-scoreboard objectives add displayHealth dummy
+scoreboard objectives add displayHealth dummy "Health"
 scoreboard players set $Default maxHealth 200
 scoreboard objectives setdisplay belowName displayHealth
 scoreboard objectives add healthRegen dummy
@@ -75,6 +75,8 @@ function pudge:game/ability/set_default
 #consumables
 scoreboard objectives add consumeVar dummy
 scoreboard objectives add hasteTimer dummy
+scoreboard objectives add rangedAPTimer dummy
+scoreboard objectives add rangedAPValue dummy
 function pudge:game/consume/set_default
 #item use
 scoreboard objectives add crossbow minecraft.used:crossbow

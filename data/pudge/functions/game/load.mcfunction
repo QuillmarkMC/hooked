@@ -23,6 +23,7 @@ tag @a[tag=isGamer] add hasHook
 tag @a[tag=isGamer] add hasMelee
 execute as @a[tag=isGamer] run function pudge:game/cooldowns/init
 execute as @a[tag=isGamer] run function pudge:game/ability/init
+execute as @a[tag=isGamer] run function pudge:game/consume/init
 execute as @a[tag=isGamer] run function pudge:general/death/init_armorstand
 execute as @a[tag=isGamer] run advancement grant @s only pudge:inv_change
 #assign match IDs to handle reconnecting players
