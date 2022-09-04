@@ -1,5 +1,5 @@
 #debug message
-execute if score $Debug var matches 1.. run say game/ability/hook/move.mcfunction
+#execute if score $Debug var matches 1.. run say game/ability/hook/move.mcfunction
 
 #this function is executed every tick as a player who has been hooked
 #progress timer

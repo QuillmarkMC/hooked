@@ -1,5 +1,5 @@
 #debug message
-execute if score $Debug var matches 1.. run say game/inventory/alive_inv.mcfunction
+#execute if score $Debug var matches 1.. run say game/inventory/alive_inv.mcfunction
 
 function pudge:game/inventory/default_clear
 #head

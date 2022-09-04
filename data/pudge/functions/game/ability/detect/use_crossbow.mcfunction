@@ -1,3 +1,6 @@
+#debug message
+execute if score $Debug var matches 1.. run say game/ability/detect/use_crossbow.mcfunction
+
 tag @s add tempArrowOwnerTag
 
 scoreboard players set $Temp crossbow 0
