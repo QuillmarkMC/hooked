@@ -29,6 +29,9 @@ function pudge:game/killstreak/reset
 #ability effects
 execute if score @s hookID matches 0.. run function pudge:game/ability/hook/end
 scoreboard players reset @s suicideTimer
+scoreboard players set @s elytraTimer -1
+scoreboard players set @s rapidFireChargeTimer -1
+scoreboard players set @s rapidFireTimer -1
 
 #spectator armor stand
 gamemode spectator
