@@ -70,6 +70,7 @@ scoreboard objectives add lifestealRegen dummy
 scoreboard objectives add totemChance dummy
 scoreboard objectives add clearTotemEffects dummy
 scoreboard objectives add stupidTotemFix dummy
+scoreboard objectives add goatSound dummy
 #execute unless score $AbilityDefaultTriggered abilityVar matches 1.. run function pudge:game/ability/set_default
 function pudge:game/ability/set_default
 #consumables
@@ -103,6 +104,7 @@ scoreboard objectives add shopItem.Grapple dummy
 scoreboard objectives add shopItem.Lifesteal dummy
 scoreboard objectives add shopItem.Totem dummy
 scoreboard objectives add shopItem.ExtraHealth dummy
+scoreboard objectives add shopItem.Goat dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
 scoreboard players set $IncomeCycle gold 80
 scoreboard players set $IncomeAmount gold 1
@@ -143,6 +145,7 @@ scoreboard players set $ItemID shopItem.Knockback 3
 scoreboard players set $ItemID shopItem.Grapple 4
 scoreboard players set $ItemID shopItem.Lifesteal 5
 scoreboard players set $ItemID shopItem.Totem 6
+scoreboard players set $ItemID shopItem.Goat 7
 #skip hotbars 0 and 1 because hook and melee will always occupy those slots
 scoreboard objectives add hotbar.2.ID dummy
 scoreboard objectives add hotbar.3.ID dummy

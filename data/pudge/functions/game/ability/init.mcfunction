@@ -8,5 +8,6 @@ scoreboard players operation @s knockbackLevel = $KnockbackInitLevel abilityVar
 scoreboard players operation @s lifestealAmount = $LifestealInitAmount abilityVar
 scoreboard players operation @s lifestealRegen = $LifestealInitRegen abilityVar
 scoreboard players operation @s totemChance = $TotemInitChance abilityVar
+scoreboard players operation @s goatSound = $GoatInitSound abilityVar
 #kill bounty
 scoreboard players operation @s bounty = $BaseBounty var

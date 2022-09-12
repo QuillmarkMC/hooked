@@ -13,6 +13,7 @@ scoreboard players set @s shopItem.Grapple 0
 scoreboard players set @s shopItem.Lifesteal 0
 scoreboard players set @s shopItem.Totem 0
 scoreboard players set @s shopItem.ExtraHealth 0
+scoreboard players set @s shopItem.Goat 0
 
 #upgrade count
 scoreboard players set @s numUpgrades 0

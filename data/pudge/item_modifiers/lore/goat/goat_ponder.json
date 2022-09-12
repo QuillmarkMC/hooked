@@ -1,0 +1,29 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Knockback level: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "@s",
+              "objective": "knockbackLevel"
+            },
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "replace": false
+    },
+    {
+      "function": "minecraft:set_instrument",
+      "options": "#minecraft:goat_horns"
+    }
+  ]
+  
