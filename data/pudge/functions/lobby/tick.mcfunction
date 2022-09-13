@@ -1,4 +1,6 @@
 #triggers for game settings
+execute as @a run function pudge:lobby/trigger
+scoreboard players enable @a lobbysigns
 
 #border check
 execute as @a[predicate=!pudge:lobby/lobby,gamemode=adventure] run tp @s @e[type=marker,tag=lobbySpawn,limit=1]
