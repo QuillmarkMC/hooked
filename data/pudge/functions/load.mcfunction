@@ -32,7 +32,7 @@ scoreboard objectives add regenTimer dummy
 scoreboard players set $RegenTick regenTimer 20
 scoreboard objectives add lobbyvar dummy
 scoreboard objectives add countdown dummy
-scoreboard objectives add lobbysigns dummy
+scoreboard objectives add lobbysigns trigger
 scoreboard objectives add lastDamagedBy dummy
 
 ##Game Scoreboards
