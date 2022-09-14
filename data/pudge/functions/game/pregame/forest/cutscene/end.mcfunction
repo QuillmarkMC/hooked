@@ -14,5 +14,5 @@ execute at @e[type=marker,tag=gameRedSpawn,limit=1] run spawnpoint @a[team=red] 
 execute at @e[type=marker,tag=gameBlueSpawn,limit=1] run spawnpoint @a[team=blue] ~ ~ ~
 
 #start countdown for game start
-scoreboard players set $StartCountdown countdown 6
+scoreboard players set $StartCountdown countdown 8
 function pudge:game/pregame/countdown
