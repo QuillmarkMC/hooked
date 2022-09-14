@@ -1,6 +1,6 @@
 scoreboard players add $Timer cutscene 1
 
-execute as @e[type=armor_stand,tag=introCam2,limit=1] at @s positioned ^0.05 ^ ^ positioned ~ ~0.75 ~ run tp @s ~ ~ ~ facing entity @e[type=marker,tag=introCam2FacingTarget,limit=1] feet
+execute as @e[type=armor_stand,tag=introCam2,limit=1] at @s positioned ^0.1 ^ ^ positioned ~ ~0.55 ~ run tp @s ~ ~ ~ facing entity @e[type=marker,tag=introCam2FacingTarget,limit=1] feet
 
 gamemode spectator @a
 execute as @a run spectate @e[type=armor_stand,tag=introCam2,limit=1]

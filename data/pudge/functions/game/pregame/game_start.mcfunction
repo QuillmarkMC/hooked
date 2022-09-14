@@ -15,7 +15,7 @@ execute as @a[tag=isGamer] run function pudge:game/ability/init
 execute as @a[tag=isGamer] run function pudge:game/consume/init
 execute as @a[tag=isGamer] run function pudge:general/death/init_armorstand
 execute as @a[tag=isGamer] run advancement grant @s only pudge:inv_change
-execute at @a[tag=isGamer] run fill ~1 ~3 ~1 ~-1 ~ ~-1 air replace barrier
+execute at @a[tag=isGamer] run fill ~1 ~3 ~1 ~-1 ~-1 ~-1 air replace barrier
 #assign match IDs to handle reconnecting players
 scoreboard players add $Global matchID 1
 scoreboard players operation @a matchID = $Global matchID
