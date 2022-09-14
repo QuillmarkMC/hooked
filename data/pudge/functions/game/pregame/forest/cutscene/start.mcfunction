@@ -12,5 +12,12 @@ summon armor_stand 18 64 8 {Tags:["introCutscene","introCam3"],Marker:1b,Invisib
 summon marker 22 64 31 {Tags:["introCutscene","introCam3","introCam3FacingTarget"]}
 
 summon armor_stand 57 69 -21 {Tags:["introCutscene","introCam4"],Marker:1b,Invisible:true,Silent:true,Rotation:[0.0f,0.0f]}
+
+#music
+execute as @a at @s run playsound game.music.intro ambient @s
+
+#fix healthbar
+title @a actionbar ""
+
 #start camera 1
 function pudge:game/pregame/forest/cutscene/camera1/begin
