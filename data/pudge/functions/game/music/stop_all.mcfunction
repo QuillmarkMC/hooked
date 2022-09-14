@@ -14,5 +14,7 @@ stopsound @a record game.music.elite_four
 stopsound @a record game.music.leviathan
 stopsound @a record game.music.space_invaders
 stopsound @a record game.music.bomberman
+stopsound @a record game.music.lamenting_city
+stopsound @a record game.music.brain_power
 
 scoreboard players reset @a skip

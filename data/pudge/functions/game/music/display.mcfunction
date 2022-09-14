@@ -15,5 +15,7 @@ execute if score $out rng matches 12 run advancement grant @a only pudge:music/e
 execute if score $out rng matches 13 run advancement grant @a only pudge:music/leviathan
 execute if score $out rng matches 14 run advancement grant @a only pudge:music/space_invaders
 execute if score $out rng matches 15 run advancement grant @a only pudge:music/bomberman
+execute if score $out rng matches 16 run advancement grant @a only pudge:music/lamenting_city
+execute if score $out rng matches 17 run advancement grant @a only pudge:music/brain_power
 
 schedule function pudge:game/music/display_delay 2t

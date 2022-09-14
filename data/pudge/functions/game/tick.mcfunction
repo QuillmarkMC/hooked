@@ -15,13 +15,13 @@ execute as @a[tag=shopInteractDetect] run advancement grant @s only pudge:inv_ch
 execute as @a[tag=dead] run function pudge:general/death/while_dead
 
 #tick map effects
-execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/tick
+execute if score $StartGame var matches 2 if score $LoadMap var matches 1 run function pudge:game/maps/forest/tick
 
 #custom regen effect tick
 execute as @a[scores={regenTimer=1..}] run function pudge:general/health/regen_effect
 
 #gold tick function
-function pudge:game/gold/tick
+execute if score $StartGame var matches 2 run function pudge:game/gold/tick
 
 #combo tick function
 execute as @a[scores={comboTimer=1..}] run function pudge:game/killstreak/combo/tick

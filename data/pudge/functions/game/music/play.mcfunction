@@ -18,6 +18,8 @@ execute if score $out rng matches 12 as @a at @s run playsound game.music.elite_
 execute if score $out rng matches 13 as @a at @s run playsound game.music.leviathan record @s
 execute if score $out rng matches 14 as @a at @s run playsound game.music.space_invaders record @s
 execute if score $out rng matches 15 as @a at @s run playsound game.music.bomberman record @s
+execute if score $out rng matches 16 as @a at @s run playsound game.music.lamenting_city record @s
+execute if score $out rng matches 17 as @a at @s run playsound game.music.brain_power record @s
 
 #advancement display
 function pudge:game/music/display

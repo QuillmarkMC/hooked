@@ -1,2 +1,5 @@
 team join spectator @a[team=]
-function pudge:game/load
+schedule function pudge:game/load 50t
+
+title @a times 20 60 20
+title @a title {"text":"\uE006"}

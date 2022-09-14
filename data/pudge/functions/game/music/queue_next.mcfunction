@@ -10,8 +10,10 @@ execute if score $out rng matches 7 run schedule function pudge:game/music/gener
 execute if score $out rng matches 8 run schedule function pudge:game/music/generate 2074t
 execute if score $out rng matches 9 run schedule function pudge:game/music/generate 4347t
 execute if score $out rng matches 10 run schedule function pudge:game/music/generate 4535t
-execute if score $out rng matches 11 run schedule function pudge:game/music/generate 2561t
+execute if score $out rng matches 11 run schedule function pudge:game/music/generate 3189t
 execute if score $out rng matches 12 run schedule function pudge:game/music/generate 3588t
 execute if score $out rng matches 13 run schedule function pudge:game/music/generate 1337t
 execute if score $out rng matches 14 run schedule function pudge:game/music/generate 6967t
 execute if score $out rng matches 15 run schedule function pudge:game/music/generate 3068t
+execute if score $out rng matches 16 run schedule function pudge:game/music/generate 3759t
+execute if score $out rng matches 17 run schedule function pudge:game/music/generate 7264t

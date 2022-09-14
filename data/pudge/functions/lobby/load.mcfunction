@@ -16,6 +16,7 @@ execute at @e[type=villager,tag=redTeamSelect,limit=1] run summon minecraft:armo
 
 #tip display
 scoreboard players set $TipTimer lobbyvar 200
+scoreboard players reset $PauseTips countdown
 
 #default config options
 scoreboard players set $LoadMap var 1

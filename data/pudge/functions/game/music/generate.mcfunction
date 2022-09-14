@@ -3,7 +3,7 @@ execute if score $Debug var matches 1.. run say game/music/generate.mcfunction
 #randomly pick a tip to display
 scoreboard players set #Temp music 0
 #rng
-scoreboard players set $max rng 16
+scoreboard players set $max rng 18
 function pudge:general/rng/rand
 
 #dont play song if it was one of the last 10 songs played

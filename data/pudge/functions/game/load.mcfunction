@@ -2,36 +2,10 @@
 function pudge:general/change_state
 #set state
 scoreboard players set $State var 2
+scoreboard players set $StartGame var 1
 
 #init map
 execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/init
-function pudge:game/bossbar/init
-scoreboard players operation $Income gold = $IncomeCycle var
-scoreboard objectives setdisplay list playerKills
-function pudge:game/killstreak/combo/init_times
 
-#players
-tag @a[team=!spectator] add isGamer
-gamemode spectator @a[team=spectator]
-effect clear @a
-execute as @a[team=red] run tp @s @e[type=marker,tag=gameRedSpawn,limit=1,sort=random]
-execute as @a[team=blue] run tp @s @e[type=marker,tag=gameBlueSpawn,limit=1,sort=random]
-tp @a[gamemode=spectator] @e[type=marker,tag=gameSpectatorSpawn,limit=1]
-execute at @e[type=marker,tag=gameRedSpawn,limit=1] run spawnpoint @a[team=red] ~ ~ ~
-execute at @e[type=marker,tag=gameBlueSpawn,limit=1] run spawnpoint @a[team=blue] ~ ~ ~
-tag @a[tag=isGamer] add hasHook
-tag @a[tag=isGamer] add hasMelee
-execute as @a[tag=isGamer] run function pudge:game/cooldowns/init
-execute as @a[tag=isGamer] run function pudge:game/ability/init
-execute as @a[tag=isGamer] run function pudge:game/consume/init
-execute as @a[tag=isGamer] run function pudge:general/death/init_armorstand
-execute as @a[tag=isGamer] run advancement grant @s only pudge:inv_change
-#assign match IDs to handle reconnecting players
-scoreboard players add $Global matchID 1
-scoreboard players operation @a matchID = $Global matchID
-#random
-scoreboard players operation $CooldownDisplayUpdate var = $DisplayUpdateInterval abilityVar
-#shops
-function pudge:game/shop/init
-#music
-function pudge:game/music/init
+#intro cutscene
+execute if score $LoadMap var matches 1 run function pudge:game/pregame/forest/cutscene/start

@@ -34,6 +34,7 @@ scoreboard objectives add lobbyvar dummy
 scoreboard objectives add countdown dummy
 scoreboard objectives add lobbysigns trigger
 scoreboard objectives add lastDamagedBy dummy
+scoreboard objectives add cutscene dummy
 
 ##Game Scoreboards
 #durability
