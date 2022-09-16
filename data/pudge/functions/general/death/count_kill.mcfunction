@@ -41,4 +41,4 @@ execute if score #Temp math matches 1 run scoreboard players set $Temp killstrea
 execute if score $Temp killstreak matches 1.. run function pudge:game/killstreak/announce
 
 #check win
-function pudge:game/end/check_win
+function pudge:game/postgame/check_win

@@ -1,6 +1,6 @@
 #gold
 scoreboard players operation @s gold = $StartingGold gold
-scoreboard players operation @s totalGold = $StartingGold gold
+scoreboard players set @s totalGold 0
 function pudge:game/gold/update_display
 
 #item levels
