@@ -13,3 +13,5 @@ schedule function pudge:game/postgame/game_stats/titles/title_team 30t
 function pudge:game/postgame/forest/cutscene/start
 #queue stat display in chat
 schedule function pudge:game/postgame/game_stats/stats/queue_red 60t
+#hide bossbar
+bossbar set score players
