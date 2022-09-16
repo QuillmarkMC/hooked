@@ -1,5 +1,5 @@
 #called when red team has required points to win
-scoreboard players set $Winner cutscene 1
+scoreboard players set $Winner cutscene 2
 #black screen
 title @a times 20 40 20
 title @a title {"text":"\uE006"}

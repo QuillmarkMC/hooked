@@ -1,6 +1,6 @@
 scoreboard players add $Timer cutscene 1
 
-execute as @e[type=armor_stand,tag=outroCam1,limit=1] at @s run tp @s ^ ^ ^0.02
+execute as @e[type=armor_stand,tag=outroCam1,limit=1] at @s run tp @s ^ ^ ^0.04
 
 execute if score $Timer cutscene matches 2 as @a run spectate
 gamemode spectator @a
