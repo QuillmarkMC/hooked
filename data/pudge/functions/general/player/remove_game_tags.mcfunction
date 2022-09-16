@@ -10,3 +10,4 @@ tag @s remove tempAttackerTag
 tag @s remove tempReceiverTag
 tag @s remove tempSelfDeathAttackerTag
 tag @s remove hasTotem
+tag @s remove statsDisplay

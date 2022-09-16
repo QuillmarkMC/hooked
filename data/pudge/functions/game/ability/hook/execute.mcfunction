@@ -4,6 +4,8 @@
 tag @s add teamCheckPlayer1
 tag @a[tag=tempAttackerTag,limit=1] add teamCheckPlayer2
 function pudge:general/teams/check_teams
+#if different teams, count assist
+execute if score #TempTeams var matches 0 run function pudge:game/ability/hook/execute_assist
 #if different teams, count kill. if same team, dont count kill but still kill player
 execute if score #TempTeams var matches 0 as @a[tag=tempAttackerTag,limit=1] run function pudge:general/death/count_kill
 execute unless score #TempTeams var matches 0 run function pudge:general/death/on_death

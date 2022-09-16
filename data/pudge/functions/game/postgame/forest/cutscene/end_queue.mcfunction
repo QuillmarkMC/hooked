@@ -1,0 +1,1 @@
+schedule function pudge:game/postgame/forest/cutscene/end 40t

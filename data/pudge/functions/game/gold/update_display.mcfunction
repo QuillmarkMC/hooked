@@ -5,4 +5,6 @@ execute store result score #Temp gold run xp query @s levels
 execute if score #Temp gold < @s gold run xp add @s 1 levels
 execute if score #Temp gold > @s gold run xp add @s -1 levels
 
+execute if score #Temp gold < @s gold run scoreboard players add @s totalGold 1
+
 execute unless score #Temp gold = @s gold run function pudge:game/gold/update_display

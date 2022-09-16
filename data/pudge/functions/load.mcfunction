@@ -27,6 +27,7 @@ scoreboard objectives add deathTimer dummy
 scoreboard objectives add deathStreak dummy
 scoreboard objectives add totalDeaths dummy
 scoreboard objectives add playerKills dummy {"text": "Individual Kills","color": "gold"}
+scoreboard objectives add totalAssists dummy
 scoreboard players set $RespawnDelay var 100
 scoreboard objectives add regenTimer dummy
 scoreboard players set $RegenTick regenTimer 20
@@ -109,6 +110,7 @@ scoreboard objectives add shopItem.Totem dummy
 scoreboard objectives add shopItem.ExtraHealth dummy
 scoreboard objectives add shopItem.Goat dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
+scoreboard objectives add totalGold dummy
 scoreboard players set $IncomeCycle gold 80
 scoreboard players set $IncomeAmount gold 1
 scoreboard players set $StartingGold gold 30
@@ -117,6 +119,7 @@ scoreboard objectives add dropPotion minecraft.dropped:minecraft.potion
 #kill bounty
 scoreboard objectives add bounty dummy
 scoreboard players set $BaseBounty var 20
+scoreboard players set $AssistBounty var 5
 #killstreak
 scoreboard objectives add killstreak dummy
 #kill combos

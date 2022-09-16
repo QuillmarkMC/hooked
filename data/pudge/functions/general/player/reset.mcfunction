@@ -29,7 +29,11 @@ scoreboard players operation @s health = @s maxHealth
 scoreboard players reset @s playerKills
 scoreboard players reset @s totalDeaths
 scoreboard players reset @s killstreak
+scoreboard players reset @s totalAssists
+scoreboard players reset @s suicideTimer
 scoreboard players reset @s elytraTimer
+scoreboard players reset @s rapidFireChargeTimer
+scoreboard players reset @s rapidFireTimer
 scoreboard players reset @s lastDamagedBy
 scoreboard players reset @s skip
 scoreboard players reset @s deathStreak
