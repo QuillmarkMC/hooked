@@ -26,10 +26,10 @@ xp set @s 0 points
 xp set @s 0 levels
 scoreboard players operation @s maxHealth = $Default maxHealth
 scoreboard players operation @s health = @s maxHealth
-scoreboard players reset @s playerKills
-scoreboard players reset @s totalDeaths
+scoreboard players set @s playerKills 0
+scoreboard players set @s totalDeaths 0
 scoreboard players reset @s killstreak
-scoreboard players reset @s totalAssists
+scoreboard players set @s totalAssists 0
 scoreboard players reset @s suicideTimer
 scoreboard players reset @s elytraTimer
 scoreboard players reset @s rapidFireChargeTimer
