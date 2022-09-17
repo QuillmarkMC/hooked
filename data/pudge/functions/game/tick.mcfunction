@@ -39,7 +39,7 @@ execute as @a[scores={hasteTimer=1..}] run function pudge:game/consume/haste/upd
 execute as @a[scores={rangedAPTimer=1..}] run function pudge:game/consume/ranged_ap/update
 #effects
 effect give @a minecraft:saturation 999999 255 true
-execute as @a unless score @s clearTotemEffects matches 2.. run effect give @s minecraft:resistance 999999 10 true
+execute as @a unless score @s clearTotemEffects matches 2.. run effect give @s minecraft:resistance 999999 4 true
 execute as @a[scores={clearTotemEffects=1..}] run function pudge:game/ability/totem/clear_effects
 #tick damage check
 scoreboard players set @a resist 0
