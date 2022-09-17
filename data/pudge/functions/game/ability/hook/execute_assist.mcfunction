@@ -5,10 +5,8 @@
 scoreboard players operation $Temp_Player hookID = @s hookID
 execute as @a[tag=isGamer] if score @s entityid = $Temp_Player hookID run tag @s add tempHookTag
 
-tellraw @a[tag=tempHookTag,limit=1] [{"text": "(+) ","color": "green"},{"text": "You just assisted ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempAttackerTag,limit=1]"}]},{"text": " and got ","color": "white"},{"score":{"name":"$AssistBounty","objective":"var"},"color": "gold"},{"text": " gold!","color": "gold"}]
-scoreboard players operation @a[tag=tempHookTag,limit=1] gold += $AssistBounty var
-function pudge:game/gold/update_display
-
-scoreboard players add @a[tag=tempHookTag,limit=1] totalAssists 1
+#check team of assister
+execute if entity @s[team=red] unless entity @a[tag=tempHookTag,limit=1,team=red] run function pudge:game/ability/hook/execute_assist_success
+execute if entity @s[team=blue] unless entity @a[tag=tempHookTag,limit=1,team=blue] run function pudge:game/ability/hook/execute_assist_success
 
 tag @a[tag=tempHookTag,limit=1] remove tempHookTag
