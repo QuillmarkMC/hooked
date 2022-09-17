@@ -10,6 +10,23 @@
             "italic": true
           }          
         ],
+        [
+          {
+            "text": "Press \"",
+            "color": "yellow",
+            "italic": true
+          },
+          {
+            "keybind":"key.swapOffhand",
+            "color": "yellow",
+            "italic": true
+          },
+          {
+            "text": "\" to change the horn sound!",
+            "color": "yellow",
+            "italic": true
+          }  
+        ],
         {
           "text": ""
         }
