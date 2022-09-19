@@ -24,7 +24,7 @@ execute at @e[type=marker,tag=tempHookTag,limit=1] unless block ~ ~1 ~ #pudge:em
 #if both blocks air, rotate marker as target then teleport target to marker
 execute unless score @s hookTimer matches ..-1 run tp @s @e[type=marker,tag=tempHookTag,limit=1]
 #render particles using raycasting to look like a line pulling the player
-#execute unless score @s hookTimer matches ..-1 at @s positioned ~ ~1 ~ run function pudge:game/ability/hook/particles/raycast
+execute unless score @s hookTimer matches ..-1 at @s positioned ~ ~1 ~ run function pudge:game/ability/hook/particles/raycast
 
 tag @e[tag=tempHookTag] remove tempHookTag
 
