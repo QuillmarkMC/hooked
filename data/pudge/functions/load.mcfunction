@@ -163,6 +163,16 @@ scoreboard objectives add hotbar.7.ID dummy
 #background music
 scoreboard objectives add music dummy
 scoreboard objectives add skip trigger
+scoreboard players set $LastPlayed1 music -1
+scoreboard players set $LastPlayed2 music -1
+scoreboard players set $LastPlayed3 music -1
+scoreboard players set $LastPlayed4 music -1
+scoreboard players set $LastPlayed5 music -1
+scoreboard players set $LastPlayed6 music -1
+scoreboard players set $LastPlayed7 music -1
+scoreboard players set $LastPlayed8 music -1
+scoreboard players set $LastPlayed9 music -1
+scoreboard players set $LastPlayed10 music -1
 
 #RNG
 scoreboard objectives add rng dummy
