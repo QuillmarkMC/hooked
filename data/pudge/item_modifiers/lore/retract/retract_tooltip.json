@@ -5,13 +5,18 @@
       "lore": [
         [
           {
-            "text": "Increases the speed that your Hookshot",
+            "text": "Your Hookshot and Grappling hook have",
             "color": "gray",
             "italic": true
           }          
         ],
         {
-          "text": "and Grappling Hook pull their targets.",
+          "text": "been equipped with advanced retraction coils,",
+          "color": "gray",
+          "italic": true
+        },
+        {
+          "text": "causing them to pull with extra strength.",
           "color": "gray",
           "italic": true
         },
