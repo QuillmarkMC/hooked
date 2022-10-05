@@ -26,7 +26,7 @@ execute if score $StartGame var matches 2 run function pudge:game/gold/tick
 #combo tick function
 execute as @a[scores={comboTimer=1..}] run function pudge:game/killstreak/combo/tick
 
-#border check?
+#border check
 execute at @e[type=marker,tag=gameSpectatorSpawn,limit=1] as @a[gamemode=spectator,distance=80..,tag=!dead] run tp @s ~ ~ ~
 #ability effects
 execute as @a[scores={hookTimer=1..}] run function pudge:game/ability/hook/move

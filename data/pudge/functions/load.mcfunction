@@ -36,6 +36,10 @@ scoreboard objectives add countdown dummy
 scoreboard objectives add lobbysigns trigger
 scoreboard objectives add lastDamagedBy dummy
 scoreboard objectives add cutscene dummy
+#timers
+scoreboard objectives add timers dummy
+scoreboard players set $MaxGameLengthSeconds timers 3600
+scoreboard players set $MaxLengthPerKillSeconds timers 600
 
 ##Game Scoreboards
 #durability
@@ -115,12 +119,12 @@ scoreboard objectives add totalGold dummy
 scoreboard players set $IncomeCycle gold 80
 scoreboard players set $IncomeAmount gold 1
 scoreboard players set $StartingGold gold 30
+scoreboard players set $TeamkillPunishment gold 10
 scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
 scoreboard objectives add dropPotion minecraft.dropped:minecraft.potion
 #kill bounty
 scoreboard objectives add bounty dummy
 scoreboard players set $BaseBounty var 20
-scoreboard players set $AssistBounty var 5
 #killstreak
 scoreboard objectives add killstreak dummy
 #kill combos

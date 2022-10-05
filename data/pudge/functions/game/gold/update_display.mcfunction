@@ -1,4 +1,6 @@
 #called by a player who just gained or lost gold
+#lower bound for gold value
+execute if score @s gold matches ..-1 run scoreboard players set @s gold 0
 #recursively call this function until xp level matches gold objective
 execute store result score #TempXP gold run xp query @s levels
 

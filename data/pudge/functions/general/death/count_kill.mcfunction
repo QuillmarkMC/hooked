@@ -6,6 +6,8 @@ scoreboard players set $Temp killstreak 0
 execute if entity @s[team=red] unless entity @a[tag=tempReceiverTag,team=red] run scoreboard players add $RedScore var 1
 execute if entity @s[team=blue] unless entity @a[tag=tempReceiverTag,team=blue] run scoreboard players add $BlueScore var 1
 function pudge:game/bossbar/update
+#reset recent kill timer
+scoreboard players operation $KillTime timers = $MaxLengthPerKillSeconds timers
 #check teams
 tag @s add teamCheckPlayer1
 tag @a[tag=tempReceiverTag,limit=1] add teamCheckPlayer2
@@ -14,7 +16,7 @@ function pudge:general/teams/check_teams
 execute unless score #SkipDeath death matches 1 if score #TempTeams var matches 0 run tellraw @s [{"text": "(+) ","color": "green"},{"text": "You just killed ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempReceiverTag,limit=1]"}]},{"text": " and got ","color": "white"},{"score":{"name":"@a[tag=tempReceiverTag,limit=1]","objective":"bounty"},"color": "gold"},{"text": " gold!","color": "gold"}]
 execute unless score #TempTeams var matches 0 unless entity @s[tag=tempReceiverTag] run tellraw @s [{"text": "(+) ","color": "green"},{"text": "You just killed ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempReceiverTag,limit=1]"}]}]
 #check receiver's kill streak, set variable if ending streak
-execute if score @a[tag=tempReceiverTag,limit=1] killstreak matches 3.. run scoreboard players set $Temp killstreak 17
+execute if score #TempTeams var matches 0 if score @a[tag=tempReceiverTag,limit=1] killstreak matches 3.. run scoreboard players set $Temp killstreak 17
 #handle lifesteal ability's regen effect
 execute if score @s lifestealAmount matches 1.. if score #TempTeams var matches 0 run function pudge:game/ability/lifesteal/regen
 #grant gold for kill

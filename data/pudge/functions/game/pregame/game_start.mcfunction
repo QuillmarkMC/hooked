@@ -25,3 +25,5 @@ scoreboard players operation $CooldownDisplayUpdate var = $DisplayUpdateInterval
 function pudge:game/shop/init
 #music
 function pudge:game/music/init
+#timers
+function pudge:game/scheduled_timers/init

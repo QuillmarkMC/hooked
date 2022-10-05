@@ -7,6 +7,8 @@ execute if score $Winner cutscene matches 1 as @a[team=blue] at @s run playsound
 execute if score $Winner cutscene matches 1 as @a[team=red] at @s run playsound game.music.defeat ambient @s
 execute if score $Winner cutscene matches 2 as @a[team=blue] at @s run playsound game.music.defeat ambient @s
 execute if score $Winner cutscene matches 2 as @a[team=red] at @s run playsound game.music.victory ambient @s
+execute if score $Winner cutscene matches 3 as @a[team=!spectator] at @s run playsound game.music.defeat ambient @s
+execute as @a[team=spectator] at @s run playsound game.music.victory ambient @s
 #queue /title to display after black screen ends
 schedule function pudge:game/postgame/game_stats/titles/title_team 30t
 #start cutscene

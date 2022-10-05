@@ -25,7 +25,7 @@ execute if entity @s[tag=tempAttackerTag,scores={lastDamagedBy=-2147483648..2147
 #calculate new kill bounty
 execute if score #TempTeams var matches 0 run function pudge:general/death/bounty/reduced_bounty
 #reset kill streak
-function pudge:game/killstreak/reset
+execute if score #TempTeams var matches 0 run function pudge:game/killstreak/reset
 #ability effects
 execute if score @s hookID matches 0.. run function pudge:game/ability/hook/end
 scoreboard players reset @s suicideTimer

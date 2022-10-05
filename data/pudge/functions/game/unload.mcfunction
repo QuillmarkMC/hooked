@@ -9,3 +9,4 @@ scoreboard players set $Winner cutscene 0
 execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/uninit
 function pudge:game/music/stop_all
 schedule clear pudge:game/music/generate
+schedule clear pudge:game/scheduled_timers/seconds
