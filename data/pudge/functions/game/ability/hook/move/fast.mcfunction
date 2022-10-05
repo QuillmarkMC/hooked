@@ -1,0 +1,8 @@
+execute unless entity @a[predicate=pudge:sneaking,tag=tempHookTag,limit=1] if score @a[tag=tempHookTag,limit=1] shopItem.Retract matches 1 as @e[type=marker,tag=tempHookTag,limit=1] at @s facing entity @a[tag=tempHookTag,limit=1] feet run tp @s ^ ^ ^0.6 facing entity @a[tag=tempHookTag,limit=1]
+execute unless entity @a[predicate=pudge:sneaking,tag=tempHookTag,limit=1] if score @a[tag=tempHookTag,limit=1] shopItem.Retract matches 2 as @e[type=marker,tag=tempHookTag,limit=1] at @s facing entity @a[tag=tempHookTag,limit=1] feet run tp @s ^ ^ ^0.7 facing entity @a[tag=tempHookTag,limit=1]
+execute unless entity @a[predicate=pudge:sneaking,tag=tempHookTag,limit=1] if score @a[tag=tempHookTag,limit=1] shopItem.Retract matches 3 as @e[type=marker,tag=tempHookTag,limit=1] at @s facing entity @a[tag=tempHookTag,limit=1] feet run tp @s ^ ^ ^0.8 facing entity @a[tag=tempHookTag,limit=1]
+execute unless entity @a[predicate=pudge:sneaking,tag=tempHookTag,limit=1] if score @a[tag=tempHookTag,limit=1] shopItem.Retract matches 4 as @e[type=marker,tag=tempHookTag,limit=1] at @s facing entity @a[tag=tempHookTag,limit=1] feet run tp @s ^ ^ ^0.9 facing entity @a[tag=tempHookTag,limit=1]
+execute unless entity @a[predicate=pudge:sneaking,tag=tempHookTag,limit=1] if score @a[tag=tempHookTag,limit=1] shopItem.Retract matches 5.. as @e[type=marker,tag=tempHookTag,limit=1] at @s facing entity @a[tag=tempHookTag,limit=1] feet run tp @s ^ ^ ^1.0 facing entity @a[tag=tempHookTag,limit=1]
+execute if entity @a[predicate=pudge:sneaking,tag=tempHookTag,limit=1] run function pudge:game/ability/hook/move/slow
+
+execute unless entity @a[predicate=pudge:sneaking,tag=tempHookTag,limit=1] run scoreboard players set #ColorTemp hookTimer 2

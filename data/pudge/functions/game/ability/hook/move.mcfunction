@@ -1,5 +1,6 @@
 #debug message
 #execute if score $Debug var matches 1.. run say game/ability/hook/move.mcfunction
+# @s = receiver
 
 #this function is executed every tick as a player who has been hooked
 #progress timer
@@ -16,10 +17,10 @@ execute if score @s deaths matches 1.. run scoreboard players set @s hookTimer -
 execute if entity @a[tag=tempHookTag,tag=dead,limit=1] run scoreboard players set @s hookTimer -1
 #if within 1.5 blocks of source, end effect
 execute at @s if entity @a[tag=tempHookTag,distance=..1.5,limit=1] run scoreboard players set @s hookTimer -1
-#face marker towards source, tp small distance towards them
-execute as @e[type=marker,tag=tempHookTag,limit=1] at @s facing entity @a[tag=tempHookTag,limit=1] feet run tp @s ^ ^ ^0.5 facing entity @a[tag=tempHookTag,limit=1]
-#check if current block ~ ~ ~ and ~ ~1 ~ are air, if not then end effect immediately
-#execute at @e[type=marker,tag=tempHookTag,limit=1] unless block ~ ~ ~ #ctf:empty run scoreboard players set @s hookTimer -1
+#control hook movement
+execute unless score @s hookTimer matches ..-1 if score @a[tag=tempHookTag,limit=1] shopItem.Retract matches 1.. run function pudge:game/ability/hook/move/fast
+execute unless score @s hookTimer matches ..-1 if score @a[tag=tempHookTag,limit=1] shopItem.Retract matches ..0 run function pudge:game/ability/hook/move/slow
+#check if head is in a block, if so then end effect immediately
 execute at @e[type=marker,tag=tempHookTag,limit=1] unless block ~ ~1 ~ #pudge:empty run scoreboard players set @s hookTimer -1
 #if both blocks air, rotate marker as target then teleport target to marker
 execute unless score @s hookTimer matches ..-1 run tp @s @e[type=marker,tag=tempHookTag,limit=1]

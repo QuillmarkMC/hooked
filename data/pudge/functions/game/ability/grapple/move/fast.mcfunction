@@ -1,0 +1,5 @@
+execute if score @s shopItem.Retract matches 1 as @e[type=marker,tag=tempGrappleMarkerTag,limit=1] at @s facing entity @e[tag=tempGrappleTag,limit=1] feet run tp @s ^ ^ ^0.6 facing entity @e[tag=tempGrappleTag,limit=1]
+execute if score @s shopItem.Retract matches 2 as @e[type=marker,tag=tempGrappleMarkerTag,limit=1] at @s facing entity @e[tag=tempGrappleTag,limit=1] feet run tp @s ^ ^ ^0.7 facing entity @e[tag=tempGrappleTag,limit=1]
+execute if score @s shopItem.Retract matches 3 as @e[type=marker,tag=tempGrappleMarkerTag,limit=1] at @s facing entity @e[tag=tempGrappleTag,limit=1] feet run tp @s ^ ^ ^0.8 facing entity @e[tag=tempGrappleTag,limit=1]
+execute if score @s shopItem.Retract matches 4 as @e[type=marker,tag=tempGrappleMarkerTag,limit=1] at @s facing entity @e[tag=tempGrappleTag,limit=1] feet run tp @s ^ ^ ^0.9 facing entity @e[tag=tempGrappleTag,limit=1]
+execute if score @s shopItem.Retract matches 5.. as @e[type=marker,tag=tempGrappleMarkerTag,limit=1] at @s facing entity @e[tag=tempGrappleTag,limit=1] feet run tp @s ^ ^ ^1.0 facing entity @e[tag=tempGrappleTag,limit=1]

@@ -15,6 +15,28 @@
           "color": "gray",
           "italic": true
         },
+        [
+          {
+            "text": "Press \"",
+            "color": "yellow",
+            "italic": true
+          },
+          {
+            "keybind":"key.sneak",
+            "color": "yellow",
+            "italic": true
+          },
+          {
+            "text": "\" to instantly release",
+            "color": "yellow",
+            "italic": true
+          }  
+        ],
+        {
+          "text": "the Grappling hook.",
+          "color": "yellow",
+          "italic": true
+        } ,
         {
           "text": "Does not ricochet!",
           "color": "dark_red",
