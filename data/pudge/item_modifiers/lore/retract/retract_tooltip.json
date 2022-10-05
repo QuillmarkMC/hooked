@@ -1,0 +1,25 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Increases the speed that your Hookshot",
+            "color": "gray",
+            "italic": true
+          }          
+        ],
+        {
+          "text": "and Grappling Hook pull their targets.",
+          "color": "gray",
+          "italic": true
+        },
+        {
+          "text": ""
+        }
+      ],
+      "replace": true
+    }
+  ]
+  

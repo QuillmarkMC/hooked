@@ -1,0 +1,30 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Speed: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "$Num1",
+              "objective": "math"
+            },
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "text": " blocks per second",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "replace": false
+    }
+  ]
+  

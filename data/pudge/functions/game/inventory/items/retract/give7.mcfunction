@@ -1,0 +1,10 @@
+item replace entity @s hotbar.7 with bedrock{CustomModelData:107}
+
+#dynamic item lore
+item modify entity @s hotbar.7 pudge:lore/retract/retract_name
+item modify entity @s hotbar.7 pudge:lore/retract/retract_tooltip
+scoreboard players set $Num1 math 10
+scoreboard players set $Num2 math 2
+scoreboard players operation $Num2 math *= @s shopItem.Retract
+scoreboard players operation $Num1 math += $Num2 math
+item modify entity @s hotbar.7 pudge:lore/retract/retract_speed

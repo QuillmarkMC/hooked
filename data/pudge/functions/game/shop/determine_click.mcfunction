@@ -20,6 +20,7 @@ execute store success score $TempHaste shop run clear @s potion{HasteConsumes:1}
 execute store success score $TempRangedAP shop run clear @s potion{RangedAPConsumes:1} 1
 execute store success score $TempExtraHealth shop run clear @s bedrock{ExtraHealthStats:1} 1
 execute store success score $TempGoat shop run clear @s bedrock{GoatAbility:1} 1
+execute store success score $TempRetract shop run clear @s bedrock{RetractAbility:1} 1
 
 #run logic based on what item was selected
 execute if score $TempBackPage shop matches 1.. run scoreboard players set @s shopState 0
@@ -40,6 +41,7 @@ execute if score $TempHaste shop matches 1.. run function pudge:game/shop/click_
 execute if score $TempRangedAP shop matches 1.. run function pudge:game/shop/click_logic/consumes/ranged_ap/click
 execute if score $TempExtraHealth shop matches 1.. run function pudge:game/shop/click_logic/stats/extra_health/click
 execute if score $TempGoat shop matches 1.. run function pudge:game/shop/click_logic/abilities/goat/click
+execute if score $TempRetract shop matches 1.. run function pudge:game/shop/click_logic/abilities/retract/click
 
 #update ender chest inventory
 function pudge:game/shop/inventory/update

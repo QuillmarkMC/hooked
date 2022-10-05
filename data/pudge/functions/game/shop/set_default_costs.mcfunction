@@ -12,3 +12,4 @@ scoreboard players set $HasteCost shop 20
 scoreboard players set $RangedAPCost shop 30
 scoreboard players set $ExtraHealthCost shop 70
 scoreboard players set $GoatCost shop 10
+scoreboard players set $RetractCost shop 45

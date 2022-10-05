@@ -1,0 +1,36 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+      {
+        "text": "Gyro-Balanced Khorium-Infused Retraction Coils",
+        "color": "#33FFB8",
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": " (passive: lvl ",
+        "color": "gray",
+        "bold": false,
+        "italic": true
+      },
+      {
+        "score": {
+          "name": "@s",
+          "objective": "shopItem.Retract"
+        },
+        "color": "gray",
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": ")",
+        "color": "gray",
+        "bold": false,
+        "italic": true
+      }
+    ]
+  }
+]
+  
