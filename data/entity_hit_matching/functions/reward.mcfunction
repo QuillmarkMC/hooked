@@ -8,4 +8,5 @@ execute if entity @s[advancements={entity_hit_matching:on_hit={target=true}}] ru
 
 tag @a[tag=tempReceiverTag,limit=1] remove tempReceiverTag
 tag @a[tag=tempAttackerTag,limit=1] remove tempAttackerTag
+advancement revoke @s only pudge:attack_slime
 advancement revoke @s only entity_hit_matching:on_hit
