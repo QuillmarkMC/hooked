@@ -3,3 +3,5 @@
 scoreboard players operation $GameTime timers = $MaxGameLengthSeconds timers
 #no kills timer
 scoreboard players operation $KillTime timers = $MaxLengthPerKillSeconds timers
+
+schedule function pudge:game/scheduled_timers/seconds 1s
