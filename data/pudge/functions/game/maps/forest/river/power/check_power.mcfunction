@@ -5,4 +5,4 @@ execute if entity @s[advancements={pudge:attack_slime={elytra=true}}] run functi
 execute if entity @s[advancements={pudge:attack_slime={suicide=true}}] run function pudge:game/maps/forest/river/power/suicide/start
 execute if entity @s[advancements={pudge:attack_slime={rapid_fire=true}}] run function pudge:game/maps/forest/river/power/rapid_fire/start
 
-schedule function pudge:general/advancements/revoke 1t
+advancement revoke @s only pudge:attack_slime
