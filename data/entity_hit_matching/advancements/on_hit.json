@@ -42,15 +42,24 @@
         "not_hookarrow": {
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
-                "entity": [],
-                "damage":{
-                    "type": {
-                        "direct_entity": {
-                            "type": "minecraft:arrow",
-                            "nbt": "{Tags:[\"hookArrow\"]}"
+                "entity": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:damage_source_properties",
+                            "entity": "this",
+                            "predicate": {
+                                
+                                    "direct_entity": {
+                                        "type": "minecraft:arrow",
+                                        "nbt": "{Tags:[\"hookArrow\"]}"
+                                        
+                                    }
+                                
+                            }
                         }
                     }
-                }
+                ]
             }
         },
         "grapplearrow": {
@@ -70,15 +79,24 @@
         "not_grapplearrow": {
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
-                "entity": [],
-                "damage":{
-                    "type": {
-                        "direct_entity": {
-                            "type": "minecraft:arrow",
-                            "nbt": "{Tags:[\"grappleArrow\"]}"
+                "entity": [
+                    {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                            "condition": "minecraft:damage_source_properties",
+                            "entity": "this",
+                            "predicate": {
+                                
+                                    "direct_entity": {
+                                        "type": "minecraft:arrow",
+                                        "nbt": "{Tags:[\"grappleArrow\"]}"
+                                        
+                                    }
+                                
+                            }
                         }
                     }
-                }
+                ]
             }
         },
         "bit0": {
