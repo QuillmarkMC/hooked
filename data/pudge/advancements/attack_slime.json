@@ -21,15 +21,20 @@
         "not_hell": {
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
-              "player": [],
-              "damage": {
-                "type": {
-                  "direct_entity": {
-                    "type": "arrow",
-                    "nbt": "{Tags:[\"hookArrow\"]}"
+              "player": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                      "direct_entity": {
+                        "type": "minecraft:arrow",
+                        "nbt": "{Tags:[\"hookArrow\"]}"
+                      }
+                    }
                   }
                 }
-              },
+              ],
               "entity": [
                 {
                   "condition": "minecraft:inverted",
@@ -66,15 +71,20 @@
         "not_gold": {
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
-              "player": [],
-              "damage": {
-                "type": {
-                  "direct_entity": {
-                    "type": "arrow",
-                    "nbt": "{Tags:[\"hookArrow\"]}"
+              "player": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:damage_source_properties",
+                    "predicate": {
+                      "direct_entity": {
+                        "type": "minecraft:arrow",
+                        "nbt": "{Tags:[\"hookArrow\"]}"
+                      }
+                    }
                   }
                 }
-              },
+              ],
               "entity": [
                 {
                   "condition": "minecraft:inverted",
@@ -111,15 +121,20 @@
           "not_hook": {
               "trigger": "minecraft:player_hurt_entity",
               "conditions": {
-                "player": [],
-              "damage": {
-                "type": {
-                  "direct_entity": {
-                    "type": "arrow",
-                    "nbt": "{Tags:[\"hookArrow\"]}"
+                "player": [
+                  {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                      "condition": "minecraft:damage_source_properties",
+                      "predicate": {
+                        "direct_entity": {
+                          "type": "minecraft:arrow",
+                          "nbt": "{Tags:[\"hookArrow\"]}"
+                        }
+                      }
+                    }
                   }
-                }
-              },
+                ],
                 "entity": [
                   {
                     "condition": "minecraft:inverted",
@@ -156,15 +171,20 @@
             "not_elytra": {
                 "trigger": "minecraft:player_hurt_entity",
                 "conditions": {
-                  "player": [],
-              "damage": {
-                "type": {
-                  "direct_entity": {
-                    "type": "arrow",
-                    "nbt": "{Tags:[\"hookArrow\"]}"
-                  }
-                }
-              },
+                  "player": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "minecraft:damage_source_properties",
+                        "predicate": {
+                          "direct_entity": {
+                            "type": "minecraft:arrow",
+                            "nbt": "{Tags:[\"hookArrow\"]}"
+                          }
+                        }
+                      }
+                    }
+                  ],
                   "entity": [
                     {
                       "condition": "minecraft:inverted",
@@ -201,15 +221,20 @@
               "not_suicide": {
                   "trigger": "minecraft:player_hurt_entity",
                   "conditions": {
-                    "player": [],
-              "damage": {
-                "type": {
-                  "direct_entity": {
-                    "type": "arrow",
-                    "nbt": "{Tags:[\"hookArrow\"]}"
-                  }
-                }
-              },
+                    "player": [
+                      {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                          "condition": "minecraft:damage_source_properties",
+                          "predicate": {
+                            "direct_entity": {
+                              "type": "minecraft:arrow",
+                              "nbt": "{Tags:[\"hookArrow\"]}"
+                            }
+                          }
+                        }
+                      }
+                    ],
                     "entity": [
                       {
                         "condition": "minecraft:inverted",
@@ -246,15 +271,20 @@
                 "not_rapid_fire": {
                     "trigger": "minecraft:player_hurt_entity",
                     "conditions": {
-                      "player": [],
-              "damage": {
-                "type": {
-                  "direct_entity": {
-                    "type": "arrow",
-                    "nbt": "{Tags:[\"hookArrow\"]}"
-                  }
-                }
-              },
+                      "player": [
+                        {
+                          "condition": "minecraft:inverted",
+                          "term": {
+                            "condition": "minecraft:damage_source_properties",
+                            "predicate": {
+                              "direct_entity": {
+                                "type": "minecraft:arrow",
+                                "nbt": "{Tags:[\"hookArrow\"]}"
+                              }
+                            }
+                          }
+                        }
+                      ],
                       "entity": [
                         {
                           "condition": "minecraft:inverted",
