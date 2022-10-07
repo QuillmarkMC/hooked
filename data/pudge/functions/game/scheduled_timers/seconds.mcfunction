@@ -12,4 +12,4 @@ execute if score $KillTime timers matches ..0 unless score $GameTime timers matc
 #end game if no online players
 execute if score $OnlinePlayers timers matches ..0 unless score $KillTime timers matches ..0 unless score $GameTime timers matches ..0 run function pudge:lobby/load
 
-execute unless score $KillTime timers matches ..0 unless score $GameTime timers matches ..0 unless score $OnlinePlayers timers matches ..0 run schedule function pudge:game/scheduled_timers/seconds 1s
+execute unless score $KillTime timers matches ..0 unless score $GameTime timers matches ..0 unless score $OnlinePlayers timers matches ..0 unless score $Winner cutscene matches 1.. run schedule function pudge:game/scheduled_timers/seconds 1s
