@@ -10,3 +10,4 @@ execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/unin
 function pudge:game/music/stop_all
 schedule clear pudge:game/music/generate
 schedule clear pudge:game/scheduled_timers/seconds
+schedule clear pudge:game/catchup/seconds

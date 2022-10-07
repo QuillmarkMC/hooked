@@ -27,3 +27,4 @@ function pudge:game/shop/init
 function pudge:game/music/init
 #timers
 function pudge:game/scheduled_timers/init
+function pudge:game/catchup/init

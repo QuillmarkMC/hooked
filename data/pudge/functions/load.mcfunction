@@ -16,6 +16,7 @@ scoreboard players set #-1 math -1
 scoreboard players set #2 math 2
 scoreboard players set #3 math 3
 scoreboard players set #4 math 4
+scoreboard players set #5 math 5
 scoreboard players set #10 math 10
 scoreboard players set #20 math 20
 scoreboard players set #40 math 40
@@ -40,6 +41,8 @@ scoreboard objectives add cutscene dummy
 scoreboard objectives add timers dummy
 scoreboard players set $MaxGameLengthSeconds timers 3600
 scoreboard players set $MaxLengthPerKillSeconds timers 600
+scoreboard players set $MaxCatchupLengthSeconds timers 300
+scoreboard players set $BaseCatchupReward timers 100
 
 ##Game Scoreboards
 #durability
