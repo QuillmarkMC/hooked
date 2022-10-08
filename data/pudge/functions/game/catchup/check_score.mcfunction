@@ -7,5 +7,5 @@ scoreboard players operation $Num1 math -= $Num2 math
 execute if score $Num1 math matches 5.. run scoreboard players set #TempCatchup timers 1
 execute if score $Num1 math matches ..-5 run scoreboard players set #TempCatchup timers 2
 
-execute if score #TempCatchup timers matches 1 run function pudge:game/catchup/reward/red
-execute if score #TempCatchup timers matches 2 run function pudge:game/catchup/reward/blue
+execute if score #TempCatchup timers matches 1 run function pudge:game/catchup/reward/blue
+execute if score #TempCatchup timers matches 2 run function pudge:game/catchup/reward/red
