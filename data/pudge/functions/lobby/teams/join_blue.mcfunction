@@ -1,6 +1,6 @@
 scoreboard players set #Temp lobbyvar 0
 execute store success score #Temp lobbyvar if entity @s[team=blue]
-execute if score #Temp lobbyvar matches 1 run team join spectator
+execute if score #Temp lobbyvar matches 1 run team leave @s
 execute if score #Temp lobbyvar matches 0 run team join blue
 
 execute if score #Temp lobbyvar matches 1 run tellraw @s [{"text": "[!] ","color": "yellow","bold": true},{"text": "You left your team!","color": "white","bold": false}]
