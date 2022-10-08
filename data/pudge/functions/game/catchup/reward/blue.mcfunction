@@ -1,5 +1,4 @@
 # $Num1 initial value is number of kills behind
-scoreboard players operation $Num1 math *= #-1 math
 scoreboard players operation $Num1 math /= #5 math
 scoreboard players operation $Num2 math = $BaseCatchupReward timers
 scoreboard players operation $Num2 math /= #2 math
