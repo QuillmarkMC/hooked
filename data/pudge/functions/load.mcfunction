@@ -41,7 +41,7 @@ scoreboard objectives add cutscene dummy
 scoreboard objectives add timers dummy
 scoreboard players set $MaxGameLengthSeconds timers 3600
 scoreboard players set $MaxLengthPerKillSeconds timers 600
-scoreboard players set $MaxCatchupLengthSeconds timers 300
+scoreboard players set $MaxCatchupLengthSeconds timers 240
 scoreboard players set $BaseCatchupReward timers 100
 
 ##Game Scoreboards
