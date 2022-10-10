@@ -27,10 +27,7 @@ setblock 205 64 -66 air
 function pudge:lobby/settings/display/unlocked/pages/page_selection/back
 function pudge:lobby/settings/display/unlocked/pages/page_selection/page1
 function pudge:lobby/settings/display/unlocked/pages/page_selection/page2
-#shop
-setblock 202 63 -66 oak_wall_sign[facing=south]
-#effects
-setblock 203 63 -66 oak_wall_sign[facing=south]
-#empty
-setblock 204 63 -66 oak_wall_sign[facing=south]
+function pudge:lobby/settings/display/unlocked/pages/page_selection/page3
+function pudge:lobby/settings/display/unlocked/pages/page_selection/page4
+function pudge:lobby/settings/display/unlocked/pages/page_selection/page5
 function pudge:lobby/settings/display/unlocked/pages/page_selection/forward

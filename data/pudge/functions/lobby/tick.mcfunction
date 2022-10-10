@@ -1,5 +1,5 @@
 #triggers for game settings
-execute as @a run function pudge:lobby/trigger
+execute as @a[scores={lobbysigns=1..}] run function pudge:lobby/trigger
 scoreboard players enable @a lobbysigns
 
 #border check
