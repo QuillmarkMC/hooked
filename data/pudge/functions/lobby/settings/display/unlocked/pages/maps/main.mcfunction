@@ -24,13 +24,13 @@ setblock 203 64 -66 air
 setblock 204 64 -66 air
 setblock 205 64 -66 air
 #bottom row (navigation)
-setblock 199 63 -66 oak_wall_sign[facing=south]{GlowingText:true,Text1:'{"clickEvent":{"action":"run_command","value": "trigger lobbysigns set 3"},"text": ""}',Text2:'{"text":"Previous Page","color":"blue"}',Text3:'{"text":"<-----","color":"gray"}',Text4:""}
+function pudge:lobby/settings/display/unlocked/pages/page_selection/back
 function pudge:lobby/settings/display/unlocked/pages/page_selection/page1
 function pudge:lobby/settings/display/unlocked/pages/page_selection/page2
 #shop
-setblock 202 63 -66 oak_wall_sign
+setblock 202 63 -66 oak_wall_sign[facing=south]
 #effects
-setblock 203 63 -66 oak_wall_sign
+setblock 203 63 -66 oak_wall_sign[facing=south]
 #empty
-setblock 204 63 -66 oak_wall_sign
-setblock 205 63 -66 oak_wall_sign[facing=south]{GlowingText:true,Text1:'{"clickEvent":{"action":"run_command","value": "trigger lobbysigns set 4"},"text": ""}',Text2:'{"text":"Next Page","color":"blue"}',Text3:'{"text":"----->","color":"gray"}',Text4:""}
+setblock 204 63 -66 oak_wall_sign[facing=south]
+function pudge:lobby/settings/display/unlocked/pages/page_selection/forward
