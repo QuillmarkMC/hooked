@@ -47,7 +47,6 @@ scoreboard players set $MaxLengthPerKillSeconds timers 600
 scoreboard players set $MaxCatchupLengthSeconds timers 240
 scoreboard players set $BaseCatchupReward timers 100
 
-##Game Scoreboards
 #durability
 scoreboard objectives add durability dummy
 scoreboard players set #-1 durability -1

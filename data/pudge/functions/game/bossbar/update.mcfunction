@@ -1,1 +1,2 @@
-bossbar set score name [{"text":"Red: ","color":"red"},{"score":{"name":"$RedScore","objective":"var"},"color":"white"},{"text":"       "},{"text":"Kills to Win: ","color":"#999999"},{"score":{"name":"$TotalRequiredKills","objective":"var"},"color":"white"},{"text":"       "},{"text":"Blue: ","color":"blue"},{"score":{"name":"$BlueScore","objective":"var"},"color":"white"}]
+execute if score $VictoryType lobbysigns matches 1 run function pudge:game/bossbar/display/kills
+execute unless score $VictoryType lobbysigns matches 1 run function pudge:game/bossbar/display/time

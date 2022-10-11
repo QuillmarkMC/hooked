@@ -1,0 +1,1 @@
+bossbar set score name [{"text":"Red: ","color":"red"},{"score":{"name":"$RedScore","objective":"var"},"color":"white"},{"text":"       "},{"text":"Kills to Win: ","color":"#999999"},{"score":{"name":"$TotalRequiredKills","objective":"var"},"color":"white"},{"text":"       "},{"text":"Blue: ","color":"blue"},{"score":{"name":"$BlueScore","objective":"var"},"color":"white"}]
