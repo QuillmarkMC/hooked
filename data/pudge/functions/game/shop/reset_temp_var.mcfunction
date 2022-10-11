@@ -16,3 +16,4 @@ scoreboard players set $TempRangedAP shop 0
 scoreboard players set $TempExtraHealth shop 0
 scoreboard players set $TempGoat shop 0
 scoreboard players set $TempRetract shop 0
+scoreboard players set $TempUnavailable shop 0
