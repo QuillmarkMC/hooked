@@ -11,7 +11,7 @@ setblock 205 66 -66 oak_wall_sign[facing=south]
 setblock 199 65 -66 air
 setblock 200 65 -66 air
 setblock 201 65 -66 air
-setblock 202 65 -66 air
+function pudge:lobby/settings/display/unlocked/pages/maps/forest
 setblock 203 65 -66 air
 setblock 204 65 -66 air
 setblock 205 65 -66 air
@@ -19,7 +19,7 @@ setblock 205 65 -66 air
 setblock 199 64 -66 air
 setblock 200 64 -66 air
 setblock 201 64 -66 air
-function pudge:lobby/settings/display/unlocked/pages/maps/forest
+setblock 202 64 -66 air
 setblock 203 64 -66 air
 setblock 204 64 -66 air
 setblock 205 64 -66 air

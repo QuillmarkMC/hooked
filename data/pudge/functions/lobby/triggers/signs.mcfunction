@@ -12,5 +12,7 @@ execute if score @s lobbysigns matches 101 run function pudge:lobby/settings/act
 execute if score @s lobbysigns matches 102 run function pudge:lobby/settings/actions/general/victory_time/check_input
 execute if score @s lobbysigns matches 200 run function pudge:lobby/settings/actions/maps/change
 
+execute at @s run playsound block.wooden_button.click_on ambient @s ~ ~ ~ 1 0.75
+
 function pudge:lobby/settings/display/update
 scoreboard players set @s lobbysigns 0
