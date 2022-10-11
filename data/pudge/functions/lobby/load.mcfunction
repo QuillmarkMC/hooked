@@ -19,5 +19,5 @@ scoreboard players set $TipTimer lobbyvar 200
 scoreboard players reset $PauseTips countdown
 scoreboard players set $LastTip lobbyvar -1
 
-#default config options
-function pudge:lobby/settings/init
+#reset config options
+#function pudge:lobby/settings/init

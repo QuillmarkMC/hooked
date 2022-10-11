@@ -38,7 +38,6 @@ scoreboard objectives add lobbysigns.default dummy "Default Settings"
 scoreboard objectives add value trigger
 scoreboard objectives add customValueTimer dummy
 scoreboard players set $CustomTimeoutLength customValueTimer 300
-function pudge:lobby/settings/defaults
 scoreboard objectives add lastDamagedBy dummy
 scoreboard objectives add cutscene dummy
 #timers
@@ -198,9 +197,6 @@ bossbar add score {"text":""}
 #lobby
 forceload add 185 -39 218 -71
 
-##NPC datapack setup
-
-
 #match ID for handling DCs
 scoreboard objectives add matchID dummy
 execute unless score $Global matchID matches 1.. run scoreboard players set $Global matchID 0
@@ -210,6 +206,8 @@ scoreboard objectives add leave minecraft.custom:minecraft.leave_game
 
 #init state to lobby
 execute if score $State var matches 0 run function pudge:lobby/load
+function pudge:lobby/settings/defaults
+execute if score $State var matches 0 run function pudge:lobby/settings/init
 
 ##Teams
 team add red

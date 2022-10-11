@@ -6,8 +6,7 @@ scoreboard players set $Locked lobbysigns.default 0
 scoreboard players set $VictoryType lobbysigns.default 1
 scoreboard players set $TotalRequiredKills lobbysigns.default 60
 scoreboard players set $TotalTimeMinutes lobbysigns.default 20
-scoreboard players set $VictoryTime.State lobbysigns 0
-scoreboard players set $VictoryKills.State lobbysigns 0
+scoreboard players set $GameMode lobbysigns.default 1
 
 #maps
 scoreboard players set $LoadMap lobbysigns.default 1
