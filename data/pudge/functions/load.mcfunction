@@ -8,7 +8,6 @@ scoreboard players set $Default maxHealth 200
 scoreboard objectives setdisplay belowName displayHealth
 scoreboard objectives add healthRegen dummy
 scoreboard players set $RegenTime healthRegen 20
-scoreboard players set $TotalRequiredKills var 60
 scoreboard objectives add resist minecraft.custom:minecraft.damage_resisted
 scoreboard objectives add math dummy
 scoreboard players set #SnowballFix math 1
@@ -35,6 +34,9 @@ scoreboard players set $RegenTick regenTimer 20
 scoreboard objectives add lobbyvar dummy
 scoreboard objectives add countdown dummy
 scoreboard objectives add lobbysigns trigger
+scoreboard objectives add lobbysigns.default dummy "Default Settings"
+scoreboard objectives add value trigger
+function pudge:lobby/settings/defaults
 scoreboard objectives add lastDamagedBy dummy
 scoreboard objectives add cutscene dummy
 #timers

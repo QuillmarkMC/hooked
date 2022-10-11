@@ -16,9 +16,9 @@ setblock 203 65 -66 air
 setblock 204 65 -66 air
 setblock 205 65 -66 air
 #3rd row
-setblock 199 64 -66 air
-setblock 200 64 -66 air
-setblock 201 64 -66 air
+#setblock 199 64 -66 air gamemode
+function pudge:lobby/settings/display/unlocked/pages/general/victory_type
+function pudge:lobby/settings/display/unlocked/pages/general/victory_condition
 setblock 202 64 -66 oak_wall_sign[facing=south]{GlowingText:true,Color:"blue",Text1:'{"clickEvent":{"action":"run_command","value": "trigger lobbysigns set 1"},"text": ""}',Text2:'{"text":"Start Game","color":"dark_green"}',Text3:'{"text":"[Right Click]","color":"white"}',Text4:""}
 setblock 203 64 -66 air
 setblock 204 64 -66 air

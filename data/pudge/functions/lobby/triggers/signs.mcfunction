@@ -7,7 +7,10 @@ execute if score @s lobbysigns matches 6 run function pudge:lobby/settings/actio
 execute if score @s lobbysigns matches 7 run function pudge:lobby/settings/actions/navigation/jump_to_shop1
 execute if score @s lobbysigns matches 8 run function pudge:lobby/settings/actions/navigation/jump_to_shop2
 execute if score @s lobbysigns matches 9 run function pudge:lobby/settings/actions/navigation/jump_to_items
+execute if score @s lobbysigns matches 100 run function pudge:lobby/settings/actions/general/victory_type
+execute if score @s lobbysigns matches 101 run function pudge:lobby/settings/actions/general/victory_kills/check_input
+execute if score @s lobbysigns matches 102 run function pudge:lobby/settings/actions/general/victory_time/check_input
 execute if score @s lobbysigns matches 200 run function pudge:lobby/settings/actions/maps/change
 
-execute if score @s lobbysigns matches 1.. run function pudge:lobby/settings/display/update
+function pudge:lobby/settings/display/update
 scoreboard players set @s lobbysigns 0
