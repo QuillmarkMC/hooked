@@ -25,6 +25,9 @@ clear @s
 effect clear @s
 xp set @s 0 points
 xp set @s 0 levels
+scoreboard players reset @s lobbysigns
+scoreboard players reset @s value
+scoreboard players reset @s customValueTimer
 scoreboard players operation @s maxHealth = $Default maxHealth
 scoreboard players operation @s health = @s maxHealth
 scoreboard players set @s playerKills 0

@@ -3,3 +3,4 @@ kill @e[type=armor_stand,tag=teamSelect]
 kill @e[type=villager,tag=teamSelect]
 
 scoreboard players reset @a lobbysigns
+scoreboard players reset @a value
