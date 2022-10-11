@@ -1,0 +1,25 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Gold: ",
+            "color": "gold",
+            "italic": false
+          },
+          {
+            "score": {
+                "name": "$TempGoldDisplay",
+                "objective": "shop"
+              },
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "replace": false
+    }
+  ]
+  
