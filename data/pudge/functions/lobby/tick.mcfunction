@@ -1,7 +1,8 @@
 #triggers for game settings
 execute as @a[scores={lobbysigns=1..}] run function pudge:lobby/triggers/signs
 scoreboard players enable @a lobbysigns
-execute as @a[scores={value=-2147483648..2147483647}] run function pudge:lobby/triggers/value
+execute as @a[scores={value=1..}] run function pudge:lobby/triggers/value
+execute as @a[scores={customValueTimer=1..}] run function pudge:lobby/triggers/value_timer
 
 #border check
 execute as @a[predicate=!pudge:lobby/lobby,gamemode=adventure] run tp @s @e[type=marker,tag=lobbySpawn,limit=1]

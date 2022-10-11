@@ -7,6 +7,7 @@ gamemode adventure
 team leave @s
 tag @s remove playerReset
 function pudge:general/player/remove_game_tags
+function pudge:general/player/remove_lobby_tags
 
 #inventory slot management
 scoreboard players set @s hotbar.1.ID 0

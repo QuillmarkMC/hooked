@@ -6,3 +6,4 @@ execute if score $Temp lobbysigns matches 1 run tellraw @s [{"text": ""},{"text"
 execute if score $Temp lobbysigns matches 0 run tag @s add editing
 execute if score $Temp lobbysigns matches 0 run tag @s add editing.VictoryKills
 execute if score $Temp lobbysigns matches 0 run scoreboard players enable @s value
+execute if score $Temp lobbysigns matches 0 run scoreboard players operation @s customValueTimer = $CustomTimeoutLength customValueTimer

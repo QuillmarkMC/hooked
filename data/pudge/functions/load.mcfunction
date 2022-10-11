@@ -36,6 +36,8 @@ scoreboard objectives add countdown dummy
 scoreboard objectives add lobbysigns trigger
 scoreboard objectives add lobbysigns.default dummy "Default Settings"
 scoreboard objectives add value trigger
+scoreboard objectives add customValueTimer dummy
+scoreboard players set $CustomTimeoutLength customValueTimer 300
 function pudge:lobby/settings/defaults
 scoreboard objectives add lastDamagedBy dummy
 scoreboard objectives add cutscene dummy
