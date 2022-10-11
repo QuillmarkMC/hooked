@@ -1,0 +1,1 @@
+tellraw @s [{"text": ""},{"text": "[!] ","color": "light_purple","bold": true},{"text":"Click "},{"text":"here","bold": true,"underlined": true,"color": "yellow","hoverEvent":{"action":"show_text","contents":[{"text":"Click me!","italic":true,"color":"yellow"}]}},{"text":" to view the Hook, Line, & Creeper map trailer!"}]

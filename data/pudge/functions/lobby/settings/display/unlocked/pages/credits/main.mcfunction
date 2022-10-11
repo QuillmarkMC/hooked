@@ -17,9 +17,9 @@ setblock 204 65 -66 player_wall_head[facing=south]{SkullOwner:{Name:"Soccby"}}
 setblock 205 65 -66 air
 #3rd row
 setblock 199 64 -66 air
-setblock 200 64 -66 oak_wall_sign[facing=south]{Text1:'{"text":"Strongis13","color":"blue"}',Text2:'{"text":"Designer","color":"light_gray"}',Text3:'{"text":"Programming","color":"light_gray"}',Text4:'{"text":"Game Balance","color":"light_gray"}'}
+setblock 200 64 -66 oak_wall_sign[facing=south]{Text1:'{"text":"Strongis13","color":"blue"}',Text2:'{"text":"Programmer","color":"light_gray"}',Text3:'{"text":"Game Balance","color":"light_gray"}',Text4:''}
 setblock 201 64 -66 air
-setblock 202 64 -66 oak_wall_sign[facing=south]{GlowingText:true,Color:"light_gray",Text1:'{"text":"Click here to","color":"white","bold": true}',Text2:'{"text":"watch this","color":"white","bold": true}',Text3:'{"text":"map\'s trailer!","color":"white","bold": true}',Text4:'{"text":"","clickEvent":{"action":"open_url","value":"https://www.youtube.com/watch?v=Twai-14iz_I&list=PL7D-41CZ_KECQHe6bxTRFhKEUEnF6IYjl&index=2"}}'}
+setblock 202 64 -66 oak_wall_sign[facing=south]{GlowingText:true,Color:"light_gray",Text1:'{"text":"Click here to","color":"white","bold": true}',Text2:'{"text":"watch this","color":"white","bold": true}',Text3:'{"text":"map\'s trailer!","color":"white","bold": true}',Text4:'{"text":"","clickEvent":{"action":"run_command","value": "trigger lobbysigns set 500"}}'}
 setblock 203 64 -66 air
 setblock 204 64 -66 oak_wall_sign[facing=south]{Text1:'{"text":"Soccby","color":"blue"}',Text2:'{"text":"Map Builder","color":"light_gray"}',Text3:'{"text":"Game Balance","color":"light_gray"}',Text4:''}
 setblock 205 64 -66 air
