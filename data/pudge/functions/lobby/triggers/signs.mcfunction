@@ -6,7 +6,7 @@ execute if score @s lobbysigns matches 5 run function pudge:lobby/settings/actio
 execute if score @s lobbysigns matches 6 run function pudge:lobby/settings/actions/navigation/jump_to_maps
 execute if score @s lobbysigns matches 7 run function pudge:lobby/settings/actions/navigation/jump_to_shop1
 execute if score @s lobbysigns matches 8 run function pudge:lobby/settings/actions/navigation/jump_to_shop2
-execute if score @s lobbysigns matches 9 run function pudge:lobby/settings/actions/navigation/jump_to_items
+execute if score @s lobbysigns matches 9 run function pudge:lobby/settings/actions/navigation/jump_to_credits
 execute if score @s lobbysigns matches 100 run function pudge:lobby/settings/actions/general/victory_type
 execute if score @s lobbysigns matches 101 run function pudge:lobby/settings/actions/general/victory_kills/check_input
 execute if score @s lobbysigns matches 102 run function pudge:lobby/settings/actions/general/victory_time/check_input
