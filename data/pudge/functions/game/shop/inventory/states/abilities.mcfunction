@@ -1,12 +1,19 @@
 #update the state of all items in the ender chest inventory for @s (player)
 #execute unless slot is correct run function reset_slot (repeat for every item in shop)
-execute unless data entity @s EnderItems[{Slot:0b,id:"minecraft:bedrock",tag:{CreeperAbility:1}}] run function pudge:game/shop/inventory/items/abilities/creeper
-execute unless data entity @s EnderItems[{Slot:1b,id:"minecraft:bedrock",tag:{TotemAbility:1}}] run function pudge:game/shop/inventory/items/abilities/totem
-execute unless data entity @s EnderItems[{Slot:2b,id:"minecraft:bedrock",tag:{KnockbackAbility:1}}] run function pudge:game/shop/inventory/items/abilities/knockback
-execute unless data entity @s EnderItems[{Slot:3b,id:"minecraft:bedrock",tag:{GrappleAbility:1}}] run function pudge:game/shop/inventory/items/abilities/grapple
-execute unless data entity @s EnderItems[{Slot:4b,id:"minecraft:bedrock",tag:{LifestealAbility:1}}] run function pudge:game/shop/inventory/items/abilities/lifesteal
-execute unless data entity @s EnderItems[{Slot:5b,id:"minecraft:bedrock",tag:{GoatAbility:1}}] run function pudge:game/shop/inventory/items/abilities/goat
-execute unless data entity @s EnderItems[{Slot:6b,id:"minecraft:bedrock",tag:{RetractAbility:1}}] run function pudge:game/shop/inventory/items/abilities/retract
+#execute unless data entity @s EnderItems[{Slot:0b,id:"minecraft:bedrock",tag:{CreeperAbility:1}}] run function pudge:game/shop/inventory/items/abilities/creeper
+#execute unless data entity @s EnderItems[{Slot:1b,id:"minecraft:bedrock",tag:{TotemAbility:1}}] run function pudge:game/shop/inventory/items/abilities/totem
+#execute unless data entity @s EnderItems[{Slot:2b,id:"minecraft:bedrock",tag:{KnockbackAbility:1}}] run function pudge:game/shop/inventory/items/abilities/knockback
+#execute unless data entity @s EnderItems[{Slot:3b,id:"minecraft:bedrock",tag:{GrappleAbility:1}}] run function pudge:game/shop/inventory/items/abilities/grapple
+#execute unless data entity @s EnderItems[{Slot:4b,id:"minecraft:bedrock",tag:{LifestealAbility:1}}] run function pudge:game/shop/inventory/items/abilities/lifesteal
+#execute unless data entity @s EnderItems[{Slot:5b,id:"minecraft:bedrock",tag:{GoatAbility:1}}] run function pudge:game/shop/inventory/items/abilities/goat
+#execute unless data entity @s EnderItems[{Slot:6b,id:"minecraft:bedrock",tag:{RetractAbility:1}}] run function pudge:game/shop/inventory/items/abilities/retract
+function pudge:game/shop/inventory/items/abilities/creeper
+function pudge:game/shop/inventory/items/abilities/totem
+function pudge:game/shop/inventory/items/abilities/knockback
+function pudge:game/shop/inventory/items/abilities/grapple
+function pudge:game/shop/inventory/items/abilities/lifesteal
+function pudge:game/shop/inventory/items/abilities/goat
+function pudge:game/shop/inventory/items/abilities/retract
 item replace entity @s enderchest.7 with air
 item replace entity @s enderchest.8 with air
 item replace entity @s enderchest.9 with air

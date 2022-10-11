@@ -1,5 +1,6 @@
 #tick power up spawns in the river
-execute unless score $HellActive river matches 1.. run scoreboard players remove $RiverPowerSpawn river 1
+execute if score $GameMode var matches 1 unless score $HellActive river matches 1.. run scoreboard players remove $RiverPowerSpawn river 1
+execute if score $GameMode var matches -1 run function pudge:game/maps/forest/river/gamemode/rapid_fire_tick
 execute if score $RiverPowerSpawn river matches ..0 run function pudge:game/maps/forest/river/spawn/pick_side
 execute if score $RiverPowerSpawn river matches ..0 run scoreboard players operation $RiverPowerSpawn river = $RiverPowerSpawnDelay river
 

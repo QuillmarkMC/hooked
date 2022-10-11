@@ -1,10 +1,15 @@
 #update the state of all items in the ender chest inventory for @s (player)
 #execute unless slot is correct run function reset_slot (repeat for every item in shop)
-execute unless data entity @s EnderItems[{Slot:0b,id:"minecraft:bedrock",tag:{HookCDStats:1}}] run function pudge:game/shop/inventory/items/stats/hook_cd
-execute unless data entity @s EnderItems[{Slot:1b,id:"minecraft:bedrock",tag:{HookDamageStats:1}}] run function pudge:game/shop/inventory/items/stats/hook_damage
-execute unless data entity @s EnderItems[{Slot:2b,id:"minecraft:bedrock",tag:{BounceAbility:1}}] run function pudge:game/shop/inventory/items/stats/bounce
-execute unless data entity @s EnderItems[{Slot:3b,id:"minecraft:bedrock",tag:{MeleeDamageStats:1}}] run function pudge:game/shop/inventory/items/stats/melee_damage
-execute unless data entity @s EnderItems[{Slot:4b,id:"minecraft:bedrock",tag:{ExtraHealthStats:1}}] run function pudge:game/shop/inventory/items/stats/extra_health
+#execute unless data entity @s EnderItems[{Slot:0b,id:"minecraft:bedrock",tag:{HookCDStats:1}}] run function pudge:game/shop/inventory/items/stats/hook_cd
+#execute unless data entity @s EnderItems[{Slot:1b,id:"minecraft:bedrock",tag:{HookDamageStats:1}}] run function pudge:game/shop/inventory/items/stats/hook_damage
+#execute unless data entity @s EnderItems[{Slot:2b,id:"minecraft:bedrock",tag:{BounceAbility:1}}] run function pudge:game/shop/inventory/items/stats/bounce
+#execute unless data entity @s EnderItems[{Slot:3b,id:"minecraft:bedrock",tag:{MeleeDamageStats:1}}] run function pudge:game/shop/inventory/items/stats/melee_damage
+#execute unless data entity @s EnderItems[{Slot:4b,id:"minecraft:bedrock",tag:{ExtraHealthStats:1}}] run function pudge:game/shop/inventory/items/stats/extra_health
+function pudge:game/shop/inventory/items/stats/hook_cd
+function pudge:game/shop/inventory/items/stats/hook_damage
+function pudge:game/shop/inventory/items/stats/bounce
+function pudge:game/shop/inventory/items/stats/melee_damage
+function pudge:game/shop/inventory/items/stats/extra_health
 item replace entity @s enderchest.5 with air
 item replace entity @s enderchest.6 with air
 item replace entity @s enderchest.7 with air

@@ -16,9 +16,9 @@ function pudge:lobby/settings/display/unlocked/pages/maps/forest
 #setblock 204 65 -66 air
 #setblock 205 65 -66 air
 #3rd row
-#setblock 199 64 -66 air
-#setblock 200 64 -66 air
-#setblock 201 64 -66 air
+#setblock 199 64 -66 air starting gold
+#setblock 200 64 -66 air base bounty
+#setblock 201 64 -66 air respawn time
 #setblock 202 64 -66 air
 #setblock 203 64 -66 air
 #setblock 204 64 -66 air
