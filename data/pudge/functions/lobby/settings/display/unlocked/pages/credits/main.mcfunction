@@ -19,7 +19,7 @@ setblock 205 65 -66 air
 setblock 199 64 -66 air
 setblock 200 64 -66 oak_wall_sign[facing=south]{GlowingText:true,Color:"white",Text1:'{"text":"Strongis13","color":"aqua"}',Text2:'{"text":"Programmer","color":"light_gray"}',Text3:'{"text":"Game Balance","color":"light_gray"}',Text4:''}
 setblock 201 64 -66 air
-setblock 202 64 -66 oak_wall_sign[facing=south]{GlowingText:true,Color:"light_gray",Text1:'{"text":"Click here to","color":"white","bold": true}',Text2:'{"text":"watch this","color":"white","bold": true}',Text3:'{"text":"map\'s trailer!","color":"white","bold": true}',Text4:'{"text":"","clickEvent":{"action":"run_command","value": "trigger lobbysigns set 500"}}'}
+setblock 202 64 -66 oak_wall_sign[facing=south]{GlowingText:true,Color:"light_gray",Text1:'[{"text":"Click here ","color":"yellow"},{"text":"to","color":"white"}]',Text2:'{"text":"watch this","color":"white"}',Text3:'{"text":"map\'s trailer!","color":"white"}',Text4:'{"text":"","clickEvent":{"action":"run_command","value": "trigger lobbysigns set 500"}}'}
 setblock 203 64 -66 air
 setblock 204 64 -66 oak_wall_sign[facing=south]{GlowingText:true,Color:"white",Text1:'{"text":"Soccby","color":"aqua"}',Text2:'{"text":"Builder","color":"light_gray"}',Text3:'{"text":"Game Balance","color":"light_gray"}',Text4:''}
 setblock 205 64 -66 air
