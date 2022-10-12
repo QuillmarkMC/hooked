@@ -16,7 +16,7 @@ execute if score @s lobbysigns matches 105 run function pudge:lobby/settings/act
 execute if score @s lobbysigns matches 200 run function pudge:lobby/settings/actions/maps/change
 execute if score @s lobbysigns matches 500 run function pudge:lobby/settings/actions/credits/trailer
 
-execute at @s run playsound block.wooden_button.click_on ambient @s ~ ~ ~ 0.75 0.75
+execute unless score @s lobbysigns matches 1..2 at @s run playsound block.wooden_button.click_on ambient @s ~ ~ ~ 0.75 0.75
 
 function pudge:lobby/settings/display/update
 scoreboard players set @s lobbysigns 0
