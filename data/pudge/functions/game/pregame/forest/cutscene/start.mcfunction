@@ -2,8 +2,8 @@
 gamemode spectator @a
 #summon cameras at starting positions
 summon armor_stand 54 73 58 {Tags:["introCutscene","introCam1"],Marker:1b,Invisible:true,Silent:true,Rotation:[-152.4f,12.0f]}
-summon marker 94 73 -18 {Tags:["introCutscene","introCam1","introCam1TPTarget"]}
-summon marker 61 65 -18 {Tags:["introCutscene","introCam1","introCam1FacingTarget"],Rotation:[44.0f,0.0f]}
+summon marker 94 69 -18 {Tags:["introCutscene","introCam1","introCam1TPTarget"]}
+summon marker 61 69 -18 {Tags:["introCutscene","introCam1","introCam1FacingTarget"],Rotation:[44.0f,0.0f]}
 
 summon armor_stand 56 59 23 {Tags:["introCutscene","introCam2"],Marker:1b,Invisible:true,Silent:true,Rotation:[180.0f,20.0f]}
 summon marker 56 59 19 {Tags:["introCutscene","introCam2","introCam2FacingTarget"]}
