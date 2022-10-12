@@ -14,5 +14,7 @@ scoreboard players set $Soundtrack music 0
 #maps
 scoreboard players set $LoadMap var 1
 
+#shop1+2
+function pudge:game/shop/reset_costs
 
 function pudge:lobby/settings/display/update
