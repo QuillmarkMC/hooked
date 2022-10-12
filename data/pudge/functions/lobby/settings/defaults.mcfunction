@@ -10,3 +10,6 @@ scoreboard players set $GameMode lobbysigns.default 1
 
 #maps
 scoreboard players set $LoadMap lobbysigns.default 1
+
+#shop
+function pudge:game/shop/set_default_costs

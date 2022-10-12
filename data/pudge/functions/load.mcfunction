@@ -127,6 +127,7 @@ scoreboard players set $StartingGold gold 30
 scoreboard players set $TeamkillPunishment gold 10
 scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
 scoreboard objectives add dropPotion minecraft.dropped:minecraft.potion
+
 #kill bounty
 scoreboard objectives add bounty dummy
 scoreboard players set $BaseBounty var 20

@@ -1,5 +1,5 @@
 #stop all current songs in case of overlap
-function pudge:game/music/stop_all
+function pudge:game/music/playlist/default/stop_all
 
 #play song based on rng
 execute if score $out rng matches 0 as @a at @s run playsound game.music.sandstorm record @s
@@ -22,7 +22,7 @@ execute if score $out rng matches 16 as @a at @s run playsound game.music.lament
 execute if score $out rng matches 17 as @a at @s run playsound game.music.brain_power record @s
 
 #advancement display
-function pudge:game/music/display
+function pudge:game/music/playlist/default/display
 
 #update last played variables
 scoreboard players operation $LastPlayed10 music = $LastPlayed9 music
@@ -37,7 +37,7 @@ scoreboard players operation $LastPlayed2 music = $LastPlayed1 music
 scoreboard players operation $LastPlayed1 music = $out rng
 
 #schedule next song based on song selected
-function pudge:game/music/queue_next
+function pudge:game/music/playlist/default/queue_next
 
 #dont create infinite loop in generate function
 scoreboard players set #Temp music 1

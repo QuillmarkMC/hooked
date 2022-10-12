@@ -1,0 +1,21 @@
+#schedule new song to play just when current song ends
+execute if score $out rng matches 0 run schedule function pudge:game/music/generate 6321t
+execute if score $out rng matches 1 run schedule function pudge:game/music/generate 5247t
+execute if score $out rng matches 2 run schedule function pudge:game/music/generate 5143t
+execute if score $out rng matches 3 run schedule function pudge:game/music/generate 4823t
+execute if score $out rng matches 4 run schedule function pudge:game/music/generate 5229t
+execute if score $out rng matches 5 run schedule function pudge:game/music/generate 3815t
+execute if score $out rng matches 6 run schedule function pudge:game/music/generate 5438t
+execute if score $out rng matches 7 run schedule function pudge:game/music/generate 5142t
+execute if score $out rng matches 8 run schedule function pudge:game/music/generate 6751t
+execute if score $out rng matches 9 run schedule function pudge:game/music/generate 6331t
+execute if score $out rng matches 10 run schedule function pudge:game/music/generate 4881t
+execute if score $out rng matches 11 run schedule function pudge:game/music/generate 6067t
+execute if score $out rng matches 12 run schedule function pudge:game/music/generate 7260t
+execute if score $out rng matches 13 run schedule function pudge:game/music/generate 5665t
+execute if score $out rng matches 14 run schedule function pudge:game/music/generate 4537t
+execute if score $out rng matches 15 run schedule function pudge:game/music/generate 5703t
+execute if score $out rng matches 16 run schedule function pudge:game/music/generate 5659t
+execute if score $out rng matches 17 run schedule function pudge:game/music/generate 5500t
+execute if score $out rng matches 18 run schedule function pudge:game/music/generate 4239t
+execute if score $out rng matches 19 run schedule function pudge:game/music/generate 3828t
