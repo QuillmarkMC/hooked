@@ -14,6 +14,14 @@ execute if score @s lobbysigns matches 103 run function pudge:lobby/settings/act
 execute if score @s lobbysigns matches 104 run function pudge:lobby/settings/actions/general/gamemode
 execute if score @s lobbysigns matches 105 run function pudge:lobby/settings/actions/general/soundtrack
 execute if score @s lobbysigns matches 200 run function pudge:lobby/settings/actions/maps/change
+execute if score @s lobbysigns matches 300 run function pudge:lobby/settings/actions/shop1/hook_cd/check_input
+execute if score @s lobbysigns matches 301 run function pudge:lobby/settings/actions/shop1/hook_damage/check_input
+execute if score @s lobbysigns matches 302 run function pudge:lobby/settings/actions/shop1/bounce/check_input
+execute if score @s lobbysigns matches 303 run function pudge:lobby/settings/actions/shop1/melee_damage/check_input
+execute if score @s lobbysigns matches 304 run function pudge:lobby/settings/actions/shop1/extra_health/check_input
+execute if score @s lobbysigns matches 305 run function pudge:lobby/settings/actions/shop1/heal/check_input
+execute if score @s lobbysigns matches 306 run function pudge:lobby/settings/actions/shop1/haste/check_input
+execute if score @s lobbysigns matches 307 run function pudge:lobby/settings/actions/shop1/ranged_ap/check_input
 execute if score @s lobbysigns matches 500 run function pudge:lobby/settings/actions/credits/trailer
 
 execute unless score @s lobbysigns matches 1..2 at @s run playsound block.wooden_button.click_on ambient @s ~ ~ ~ 0.75 0.75
