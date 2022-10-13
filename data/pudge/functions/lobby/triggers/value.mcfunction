@@ -8,6 +8,13 @@ execute if entity @s[tag=editing.ExtraHealth] run function pudge:lobby/settings/
 execute if entity @s[tag=editing.Heal] run function pudge:lobby/settings/custom_value/shop1/heal
 execute if entity @s[tag=editing.Haste] run function pudge:lobby/settings/custom_value/shop1/haste
 execute if entity @s[tag=editing.RangedAP] run function pudge:lobby/settings/custom_value/shop1/ranged_ap
+execute if entity @s[tag=editing.Creeper] run function pudge:lobby/settings/custom_value/shop2/creeper
+execute if entity @s[tag=editing.Totem] run function pudge:lobby/settings/custom_value/shop2/totem
+execute if entity @s[tag=editing.Knockback] run function pudge:lobby/settings/custom_value/shop2/knockback
+execute if entity @s[tag=editing.Grapple] run function pudge:lobby/settings/custom_value/shop2/grapple
+execute if entity @s[tag=editing.Lifesteal] run function pudge:lobby/settings/custom_value/shop2/lifesteal
+execute if entity @s[tag=editing.Goat] run function pudge:lobby/settings/custom_value/shop2/goat
+execute if entity @s[tag=editing.Retract] run function pudge:lobby/settings/custom_value/shop2/retract
 
 execute at @s run playsound entity.experience_orb.pickup ambient @s ~ ~ ~
 function pudge:lobby/settings/display/update

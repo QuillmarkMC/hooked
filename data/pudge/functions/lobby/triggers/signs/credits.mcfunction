@@ -1,0 +1,1 @@
+execute if score @s lobbysigns matches 500 run function pudge:lobby/settings/actions/credits/trailer
