@@ -5,6 +5,6 @@ execute if score $Temp lobbysigns matches 1 run tellraw @s [{"text": ""},{"text"
 execute at @s run playsound block.note_block.pling ambient @s ~ ~ ~
 
 execute if score $Temp lobbysigns matches 0 run tag @s add editing
-execute if score $Temp lobbysigns matches 0 run tag @s add editing.StartingGold
+execute if score $Temp lobbysigns matches 0 run tag @s add editing.IncomeCycle
 execute if score $Temp lobbysigns matches 0 run scoreboard players enable @s value
 execute if score $Temp lobbysigns matches 0 run scoreboard players operation @s customValueTimer = $CustomTimeoutLength customValueTimer

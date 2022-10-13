@@ -13,11 +13,11 @@ scoreboard players set $Soundtrack music 0
 
 #gameplay
 scoreboard players set $LoadMap var 1
-execute store result score $IncomeCycleSeconds lobbysigns run scoreboard players operation $IncomeCycle shop = $IncomeCycle lobbysigns.default
+execute store result score $IncomeCycleSeconds lobbysigns run scoreboard players operation $IncomeCycle gold = $IncomeCycle lobbysigns.default
 scoreboard players operation $IncomeCycleSeconds lobbysigns /= #20 math
-scoreboard players operation $IncomeAmount shop = $IncomeAmount lobbysigns.default
-scoreboard players operation $StartingGold shop = $StartingGold lobbysigns.default
-scoreboard players operation $TeamkillPunishment shop = TeamkillPunishment lobbysigns.default
+scoreboard players operation $IncomeAmount gold = $IncomeAmount lobbysigns.default
+scoreboard players operation $StartingGold gold = $StartingGold lobbysigns.default
+scoreboard players operation $TeamkillPunishment gold = TeamkillPunishment lobbysigns.default
 scoreboard players operation $BaseBounty var = $BaseBounty lobbysigns.default
 scoreboard players operation $MaxInventoryUpgrades var = $MaxInventoryUpgrades lobbysigns.default
 execute store result score $RespawnDelaySeconds lobbysigns run scoreboard players operation $RespawnDelay var = $RespawnDelay lobbysigns.default

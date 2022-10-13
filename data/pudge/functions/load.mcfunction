@@ -28,7 +28,7 @@ scoreboard objectives add deathStreak dummy
 scoreboard objectives add totalDeaths dummy
 scoreboard objectives add playerKills dummy {"text": "Individual Kills","color": "gold"}
 scoreboard objectives add totalAssists dummy
-scoreboard players set $RespawnDelay var 100
+#scoreboard players set $RespawnDelay var 100
 scoreboard objectives add regenTimer dummy
 scoreboard players set $RegenTick regenTimer 20
 scoreboard objectives add lobbyvar dummy
@@ -121,16 +121,16 @@ scoreboard objectives add shopItem.Goat dummy
 scoreboard objectives add shopItem.Retract dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
 scoreboard objectives add totalGold dummy
-scoreboard players set $IncomeCycle gold 80
-scoreboard players set $IncomeAmount gold 1
-scoreboard players set $StartingGold gold 30
-scoreboard players set $TeamkillPunishment gold 10
+#scoreboard players set $IncomeCycle gold 80
+#scoreboard players set $IncomeAmount gold 1
+#scoreboard players set $StartingGold gold 30
+#scoreboard players set $TeamkillPunishment gold 10
 scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
 scoreboard objectives add dropPotion minecraft.dropped:minecraft.potion
 
 #kill bounty
 scoreboard objectives add bounty dummy
-scoreboard players set $BaseBounty var 20
+#scoreboard players set $BaseBounty var 20
 #killstreak
 scoreboard objectives add killstreak dummy
 #kill combos
@@ -155,7 +155,7 @@ scoreboard players set $RapidFireLength river 40
 
 #weird inventory stuff
 scoreboard objectives add numUpgrades dummy
-scoreboard players set $MaxInventoryUpgrades var 3
+#scoreboard players set $MaxInventoryUpgrades var 3
 scoreboard players set $ItemID shopItem.Creeper 1
 scoreboard players set $ItemID shopItem.Bounce 2
 scoreboard players set $ItemID shopItem.Knockback 3

@@ -1,2 +1,2 @@
-scoreboard players operation $IncomeCycle shop = $IncomeCycleSeconds lobbysigns
-scoreboard players operation $IncomeCycle shop *= #20 math
+scoreboard players operation $IncomeCycle gold = $IncomeCycleSeconds lobbysigns
+scoreboard players operation $IncomeCycle gold *= #20 math
