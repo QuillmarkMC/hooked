@@ -13,13 +13,15 @@ scoreboard players set $Soundtrack music 0
 
 #gameplay
 scoreboard players set $LoadMap var 1
-scoreboard players operation $IncomeCycle shop = $IncomeCycle lobbysigns.default
+execute store result score $IncomeCycleSeconds lobbysigns run scoreboard players operation $IncomeCycle shop = $IncomeCycle lobbysigns.default
+scoreboard players operation $IncomeCycleSeconds lobbysigns /= #20 math
 scoreboard players operation $IncomeAmount shop = $IncomeAmount lobbysigns.default
 scoreboard players operation $StartingGold shop = $StartingGold lobbysigns.default
 scoreboard players operation $TeamkillPunishment shop = TeamkillPunishment lobbysigns.default
 scoreboard players operation $BaseBounty var = $BaseBounty lobbysigns.default
 scoreboard players operation $MaxInventoryUpgrades var = $MaxInventoryUpgrades lobbysigns.default
-scoreboard players operation $RespawnDelay var = $RespawnDelay lobbysigns.default
+execute store result score $RespawnDelaySeconds lobbysigns run scoreboard players operation $RespawnDelay var = $RespawnDelay lobbysigns.default
+scoreboard players operation $RespawnDelaySeconds lobbysigns /= #20 math
 
 #shop1+2
 function pudge:game/shop/reset_costs

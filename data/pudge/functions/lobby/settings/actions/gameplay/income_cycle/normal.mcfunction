@@ -5,3 +5,5 @@ execute if score $IncomeCycle.State lobbysigns matches 1 run scoreboard players 
 execute if score $IncomeCycle.State lobbysigns matches 2 run scoreboard players set $IncomeCycle shop 1
 execute if score $IncomeCycle.State lobbysigns matches 3 run scoreboard players set $IncomeCycle shop 10
 execute if score $IncomeCycle.State lobbysigns matches 4 run scoreboard players set $IncomeCycle shop 5
+
+function pudge:lobby/settings/actions/gameplay/income_cycle/convert
