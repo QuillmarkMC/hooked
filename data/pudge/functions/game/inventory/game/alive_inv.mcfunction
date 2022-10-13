@@ -21,20 +21,29 @@ execute if entity @s[tag=!hasHook] run item replace entity @s hotbar.0 with barr
 execute if entity @s[tag=hasMelee] run function pudge:game/inventory/items/melee/give
 execute if entity @s[tag=!hasMelee] run item replace entity @s hotbar.1 with barrier{display:{Name:'{"text":"Unavailable","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"-","color":"dark_purple","italic":false}']}}
 #hotbar 2
-execute if score @s hotbar.2.ID matches 1.. run function pudge:game/inventory/game/slot_check/hotbar2_general
-execute if score @s hotbar.2.ID matches ..0 run item replace entity @s hotbar.2 with barrier{display:{Name:'{"text":"Unavailable","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"-","color":"dark_purple","italic":false}']}}
+execute if score $MaxInventoryUpgrades var matches 1.. if score @s hotbar.2.ID matches 1.. run function pudge:game/inventory/game/slot_check/hotbar2_general
+execute if score $MaxInventoryUpgrades var matches 1.. if score @s hotbar.2.ID matches ..0 run item replace entity @s hotbar.2 with barrier{display:{Name:'{"text":"Empty Slot","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"Purchase abilities from the shop!","color":"gray","italic":true}']}}
+execute unless score $MaxInventoryUpgrades var matches 1.. run item replace entity @s hotbar.2 with air
 #hotbar 3
-execute if score @s hotbar.3.ID matches 1.. run function pudge:game/inventory/game/slot_check/hotbar3_general
-execute if score @s hotbar.3.ID matches ..0 run item replace entity @s hotbar.3 with barrier{display:{Name:'{"text":"Unavailable","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"-","color":"dark_purple","italic":false}']}}
+execute if score $MaxInventoryUpgrades var matches 2.. if score @s hotbar.3.ID matches 1.. run function pudge:game/inventory/game/slot_check/hotbar3_general
+execute if score $MaxInventoryUpgrades var matches 2.. if score @s hotbar.3.ID matches ..0 run item replace entity @s hotbar.3 with barrier{display:{Name:'{"text":"Empty Slot","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"Purchase abilities from the shop!","color":"gray","italic":true}']}}
+execute unless score $MaxInventoryUpgrades var matches 2.. run item replace entity @s hotbar.3 with air
 #hotbar 4
-execute if score @s hotbar.4.ID matches 1.. run function pudge:game/inventory/game/slot_check/hotbar4_general
-execute if score @s hotbar.4.ID matches ..0 run item replace entity @s hotbar.4 with barrier{display:{Name:'{"text":"Unavailable","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"-","color":"dark_purple","italic":false}']}}
+execute if score $MaxInventoryUpgrades var matches 3.. if score @s hotbar.4.ID matches 1.. run function pudge:game/inventory/game/slot_check/hotbar4_general
+execute if score $MaxInventoryUpgrades var matches 3.. if score @s hotbar.4.ID matches ..0 run item replace entity @s hotbar.4 with barrier{display:{Name:'{"text":"Empty Slot","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"Purchase abilities from the shop!","color":"gray","italic":true}']}}
+execute unless score $MaxInventoryUpgrades var matches 3.. run item replace entity @s hotbar.4 with air
 #hotbar 5
-item replace entity @s hotbar.5 with air
+execute if score $MaxInventoryUpgrades var matches 4.. if score @s hotbar.5.ID matches 1.. run function pudge:game/inventory/game/slot_check/hotbar5_general
+execute if score $MaxInventoryUpgrades var matches 4.. if score @s hotbar.5.ID matches ..0 run item replace entity @s hotbar.5 with barrier{display:{Name:'{"text":"Empty Slot","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"Purchase abilities from the shop!","color":"gray","italic":true}']}}
+execute unless score $MaxInventoryUpgrades var matches 4.. run item replace entity @s hotbar.5 with air
 #hotbar 6
-item replace entity @s hotbar.6 with air
+execute if score $MaxInventoryUpgrades var matches 5.. if score @s hotbar.6.ID matches 1.. run function pudge:game/inventory/game/slot_check/hotbar6_general
+execute if score $MaxInventoryUpgrades var matches 5.. if score @s hotbar.6.ID matches ..0 run item replace entity @s hotbar.6 with barrier{display:{Name:'{"text":"Empty Slot","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"Purchase abilities from the shop!","color":"gray","italic":true}']}}
+execute unless score $MaxInventoryUpgrades var matches 5.. run item replace entity @s hotbar.6 with air
 #hotbar 7
-item replace entity @s hotbar.7 with air
+execute if score $MaxInventoryUpgrades var matches 6.. if score @s hotbar.7.ID matches 1.. run function pudge:game/inventory/game/slot_check/hotbar7_general
+execute if score $MaxInventoryUpgrades var matches 6.. if score @s hotbar.7.ID matches ..0 run item replace entity @s hotbar.7 with barrier{display:{Name:'{"text":"Empty Slot","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"Purchase abilities from the shop!","color":"gray","italic":true}']}}
+execute unless score $MaxInventoryUpgrades var matches 6.. run item replace entity @s hotbar.7 with air
 #hotbar 8
 item replace entity @s hotbar.8 with air
 #off hand
