@@ -11,7 +11,7 @@ setblock 205 66 -66 dark_oak_wall_sign[facing=south]
 #setblock 199 65 -66 air
 function pudge:lobby/settings/display/locked/pages/general/victory_type
 function pudge:lobby/settings/display/locked/pages/general/victory_condition
-setblock 202 65 -66 dark_oak_wall_sign[facing=south]{GlowingText:true,Color:"blue",Text1:'{"clickEvent":{"action":"run_command","value": "trigger lobbysigns set 1000"},"text": ""}',Text2:'{"text":"Start Game","color":"dark_green"}',Text3:'{"text":"[Right Click]","color":"white"}',Text4:""}
+setblock 202 65 -66 dark_oak_wall_sign[facing=south]{GlowingText:true,Color:"blue",Text1:'{"clickEvent":{"action":"run_command","value": "trigger lobbysigns set 1001"},"text": ""}',Text2:'{"text":"Start Game","color":"dark_green"}',Text3:'{"text":"[Right Click]","color":"white"}',Text4:""}
 function pudge:lobby/settings/display/locked/pages/general/gamemode
 function pudge:lobby/settings/display/locked/pages/general/soundtrack
 #setblock 205 65 -66 air
