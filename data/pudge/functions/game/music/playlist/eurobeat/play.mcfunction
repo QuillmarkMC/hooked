@@ -2,26 +2,26 @@
 function pudge:game/music/playlist/eurobeat/stop_all
 
 #play song based on rng
-execute if score $out rng matches 0 as @a at @s run playsound game.music.perfect_hero record @s
-execute if score $out rng matches 1 as @a at @s run playsound game.music.adrenaline record @s
-execute if score $out rng matches 2 as @a at @s run playsound game.music.all_over_me record @s
-execute if score $out rng matches 3 as @a at @s run playsound game.music.because_of_you record @s
-execute if score $out rng matches 4 as @a at @s run playsound game.music.deja_vu record @s
-execute if score $out rng matches 5 as @a at @s run playsound game.music.all_star record @s
-execute if score $out rng matches 6 as @a at @s run playsound game.music.gas_gas_gas record @s
-execute if score $out rng matches 7 as @a at @s run playsound game.music.wont_fall_apart record @s
-execute if score $out rng matches 8 as @a at @s run playsound game.music.kickstart_my_heart record @s
-execute if score $out rng matches 9 as @a at @s run playsound game.music.night_of_fire record @s
-execute if score $out rng matches 10 as @a at @s run playsound game.music.nitrofire record @s
-execute if score $out rng matches 11 as @a at @s run playsound game.music.sleep_in_tokyo record @s
-execute if score $out rng matches 12 as @a at @s run playsound game.music.rebel_yell record @s
-execute if score $out rng matches 13 as @a at @s run playsound game.music.remember_me record @s
-execute if score $out rng matches 14 as @a at @s run playsound game.music.revenge record @s
-execute if score $out rng matches 15 as @a at @s run playsound game.music.running_in_the_90s record @s
-execute if score $out rng matches 16 as @a at @s run playsound game.music.race_of_the_night record @s
-execute if score $out rng matches 17 as @a at @s run playsound game.music.the_top record @s
-execute if score $out rng matches 18 as @a at @s run playsound game.music.you_give_love_a_bad_name record @s
-execute if score $out rng matches 19 as @a at @s run playsound game.music.gonna_go_far_kid record @s
+execute if score $out rng matches 0 as @a at @s run playsound pudge:game.music.perfect_hero record @s
+execute if score $out rng matches 1 as @a at @s run playsound pudge:game.music.adrenaline record @s
+execute if score $out rng matches 2 as @a at @s run playsound pudge:game.music.all_over_me record @s
+execute if score $out rng matches 3 as @a at @s run playsound pudge:game.music.because_of_you record @s
+execute if score $out rng matches 4 as @a at @s run playsound pudge:game.music.deja_vu record @s
+execute if score $out rng matches 5 as @a at @s run playsound pudge:game.music.all_star record @s
+execute if score $out rng matches 6 as @a at @s run playsound pudge:game.music.gas_gas_gas record @s
+execute if score $out rng matches 7 as @a at @s run playsound pudge:game.music.wont_fall_apart record @s
+execute if score $out rng matches 8 as @a at @s run playsound pudge:game.music.kickstart_my_heart record @s
+execute if score $out rng matches 9 as @a at @s run playsound pudge:game.music.night_of_fire record @s
+execute if score $out rng matches 10 as @a at @s run playsound pudge:game.music.nitrofire record @s
+execute if score $out rng matches 11 as @a at @s run playsound pudge:game.music.sleep_in_tokyo record @s
+execute if score $out rng matches 12 as @a at @s run playsound pudge:game.music.rebel_yell record @s
+execute if score $out rng matches 13 as @a at @s run playsound pudge:game.music.remember_me record @s
+execute if score $out rng matches 14 as @a at @s run playsound pudge:game.music.revenge record @s
+execute if score $out rng matches 15 as @a at @s run playsound pudge:game.music.running_in_the_90s record @s
+execute if score $out rng matches 16 as @a at @s run playsound pudge:game.music.race_of_the_night record @s
+execute if score $out rng matches 17 as @a at @s run playsound pudge:game.music.the_top record @s
+execute if score $out rng matches 18 as @a at @s run playsound pudge:game.music.you_give_love_a_bad_name record @s
+execute if score $out rng matches 19 as @a at @s run playsound pudge:game.music.gonna_go_far_kid record @s
 
 #advancement display
 function pudge:game/music/playlist/eurobeat/display

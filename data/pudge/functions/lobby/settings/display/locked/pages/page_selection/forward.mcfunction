@@ -1,0 +1,1 @@
+setblock 205 63 -66 dark_oak_wall_sign[facing=south]{GlowingText:true,Color:"gray",Text1:'{"clickEvent":{"action":"run_command","value": "trigger lobbysigns set 1004"},"text": ""}',Text2:'{"text":"Next Page","color":"blue"}',Text3:'{"text":"----->","color":"gray"}',Text4:""}

@@ -1,6 +1,6 @@
 #set default values for lobby settings
 scoreboard players set $Page lobbysigns.default 1
-scoreboard players set $Locked lobbysigns.default 0
+scoreboard players set $Locked lobbysigns 0
 
 #general
 scoreboard players set $VictoryType lobbysigns.default 1

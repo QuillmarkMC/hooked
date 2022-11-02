@@ -9,7 +9,7 @@ scoreboard players set $TotalTimeMinutes var 20
 scoreboard players set $GameMode var 1
 scoreboard players set $VictoryTime.State lobbysigns 0
 scoreboard players set $VictoryKills.State lobbysigns 0
-scoreboard players set $Soundtrack music 1
+scoreboard players set $Soundtrack music 0
 
 #gameplay
 scoreboard players set $LoadMap var 1

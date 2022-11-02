@@ -2,15 +2,15 @@
 function pudge:game/music/playlist/minecraft/stop_all
 
 #play song based on rng
-execute if score $out rng matches 0 as @a at @s run playsound game.music.blocks record @s
-execute if score $out rng matches 1 as @a at @s run playsound game.music.chirp record @s
-execute if score $out rng matches 2 as @a at @s run playsound game.music.far record @s
-execute if score $out rng matches 3 as @a at @s run playsound game.music.mall record @s
-execute if score $out rng matches 4 as @a at @s run playsound game.music.otherside record @s
-execute if score $out rng matches 5 as @a at @s run playsound game.music.pigstep record @s
-execute if score $out rng matches 6 as @a at @s run playsound game.music.strad record @s
-execute if score $out rng matches 7 as @a at @s run playsound game.music.wait record @s
-execute if score $out rng matches 8 as @a at @s run playsound game.music.ward record @s
+execute if score $out rng matches 0 as @a at @s run playsound pudge:game.music.blocks record @s
+execute if score $out rng matches 1 as @a at @s run playsound pudge:game.music.chirp record @s
+execute if score $out rng matches 2 as @a at @s run playsound pudge:game.music.far record @s
+execute if score $out rng matches 3 as @a at @s run playsound pudge:game.music.mall record @s
+execute if score $out rng matches 4 as @a at @s run playsound pudge:game.music.otherside record @s
+execute if score $out rng matches 5 as @a at @s run playsound pudge:game.music.pigstep record @s
+execute if score $out rng matches 6 as @a at @s run playsound pudge:game.music.strad record @s
+execute if score $out rng matches 7 as @a at @s run playsound pudge:game.music.wait record @s
+execute if score $out rng matches 8 as @a at @s run playsound pudge:game.music.ward record @s
 
 #advancement display
 function pudge:game/music/playlist/minecraft/display

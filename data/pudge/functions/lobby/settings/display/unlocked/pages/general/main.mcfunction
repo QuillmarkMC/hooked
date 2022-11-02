@@ -20,7 +20,7 @@ function pudge:lobby/settings/display/unlocked/pages/general/soundtrack
 #setblock 200 64 -66 air
 setblock 201 64 -66 oak_wall_sign[facing=south]{GlowingText:true,Color:"red",Text1:'{"clickEvent":{"action":"run_command","value": "trigger lobbysigns set 103"},"text": ""}',Text2:'{"text":"Reset to","color":"white"}',Text3:'{"text":"Default","color":"red"}',Text4:""}
 #setblock 202 64 -66 air
-setblock 203 64 -66 dark_oak_wall_sign[facing=south]{GlowingText:true,Color:"blue",Text1:'{"clickEvent":{"action":"run_command","value": "/function pudge:lobby/settings/actions/general/lock"},"text": ""}',Text2:'{"text":"Lock Settings","color":"yellow"}',Text3:'{"text":"[Admins Only]","color":"white"}',Text4:""}
+setblock 203 64 -66 dark_oak_wall_sign[facing=south]{GlowingText:true,Color:"blue",Text1:'{"clickEvent":{"action":"run_command","value": "trigger lobbysigns set 106"},"text": ""}',Text2:'{"text":"Lock Settings","color":"yellow"}',Text3:'{"text":"[Admins Only]","color":"white"}',Text4:""}
 #setblock 204 64 -66 air
 #setblock 205 64 -66 air
 #bottom row (navigation)

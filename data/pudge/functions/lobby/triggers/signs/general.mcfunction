@@ -4,3 +4,5 @@ execute if score @s lobbysigns matches 102 run function pudge:lobby/settings/act
 execute if score @s lobbysigns matches 103 run function pudge:lobby/settings/actions/general/reset
 execute if score @s lobbysigns matches 104 run function pudge:lobby/settings/actions/general/gamemode
 execute if score @s lobbysigns matches 105 run function pudge:lobby/settings/actions/general/soundtrack
+execute if score @s lobbysigns matches 106 run function pudge:lobby/settings/actions/general/lock
+execute if score @s lobbysigns matches 107 run function pudge:lobby/settings/actions/general/unlock/click
