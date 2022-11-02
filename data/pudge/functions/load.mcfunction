@@ -188,7 +188,7 @@ scoreboard players set $LastPlayed10 music -1
 
 #RNG
 scoreboard objectives add rng dummy
-function pudge:general/rng/reset_seed
+function pudge:general/rng/init
 
 #Game Bossbar
 bossbar add score {"text":""}
