@@ -14,7 +14,7 @@ scoreboard players operation @e[type=marker,tag=tempGrappleMarkerTag,limit=1] gr
 scoreboard players operation @a[tag=tempReceiverTag,limit=1] grappleTimer = $HookLength abilityVar
 #apply stun (attribute movementspeed)
 attribute @a[tag=tempReceiverTag,limit=1] generic.movement_speed base set 0
-effect give @a[tag=tempReceiverTag,limit=1] levitation 999999 255 true
+effect give @a[tag=tempReceiverTag,limit=1] levitation 999999 0 true
 
 
 tag @e[type=marker,tag=tempGrappleMarkerTag,limit=1] remove tempGrappleMarkerTag
