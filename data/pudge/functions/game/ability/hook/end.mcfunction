@@ -11,5 +11,6 @@ scoreboard players reset @s hookTimer
 scoreboard players reset @s hookID
 #remove stun (attribute movementspeed)
 attribute @s generic.movement_speed base set 0.1
+effect clear @s levitation
 #get player out of ground
 execute at @s unless block ~ ~ ~ #pudge:ignore_teleport positioned ~ ~1 ~ align y run tp @s ~ ~ ~

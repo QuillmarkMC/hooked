@@ -11,6 +11,7 @@ scoreboard players operation @e[type=marker,tag=tempHookMarkerTag,limit=1] hookI
 scoreboard players operation @a[tag=tempReceiverTag,limit=1] hookTimer = $HookLength abilityVar
 #apply stun (attribute movementspeed)
 attribute @a[tag=tempReceiverTag,limit=1] generic.movement_speed base set 0
+effect give @a[tag=tempReceiverTag,limit=1] levitation 999999 255 true
 
 #deal damage to receiver
 tag @s add teamCheckPlayer1
