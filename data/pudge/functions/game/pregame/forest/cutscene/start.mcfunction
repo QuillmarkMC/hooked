@@ -8,7 +8,7 @@ summon marker 61 69 -18 {Tags:["introCutscene","introCam1","introCam1FacingTarge
 summon armor_stand 56 59 23 {Tags:["introCutscene","introCam2"],Marker:1b,Invisible:true,Silent:true,Rotation:[180.0f,20.0f]}
 summon marker 56 59 19 {Tags:["introCutscene","introCam2","introCam2FacingTarget"]}
 
-summon armor_stand 18 64 8 {Tags:["introCutscene","introCam3"],Marker:1b,Invisible:true,Silent:true,Rotation:[-12.0f,7.0f]}
+summon armor_stand 18 64 8 {Tags:["introCutscene","introCam3"],Marker:1b,Invisible:true,Silent:true,Rotation:[-31.3f,0.0f]}
 summon marker 32 64 31 {Tags:["introCutscene","introCam3","introCam3FacingTarget"]}
 
 summon armor_stand 57 69 -21 {Tags:["introCutscene","introCam4"],Marker:1b,Invisible:true,Silent:true,Rotation:[0.0f,0.0f]}
