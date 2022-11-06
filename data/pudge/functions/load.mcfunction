@@ -207,7 +207,7 @@ scoreboard objectives add leave minecraft.custom:minecraft.leave_game
 #init state to lobby
 function pudge:lobby/settings/defaults
 execute if score $State var matches 0 run function pudge:lobby/settings/init
-execute if score $State var matches 0 run schedule function pudge:lobby/load 2t
+execute if score $State var matches 0 run function pudge:lobby/load
 
 ##Teams
 team add red
