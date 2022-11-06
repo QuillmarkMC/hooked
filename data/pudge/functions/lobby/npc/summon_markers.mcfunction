@@ -1,9 +1,10 @@
 #summon npcs and markers in lobby
-
+#kill existing npcs first
 function pudge:lobby/npc/kill_markers
+#prevent this function from running again
 scoreboard players set $NPCLoad lobbyvar 1
 
-#marker to ensure chunks are loaded
+#marker used to check when entities load
 summon marker 223.0 200.0 -33.0 {Tags:["NPCLoadCheck","lobbyMarker"]}
 #marker for spawn location
 summon marker 203.0 64 -58.5 {Tags:["lobbySpawn","lobbyMarker"],Rotation:[0.0f,12.0f]}

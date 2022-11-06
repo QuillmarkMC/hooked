@@ -14,6 +14,7 @@ function pudge:lobby/tips/timer
 execute if score $Locked lobbysigns matches 1 unless entity @a[tag=admin] run function pudge:lobby/settings/actions/general/unlock/auto_unlock
 
 #check npc load condition
+execute unless score $NPCLoad lobbyvar matches 1 if score $NPCTimerCheck lobbyvar matches 100.. run function pudge:lobby/npc/summon_markers
 execute unless score $NPCLoad lobbyvar matches 1 run scoreboard players add $NPCTimerCheck lobbyvar 1
 execute unless score $NPCLoad lobbyvar matches 1 if entity @e[type=marker,tag=NPCLoadCheck] run function pudge:lobby/npc/summon_markers
 
