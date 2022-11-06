@@ -2,9 +2,10 @@
 function pudge:general/change_state
 #set state
 scoreboard players set $State var 0
+#kill existing markers before spawning new ones
+function pudge:lobby/kill_markers
 #marker for spawn location
 summon marker 203.0 64 -58.5 {Tags:["lobbySpawn","lobbyMarker"],Rotation:[0.0f,12.0f]}
-#npcs for credits
 
 #team select npcs
 #blue
@@ -19,5 +20,6 @@ scoreboard players set $TipTimer lobbyvar 200
 scoreboard players reset $PauseTips countdown
 scoreboard players set $LastTip lobbyvar -1
 
-#reset config options
-#function pudge:lobby/settings/init
+#unlock settings
+scoreboard players set $Locked lobbysigns 0
+function pudge:lobby/settings/display/update

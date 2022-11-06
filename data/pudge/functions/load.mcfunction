@@ -205,9 +205,9 @@ execute unless score $Global matchID matches 1.. run scoreboard players set $Glo
 scoreboard objectives add leave minecraft.custom:minecraft.leave_game
 
 #init state to lobby
-execute if score $State var matches 0 run function pudge:lobby/load
 function pudge:lobby/settings/defaults
 execute if score $State var matches 0 run function pudge:lobby/settings/init
+execute if score $State var matches 0 run function pudge:lobby/load
 
 ##Teams
 team add red

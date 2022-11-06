@@ -1,6 +1,4 @@
-kill @e[type=marker,tag=lobbyMarker]
-kill @e[type=armor_stand,tag=teamSelect]
-kill @e[type=villager,tag=teamSelect]
+function pudge:lobby/kill_markers
 
 scoreboard players reset @a lobbysigns
 scoreboard players reset @a value

@@ -26,8 +26,6 @@ scoreboard players operation $RespawnDelaySeconds lobbysigns /= #20 math
 #shop1+2
 function pudge:game/shop/reset_costs
 
-function pudge:lobby/settings/display/update
-
 
 #STATES
 scoreboard players set $BaseBounty.State lobbysigns 0
