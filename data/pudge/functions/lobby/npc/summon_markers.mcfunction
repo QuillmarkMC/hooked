@@ -4,7 +4,7 @@ function pudge:lobby/npc/kill_markers
 scoreboard players set $NPCLoad lobbyvar 1
 
 #marker to ensure chunks are loaded
-summon marker 177.0 200.0 -79.0 {Tags:["NPCLoadCheck","lobbyMarker"]}
+summon marker 223.0 200.0 -33.0 {Tags:["NPCLoadCheck","lobbyMarker"]}
 #marker for spawn location
 summon marker 203.0 64 -58.5 {Tags:["lobbySpawn","lobbyMarker"],Rotation:[0.0f,12.0f]}
 
