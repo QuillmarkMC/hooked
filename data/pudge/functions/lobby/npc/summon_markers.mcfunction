@@ -5,7 +5,7 @@ function pudge:lobby/npc/kill_markers
 scoreboard players set $NPCLoad lobbyvar 1
 
 #marker used to check when entities load
-summon marker 223.0 200.0 -33.0 {Tags:["NPCLoadCheck","lobbyMarker"]}
+execute unless entity @e[type=marker,tag=NPCLoadCheck] run summon marker 223.0 200.0 -33.0 {Tags:["NPCLoadCheck"]}
 #marker for spawn location
 summon marker 203.0 64 -58.5 {Tags:["lobbySpawn","lobbyMarker"],Rotation:[0.0f,12.0f]}
 
