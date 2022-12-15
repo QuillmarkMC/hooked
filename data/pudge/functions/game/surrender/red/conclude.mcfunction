@@ -8,6 +8,7 @@ execute if score $RedSurrender surrender matches 1 run tellraw @a [{"text": ""},
 
 #reset trigger if failure
 scoreboard players reset @a[team=red] surrender
+scoreboard players set $RedVotes surrender 0
 execute if score $RedSurrender surrender matches 0 run schedule function pudge:game/surrender/red/enable 60s
 #end game if success
 execute if score $RedSurrender surrender matches 1 run function pudge:game/postgame/blue_win

@@ -7,7 +7,7 @@ scoreboard players set $NPCLoad lobbyvar 1
 #marker used to check when entities load
 execute unless entity @e[type=marker,tag=NPCLoadCheck] run summon marker 223.0 200.0 -33.0 {Tags:["NPCLoadCheck"]}
 #marker for spawn location
-summon marker 203.0 64 -58.5 {Tags:["lobbySpawn","lobbyMarker"],Rotation:[0.0f,12.0f]}
+summon marker 202.5 64.0 -58.5 {Tags:["lobbySpawn","lobbyMarker"],Rotation:[180.0f,6.5f]}
 
 #team select npcs
 #blue

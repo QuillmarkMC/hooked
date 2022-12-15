@@ -1,4 +1,3 @@
-scoreboard players set $BlueVotes surrender 0
 #get number of players on the team, and subtract 1 to get number of players needed to surrender (exception for teams of size 1)
 execute store result score $BlueVotesNeeded surrender if entity @a[team=blue]
 execute unless score $BlueVotesNeeded surrender matches 1 run scoreboard players remove $BlueVotesNeeded surrender 1
