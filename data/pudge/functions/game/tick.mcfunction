@@ -50,3 +50,4 @@ function pudge:game/ability/snowball_generic/tick
 
 #trigger
 execute as @a[scores={skip=1..}] run function pudge:game/music/skip/vote_skip
+execute as @a[tag=isGamer,scores={surrender=1..}] run function pudge:game/surrender/trigger

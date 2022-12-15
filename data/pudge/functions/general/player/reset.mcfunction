@@ -44,6 +44,7 @@ scoreboard players reset @s skip
 scoreboard players reset @s deathStreak
 scoreboard players reset @s stupidTotemFix
 scoreboard players reset @s clearTotemEffects
+scoreboard players reset @s surrender
 advancement revoke @s from pudge:music/root
 
 #state-based reset

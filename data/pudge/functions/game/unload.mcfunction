@@ -11,3 +11,7 @@ function pudge:game/music/stop_all
 schedule clear pudge:game/music/generate
 schedule clear pudge:game/scheduled_timers/seconds
 schedule clear pudge:game/catchup/seconds
+schedule clear pudge:game/surrender/red/conclude
+schedule clear pudge:game/surrender/blue/conclude
+schedule clear pudge:game/surrender/red/enable
+schedule clear pudge:game/surrender/blue/enable

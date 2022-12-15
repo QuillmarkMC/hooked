@@ -11,3 +11,4 @@ scoreboard players reset @s rapidFireChargeTimer
 scoreboard players reset @s rapidFireTimer
 scoreboard players reset @s lastDamagedBy
 scoreboard players reset @s skip
+scoreboard players reset @s surrender

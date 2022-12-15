@@ -21,6 +21,7 @@ scoreboard players add $Global matchID 1
 scoreboard players operation @a matchID = $Global matchID
 #random
 scoreboard players operation $CooldownDisplayUpdate var = $DisplayUpdateInterval abilityVar
+scoreboard players enable @a[tag=isGamer] surrender
 #shops
 function pudge:game/shop/init
 #music
@@ -28,3 +29,5 @@ function pudge:game/music/init
 #timers
 function pudge:game/scheduled_timers/init
 function pudge:game/catchup/init
+#surrender trigger
+function pudge:game/surrender/init

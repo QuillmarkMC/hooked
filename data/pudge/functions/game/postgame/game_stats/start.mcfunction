@@ -17,3 +17,8 @@ function pudge:game/postgame/forest/cutscene/start
 schedule function pudge:game/postgame/game_stats/stats/queue_red 60t
 #hide bossbar
 bossbar set score players
+#stop in progress surrender votes
+schedule clear pudge:game/surrender/red/conclude
+schedule clear pudge:game/surrender/blue/conclude
+schedule clear pudge:game/surrender/red/enable
+schedule clear pudge:game/surrender/blue/enable

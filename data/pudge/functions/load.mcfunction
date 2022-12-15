@@ -28,7 +28,6 @@ scoreboard objectives add deathStreak dummy
 scoreboard objectives add totalDeaths dummy
 scoreboard objectives add playerKills dummy {"text": "Individual Kills","color": "gold"}
 scoreboard objectives add totalAssists dummy
-#scoreboard players set $RespawnDelay var 100
 scoreboard objectives add regenTimer dummy
 scoreboard players set $RegenTick regenTimer 20
 scoreboard objectives add lobbyvar dummy
@@ -40,6 +39,7 @@ scoreboard objectives add customValueTimer dummy
 scoreboard players set $CustomTimeoutLength customValueTimer 300
 scoreboard objectives add lastDamagedBy dummy
 scoreboard objectives add cutscene dummy
+scoreboard objectives add surrender trigger
 #timers
 scoreboard objectives add timers dummy
 scoreboard players set $MaxGameLengthSeconds timers 3600
