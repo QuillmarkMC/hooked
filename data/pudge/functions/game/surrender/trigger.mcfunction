@@ -5,3 +5,5 @@ execute if entity @s[team=blue] if score $BlueVotes surrender matches 1.. run fu
 #if new vote needs to be started
 execute if entity @s[team=red] unless score $RedVotes surrender matches 1.. run function pudge:game/surrender/red/start
 execute if entity @s[team=blue] unless score $BlueVotes surrender matches 1.. run function pudge:game/surrender/blue/start
+
+scoreboard players reset @s surrender
