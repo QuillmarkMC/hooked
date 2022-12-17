@@ -1,0 +1,5 @@
+tellraw @s {"text": "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~","color": "dark_green"}
+tellraw @s [{"text": ""},{"text": " \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 Combat","color": "#cfcfff","bold": true},{"text": " (3/3/)","color": "gray"}]
+tellraw @s [{"text": ""},{"text": "Killing a teammate in any way other than a "},{"text": "headshot","color": "dark_red"},{"text":" will result in an instant "},{"text": "gold penalty","color": "red"},{"text":" applied to the attacker. The specific amount can be configured in the "},{"text": "lobby","color": "green"},{"text":", but defaults to "},{"text": "10 gold","color": "gold"},{"text":"."}]
+#tellraw @s {"text": "Next Page →","color": "yellow","underlined": true,"italic": true,"clickEvent":{"action":"run_command","value":"/trigger lobbysigns set 912"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click me!","italic":true,"color":"yellow"}]}}
+tellraw @s {"text": "\n\n\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~","color": "dark_green"}

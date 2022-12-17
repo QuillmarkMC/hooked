@@ -9,6 +9,8 @@ execute if score @s lobbysigns matches 300..399 run function pudge:lobby/trigger
 execute if score @s lobbysigns matches 400..499 run function pudge:lobby/triggers/signs/shop2
 execute if score @s lobbysigns matches 500..599 run function pudge:lobby/triggers/signs/credits
 
+execute if score @s lobbysigns matches 900..999 run function pudge:lobby/triggers/info/tutorial
+
 execute unless score @s lobbysigns matches 1..2 at @s run playsound block.wooden_button.click_on ambient @s ~ ~ ~ 0.75 0.75
 
 execute if score @s lobbysigns matches 1000.. run tellraw @s [{"text": ""},{"text": "[!] ","color": "dark_red","bold": true},{"text":"Settings are locked! "},{"hoverEvent":{"action":"show_text","contents":[{"text":"Admins only!","italic":true,"color":"yellow"}]},"clickEvent":{"action":"run_command","value": "/function pudge:lobby/settings/actions/general/unlock/grant_permission"},"text": "Click here","underlined": true,"color": "gold"},{"text": " to give yourself editing permission."}]
