@@ -1,0 +1,1 @@
+execute if score @s lobbysigns matches 950 run function pudge:lobby/triggers/info/lobby/page1

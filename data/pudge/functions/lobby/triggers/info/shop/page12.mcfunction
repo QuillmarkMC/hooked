@@ -1,1 +1,7 @@
-#lifestealing
+tellraw @s {"text": "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~","color": "dark_green"}
+tellraw @s [{"text": ""},{"text": " \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 Item Shop","color": "#cfcfff","bold": true},{"text": " (12/17)","color": "gray"}]
+tellraw @s [{"text": ""},{"text": "[!] ","color": "aqua","bold": true},{"text":"Lifestealing: ","bold": true,"color": "#911919"},{"text": "Buying this ability gives you a passive lifestealing effect, causing you to instantly restore health on every successful shot from your Hookshot and quickly regenerate health from every kill you acquire "},{"text":"by any method.","italic": true},{"text":" Lifestealing can only apply when interacting with enemy players. The health restored increases with each purchase."}]
+tellraw @s [{"text": ""},{"text":"Starting Value: ","color": "dark_green"},{"text": "0.5 hearts on hit, 1 heart on kill"}]
+tellraw @s [{"text": ""},{"text":"Maximum Upgrade Value: ","color": "purple"},{"text": "1.5 hearts on hit, 3 hearts on kill"}]
+tellraw @s {"text": "Next Page →","color": "yellow","underlined": true,"italic": true,"clickEvent":{"action":"run_command","value":"/trigger lobbysigns set 932"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click me!","italic":true,"color":"yellow"}]}}
+tellraw @s {"text": "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~","color": "dark_green"}

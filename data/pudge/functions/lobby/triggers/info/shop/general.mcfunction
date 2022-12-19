@@ -1,0 +1,17 @@
+execute if score @s lobbysigns matches 920 run function pudge:lobby/triggers/info/shop/page1
+execute if score @s lobbysigns matches 921 run function pudge:lobby/triggers/info/shop/page2
+execute if score @s lobbysigns matches 922 run function pudge:lobby/triggers/info/shop/page3
+execute if score @s lobbysigns matches 923 run function pudge:lobby/triggers/info/shop/page4
+execute if score @s lobbysigns matches 924 run function pudge:lobby/triggers/info/shop/page5
+execute if score @s lobbysigns matches 925 run function pudge:lobby/triggers/info/shop/page6
+execute if score @s lobbysigns matches 926 run function pudge:lobby/triggers/info/shop/page7
+execute if score @s lobbysigns matches 927 run function pudge:lobby/triggers/info/shop/page8
+execute if score @s lobbysigns matches 928 run function pudge:lobby/triggers/info/shop/page9
+execute if score @s lobbysigns matches 929 run function pudge:lobby/triggers/info/shop/page10
+execute if score @s lobbysigns matches 930 run function pudge:lobby/triggers/info/shop/page11
+execute if score @s lobbysigns matches 931 run function pudge:lobby/triggers/info/shop/page12
+execute if score @s lobbysigns matches 932 run function pudge:lobby/triggers/info/shop/page13
+execute if score @s lobbysigns matches 933 run function pudge:lobby/triggers/info/shop/page14
+execute if score @s lobbysigns matches 934 run function pudge:lobby/triggers/info/shop/page15
+execute if score @s lobbysigns matches 935 run function pudge:lobby/triggers/info/shop/page16
+execute if score @s lobbysigns matches 936 run function pudge:lobby/triggers/info/shop/page17

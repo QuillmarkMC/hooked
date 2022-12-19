@@ -15,3 +15,5 @@ scoreboard players set $LastTip lobbyvar -1
 scoreboard players set $Locked lobbysigns 0
 #render settings
 function pudge:lobby/settings/display/update
+#place information board
+function pudge:lobby/information/display

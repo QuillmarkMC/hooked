@@ -1,0 +1,5 @@
+tellraw @s {"text": "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~","color": "dark_green"}
+tellraw @s [{"text": ""},{"text": " \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 The River","color": "#cfcfff","bold": true},{"text": " (6/8)","color": "gray"}]
+tellraw @s [{"text": ""},{"text": "[!] ","color": "aqua","bold": true},{"text":"Mass Hook","bold": true,"color": "white"},{"text": ": All enemy players are immediately hooked and will begin getting pulled towards you, as if you just hit each of them with your Hookshot."}]
+tellraw @s {"text": "Next Page →","color": "yellow","underlined": true,"italic": true,"clickEvent":{"action":"run_command","value":"/trigger lobbysigns set 946"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click me!","italic":true,"color":"yellow"}]}}
+tellraw @s {"text": "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~","color": "dark_green"}

@@ -1,1 +1,5 @@
-#speed
+tellraw @s {"text": "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~","color": "dark_green"}
+tellraw @s [{"text": ""},{"text": " \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 Item Shop","color": "#cfcfff","bold": true},{"text": " (16/17)","color": "gray"}]
+tellraw @s [{"text": ""},{"text": "[!] ","color": "aqua","bold": true},{"text":"Speed: ","bold": true,"color": "#7ECAFF"},{"text": "Buying this item instantly applies a Speed III and Dolphin's Grace I effect for 20 seconds. The effects are applied instantly after purchasing and cannot be saved for later."}]
+tellraw @s {"text": "Next Page →","color": "yellow","underlined": true,"italic": true,"clickEvent":{"action":"run_command","value":"/trigger lobbysigns set 936"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click me!","italic":true,"color":"yellow"}]}}
+tellraw @s {"text": "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~","color": "dark_green"}

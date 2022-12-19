@@ -8,7 +8,7 @@ execute as @a[scores={customValueTimer=1..}] run function pudge:lobby/triggers/v
 execute as @a[predicate=!pudge:lobby/lobby,gamemode=adventure] run tp @s @e[type=marker,tag=lobbySpawn,limit=1]
 
 #gameplay tips
-function pudge:lobby/tips/timer
+#function pudge:lobby/tips/timer
 
 #unlock settings if admins dc
 execute if score $Locked lobbysigns matches 1 unless entity @a[tag=admin] run function pudge:lobby/settings/actions/general/unlock/auto_unlock
