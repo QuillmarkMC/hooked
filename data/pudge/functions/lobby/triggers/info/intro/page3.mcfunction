@@ -1,5 +1,5 @@
-tellraw @s {"text": "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~","color": "dark_green"}
-tellraw @s [{"text": ""},{"text": " \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 Introduction","color": "#cfcfff","bold": true},{"text": " (3/3)","color": "gray"}]
+tellraw @s [{"text": "------------------","color": "dark_green"},{"text": "Introduction","color": "#cfcfff","bold":true},{"text": " (3/3)","color": "gray"},{"text":"------------------","color": "dark_green"}]
+#tellraw @s [{"text": ""},{"text": " \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 Introduction","color": "#cfcfff","bold": true},{"text": " (3/3)","color": "gray"}]
 tellraw @s [{"text": ""},{"text": "The current "},{"text": "score","color": "light_purple"},{"text":" of both teams is displayed at the top of the screen. The current "},{"text": "victory condition","color": "light_purple"},{"text":" is also shown in this location. Check out the other sections on the "},{"text": "information board","color": "yellow"},{"text":" for more detailed information on other aspects of the map!"}]
-#tellraw @s {"text": "Next Page →","color": "yellow","underlined": true,"italic": true,"clickEvent":{"action":"run_command","value":"/trigger lobbysigns set 902"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click me!","italic":true,"color":"yellow"}]}}
-tellraw @s {"text": "\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~","color": "dark_green"}
+tellraw @s [{"text": ""},{"text": "\n\n\n← Previous Page","color": "dark_gray","underlined": true,"italic": true,"clickEvent":{"action":"run_command","value":"/trigger lobbysigns set 901"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click me!","italic":true,"color":"dark_gray"}]}}]
+#tellraw @s {"text": "\n\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~","color": "dark_green"}
