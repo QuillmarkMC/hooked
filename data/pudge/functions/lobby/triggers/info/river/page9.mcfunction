@@ -1,0 +1,5 @@
+tellraw @s [{"text": "-------------------","color": "dark_green"},{"text": "The River","color": "#cfcfff","bold":true},{"text": " (9/9)","color": "gray"},{"text":"-------------------","color": "dark_green"}]
+#tellraw @s [{"text": ""},{"text": " \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 The River","color": "#cfcfff","bold": true},{"text": " (8/8)","color": "gray"}]
+tellraw @s [{"text": ""},{"text": "[!] ","color": "aqua","bold": true},{"text":"Self Destruct","bold": true,"color": "dark_gray"},{"text": ": After a 10 second delay, you blow up and instantly kill all players within 6 blocks of your location (including yourself)."}]
+tellraw @s [{"text": ""},{"text": "\n\n\n\n\n← Previous Page","color": "dark_gray","underlined": true,"italic": true,"clickEvent":{"action":"run_command","value":"/trigger lobbysigns set 947"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click me!","italic":true,"color":"dark_gray"}]}}]
+#tellraw @s {"text": "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~","color": "dark_green"}

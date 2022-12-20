@@ -1,4 +1,4 @@
-tellraw @s [{"text": "-------------------","color": "dark_green"},{"text": "Item Shop","color": "#cfcfff","bold":true},{"text": " (16/19)","color": "gray"},{"text":"-------------------","color": "dark_green"}]
+tellraw @s [{"text": "-------------------","color": "dark_green"},{"text": "Item Shop","color": "#cfcfff","bold":true},{"text": " (16/19)","color": "gray"},{"text":"------------------","color": "dark_green"}]
 #tellraw @s [{"text": ""},{"text": " \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 Item Shop","color": "#cfcfff","bold": true},{"text": " (14/17)","color": "gray"}]
 tellraw @s [{"text": ""},{"text": "[!] ","color": "aqua","bold": true},{"text":"Gyro-Balanced Retraction Coils: ","bold": true,"color": "#33FFB8"},{"text": "Buying this ability passively increases the speed that your Hookshot and Grappling Hook pull their respective targets. You can hold \""},{"keybind":"key.sneak"},{"text":"\" during the pull to temporarily disable the increased speed. The pull speed increases with each purchase."}]
 tellraw @s [{"text": ""},{"text":"Starting Value: ","color": "dark_green"},{"text": "10 blocks per second"}]

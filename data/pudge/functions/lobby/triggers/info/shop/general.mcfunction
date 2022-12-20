@@ -15,3 +15,5 @@ execute if score @s lobbysigns matches 933 run function pudge:lobby/triggers/inf
 execute if score @s lobbysigns matches 934 run function pudge:lobby/triggers/info/shop/page15
 execute if score @s lobbysigns matches 935 run function pudge:lobby/triggers/info/shop/page16
 execute if score @s lobbysigns matches 936 run function pudge:lobby/triggers/info/shop/page17
+execute if score @s lobbysigns matches 937 run function pudge:lobby/triggers/info/shop/page18
+execute if score @s lobbysigns matches 938 run function pudge:lobby/triggers/info/shop/page19
