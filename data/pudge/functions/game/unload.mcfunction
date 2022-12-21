@@ -15,3 +15,4 @@ schedule clear pudge:game/surrender/red/conclude
 schedule clear pudge:game/surrender/blue/conclude
 schedule clear pudge:game/surrender/red/enable
 schedule clear pudge:game/surrender/blue/enable
+schedule clear pudge:game/scheduled_timers/victory_time

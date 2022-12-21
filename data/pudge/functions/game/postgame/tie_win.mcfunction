@@ -1,4 +1,4 @@
-#called when blue team has required points to win
+#called when both teams are tied for points at the end of the game
 scoreboard players set $Winner cutscene 3
 #black screen
 title @a times 20 40 20
