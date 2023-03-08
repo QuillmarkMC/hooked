@@ -5,7 +5,7 @@ execute if score $Debug var matches 1.. run say game/ability/hook/begin.mcfuncti
 #tag hit target with ID of source player
 scoreboard players operation @a[tag=tempReceiverTag,limit=1] hookID = @s entityid
 #summon armor stand and tag it with ID of source player
-execute at @a[tag=tempReceiverTag,limit=1] run summon armor_stand ~ ~0.5 ~ {Marker:true,Small:true,Invisible:true,Tags:["tempHookMarkerTag","hookMovementMarker"]}
+execute at @a[tag=tempReceiverTag,limit=1] run summon armor_stand ~ ~0.5 ~ {Marker:true,Invisible:true,Tags:["tempHookMarkerTag","hookMovementMarker"]}
 scoreboard players operation @e[type=armor_stand,tag=tempHookMarkerTag,limit=1] hookID = @a[tag=tempReceiverTag,limit=1] entityid
 #set scoreboards of target for maximum hook length
 scoreboard players operation @a[tag=tempReceiverTag,limit=1] hookTimer = $HookLength abilityVar

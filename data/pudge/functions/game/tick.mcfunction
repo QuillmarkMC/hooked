@@ -9,6 +9,7 @@ function pudge:game/inventory/delayed_cooldown_display
 #ability detection
 execute as @a[scores={crossbow=1..}] run function pudge:game/ability/detect/use_crossbow
 execute as @a[scores={snowball=1..}] run function pudge:game/ability/detect/use_snowball
+execute as @a[scores={clickFungus=1..}] run function pudge:game/ability/detect/use_warped_fungus
 #late shop item detection (place after all inventory updates) (runs only if player did not have an alternate inventory update this tick)
 execute as @a[tag=shopInteractDetect] run advancement grant @s only pudge:inv_change
 #dead players
@@ -31,6 +32,8 @@ execute at @e[type=marker,tag=gameSpectatorSpawn,limit=1] as @a[gamemode=spectat
 #ability effects
 execute as @a[scores={hookTimer=1..}] run function pudge:game/ability/hook/move
 execute as @a[scores={grappleTimer=1..}] run function pudge:game/ability/grapple/move
+execute as @a[scores={grabID=1..}] run function pudge:game/ability/grab/tick
+execute as @a[scores={grabDropDelay=1..}] run scoreboard players remove @s grabDropDelay 1
 execute as @e[type=arrow,scores={bounceCount=1..}] run function pudge:game/ability/bounce/arrow_tick
 execute as @e[type=arrow,tag=grappleArrow,nbt={inGround:true}] run function pudge:game/ability/grapple/tag_player
 execute as @a[scores={stupidTotemFix=0..}] run function pudge:game/ability/totem/delay_use

@@ -6,6 +6,7 @@ bossbar set score players
 scoreboard objectives setdisplay list
 scoreboard players set $StartGame var 0
 scoreboard players set $Winner cutscene 0
+scoreboard players reset * grabDropDelay
 execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/uninit
 function pudge:game/music/stop_all
 schedule clear pudge:game/music/generate

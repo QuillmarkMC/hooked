@@ -11,3 +11,8 @@ tag @s remove tempReceiverTag
 tag @s remove tempSelfDeathAttackerTag
 tag @s remove hasTotem
 tag @s remove statsDisplay
+tag @s remove tempGrabTag
+tag @s remove tempLaunchTag
+tag @s remove PreventGrapple
+tag @s remove AllowDismount
+tag @s remove holdingPlayer

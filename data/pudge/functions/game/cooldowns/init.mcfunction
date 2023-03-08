@@ -19,3 +19,6 @@ scoreboard players operation @s cdLifesteal = $LifestealCD abilityVar
 
 scoreboard players operation @s cdTotemCurrent = $TotemCD abilityVar
 scoreboard players set @s cdTotem -1
+
+scoreboard players operation @s cdGrabCurrent = $GrabCD abilityVar
+scoreboard players set @s cdGrab -1

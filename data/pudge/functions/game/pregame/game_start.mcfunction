@@ -28,5 +28,6 @@ function pudge:game/music/init
 #timers
 function pudge:game/scheduled_timers/init
 function pudge:game/catchup/init
+function pudge:game/scheduled_timers/dc_players
 #surrender trigger
 function pudge:game/surrender/init

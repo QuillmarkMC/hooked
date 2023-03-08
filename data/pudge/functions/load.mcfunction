@@ -65,6 +65,8 @@ scoreboard objectives add cdGrappleCurrent dummy
 scoreboard objectives add cdLifesteal dummy
 scoreboard objectives add cdTotem dummy
 scoreboard objectives add cdTotemCurrent dummy
+scoreboard objectives add cdGrab dummy
+scoreboard objectives add cdGrabCurrent dummy
 #execute unless score $CDDefaultTriggered abilityVar matches 1.. run function pudge:game/cooldowns/set_default
 function pudge:game/cooldowns/set_default
 #ability
@@ -84,6 +86,10 @@ scoreboard objectives add totemChance dummy
 scoreboard objectives add clearTotemEffects dummy
 scoreboard objectives add stupidTotemFix dummy
 scoreboard objectives add goatSound dummy
+scoreboard objectives add grabID dummy
+scoreboard objectives add grabDropDelay dummy
+scoreboard players set $DropDelay grabDropDelay 10
+scoreboard objectives add launchID dummy
 #execute unless score $AbilityDefaultTriggered abilityVar matches 1.. run function pudge:game/ability/set_default
 function pudge:game/ability/set_default
 #consumables
@@ -95,7 +101,7 @@ function pudge:game/consume/set_default
 #item use
 scoreboard objectives add crossbow minecraft.used:crossbow
 scoreboard objectives add snowball minecraft.used:minecraft.snowball
-scoreboard objectives add click minecraft.used:warped_fungus_on_a_stick
+scoreboard objectives add clickFungus minecraft.used:warped_fungus_on_a_stick
 #used by arrows to determine who shot them
 scoreboard objectives add arrowOwner dummy
 scoreboard objectives add snowballOwner dummy
@@ -119,6 +125,7 @@ scoreboard objectives add shopItem.Totem dummy
 scoreboard objectives add shopItem.ExtraHealth dummy
 scoreboard objectives add shopItem.Goat dummy
 scoreboard objectives add shopItem.Retract dummy
+scoreboard objectives add shopItem.Grab dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
 scoreboard objectives add totalGold dummy
 #scoreboard players set $IncomeCycle gold 80
@@ -127,6 +134,8 @@ scoreboard objectives add totalGold dummy
 #scoreboard players set $TeamkillPunishment gold 10
 scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
 scoreboard objectives add dropPotion minecraft.dropped:minecraft.potion
+#raycasting
+scoreboard objectives add raycast dummy
 
 #kill bounty
 scoreboard objectives add bounty dummy
@@ -155,7 +164,6 @@ scoreboard players set $RapidFireLength river 40
 
 #weird inventory stuff
 scoreboard objectives add numUpgrades dummy
-#scoreboard players set $MaxInventoryUpgrades var 3
 scoreboard players set $ItemID shopItem.Creeper 1
 scoreboard players set $ItemID shopItem.Bounce 2
 scoreboard players set $ItemID shopItem.Knockback 3
@@ -164,6 +172,7 @@ scoreboard players set $ItemID shopItem.Lifesteal 5
 scoreboard players set $ItemID shopItem.Totem 6
 scoreboard players set $ItemID shopItem.Goat 7
 scoreboard players set $ItemID shopItem.Retract 8
+scoreboard players set $ItemID shopItem.Grab 9
 #skip hotbars 0 and 1 because hook and melee will always occupy those slots
 scoreboard objectives add hotbar.2.ID dummy
 scoreboard objectives add hotbar.3.ID dummy

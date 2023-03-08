@@ -18,3 +18,6 @@ execute if score @s cdLifesteal matches 0 run function pudge:game/cooldowns/life
 
 execute if score @s cdTotem matches 1.. run scoreboard players remove @s cdTotem 1
 execute if score @s cdTotem matches 0 run function pudge:game/cooldowns/totem/end_cd
+
+execute if score @s cdGrab matches 1.. run scoreboard players remove @s cdGrab 1
+execute if score @s cdGrab matches 0 run function pudge:game/cooldowns/grab/end_cd

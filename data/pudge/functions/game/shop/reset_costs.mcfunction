@@ -14,3 +14,4 @@ scoreboard players operation $RangedAPCost shop = $RangedAPCost.Default shop
 scoreboard players operation $ExtraHealthCost shop = $ExtraHealthCost.Default shop
 scoreboard players operation $GoatCost shop = $GoatCost.Default shop
 scoreboard players operation $RetractCost shop = $RetractCost.Default shop
+scoreboard players operation $GrabCost shop = $GrabCost.Default shop

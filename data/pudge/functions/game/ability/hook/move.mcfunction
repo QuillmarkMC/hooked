@@ -12,7 +12,7 @@ execute as @a[tag=isGamer] if score @s entityid = $Temp_Player hookID run tag @s
 scoreboard players operation $Temp_Marker hookID = @s entityid
 execute as @e[type=armor_stand,tag=hookMovementMarker] if score @s hookID = $Temp_Marker hookID run tag @s add tempHookTag
 #if target died in last tick, end effect
-execute if score @s deaths matches 1.. run scoreboard players set @s hookTimer -1
+#execute if score @s deaths matches 1.. run scoreboard players set @s hookTimer -1
 #if source player is dead, end effect
 execute if entity @a[tag=tempHookTag,tag=dead,limit=1] run scoreboard players set @s hookTimer -1
 #if within 1.5 blocks of source, end effect
