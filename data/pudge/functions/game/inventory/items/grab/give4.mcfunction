@@ -1,6 +1,6 @@
 execute if entity @s[tag=!PreventGrab,tag=!holdingPlayer] if score @s cdGrab matches ..0 run item replace entity @s hotbar.4 with warped_fungus_on_a_stick{CustomModelData:108,HideFlags:127,Unbreakable:true,Grab:1}
 execute if score @s cdGrab matches 1.. run item replace entity @s hotbar.4 with shears{CustomModelData:108,HideFlags:127,Unbreakable:false}
-execute if entity @s[tag=PreventGrab,tag=!holdingPlayer] if score @s cdGrab matches ..0 run item replace entity @s hotbar.4 with shears{CustomModelData:108,HideFlags:127,Unbreakable:true}
+execute if entity @s[tag=PreventGrab,tag=!holdingPlayer] if score @s cdGrab matches ..0 run item replace entity @s hotbar.4 with shears{CustomModelData:2,HideFlags:127,Unbreakable:true}
 execute if entity @s[tag=holdingPlayer] if score @s cdGrab matches ..0 run item replace entity @s hotbar.4 with warped_fungus_on_a_stick{CustomModelData:109,HideFlags:127,Unbreakable:true,GrabDrop:1}
 
 #dynamic item lore

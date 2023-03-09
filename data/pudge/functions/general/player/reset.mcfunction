@@ -50,6 +50,7 @@ scoreboard players reset @s surrender
 advancement revoke @s from pudge:music/root
 
 #state-based reset
+execute if score $State var matches 0..1 run function pudge:lobby/effects/standard
 execute if score $State var matches 2 run bossbar set score players @a
 execute if score $State var matches 2 run team join spectator
 execute if score $State var matches 2 run gamemode spectator

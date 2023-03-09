@@ -7,5 +7,5 @@ scoreboard players operation @s rangedAPValue /= #2 math
 scoreboard players operation @s hookDamage += @s rangedAPValue
 
 tag @s remove hasMelee
-effect give @s strength 999999 0 false
+effect give @s strength infinite 0 false
 #execute unless entity @s[tag=hasCooldown] run advancement grant @s only pudge:inv_change

@@ -11,7 +11,7 @@ setblock 205 66 -66 oak_wall_sign[facing=south]
 setblock 199 65 -66 air
 setblock 200 65 -66 player_wall_head[facing=south]{SkullOwner:{Name:"Strongis13"}}
 setblock 201 65 -66 air
-setblock 202 65 -66 air
+setblock 202 65 -66 oak_wall_sign[facing=south]{GlowingText:true,Color:"light_gray",Text1:'[{"text":"Click here ","color":"yellow"},{"text":"to","color":"white"}]',Text2:'{"text":"download the","color":"white"}',Text3:'{"text":"map from","color":"white"}',Text4:'{"text":"Planet Minecraft!","clickEvent":{"action":"run_command","value": "trigger lobbysigns set 501"},"color": "green"}'}
 setblock 203 65 -66 air
 setblock 204 65 -66 player_wall_head[facing=south]{SkullOwner:{Name:"Soccby"}}
 setblock 205 65 -66 air

@@ -1,4 +1,4 @@
-tellraw @s [{"text": "-------------------","color": "dark_green"},{"text": "Item Shop","color": "#cfcfff","bold":true},{"text": " (5/19)","color": "gray"},{"text":"------------------","color": "dark_green"}]
+tellraw @s [{"text": "-------------------","color": "dark_green"},{"text": "Item Shop","color": "#cfcfff","bold":true},{"text": " (5/20)","color": "gray"},{"text":"------------------","color": "dark_green"}]
 #tellraw @s [{"text": ""},{"text": " \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 Item Shop","color": "#cfcfff","bold": true},{"text": " (3/17)","color": "gray"}]
 tellraw @s [{"text": ""},{"text": "[!] ","color": "aqua","bold": true},{"text":"Hookshot Cooldown: ","bold": true,"color": "yellow"},{"text": "Buying this upgrade reduces the cooldown of your Hookshot by 1 second each purchase."}]
 tellraw @s [{"text": ""},{"text":"Starting Value: ","color": "dark_green"},{"text": "8 seconds"}]
