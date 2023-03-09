@@ -7,9 +7,9 @@ execute as @a[tag=isGamer] if score @s entityid = $Temp_Player grabID run tag @s
 execute as @e[type=armor_stand,tag=grabHoldingMarker] if score @s grabID = $Temp_Player grabID run tag @s add tempGrabTag
 
 #check teams
-tag @s add teamCheckPlayer1
-tag @a[tag=tempGrabTag,limit=1] add teamCheckPlayer2
-function pudge:general/teams/check_teams
+#tag @s add teamCheckPlayer1
+#tag @a[tag=tempGrabTag,limit=1] add teamCheckPlayer2
+#function pudge:general/teams/check_teams
 
 scoreboard players set #TempGrabEnd grabID 0
 #if grabbed player dies, end effect
@@ -21,11 +21,11 @@ execute unless entity @a[tag=tempGrabTag,limit=1] run scoreboard players set #Te
 #end if teammate dismounted
 scoreboard players set #TempGrabDismountCheck grabID 0
 execute on vehicle if entity @s run scoreboard players set #TempGrabDismountCheck grabID 1
-execute if score #TempTeams var matches 2 unless score #TempGrabDismountCheck grabID matches 1 run scoreboard players set #TempGrabEnd grabID 1
+execute if score @s teamID = @a[tag=tempGrabTag,limit=1] teamID unless score #TempGrabDismountCheck grabID matches 1 run scoreboard players set #TempGrabEnd grabID 1
 #teleport armor stand to grabber
 execute at @a[tag=tempGrabTag,limit=1] positioned ~ ~2 ~ run tp @e[type=armor_stand,tag=tempGrabTag,limit=1] ~ ~ ~
 #force enemy to ride armor stand
-execute if score #TempTeams var matches 0 run ride @s mount @e[type=armor_stand,tag=tempGrabTag,limit=1]
+execute unless score @s teamID = @a[tag=tempGrabTag,limit=1] teamID run ride @s mount @e[type=armor_stand,tag=tempGrabTag,limit=1]
 
 tag @e[type=armor_stand,tag=tempGrabTag,limit=1] remove tempGrabTag
 

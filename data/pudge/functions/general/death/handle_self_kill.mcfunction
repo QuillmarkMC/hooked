@@ -7,13 +7,13 @@ execute as @a[tag=tempSelfDeathAttackerTag,limit=1] run function pudge:general/d
 scoreboard players set #SkipDeath death 0
 
 #check teams
-tag @s add teamCheckPlayer1
-tag @a[tag=tempSelfDeathAttackerTag,limit=1] add teamCheckPlayer2
-function pudge:general/teams/check_teams
+#tag @s add teamCheckPlayer1
+#tag @a[tag=tempSelfDeathAttackerTag,limit=1] add teamCheckPlayer2
+#function pudge:general/teams/check_teams
 
 #announce death to attacker and receiver
-execute if score #TempTeams var matches 0 run tellraw @a[tag=tempSelfDeathAttackerTag,limit=1] [{"text": "(+) ","color": "green"},{"text":"","extra":[{"selector":"@s"}]},{"text": " just killed themselves, the credit for the kill goes to ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempSelfDeathAttackerTag,limit=1]"}]},{"text": " and was awarded ","color": "white"},{"score":{"name":"@s","objective":"bounty"},"color": "gold"},{"text": " gold!","color": "gold"}]
-execute if score #TempTeams var matches 0 run tellraw @s [{"text": "(-) ","color": "red"},{"text":"","extra":[{"selector":"@s"}]},{"text": " just killed themselves, the credit for the kill goes to ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempSelfDeathAttackerTag,limit=1]"}]},{"text": " and was awarded ","color": "white"},{"score":{"name":"@s","objective":"bounty"},"color": "gold"},{"text": " gold!","color": "gold"}]
-execute unless score #TempTeams var matches 0 run tellraw @s [{"text": "(-) ","color": "red"},{"text":"","extra":[{"selector":"@s"}]},{"text": " just killed themselves.","color": "white"}]
+execute unless score @s teamID = @a[tag=tempSelfDeathAttackerTag,limit=1] teamID run tellraw @a[tag=tempSelfDeathAttackerTag,limit=1] [{"text": "(+) ","color": "green"},{"text":"","extra":[{"selector":"@s"}]},{"text": " just killed themselves, the credit for the kill goes to ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempSelfDeathAttackerTag,limit=1]"}]},{"text": " and was awarded ","color": "white"},{"score":{"name":"@s","objective":"bounty"},"color": "gold"},{"text": " gold!","color": "gold"}]
+execute unless score @s teamID = @a[tag=tempSelfDeathAttackerTag,limit=1] teamID run tellraw @s [{"text": "(-) ","color": "red"},{"text":"","extra":[{"selector":"@s"}]},{"text": " just killed themselves, the credit for the kill goes to ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempSelfDeathAttackerTag,limit=1]"}]},{"text": " and was awarded ","color": "white"},{"score":{"name":"@s","objective":"bounty"},"color": "gold"},{"text": " gold!","color": "gold"}]
+execute if score @s teamID = @a[tag=tempSelfDeathAttackerTag,limit=1] teamID run tellraw @s [{"text": "(-) ","color": "red"},{"text":"","extra":[{"selector":"@s"}]},{"text": " just killed themselves.","color": "white"}]
 
 tag @a[tag=tempSelfDeathAttackerTag] remove tempSelfDeathAttackerTag

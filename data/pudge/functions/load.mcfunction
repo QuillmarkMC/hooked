@@ -40,6 +40,9 @@ scoreboard players set $CustomTimeoutLength customValueTimer 300
 scoreboard objectives add lastDamagedBy dummy
 scoreboard objectives add cutscene dummy
 scoreboard objectives add surrender trigger
+scoreboard objectives add teamID dummy
+scoreboard players set $Red teamID 1
+scoreboard players set $Blue teamID 2
 #timers
 scoreboard objectives add timers dummy
 scoreboard players set $MaxGameLengthSeconds timers 3600
@@ -222,11 +225,12 @@ execute if score $State var matches 0 run function pudge:lobby/load
 team add red
 team modify red color red
 team modify red friendlyFire true
-#team modify red prefix {"text":"\uE002 ","color":"red"}
 team add blue
 team modify blue color blue
 team modify blue friendlyFire true
-#team modify blue prefix {"text":"\uE001 ","color":"blue"}
+team add random
+team modify random color light_purple
+team modify random friendlyFire true
 team add spectator
 team modify spectator color dark_gray
 team modify spectator friendlyFire false

@@ -11,13 +11,13 @@ scoreboard players operation @e[type=armor_stand,tag=tempHookMarkerTag,limit=1] 
 scoreboard players operation @a[tag=tempReceiverTag,limit=1] hookTimer = $HookLength abilityVar
 
 #deal damage to receiver
-tag @s add teamCheckPlayer1
-tag @a[tag=tempReceiverTag,limit=1] add teamCheckPlayer2
-function pudge:general/teams/check_teams
-execute if score #TempTeams var matches 0 run scoreboard players operation @a[tag=tempReceiverTag,limit=1] health -= @s hookDamage
+#tag @s add teamCheckPlayer1
+#tag @a[tag=tempReceiverTag,limit=1] add teamCheckPlayer2
+#function pudge:general/teams/check_teams
+execute unless score @s teamID = @a[tag=tempReceiverTag,limit=1] teamID run scoreboard players operation @a[tag=tempReceiverTag,limit=1] health -= @s hookDamage
 execute unless entity @s[tag=tempReceiverTag] run scoreboard players operation @a[tag=tempReceiverTag,limit=1] lastDamagedBy = @s entityid
-execute if score #TempTeams var matches 0 if score @a[tag=tempReceiverTag,limit=1] health matches ..0 run function pudge:general/death/count_kill
+execute unless score @s teamID = @a[tag=tempReceiverTag,limit=1] teamID if score @a[tag=tempReceiverTag,limit=1] health matches ..0 run function pudge:general/death/count_kill
 #lifesteal
-execute if score #TempTeams var matches 0 if score @s lifestealAmount matches 1.. run function pudge:game/ability/lifesteal/heal
+execute unless score @s teamID = @a[tag=tempReceiverTag,limit=1] teamID if score @s lifestealAmount matches 1.. run function pudge:game/ability/lifesteal/heal
 
 tag @e[type=armor_stand,tag=tempHookMarkerTag,limit=1] remove tempHookMarkerTag
