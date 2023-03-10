@@ -1,3 +1,4 @@
+execute if score $Debug var matches 1.. run say game/ability/grab/raycast/hit
 scoreboard players set $Hit raycast 1
 #dont let player start a grab if they themselves are grabbed or getting launched
 scoreboard players set #TempSuccess raycast 1
