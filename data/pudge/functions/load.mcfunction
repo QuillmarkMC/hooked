@@ -31,6 +31,7 @@ scoreboard objectives add totalAssists dummy
 scoreboard objectives add regenTimer dummy
 scoreboard players set $RegenTick regenTimer 20
 scoreboard objectives add lobbyvar dummy
+scoreboard players set $SignUpdateInterval lobbyvar 60
 scoreboard objectives add countdown dummy
 scoreboard objectives add lobbysigns trigger
 scoreboard objectives add lobbysigns.default dummy "Default Settings"

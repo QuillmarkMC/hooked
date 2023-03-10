@@ -18,7 +18,6 @@ execute if score $Locked lobbysigns matches 1 unless entity @a[tag=admin] run fu
 #execute unless score $NPCLoad lobbyvar matches 1 run scoreboard players add $NPCTimerCheck lobbyvar 1
 execute unless score $NPCLoad lobbyvar matches 1 if loaded 223 200 -33 run function pudge:lobby/npc/summon_markers
 
-#random
-#effect give @a saturation 999999 255 true
-#effect give @a resistance 999999 255 true
-#effect give @a weakness 999999 255 true
+#automatically refresh sign display
+scoreboard players remove $SignUpdateTimer lobbyvar 1
+execute if score $SignUpdateTimer lobbyvar matches ..0 run function pudge:lobby/settings/display/update

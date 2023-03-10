@@ -6,3 +6,6 @@ execute if score $Locked lobbysigns matches 1 run function pudge:lobby/settings/
 #change campfire in center of lobby
 execute if score $GameMode var matches -1 run fill 204 63 -52 200 64 -55 minecraft:soul_campfire replace minecraft:campfire
 execute if score $GameMode var matches 1 run fill 204 63 -52 200 64 -55 minecraft:campfire replace minecraft:soul_campfire
+
+#reset timer for automatic updates
+scoreboard players operation $SignUpdateTimer lobbyvar = $SignUpdateInterval lobbyvar
