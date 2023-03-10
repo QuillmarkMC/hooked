@@ -3,12 +3,12 @@ execute as @a run function pudge:game/postgame/game_stats/reset_player_lite
 #play music based on team
 function pudge:game/music/stop_all
 schedule clear pudge:game/music/generate
-execute if score $Winner cutscene matches 1 as @a[team=blue] at @s run playsound pudge:game.music.victory ambient @s
-execute if score $Winner cutscene matches 1 as @a[team=red] at @s run playsound pudge:game.music.defeat ambient @s
-execute if score $Winner cutscene matches 2 as @a[team=blue] at @s run playsound pudge:game.music.defeat ambient @s
-execute if score $Winner cutscene matches 2 as @a[team=red] at @s run playsound pudge:game.music.victory ambient @s
-execute if score $Winner cutscene matches 3 as @a[team=!spectator] at @s run playsound pudge:game.music.defeat ambient @s
-execute as @a[team=spectator] at @s run playsound pudge:game.music.victory ambient @s
+execute if score $Winner cutscene matches 1 as @a[team=blue] at @s run playsound pudge:game.music.victory record @s
+execute if score $Winner cutscene matches 1 as @a[team=red] at @s run playsound pudge:game.music.defeat record @s
+execute if score $Winner cutscene matches 2 as @a[team=blue] at @s run playsound pudge:game.music.defeat record @s
+execute if score $Winner cutscene matches 2 as @a[team=red] at @s run playsound pudge:game.music.victory record @s
+execute if score $Winner cutscene matches 3 as @a[team=!spectator] at @s run playsound pudge:game.music.defeat record @s
+execute as @a[team=spectator] at @s run playsound pudge:game.music.victory record @s
 #queue /title to display after black screen ends
 schedule function pudge:game/postgame/game_stats/titles/title_team 30t
 #start cutscene
