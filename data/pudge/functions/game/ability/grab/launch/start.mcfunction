@@ -3,6 +3,9 @@
 # @a[tag=tempLaunchTag,limit=1] = grabbed player to be launched
 # @e[type=arrow,tag=tempArrowTag,limit=1] = arrow to be mounted
 
+#debug message
+execute if score $Debug var matches 1.. run say pudge:game/ability/grab/launch/start
+
 scoreboard players operation $Temp_Player grabID = @a[tag=tempArrowOwnerTag,limit=1] entityid
 execute as @a[tag=isGamer] if score @s grabID = $Temp_Player grabID run tag @s add tempLaunchTag
 
