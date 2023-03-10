@@ -12,4 +12,5 @@ scoreboard players reset @e[type=arrow,tag=tempLaunchArrowTag,limit=1] launchID
 #clean up tags
 tag @s remove PreventGrapple
 tag @s remove AllowDismount
+advancement grant @s only pudge:inv_change
 tag @e[type=arrow,tag=tempLaunchArrowTag,limit=1] remove tempLaunchArrowTag
