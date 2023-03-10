@@ -30,12 +30,12 @@ execute as @a[scores={comboTimer=1..}] run function pudge:game/killstreak/combo/
 #border check
 execute at @e[type=marker,tag=gameSpectatorSpawn,limit=1] as @a[gamemode=spectator,distance=80..,tag=!dead] run tp @s ~ ~ ~
 #ability effects
+execute as @e[type=arrow,scores={bounceCount=1..}] run function pudge:game/ability/bounce/arrow_tick
 execute as @a[scores={hookTimer=1..}] run function pudge:game/ability/hook/move
 execute as @a[scores={grappleTimer=1..}] run function pudge:game/ability/grapple/move
 execute as @a[scores={grabID=1..}] run function pudge:game/ability/grab/tick
 execute as @a[scores={launchID=1..}] run function pudge:game/ability/grab/launch/tick
 execute as @a[scores={grabDropDelay=1..}] run scoreboard players remove @s grabDropDelay 1
-execute as @e[type=arrow,scores={bounceCount=1..}] run function pudge:game/ability/bounce/arrow_tick
 execute as @e[type=arrow,tag=grappleArrow,nbt={inGround:true}] run function pudge:game/ability/grapple/tag_player
 execute as @a[scores={stupidTotemFix=0..}] run function pudge:game/ability/totem/delay_use
 #consumables
