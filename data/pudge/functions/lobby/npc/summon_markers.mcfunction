@@ -17,6 +17,10 @@ execute at @e[type=villager,tag=blueTeamSelect,limit=1] run summon minecraft:arm
 summon villager 190.0 63.0 -53.0 {Tags:["teamSelect","lobbyVillager","redTeamSelect"],Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,VillagerData:{level:99,profession:"minecraft:fletcher",type:"minecraft:taiga"},Rotation:[-90.0f,0.0f]}
 execute at @e[type=villager,tag=redTeamSelect,limit=1] run summon minecraft:armor_stand ~ ~2 ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"Join Red Team!\",\"color\":\"red\"}",CustomNameVisible:1b,Tags:["teamSelect"]}
 #random
-summon interaction 202.0 63.0 -53.0 {width:4.1,height:2,response:true,Tags:["teamSelect","randomTeamSelect"]}
-summon interaction 204.0 63.0 -53.0 {width:2.1,height:1,response:true,Tags:["teamSelect","randomTeamSelect"]}
-summon minecraft:armor_stand 202.5 65.25 -53.0 {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"Join Random Team!\",\"color\":\"light_purple\"}",CustomNameVisible:1b,Tags:["teamSelect"]}
+#summon interaction 202.0 63.0 -53.0 {width:4.1,height:2,response:true,Tags:["teamSelect","randomTeamSelect"]}
+#summon interaction 204.0 63.0 -53.0 {width:2.1,height:1,response:true,Tags:["teamSelect","randomTeamSelect"]}
+summon villager 202.5 63 -48.5 {Tags:["teamSelect","lobbyVillager","randomTeamSelect"],Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,VillagerData:{level:99,profession:"minecraft:fletcher",type:"minecraft:taiga"},Rotation:[180.0f,0.0f]}
+execute at @e[type=villager,tag=randomTeamSelect,limit=1] run summon minecraft:armor_stand ~ ~2 ~ {Invisible:1b,Invulnerable:1b,NoGravity:1b,Marker:1b,CustomName:"{\"text\":\"Join Random Team!\",\"color\":\"light_purple\"}",CustomNameVisible:1b,Tags:["teamSelect"]}
+
+summon interaction 208.5 69.0 -30.5 {width:0.75,height:0.5,response:true,Tags:["redmageCredits"]}
+setblock 208 69 -31 player_head[rotation=5]{SkullOwner:{Name:"Eikinskialdr"}}

@@ -43,6 +43,9 @@ scoreboard objectives add surrender trigger
 scoreboard objectives add teamID dummy
 scoreboard players set $Red teamID 1
 scoreboard players set $Blue teamID 2
+scoreboard objectives add announcer dummy
+scoreboard players set $Default announcer 1
+scoreboard players set $Redmage announcer 2
 #timers
 scoreboard objectives add timers dummy
 scoreboard players set $MaxGameLengthSeconds timers 3600
