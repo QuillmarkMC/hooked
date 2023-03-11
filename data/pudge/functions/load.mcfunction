@@ -168,6 +168,8 @@ scoreboard objectives add rapidFireTimer dummy
 scoreboard objectives add rapidFireChargeTimer dummy
 scoreboard players set $RapidFireCharge river 60
 scoreboard players set $RapidFireLength river 40
+scoreboard objectives add adrenalineTimer dummy
+scoreboard players set $AdrenalineLength river 300
 
 #weird inventory stuff
 scoreboard objectives add numUpgrades dummy
@@ -246,6 +248,8 @@ team add light_purple
 team modify light_purple color light_purple
 team add dark_gray
 team modify dark_gray color dark_gray
+team add yellow
+team modify yellow color yellow
 
 ##Gamerules
 difficulty easy

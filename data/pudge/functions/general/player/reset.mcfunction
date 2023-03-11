@@ -39,6 +39,7 @@ scoreboard players reset @s killstreak
 scoreboard players set @s totalAssists 0
 scoreboard players reset @s suicideTimer
 scoreboard players reset @s elytraTimer
+scoreboard players reset @s adrenalineTimer
 scoreboard players reset @s rapidFireChargeTimer
 scoreboard players reset @s rapidFireTimer
 scoreboard players reset @s lastDamagedBy

@@ -1,2 +1,2 @@
-scoreboard players set @s cdBounce -1
+scoreboard players set @s cdBounce -100
 function pudge:game/cooldowns/check_all_cd
