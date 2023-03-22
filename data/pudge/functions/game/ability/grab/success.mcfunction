@@ -10,3 +10,4 @@ tag @s remove InitialGrabMountTag
 tag @s add PreventGrab
 tag @a[tag=raycasting,limit=1] add holdingPlayer
 advancement grant @s only pudge:inv_change
+advancement grant @a[tag=raycasting,limit=1] only pudge:inv_change
