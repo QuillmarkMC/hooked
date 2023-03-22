@@ -23,3 +23,4 @@ kill @e[type=armor_stand,tag=tempGrabTag,limit=1]
 #remove tags and reset scoreboards on target
 scoreboard players reset @s grabID
 tag @s remove PreventGrab
+advancement grant @s only pudge:inv_change
