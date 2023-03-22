@@ -8,3 +8,4 @@ tag @a[tag=DropPlayerTempTag,limit=1] remove DropPlayerTempTag
 
 #put ability on cooldown
 scoreboard players operation @s cdGrab = @s cdGrabCurrent
+tag @s add hasCooldown
