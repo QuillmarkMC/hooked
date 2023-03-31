@@ -6,14 +6,11 @@ scoreboard players operation $Temp_Player grabID = @s grabID
 execute as @a[tag=isGamer] if score @s entityid = $Temp_Player grabID run tag @s add tempGrabTag
 execute as @e[type=armor_stand,tag=grabHoldingMarker] if score @s grabID = $Temp_Player grabID run tag @s add tempGrabTag
 
-#check teams
-#tag @s add teamCheckPlayer1
-#tag @a[tag=tempGrabTag,limit=1] add teamCheckPlayer2
-#function pudge:general/teams/check_teams
-
 scoreboard players set #TempGrabEnd grabID 0
 #if grabbed player dies, end effect
 execute if entity @s[tag=dead] run scoreboard players set #TempGrabEnd grabID 1
+#if grabbed player gets hooked, end effect
+execute if score @s hookID matches 1.. run scoreboard players set #TempGrabEnd grabID 1
 #if grabbing player dies, end effect
 execute as @a[tag=tempGrabTag,limit=1] if entity @s[tag=dead] run scoreboard players set #TempGrabEnd grabID 1
 #if grabbing player disconnected, end effect

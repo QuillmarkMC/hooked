@@ -1,5 +1,5 @@
 # @s = player who initiated the grab
-# @a[tag=] = player who is grabbed
+# @a[tag=DropPlayerTempTag] = player who is grabbed
 
 scoreboard players operation $Temp_Player grabID = @s entityid
 execute as @a[tag=isGamer] if score @s grabID = $Temp_Player grabID run tag @s add DropPlayerTempTag

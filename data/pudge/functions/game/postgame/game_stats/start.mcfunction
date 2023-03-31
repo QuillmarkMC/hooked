@@ -1,5 +1,7 @@
 #"reset" players
 execute as @a run function pudge:game/postgame/game_stats/reset_player_lite
+#end deathmatch
+execute if score $HellActive river matches 1.. run function pudge:game/maps/forest/river/power/hell/end
 #play music based on team
 function pudge:game/music/stop_all
 schedule clear pudge:game/music/generate

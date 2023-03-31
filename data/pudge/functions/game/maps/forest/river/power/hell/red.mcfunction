@@ -6,6 +6,13 @@ title @a[gamemode=spectator,tag=isGamer] subtitle {"text": "You cannot respawn d
 title @a[gamemode=spectator,tag=!isGamer] subtitle ""
 title @a times 0 100 0
 title @a title "\uE009"
+#title @a subtitle "\uE014\uE007\uE015\uE009"
+#title @a times 0 100 0
+#execute if score $HellTimer river matches ..100 run title @a[gamemode=adventure] title {"text": "Last team standing!","color": "white"}
+#execute unless score $HellTimer river matches ..100 run title @a[gamemode=adventure] title ""
+#title @a[gamemode=spectator,tag=isGamer] title {"text": "You cannot respawn during Deathmatch.","color": "white"}
+#title @a[gamemode=spectator,tag=!isGamer] title ""
+
 
 #slowly drain health, increasing in frequency as hell timer increases
 scoreboard players operation #Temp math = $HellTimer river
