@@ -7,6 +7,7 @@ tag @s add InitialGrabMountTag
 execute at @a[tag=GrabbingPlayerTag,limit=1] positioned ~ ~2.25 ~ summon armor_stand run function pudge:game/ability/grab/summon
 tag @s remove InitialGrabMountTag
 
+execute if score @s grappleID matches 1.. run function pudge:game/ability/grapple/end
 scoreboard players operation @a[tag=GrabbingPlayerTag,limit=1] grabDropDelay = $DropDelay grabDropDelay
 
 tag @s add PreventGrab

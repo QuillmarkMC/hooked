@@ -16,6 +16,7 @@ scoreboard players set #2 math 2
 scoreboard players set #3 math 3
 scoreboard players set #4 math 4
 scoreboard players set #5 math 5
+scoreboard players set #8 math 8
 scoreboard players set #10 math 10
 scoreboard players set #20 math 20
 scoreboard players set #40 math 40

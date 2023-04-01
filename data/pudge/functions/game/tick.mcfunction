@@ -29,6 +29,8 @@ execute as @a[scores={comboTimer=1..}] run function pudge:game/killstreak/combo/
 
 #border check
 execute at @e[type=marker,tag=gameSpectatorSpawn,limit=1] as @a[gamemode=spectator,distance=80..,tag=!dead] run tp @s ~ ~ ~
+#out of bounds
+execute as @a[gamemode=adventure,tag=isGamer] run function pudge:game/oob/tick
 #ability effects
 execute as @e[type=arrow,scores={bounceCount=1..}] run function pudge:game/ability/bounce/arrow_tick
 execute as @a[scores={hookTimer=1..}] run function pudge:game/ability/hook/move
