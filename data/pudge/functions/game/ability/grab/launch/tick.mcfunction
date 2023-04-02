@@ -20,7 +20,7 @@ execute unless entity @e[type=arrow,tag=tempLaunchArrowTag,limit=1] run scoreboa
 #if player dismounted (and is allowed to dismount), end effect
 scoreboard players set #TempLaunchDismountCheck launchID 0
 execute on vehicle if entity @s run scoreboard players set #TempLaunchDismountCheck launchID 1
-execute if entity @s[tag=AllowDismount] unless score #TempLaunchDismountCheck launchID matches 1 run scoreboard players set #TempEndLaunch launchID 1
+#execute if entity @s[tag=AllowDismount] unless score #TempLaunchDismountCheck launchID matches 1 run scoreboard players set #TempEndLaunch launchID 1
 
 tag @e[type=arrow,tag=tempLaunchArrowTag,limit=1] remove tempLaunchArrowTag
 
