@@ -15,6 +15,8 @@ execute if entity @s[tag=dead] run scoreboard players set #TempEndLaunch launchI
 execute if score @s hookID matches 1.. run scoreboard players set #TempEndLaunch launchID 1
 #if arrow lands, end effect
 execute if entity @e[type=arrow,tag=tempLaunchArrowTag,limit=1,nbt={inGround:true}] run scoreboard players set #TempEndLaunch launchID 1
+#if arrow doesnt exist (hits an entity), end effect
+execute unless entity @e[type=arrow,tag=tempLaunchArrowTag,limit=1] run scoreboard players set #TempEndLaunch launchID 1
 #if player dismounted (and is allowed to dismount), end effect
 scoreboard players set #TempLaunchDismountCheck launchID 0
 execute on vehicle if entity @s run scoreboard players set #TempLaunchDismountCheck launchID 1

@@ -8,7 +8,7 @@ execute if score $Debug var matches 1.. run say pudge:game/ability/grab/end
 #tag grabber
 scoreboard players operation $Temp_Player grabID = @s grabID
 execute as @a[tag=isGamer] if score @s entityid = $Temp_Player grabID run tag @s add tempGrabTag
-#place ability on cooldown if called from game/ability/grab/tick
+#place ability on cooldown if called from game/ability/grab/tick OR game/ability/melee/damage
 execute if score #PlaceGrabOnCooldown cdGrab matches 1 run scoreboard players operation @a[tag=tempGrabTag,limit=1] cdGrab = @a[tag=tempGrabTag,limit=1] cdGrabCurrent
 execute if score #PlaceGrabOnCooldown cdGrab matches 1 run tag @a[tag=tempGrabTag,limit=1] add hasCooldown
 scoreboard players set #PlaceGrabOnCooldown cdGrab 0

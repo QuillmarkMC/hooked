@@ -14,10 +14,12 @@ execute as @e[type=armor_stand,tag=grappleMovementMarker] if score @s grappleID 
 execute if entity @s[tag=dead] run scoreboard players set @s grappleTimer -1
 #if source is dead, end effect
 execute if entity @e[tag=tempGrappleTag,tag=dead,limit=1] run scoreboard players set @s grappleTimer -1
-
 #if player is hooked, end effect
 execute if score @s hookTimer matches 1.. run scoreboard players set @s grappleTimer -1
-
+#if player is grabbed, end effect
+execute if score @s grabID matches 1.. run scoreboard players set @s grappleTimer -1
+#if player is launched, end effect
+execute if score @s launchID matches 1.. run scoreboard players set @s grappleTimer -1
 #if within 1.5 blocks of source, end effect
 execute at @s if entity @e[tag=tempGrappleTag,distance=..1.5,limit=1] run scoreboard players set @s grappleTimer -1
 #if player dismounts, end effect
@@ -36,5 +38,5 @@ execute unless score @s grappleTimer matches ..-1 at @s positioned ~ ~1 ~ run fu
 tag @e[tag=tempGrappleTag] remove tempGrappleTag
 tag @e[type=armor_stand,tag=tempGrappleMarkerTag] remove tempGrappleMarkerTag
 
-#if lasted longer than 3 seconds (or any other checks in this function failed), end effect
+#if grapple lasted longer than the allowed time (or any other checks in this function failed), end effect
 execute if score @s grappleTimer matches ..0 run function pudge:game/ability/grapple/end
