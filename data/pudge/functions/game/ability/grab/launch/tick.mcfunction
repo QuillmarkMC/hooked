@@ -1,6 +1,6 @@
 #called from pudge:game/tick
 # @s = player who is launched
-# @e[tag=tempGrabTag] = arrow they should be riding
+# @e[tag=tempLaunchArrowTag] = arrow they should be riding
 
 #debug message
 execute if score $Debug var matches 1.. run say pudge:game/ability/grab/launch/tick

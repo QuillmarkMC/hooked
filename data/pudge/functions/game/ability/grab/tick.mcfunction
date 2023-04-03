@@ -25,6 +25,7 @@ execute at @a[tag=tempGrabTag,limit=1] positioned ~ ~2.25 ~ run tp @e[type=armor
 execute unless score @s teamID = @a[tag=tempGrabTag,limit=1] teamID run ride @s mount @e[type=armor_stand,tag=tempGrabTag,limit=1]
 
 tag @e[type=armor_stand,tag=tempGrabTag,limit=1] remove tempGrabTag
+tag @a[tag=tempGrabTag,limit=1] remove tempGrabTag
 
 #call end function based on earlier checks
 execute if score #TempGrabEnd grabID matches 1 run scoreboard players set #PlaceGrabOnCooldown cdGrab 1
