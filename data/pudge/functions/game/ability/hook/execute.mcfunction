@@ -13,8 +13,8 @@ execute if score @s teamID = @a[tag=tempAttackerTag,limit=1] teamID run function
 #playsound
 execute unless entity @s[tag=tempAttackerTag] as @a[scores={announcer=1}] at @s run playsound pudge:game.headshot ambient @s ~ ~ ~ 0.75
 execute if entity @s[tag=tempAttackerTag] as @a[scores={announcer=1}] at @s run playsound pudge:game.impressive ambient @s ~ ~ ~ 0.75
-execute unless entity @s[tag=tempAttackerTag] as @a[scores={announcer=2}] at @s run playsound pudge:game.headshot.alt ambient @s ~ ~ ~ 0.75
-execute if entity @s[tag=tempAttackerTag] as @a[scores={announcer=2}] at @s run playsound pudge:game.impressive.alt ambient @s ~ ~ ~ 0.75
+execute unless entity @s[tag=tempAttackerTag] as @a[scores={announcer=2}] at @s run playsound pudge:game.headshot.redmage ambient @s ~ ~ ~ 0.75
+execute if entity @s[tag=tempAttackerTag] as @a[scores={announcer=2}] at @s run playsound pudge:game.impressive.redmage ambient @s ~ ~ ~ 0.75
 #tellraw
 execute unless score @s teamID = @a[tag=tempAttackerTag,limit=1] teamID run tellraw @a [{"text": "[!] ","color": "yellow","bold": true},{"text":"","extra":[{"selector":"@s"}],"bold": false},{"text":" just got pwned by ","color":"white","bold": false},{"text":"","extra":[{"selector":"@a[tag=tempAttackerTag,limit=1]"}],"bold": false},{"text":"!","bold": false,"color": "white"}]
 execute if score @s teamID = @a[tag=tempAttackerTag,limit=1] teamID run tellraw @a [{"text": "[!] ","color": "yellow","bold": true},{"text":"","extra":[{"selector":"@s"}],"bold": false},{"text":" was just denied by ","color":"white","bold": false},{"text":"","extra":[{"selector":"@a[tag=tempAttackerTag,limit=1]"}],"bold": false},{"text":"!","bold": false,"color": "white"}]
