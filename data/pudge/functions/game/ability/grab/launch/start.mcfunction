@@ -27,5 +27,6 @@ execute if score @a[tag=tempArrowOwnerTag,limit=1] teamID = @a[tag=tempLaunchTag
 scoreboard players set @a[tag=tempLaunchTag,limit=1] launchID 1
 
 tag @a[tag=tempLaunchTag,limit=1] add PreventGrapple
+scoreboard players set @a[tag=tempLaunchTag,limit=1] launchTimer 0
 advancement grant @a[tag=tempLaunchTag,limit=1] only pudge:inv_change
 tag @a[tag=tempLaunchTag,limit=1] remove tempLaunchTag

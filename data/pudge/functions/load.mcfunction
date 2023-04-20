@@ -98,6 +98,7 @@ scoreboard objectives add grabID dummy
 scoreboard objectives add grabDropDelay dummy
 scoreboard players set $DropDelay grabDropDelay 10
 scoreboard objectives add launchID dummy
+scoreboard objectives add launchTimer dummy
 #execute unless score $AbilityDefaultTriggered abilityVar matches 1.. run function pudge:game/ability/set_default
 function pudge:game/ability/set_default
 #consumables

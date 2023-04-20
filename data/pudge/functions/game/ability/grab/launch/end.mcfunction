@@ -9,6 +9,7 @@ ride @s dismount
 #clean up scoreboards
 scoreboard players reset @s launchID
 scoreboard players reset @e[type=arrow,tag=tempLaunchArrowTag,limit=1] launchID
+scoreboard players reset @s launchTimer
 #clean up tags
 tag @s remove PreventGrapple
 tag @s remove AllowDismount
