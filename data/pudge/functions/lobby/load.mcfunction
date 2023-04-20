@@ -4,7 +4,7 @@ function pudge:general/change_state
 scoreboard players set $State var 0
 #set values for summoning npcs
 scoreboard players set $NPCLoad lobbyvar 0
-#scoreboard players set $NPCTimerCheck lobbyvar 0
+scoreboard players set $NPCTimerCheck lobbyvar 0
 
 #unlock teams
 scoreboard players set $LockTeams lobbyvar 0
