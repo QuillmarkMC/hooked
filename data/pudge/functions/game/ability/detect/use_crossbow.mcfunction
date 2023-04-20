@@ -20,5 +20,6 @@ execute at @s as @e[type=arrow,tag=!arrowInit,sort=nearest,limit=1] run function
 tag @s add hasCooldown
 tag @s remove tempArrowOwnerTag
 scoreboard players set @s crossbow 0
+scoreboard players reset #HoldingPlayer cdGrab
 
 advancement grant @s only pudge:inv_change

@@ -18,11 +18,12 @@ execute if entity @e[type=arrow,tag=tempLaunchArrowTag,limit=1,nbt={inGround:tru
 #if arrow doesnt exist (hits an entity), end effect
 execute unless entity @e[type=arrow,tag=tempLaunchArrowTag,limit=1] run scoreboard players set #TempEndLaunch launchID 1
 #if player dismounted (and is allowed to dismount), end effect
+execute if entity @s[tag=AllowDismount] if score #TempEndLaunch launchID matches 0 run function pudge:game/ability/grab/launch/mount_arrow
 scoreboard players set #TempLaunchDismountCheck launchID 0
 execute on vehicle if entity @s run scoreboard players set #TempLaunchDismountCheck launchID 1
-#execute if entity @s[tag=AllowDismount] unless score #TempLaunchDismountCheck launchID matches 1 run scoreboard players set #TempEndLaunch launchID 1
+execute if entity @s[tag=AllowDismount] unless score #TempLaunchDismountCheck launchID matches 1 run scoreboard players set #TempEndLaunch launchID 1
 
 tag @e[type=arrow,tag=tempLaunchArrowTag,limit=1] remove tempLaunchArrowTag
 
-execute if score #TempEndLaunch launchID matches 0 run function pudge:game/ability/grab/launch/mount_arrow
+execute unless entity @s[tag=AllowDismount] if score #TempEndLaunch launchID matches 0 run function pudge:game/ability/grab/launch/mount_arrow
 execute if score #TempEndLaunch launchID matches 1.. run function pudge:game/ability/grab/launch/end
