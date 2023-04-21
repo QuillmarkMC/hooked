@@ -1,4 +1,4 @@
-tellraw @s [{"text": "------------------","color": "dark_green"},{"text": "Item Shop","color": "#cfcfff","bold":true},{"text": " (11/19)","color": "gray"},{"text":"------------------","color": "dark_green"}]
+tellraw @s [{"text": "------------------","color": "dark_green"},{"text": "Item Shop","color": "#cfcfff","bold":true},{"text": " (11/20)","color": "gray"},{"text":"------------------","color": "dark_green"}]
 #tellraw @s [{"text": ""},{"text": " \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 Item Shop","color": "#cfcfff","bold": true},{"text": " (9/17)","color": "gray"}]
 tellraw @s [{"text": ""},{"text": "[!] ","color": "aqua","bold": true},{"text":"Totem of Protection: ","bold": true,"color": "#FF8707"},{"text": "Buying this ability gives you a passive random chance when hit with an enemy Hookshot to dodge the hook instead, and place this ability on a 30 second cooldown. The success chance increases with each purchase."}]
 tellraw @s [{"text": ""},{"text":"Starting Value: ","color": "dark_green"},{"text": "10% success chance"}]

@@ -13,10 +13,10 @@ execute if score @s totemChance matches 30 if predicate pudge:30_percent run sco
 execute if score @s totemChance matches 100 run scoreboard players set #TotemTest totemChance 1
 
 #dont trigger on teammate hook
-tag @a[tag=tempAttackerTag,limit=1] add teamCheckPlayer1
-tag @a[tag=tempReceiverTag,limit=1] add teamCheckPlayer2
-function pudge:general/teams/check_teams
-execute unless score #TempTeams var matches 0 run scoreboard players set #TotemTest totemChance 0
+#tag @a[tag=tempAttackerTag,limit=1] add teamCheckPlayer1
+#tag @a[tag=tempReceiverTag,limit=1] add teamCheckPlayer2
+#function pudge:general/teams/check_teams
+execute if score @s teamID = @a[tag=tempAttackerTag,limit=1] teamID run scoreboard players set #TotemTest totemChance 0
 
 #automatically fail if totem on cooldown
 execute if score @s cdTotem matches 1.. run scoreboard players set #TotemTest totemChance 0

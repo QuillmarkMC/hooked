@@ -52,3 +52,4 @@ scoreboard players set $Knockback.State lobbysigns 0
 scoreboard players set $Lifesteal.State lobbysigns 0
 scoreboard players set $Retract.State lobbysigns 0
 scoreboard players set $Totem.State lobbysigns 0
+scoreboard players set $Grab.State lobbysigns 0

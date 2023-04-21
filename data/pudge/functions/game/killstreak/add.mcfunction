@@ -8,7 +8,7 @@ execute if score @s killstreak matches 3 run scoreboard players operation $Num1 
 execute if score @s killstreak matches 3 run function pudge:general/math/times_1.5
 execute if score @s killstreak matches 3 run scoreboard players operation @s bounty = $Num1 math
 #glowing marks players with a higher kill bounty
-execute if score @s killstreak matches 3 run effect give @s glowing 999999 0 true
+execute if score @s killstreak matches 3 run effect give @s glowing infinite 0 true
 
 execute if score @s killstreak matches 5 run scoreboard players operation $Num1 math = @s bounty
 execute if score @s killstreak matches 5 run function pudge:general/math/times_1.5

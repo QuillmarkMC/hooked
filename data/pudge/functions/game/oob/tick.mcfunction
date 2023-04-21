@@ -1,0 +1,2 @@
+#if a player gets out of bounds, force them to move back toward the center of the map every tick until they are in bounds
+execute if score $LoadMap var matches 1 unless predicate pudge:forest/inbounds run function pudge:game/oob/push_to_center

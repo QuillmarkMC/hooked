@@ -16,6 +16,7 @@ scoreboard players set @s shopItem.Totem 0
 scoreboard players set @s shopItem.ExtraHealth 0
 scoreboard players set @s shopItem.Goat 0
 scoreboard players set @s shopItem.Retract 0
+scoreboard players set @s shopItem.Grab 0
 
 #upgrade count
 scoreboard players set @s numUpgrades 0

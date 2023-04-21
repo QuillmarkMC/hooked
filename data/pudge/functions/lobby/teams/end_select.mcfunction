@@ -1,4 +1,5 @@
 team join spectator @a[team=]
+function pudge:lobby/teams/random/assign_random_teams
 schedule function pudge:game/load 50t
 scoreboard players set $Count countdown -1
 

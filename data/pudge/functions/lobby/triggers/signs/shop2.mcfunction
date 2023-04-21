@@ -5,3 +5,4 @@ execute if score @s lobbysigns matches 403 run function pudge:lobby/settings/act
 execute if score @s lobbysigns matches 404 run function pudge:lobby/settings/actions/shop2/lifesteal/check_input
 execute if score @s lobbysigns matches 405 run function pudge:lobby/settings/actions/shop2/goat/check_input
 execute if score @s lobbysigns matches 406 run function pudge:lobby/settings/actions/shop2/retract/check_input
+execute if score @s lobbysigns matches 407 run function pudge:lobby/settings/actions/shop2/grab/check_input

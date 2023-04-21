@@ -14,7 +14,7 @@ summon marker 32 64 31 {Tags:["introCutscene","introCam3","introCam3FacingTarget
 summon armor_stand 57 69 -21 {Tags:["introCutscene","introCam4"],Marker:1b,Invisible:true,Silent:true,Rotation:[0.0f,0.0f]}
 
 #music
-execute as @a at @s run playsound pudge:game.music.intro ambient @s
+execute as @a at @s run playsound pudge:game.music.intro record @s
 
 #fix healthbar
 title @a actionbar ""

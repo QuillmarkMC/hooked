@@ -24,6 +24,7 @@ execute if entity @s[tag=editing.Grapple] run function pudge:lobby/settings/cust
 execute if entity @s[tag=editing.Lifesteal] run function pudge:lobby/settings/custom_value/shop2/lifesteal
 execute if entity @s[tag=editing.Goat] run function pudge:lobby/settings/custom_value/shop2/goat
 execute if entity @s[tag=editing.Retract] run function pudge:lobby/settings/custom_value/shop2/retract
+execute if entity @s[tag=editing.Grab] run function pudge:lobby/settings/custom_value/shop2/grab
 
 execute at @s run playsound entity.experience_orb.pickup ambient @s ~ ~ ~
 function pudge:lobby/settings/display/update

@@ -1,7 +1,7 @@
 {
     "pack": {
-        "pack_format": 10,
-        "description": "Datapack for Pudge Wars"
+        "pack_format": 12,
+        "description": "Datapack for Hook, Line, & Creeper"
     },
     "filter": {
         "block": [

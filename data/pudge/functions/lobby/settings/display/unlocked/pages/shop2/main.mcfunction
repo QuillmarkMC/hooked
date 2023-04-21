@@ -8,19 +8,19 @@ setblock 203 66 -66 oak_wall_sign[facing=south]
 setblock 204 66 -66 oak_wall_sign[facing=south]
 setblock 205 66 -66 oak_wall_sign[facing=south]
 #2nd row
+#setblock 199 65 -66 air
 function pudge:lobby/settings/display/unlocked/pages/shop2/creeper
 function pudge:lobby/settings/display/unlocked/pages/shop2/totem
 function pudge:lobby/settings/display/unlocked/pages/shop2/knockback
 function pudge:lobby/settings/display/unlocked/pages/shop2/grapple
 function pudge:lobby/settings/display/unlocked/pages/shop2/lifesteal
-function pudge:lobby/settings/display/unlocked/pages/shop2/goat
-function pudge:lobby/settings/display/unlocked/pages/shop2/retract
+#setblock 205 65 -66 air
 #3rd row
 #setblock 199 64 -66 air
 #setblock 200 64 -66 air
-#setblock 201 64 -66 air
-#setblock 202 64 -66 air
-#setblock 203 64 -66 air
+function pudge:lobby/settings/display/unlocked/pages/shop2/goat
+function pudge:lobby/settings/display/unlocked/pages/shop2/retract
+function pudge:lobby/settings/display/unlocked/pages/shop2/grab
 #setblock 204 64 -66 air
 #setblock 205 64 -66 air
 #bottom row (navigation)

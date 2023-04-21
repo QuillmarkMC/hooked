@@ -7,14 +7,13 @@ execute as @a[tag=tempReceiverTag,limit=1] if score @s grappleTimer matches 1.. 
 
 #tag hit target with ID of source
 scoreboard players operation @a[tag=tempReceiverTag,limit=1] grappleID = @s entityid
-#summon marker and tag it with ID of source
-execute at @a[tag=tempReceiverTag,limit=1] run summon marker ~ ~ ~ {Tags:["tempGrappleMarkerTag","grappleMovementMarker"]}
-scoreboard players operation @e[type=marker,tag=tempGrappleMarkerTag,limit=1] grappleID = @a[tag=tempReceiverTag,limit=1] entityid
+#summon armor stand and tag it with ID of source
+execute at @a[tag=tempReceiverTag,limit=1] run summon armor_stand ~ ~0.5 ~ {Marker:true,Invisible:true,Tags:["tempGrappleMarkerTag","grappleMovementMarker"]}
+scoreboard players operation @e[type=armor_stand,tag=tempGrappleMarkerTag,limit=1] grappleID = @a[tag=tempReceiverTag,limit=1] entityid
 #set scoreboards of target for maximum hook length
 scoreboard players operation @a[tag=tempReceiverTag,limit=1] grappleTimer = $HookLength abilityVar
-#apply stun (attribute movementspeed)
-attribute @a[tag=tempReceiverTag,limit=1] generic.movement_speed base set 0
-effect give @a[tag=tempReceiverTag,limit=1] levitation 999999 0 true
 
+#make player ride armor stand
+ride @a[tag=tempReceiverTag,limit=1] mount @e[type=armor_stand,tag=tempGrappleMarkerTag,limit=1]
 
-tag @e[type=marker,tag=tempGrappleMarkerTag,limit=1] remove tempGrappleMarkerTag
+tag @e[type=armor_stand,tag=tempGrappleMarkerTag,limit=1] remove tempGrappleMarkerTag

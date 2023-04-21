@@ -11,6 +11,6 @@
         }
     },
     "rewards": {
-        "function": "pudge:lobby/teams/join_blue"
+        "function": "pudge:lobby/teams/try_join_blue"
     }
 }

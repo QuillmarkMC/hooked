@@ -1,0 +1,53 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Press \"",
+            "color": "gray",
+            "italic": true
+          },
+          {
+            "keybind":"key.use",
+            "color": "yellow",
+            "italic": true
+          },
+          {
+            "text": "\" while looking at",
+            "color": "gray",
+            "italic": true
+          }  
+        ],
+        {
+            "text": "another player to pick them up.",
+            "color": "gray",
+            "italic": true
+        },
+        [
+          {
+            "text": "Use your ",
+            "color": "gray",
+            "italic": true
+          },
+          {
+            "text": "Hookshot",
+            "color": "gray",
+            "italic": true,
+            "bold": true
+          },
+          {
+            "text": " to launch that player.",
+            "color": "gray",
+            "italic": true
+          }  
+        ],
+        {
+          "text": ""
+        }
+      ],
+      "replace": true
+    }
+  ]
+  
