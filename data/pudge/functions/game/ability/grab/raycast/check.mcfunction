@@ -1,0 +1,2 @@
+execute if score $Debug var matches 1.. run say game/ability/grab/raycast/check
+execute if score $Hit raycast matches 0 positioned ~-0.9 ~-0.9 ~-0.9 if entity @s[dx=0] positioned ~0.95 ~0.95 ~0.95 run function pudge:game/ability/grab/raycast/hit

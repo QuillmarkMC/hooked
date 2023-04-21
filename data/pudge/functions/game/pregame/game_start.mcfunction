@@ -16,6 +16,7 @@ execute as @a[tag=isGamer] run function pudge:game/consume/init
 execute as @a[tag=isGamer] run function pudge:general/death/init_armorstand
 execute as @a[tag=isGamer] run advancement grant @s only pudge:inv_change
 execute at @a[tag=isGamer] run fill ~1 ~3 ~1 ~-1 ~-1 ~-1 air replace barrier
+execute as @a[tag=isGamer] run function pudge:game/effects/standard
 #assign match IDs to handle reconnecting players
 scoreboard players add $Global matchID 1
 scoreboard players operation @a matchID = $Global matchID
@@ -28,5 +29,6 @@ function pudge:game/music/init
 #timers
 function pudge:game/scheduled_timers/init
 function pudge:game/catchup/init
+function pudge:game/scheduled_timers/dc_players
 #surrender trigger
 function pudge:game/surrender/init

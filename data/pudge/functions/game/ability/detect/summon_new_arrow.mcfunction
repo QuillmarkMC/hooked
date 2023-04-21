@@ -14,6 +14,9 @@ execute if score $Temp crossbow matches 2 as @e[type=arrow,tag=tempArrowTag,sort
 #check for bounce ability on arrow owner, dont bounce grappling hooks
 execute if score @a[tag=tempArrowOwnerTag,limit=1] bounceCount matches 1.. run scoreboard players operation @e[type=arrow,tag=tempArrowTag,sort=nearest,limit=1,tag=!grappleArrow] bounceCount = @a[tag=tempArrowOwnerTag,limit=1] bounceCount
 
+#check if player was holding another player, initiate launch
+execute if score #HoldingPlayer cdGrab matches 1.. run function pudge:game/ability/grab/launch/start
+
 #set arrow owner
 scoreboard players operation @e[type=arrow,tag=tempArrowTag,sort=nearest,limit=1] arrowOwner = $Temp arrowOwner
 

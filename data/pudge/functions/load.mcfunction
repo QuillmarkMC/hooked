@@ -16,6 +16,7 @@ scoreboard players set #2 math 2
 scoreboard players set #3 math 3
 scoreboard players set #4 math 4
 scoreboard players set #5 math 5
+scoreboard players set #8 math 8
 scoreboard players set #10 math 10
 scoreboard players set #20 math 20
 scoreboard players set #40 math 40
@@ -31,6 +32,7 @@ scoreboard objectives add totalAssists dummy
 scoreboard objectives add regenTimer dummy
 scoreboard players set $RegenTick regenTimer 20
 scoreboard objectives add lobbyvar dummy
+scoreboard players set $SignUpdateInterval lobbyvar 60
 scoreboard objectives add countdown dummy
 scoreboard objectives add lobbysigns trigger
 scoreboard objectives add lobbysigns.default dummy "Default Settings"
@@ -40,6 +42,12 @@ scoreboard players set $CustomTimeoutLength customValueTimer 300
 scoreboard objectives add lastDamagedBy dummy
 scoreboard objectives add cutscene dummy
 scoreboard objectives add surrender trigger
+scoreboard objectives add teamID dummy
+scoreboard players set $Red teamID 1
+scoreboard players set $Blue teamID 2
+scoreboard objectives add announcer dummy
+scoreboard players set $Default announcer 1
+scoreboard players set $Redmage announcer 2
 #timers
 scoreboard objectives add timers dummy
 scoreboard players set $MaxGameLengthSeconds timers 3600
@@ -65,6 +73,8 @@ scoreboard objectives add cdGrappleCurrent dummy
 scoreboard objectives add cdLifesteal dummy
 scoreboard objectives add cdTotem dummy
 scoreboard objectives add cdTotemCurrent dummy
+scoreboard objectives add cdGrab dummy
+scoreboard objectives add cdGrabCurrent dummy
 #execute unless score $CDDefaultTriggered abilityVar matches 1.. run function pudge:game/cooldowns/set_default
 function pudge:game/cooldowns/set_default
 #ability
@@ -84,6 +94,11 @@ scoreboard objectives add totemChance dummy
 scoreboard objectives add clearTotemEffects dummy
 scoreboard objectives add stupidTotemFix dummy
 scoreboard objectives add goatSound dummy
+scoreboard objectives add grabID dummy
+scoreboard objectives add grabDropDelay dummy
+scoreboard players set $DropDelay grabDropDelay 10
+scoreboard objectives add launchID dummy
+scoreboard objectives add launchTimer dummy
 #execute unless score $AbilityDefaultTriggered abilityVar matches 1.. run function pudge:game/ability/set_default
 function pudge:game/ability/set_default
 #consumables
@@ -95,7 +110,7 @@ function pudge:game/consume/set_default
 #item use
 scoreboard objectives add crossbow minecraft.used:crossbow
 scoreboard objectives add snowball minecraft.used:minecraft.snowball
-scoreboard objectives add click minecraft.used:warped_fungus_on_a_stick
+scoreboard objectives add clickFungus minecraft.used:warped_fungus_on_a_stick
 #used by arrows to determine who shot them
 scoreboard objectives add arrowOwner dummy
 scoreboard objectives add snowballOwner dummy
@@ -119,6 +134,7 @@ scoreboard objectives add shopItem.Totem dummy
 scoreboard objectives add shopItem.ExtraHealth dummy
 scoreboard objectives add shopItem.Goat dummy
 scoreboard objectives add shopItem.Retract dummy
+scoreboard objectives add shopItem.Grab dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
 scoreboard objectives add totalGold dummy
 #scoreboard players set $IncomeCycle gold 80
@@ -127,6 +143,8 @@ scoreboard objectives add totalGold dummy
 #scoreboard players set $TeamkillPunishment gold 10
 scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
 scoreboard objectives add dropPotion minecraft.dropped:minecraft.potion
+#raycasting
+scoreboard objectives add raycast dummy
 
 #kill bounty
 scoreboard objectives add bounty dummy
@@ -152,10 +170,11 @@ scoreboard objectives add rapidFireTimer dummy
 scoreboard objectives add rapidFireChargeTimer dummy
 scoreboard players set $RapidFireCharge river 60
 scoreboard players set $RapidFireLength river 40
+scoreboard objectives add adrenalineTimer dummy
+scoreboard players set $AdrenalineLength river 300
 
 #weird inventory stuff
 scoreboard objectives add numUpgrades dummy
-#scoreboard players set $MaxInventoryUpgrades var 3
 scoreboard players set $ItemID shopItem.Creeper 1
 scoreboard players set $ItemID shopItem.Bounce 2
 scoreboard players set $ItemID shopItem.Knockback 3
@@ -164,6 +183,7 @@ scoreboard players set $ItemID shopItem.Lifesteal 5
 scoreboard players set $ItemID shopItem.Totem 6
 scoreboard players set $ItemID shopItem.Goat 7
 scoreboard players set $ItemID shopItem.Retract 8
+scoreboard players set $ItemID shopItem.Grab 9
 #skip hotbars 0 and 1 because hook and melee will always occupy those slots
 scoreboard objectives add hotbar.2.ID dummy
 scoreboard objectives add hotbar.3.ID dummy
@@ -213,11 +233,12 @@ execute if score $State var matches 0 run function pudge:lobby/load
 team add red
 team modify red color red
 team modify red friendlyFire true
-#team modify red prefix {"text":"\uE002 ","color":"red"}
 team add blue
 team modify blue color blue
 team modify blue friendlyFire true
-#team modify blue prefix {"text":"\uE001 ","color":"blue"}
+team add random
+team modify random color light_purple
+team modify random friendlyFire true
 team add spectator
 team modify spectator color dark_gray
 team modify spectator friendlyFire false
@@ -229,6 +250,8 @@ team add light_purple
 team modify light_purple color light_purple
 team add dark_gray
 team modify dark_gray color dark_gray
+team add yellow
+team modify yellow color yellow
 
 ##Gamerules
 difficulty easy

@@ -6,3 +6,4 @@ execute if score @s hotbar.7.ID matches 5 run function pudge:game/inventory/item
 execute if score @s hotbar.7.ID matches 6 run function pudge:game/inventory/items/totem/give7
 execute if score @s hotbar.7.ID matches 7 run function pudge:game/inventory/items/goat/give7
 execute if score @s hotbar.7.ID matches 8 run function pudge:game/inventory/items/retract/give7
+execute if score @s hotbar.7.ID matches 9 run function pudge:game/inventory/items/grab/give7

@@ -16,3 +16,5 @@ scoreboard players operation @a[team=red] gold += $CatchupReward timers
 execute as @a[team=red] run function pudge:game/gold/update_display
 #playsound
 execute as @a at @s run playsound minecraft:entity.elder_guardian.curse ambient @s ~ ~ ~ 1 2
+#mercy rule reminder
+execute if score $MercyRule timers matches 1 as @a[team=red] run tellraw @s [{"text": ""},{"text": "[!] ","color": "#9E01FE","bold": true},{"text":"You can use the command \""},{"text":"/trigger surrender","clickEvent":{"action":"suggest_command","value":"/trigger surrender"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click me!","italic":true,"color":"yellow"}]},"color": "gold","underlined": true},{"text":"\" to initiate a surrender vote."}]

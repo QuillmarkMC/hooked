@@ -7,5 +7,6 @@ title @a title {"text":"\uE006"}
 scoreboard players reset @a suicideTimer
 scoreboard players set @a elytraTimer -1
 scoreboard players set @a rapidFireChargeTimer -1
+scoreboard players set @a adrenalineTimer -1
 #queue stats start
 schedule function pudge:game/postgame/game_stats/start 50t

@@ -269,7 +269,52 @@
                         }
                       ]
                     }
+                  },
+                  "adrenaline": {
+                      "trigger": "minecraft:player_hurt_entity",
+                      "conditions": {
+                          "damage": {
+                              "type": {
+                                  "direct_entity": {
+                                      "type": "minecraft:arrow",
+                                      "nbt": "{Tags:[\"hookArrow\"]}"
+                                      
+                                  }
+                              }
+                          },
+                          "entity": {
+                              "type": "slime",
+                              "nbt": "{Tags:[\"adrenalinePower\"]}"
+                          }
+                      }
+                  },
+                  "not_adrenaline": {
+                      "trigger": "minecraft:player_hurt_entity",
+                      "conditions": {
+                        "player": [],
+                "damage": {
+                  "type": {
+                    "direct_entity": {
+                      "type": "arrow",
+                      "nbt": "{Tags:[\"hookArrow\"]}"
+                    }
                   }
+                },
+                        "entity": [
+                          {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                              "condition": "minecraft:entity_properties",
+                              "entity": "this",
+                              "predicate": {
+                                "type": "minecraft:slime",
+                                "nbt": "{Tags:[\"adrenalinePower\"]}"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
         },
     "requirements": [
         [
@@ -295,6 +340,10 @@
         [
             "rapid_fire",
             "not_rapid_fire"
+        ],
+        [
+            "adrenaline",
+            "not_adrenaline"
         ]
     ],
     "rewards": {

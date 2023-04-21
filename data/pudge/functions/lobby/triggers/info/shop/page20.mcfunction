@@ -1,0 +1,5 @@
+tellraw @s [{"text": "------------------","color": "dark_green"},{"text": "Item Shop","color": "#cfcfff","bold":true},{"text": " (20/20)","color": "gray"},{"text":"------------------","color": "dark_green"}]
+#tellraw @s [{"text": ""},{"text": " \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 \u0020 Item Shop","color": "#cfcfff","bold": true},{"text": " (17/17)","color": "gray"}]
+tellraw @s [{"text": ""},{"text": "[!] ","color": "aqua","bold": true},{"text":"Ranged Attack Power: ","bold": true,"color": "#8000E5"},{"text": "Buying this item instantly increases the damage of your Hookshot by 50% for 20 seconds, but you lose your Hatchet for the same amount of time. The effect is applied instantly after purchasing and cannot be saved for later."}]
+tellraw @s [{"text": ""},{"text": "\n\n\n← Previous Page","color": "dark_gray","underlined": true,"italic": true,"clickEvent":{"action":"run_command","value":"/trigger lobbysigns set 938"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click me!","italic":true,"color":"dark_gray"}]}}]
+#tellraw @s {"text": "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~","color": "dark_green"}

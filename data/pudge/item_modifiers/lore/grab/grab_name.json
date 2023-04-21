@@ -1,0 +1,36 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+      {
+        "text": "Anchor Arms",
+        "color": "#ccca99",
+        "bold": true,
+        "italic": false
+      },
+      {
+        "text": " (lvl ",
+        "color": "gray",
+        "bold": false,
+        "italic": true
+      },
+      {
+        "score": {
+          "name": "@s",
+          "objective": "shopItem.Grab"
+        },
+        "color": "gray",
+        "bold": false,
+        "italic": true
+      },
+      {
+        "text": ")",
+        "color": "gray",
+        "bold": false,
+        "italic": true
+      }
+    ]
+  }
+]
+  

@@ -16,3 +16,7 @@ execute as @a[scores={suicideTimer=1..}] run function pudge:game/maps/forest/riv
 #rapid fire
 execute as @a[scores={rapidFireChargeTimer=1..}] run function pudge:game/maps/forest/river/power/rapid_fire/charge
 execute as @a[scores={rapidFireTimer=1..}] run function pudge:game/maps/forest/river/power/rapid_fire/timer
+
+#adrenaline
+execute as @a[scores={adrenalineTimer=1..}] run function pudge:game/maps/forest/river/power/adrenaline/timer
+execute as @a[scores={adrenalineTimer=0}] run function pudge:game/maps/forest/river/power/adrenaline/end

@@ -1,3 +1,5 @@
+#check if player tried to start the game with value of 1 if signs are locked (manually type trigger command), if true set to a random unused amount (so it does nothing)
+execute if score @s lobbysigns matches 1 if score $Locked lobbysigns matches 1 run scoreboard players set @s lobbysigns 1999
 #if player clicked on locked sign, check if they have permission to edit
 execute if score @s lobbysigns matches 1000.. if entity @s[tag=admin] run scoreboard players remove @s lobbysigns 1000
 

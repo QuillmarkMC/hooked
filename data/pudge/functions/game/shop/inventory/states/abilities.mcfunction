@@ -14,7 +14,7 @@ function pudge:game/shop/inventory/items/abilities/grapple
 function pudge:game/shop/inventory/items/abilities/lifesteal
 function pudge:game/shop/inventory/items/abilities/goat
 function pudge:game/shop/inventory/items/abilities/retract
-item replace entity @s enderchest.7 with air
+function pudge:game/shop/inventory/items/abilities/grab
 item replace entity @s enderchest.8 with air
 item replace entity @s enderchest.9 with air
 item replace entity @s enderchest.10 with air

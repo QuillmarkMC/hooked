@@ -10,3 +10,4 @@ scoreboard players set $LifestealInitAmount abilityVar 0
 scoreboard players set $LifestealInitRegen abilityVar 0
 scoreboard players set $TotemInitChance abilityVar 0
 scoreboard players set $GoatInitSound abilityVar 0
+scoreboard players set $GrabRange abilityVar 40
