@@ -1,3 +1,2 @@
-setblock 204 65 -66 dark_oak_wall_sign[facing=south]{GlowingText:true,Color:"gray",Text1:'{"text":"Max Health","color":"#BD4D4D","clickEvent":{"action":"run_command","value": "trigger lobbysigns set 1304"},"bold": true}',Text2:'',Text3:'{"score":{"name":"$ExtraHealthCost","objective":"shop"},"color":"red"}',Text4:'{"text":"gold","color":"gold"}'}
-
-execute if score $ExtraHealthCost shop = $ExtraHealthCost.Default shop run data merge block 204 65 -66 {Text3:'{"score":{"name":"$ExtraHealthCost","objective":"shop"},"color":"green"}'}
+setblock 204 65 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"gray",messages:['{"text":"Max Health","color":"#BD4D4D","clickEvent":{"action":"run_command","value": "trigger lobbysigns set 1304"},"bold": true}', '""', '{"score":{"name":"$ExtraHealthCost","objective":"shop"},"color":"red"}', '{"text":"gold","color":"gold"}']}}
+execute if score $ExtraHealthCost shop = $ExtraHealthCost.Default shop run data modify block 204 65 -66 front_text.messages[2] set value '{"score":{"name":"$ExtraHealthCost","objective":"shop"},"color":"green"}'
