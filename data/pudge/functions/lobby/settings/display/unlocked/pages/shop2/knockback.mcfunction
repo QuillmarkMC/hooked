@@ -1,3 +1,2 @@
-setblock 202 65 -66 oak_wall_sign[facing=south]{GlowingText:true,Color:"gray",Text1:'{"text":"Stick of","color":"#C69B6D","clickEvent":{"action":"run_command","value": "trigger lobbysigns set 402"},"bold": true}',Text2:'{"text":"Suffering","color":"#C69B6D","bold": true}',Text3:'{"score":{"name":"$KnockbackCost","objective":"shop"},"color":"red"}',Text4:'{"text":"gold","color":"gold"}'}
-
-execute if score $KnockbackCost shop = $KnockbackCost.Default shop run data merge block 202 65 -66 {Text3:'{"score":{"name":"$KnockbackCost","objective":"shop"},"color":"green"}'}
+setblock 202 65 -66 oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"gray",messages:['{"text":"Stick of","color":"#C69B6D","clickEvent":{"action":"run_command","value": "trigger lobbysigns set 402"},"bold": true}', '{"text":"Suffering","color":"#C69B6D","bold": true}', '{"score":{"name":"$KnockbackCost","objective":"shop"},"color":"red"}', '{"text":"gold","color":"gold"}']}}
+execute if score $KnockbackCost shop = $KnockbackCost.Default shop run data modify block 202 65 -66 front_text.messages[2] set value '{"score":{"name":"$KnockbackCost","objective":"shop"},"color":"green"}'

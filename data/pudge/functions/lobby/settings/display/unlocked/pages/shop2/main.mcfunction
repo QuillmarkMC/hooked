@@ -3,7 +3,7 @@
 setblock 199 66 -66 oak_wall_sign[facing=south]
 setblock 200 66 -66 oak_wall_sign[facing=south]
 setblock 201 66 -66 oak_wall_sign[facing=south]
-setblock 202 66 -66 oak_wall_sign[facing=south]{GlowingText:true,Color:"blue",Text1:'',Text2:'{"text":"Page 4","color":"dark_green"}',Text3:'{"text":"Shop: Part 2","color":"white"}',Text4:""}
+setblock 202 66 -66 oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"blue",messages:['""', '{"text":"Page 4","color":"dark_green"}', '{"text":"Shop: Part 2","color":"white"}', '""']}}
 setblock 203 66 -66 oak_wall_sign[facing=south]
 setblock 204 66 -66 oak_wall_sign[facing=south]
 setblock 205 66 -66 oak_wall_sign[facing=south]
