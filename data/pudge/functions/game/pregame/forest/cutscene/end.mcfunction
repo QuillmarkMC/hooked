@@ -1,5 +1,5 @@
 #kill cutscene markers and armor stands
-kill @e[tag=introCutscene]
+#kill @e[tag=introCutscene]
 
 #teleport players and place barriers around them
 gamemode adventure @a[team=!spectator]
