@@ -1,1 +1,1 @@
-setblock 199 63 -66 dark_oak_wall_sign[facing=south]{GlowingText:true,Color:"gray",Text1:'{"clickEvent":{"action":"run_command","value": "trigger lobbysigns set 1003"},"text": ""}',Text2:'{"text":"Previous Page","color":"blue"}',Text3:'{"text":"<-----","color":"gray"}',Text4:""}
+setblock 199 63 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"gray",messages:['{"clickEvent":{"action":"run_command","value": "trigger lobbysigns set 1003"},"text": ""}', '{"text":"Previous Page","color":"blue"}', '{"text":"<-----","color":"gray"}', '""']}}

@@ -1,3 +1,2 @@
-setblock 203 64 -66 dark_oak_wall_sign[facing=south]{GlowingText:true,Color:"gray",Text1:'{"text":"Anchor Arms","color":"#ccca99","clickEvent":{"action":"run_command","value": "trigger lobbysigns set 1407"},"bold": true}',Text2:'',Text3:'{"score":{"name":"$GrabCost","objective":"shop"},"color":"red"}',Text4:'{"text":"gold","color":"gold"}'}
-
-execute if score $GrabCost shop = $GrabCost.Default shop run data merge block 203 64 -66 {Text3:'{"score":{"name":"$GrabCost","objective":"shop"},"color":"green"}'}
+setblock 203 64 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"gray",messages:['{"text":"Anchor Arms","color":"#ccca99","clickEvent":{"action":"run_command","value": "trigger lobbysigns set 1407"},"bold": true}', '""', '{"score":{"name":"$GrabCost","objective":"shop"},"color":"red"}', '{"text":"gold","color":"gold"}']}}
+execute if score $GrabCost shop = $GrabCost.Default shop run data modify block 203 64 -66 front_text.messages[2] set value '{"score":{"name":"$GrabCost","objective":"shop"},"color":"green"}'

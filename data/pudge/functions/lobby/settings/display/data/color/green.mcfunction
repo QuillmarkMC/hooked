@@ -1,1 +1,1 @@
-data merge block ~ ~ ~ {Color:"green"}
+data modify block ~ ~ ~ front_text.color set value "green"

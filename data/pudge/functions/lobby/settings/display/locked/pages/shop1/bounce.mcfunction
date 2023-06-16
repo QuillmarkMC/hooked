@@ -1,3 +1,2 @@
-setblock 202 65 -66 dark_oak_wall_sign[facing=south]{GlowingText:true,Color:"gray",Text1:'{"text":"Ricochet","color":"#FCC272","clickEvent":{"action":"run_command","value": "trigger lobbysigns set 1302"},"bold": true}',Text2:'{"text":"Arrows","color":"#FCC272","bold": true}',Text3:'{"score":{"name":"$BounceCost","objective":"shop"},"color":"red"}',Text4:'{"text":"gold","color":"gold"}'}
-
-execute if score $BounceCost shop = $BounceCost.Default shop run data merge block 202 65 -66 {Text3:'{"score":{"name":"$BounceCost","objective":"shop"},"color":"green"}'}
+setblock 202 65 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"gray",messages:['{"text":"Ricochet","color":"#FCC272","clickEvent":{"action":"run_command","value": "trigger lobbysigns set 1302"},"bold": true}', '{"text":"Arrows","color":"#FCC272","bold": true}', '{"score":{"name":"$BounceCost","objective":"shop"},"color":"red"}', '{"text":"gold","color":"gold"}']}}
+execute if score $BounceCost shop = $BounceCost.Default shop run data modify block 202 65 -66 front_text.messages[2] set value '{"score":{"name":"$BounceCost","objective":"shop"},"color":"green"}'
