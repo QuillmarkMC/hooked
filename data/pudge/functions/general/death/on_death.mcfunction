@@ -32,6 +32,7 @@ scoreboard players reset @s suicideTimer
 scoreboard players set @s elytraTimer -1
 scoreboard players set @s rapidFireChargeTimer -1
 scoreboard players set @s rapidFireTimer -1
+scoreboard players set @s adrenalineTimer -1
 
 #spectator armor stand
 gamemode spectator
