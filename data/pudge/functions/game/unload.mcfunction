@@ -1,6 +1,7 @@
 kill @e[type=marker,tag=gameMarker]
 kill @e[type=armor_stand,tag=gameMarker]
 kill @e[type=armor_stand,tag=deathSpectate]
+kill @e[type=arrow]
 tag @a add playerReset
 bossbar set score players
 scoreboard objectives setdisplay list
