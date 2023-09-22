@@ -20,7 +20,7 @@ execute if score #TempTeams var matches 1 run tellraw @s [{"text": "(-) ","color
 execute if score #TempTeams var matches 2 unless entity @s[tag=tempAttackerTag] run tellraw @s [{"text": "(-) ","color": "red"},{"text": "You were killed by ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempAttackerTag,limit=1]"}]}]
 
 #if player killed themselves, give kill credit to last attacker
-execute if entity @s[tag=tempAttackerTag,scores={lastDamagedBy=-2147483648..2147483647}] run function pudge:general/death/handle_self_kill
+execute unless score #Impressive var matches 1 if entity @s[tag=tempAttackerTag,scores={lastDamagedBy=-2147483648..2147483647}] run function pudge:general/death/handle_self_kill
 
 #calculate new kill bounty
 execute if score #TempTeams var matches 0 run function pudge:general/death/bounty/reduced_bounty
