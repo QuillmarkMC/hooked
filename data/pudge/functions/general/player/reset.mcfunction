@@ -49,7 +49,7 @@ scoreboard players reset @s stupidTotemFix
 scoreboard players reset @s clearTotemEffects
 scoreboard players reset @s surrender
 scoreboard players reset @s grabDropDelay
-scoreboard players operation @s announcer = $Redmage announcer
+scoreboard players operation @s announcer = $Default announcer
 advancement revoke @s from pudge:music/root
 
 #state-based reset

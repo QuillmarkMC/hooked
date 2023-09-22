@@ -21,4 +21,7 @@ execute at @s unless block ~ ~.7 ~ #pudge:ignore_bounce run scoreboard players s
 
 execute if score #Temp bounceCount matches 1.. run scoreboard players remove @s bounceCount 1
 execute if score #Temp bounceCount matches 1.. at @s run playsound entity.arrow.hit player @a ~ ~ ~
+
+execute at @s if predicate pudge:water/in_water run scoreboard players set @s bounceCount 0
+
 data modify entity @s inGround set value 0b
