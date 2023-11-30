@@ -5,7 +5,7 @@ scoreboard objectives add health dummy
 scoreboard objectives add maxHealth dummy
 scoreboard objectives add displayHealth dummy "Health"
 scoreboard players set $Default maxHealth 200
-scoreboard objectives setdisplay belowName displayHealth
+scoreboard objectives setdisplay below_name displayHealth
 scoreboard objectives add healthRegen dummy
 scoreboard players set $RegenTime healthRegen 20
 scoreboard objectives add resist minecraft.custom:minecraft.damage_resisted
