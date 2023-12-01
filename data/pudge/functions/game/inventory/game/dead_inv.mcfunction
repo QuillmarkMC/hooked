@@ -1,5 +1,5 @@
 #debug message
-#execute if score $Debug var matches 1.. run say game/inventory/dead_inv.mcfunction
+execute if score $Debug var matches 3.. run say pudge:game/inventory/dead_inv
 
 function pudge:game/inventory/default_clear
 item replace entity @s armor.head with air

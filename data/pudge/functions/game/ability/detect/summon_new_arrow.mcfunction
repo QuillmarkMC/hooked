@@ -1,5 +1,5 @@
 #debug message
-execute if score $Debug var matches 1.. run say game/ability/detect/summon_new_arrow.mcfunction
+execute if score $Debug var matches 1.. run say pudge:game/ability/detect/summon_new_arrow
 #summon arrow
 execute at @s run summon arrow ~ ~ ~ {Tags:["tempArrowTag","arrowInit"]}
 execute at @s run data modify entity @e[type=arrow,tag=tempArrowTag,sort=nearest,limit=1] Owner set from entity @s Owner

@@ -1,5 +1,5 @@
 #debug message
-#execute if score $Debug var matches 1.. run say game/ability/grapple/move.mcfunction
+execute if score $Debug var matches 3.. run say pudge:game/ability/grapple/move
 
 #this function is executed every tick as a player who has been grappled
 #progress timer

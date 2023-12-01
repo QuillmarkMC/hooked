@@ -1,7 +1,8 @@
 {
     "pack": {
-        "pack_format": 18,
-        "description": "Datapack for Hook, Line, & Creeper"
+        "pack_format": 26,
+        "description": "Datapack for Hook, Line, & Creeper",
+        "supported_formats": [18, 26]
     },
     "filter": {
         "block": [
@@ -12,6 +13,14 @@
             {
                 "namespace": "minecraft",
                 "path": "advancements/.*"
+            }
+        ]
+    },
+    "overlays": {
+        "entries": [
+            {
+                "formats": 18,
+                "directory": "1.20.2"
             }
         ]
     }

@@ -2,7 +2,7 @@
 #   Also takes $proj_power bossdata for motion modification
 # Outputs to pudge:motion Motion
 #debug message
-execute if score $Debug var matches 1.. run say game/maps/forest/river/power/rapid_fire/get_motion.mcfunction
+execute if score $Debug var matches 1.. run say pudge:game/maps/forest/river/power/rapid_fire/get_motion
 
 summon marker ^ ^ ^0.01 {Tags:["boss_proj_calc"]}
 
