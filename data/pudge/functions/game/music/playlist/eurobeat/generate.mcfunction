@@ -1,6 +1,6 @@
 #debug message
 execute if score $Debug var matches 1.. run say pudge:game/music/generate
-#randomly pick a tip to display
+
 scoreboard players set #Temp music 0
 #rng
 scoreboard players set $max rng 20
