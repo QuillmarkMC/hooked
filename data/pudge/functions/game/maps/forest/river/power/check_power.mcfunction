@@ -1,5 +1,5 @@
 #debug message
-execute if score $Debug var matches 1.. run say pudge/game/maps/river/power/check_power.mcfunction
+execute if score $Debug var matches 1.. run say pudge:pudge/game/maps/river/power/check_power
 
 execute if entity @s[advancements={pudge:attack_slime={hell=true}}] run function pudge:game/maps/forest/river/power/hell/start
 execute if entity @s[advancements={pudge:attack_slime={gold=true}}] run function pudge:game/maps/forest/river/power/gold/start

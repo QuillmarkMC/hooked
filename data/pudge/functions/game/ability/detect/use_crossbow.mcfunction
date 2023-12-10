@@ -1,5 +1,5 @@
 #debug message
-execute if score $Debug var matches 1.. run say game/ability/detect/use_crossbow.mcfunction
+execute if score $Debug var matches 1.. run say pudge:game/ability/detect/use_crossbow
 
 tag @s add tempArrowOwnerTag
 

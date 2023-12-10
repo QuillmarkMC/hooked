@@ -1,5 +1,5 @@
 #debug message
-#execute if score $Debug var matches 1.. run say game/inventory/alive_inv.mcfunction
+execute if score $Debug var matches 3.. run say pudge:game/inventory/alive_inv
 #goat horn sound switch detection
 execute if data entity @s Inventory[{Slot:-106b,id:"minecraft:goat_horn"}] run function pudge:game/ability/goat/change_instrument
 

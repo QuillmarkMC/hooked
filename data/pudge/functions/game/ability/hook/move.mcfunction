@@ -1,5 +1,5 @@
 #debug message
-#execute if score $Debug var matches 1.. run say game/ability/hook/move.mcfunction
+execute if score $Debug var matches 3.. run say pudge:game/ability/hook/move
 # @s = receiver
 
 #this function is executed every tick as a player who has been hooked

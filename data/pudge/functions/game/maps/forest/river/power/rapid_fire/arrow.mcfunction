@@ -1,5 +1,5 @@
 #debug message
-execute if score $Debug var matches 1.. run say game/maps/forest/river/power/rapid_fire/arrow.mcfunction
+execute if score $Debug var matches 1.. run say pudge:game/maps/forest/river/power/rapid_fire/arrow
 
 scoreboard players set $proj_power rapidFireTimer 400
 playsound minecraft:item.crossbow.shoot ambient @a ~ ~ ~

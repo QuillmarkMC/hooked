@@ -1,5 +1,5 @@
 #debug message
-execute if score $Debug var matches 1.. run say game/ability/creeper/explode.mcfunction
+execute if score $Debug var matches 1.. run say pudge:game/ability/creeper/explode
 
 # @s = area effect cloud of specific creeper ability
 scoreboard players operation #Temp var = @s snowballOwner
