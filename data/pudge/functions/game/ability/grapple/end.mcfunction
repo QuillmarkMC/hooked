@@ -1,5 +1,5 @@
 #debug message
-execute if score $Debug var matches 1.. run say game/ability/grapple/end.mcfunction
+execute if score $Debug var matches 1.. run say pudge:game/ability/grapple/end
 
 #tag armor stand belonging to hooked player
 scoreboard players operation $Temp_Marker grappleID = @s entityid

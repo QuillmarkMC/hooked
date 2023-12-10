@@ -1,6 +1,6 @@
 # @s = player that was attacked
 #debug message
-execute if score $Debug var matches 1.. run say entity_hit_matching/on_hit.mcfunction
+execute if score $Debug var matches 1.. run say entity_hit_matching:on_hit
 
 tag @s add tempReceiverTag
 

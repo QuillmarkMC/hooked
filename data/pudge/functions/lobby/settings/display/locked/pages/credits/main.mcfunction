@@ -17,11 +17,11 @@ setblock 204 65 -66 player_wall_head[facing=south]{SkullOwner:{Name:"Soccby"}}
 setblock 205 65 -66 air
 #3rd row
 setblock 199 64 -66 air
-setblock 200 64 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"white",messages:['{"text":"Strongis13","color":"aqua"}', '{"text":"Programmer","color":"light_gray"}', '{"text":"Game Balance","color":"light_gray"}', '""']}}
+setblock 200 64 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"white",messages:['{"text":"Strongis13","color":"aqua"}', '{"text":"Programmer","color":"white"}', '{"text":"Game Balance","color":"white"}', '""']}}
 setblock 201 64 -66 air
 setblock 202 64 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"light_gray",messages:['[{"text":"Click here ","color":"yellow"},{"text":"to","color":"white"}]', '{"text":"watch this","color":"white"}', '{"text":"map\'s trailer!","color":"white"}', '{"text":"","clickEvent":{"action":"run_command","value": "trigger lobbysigns set 500"}}']}}
 setblock 203 64 -66 air
-setblock 204 64 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"white",messages:['{"text":"Soccby","color":"aqua"}', '{"text":"Builder","color":"light_gray"}', '{"text":"Game Balance","color":"light_gray"}', '""']}}
+setblock 204 64 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"white",messages:['{"text":"Soccby","color":"aqua"}', '{"text":"Builder","color":"white"}', '{"text":"Game Balance","color":"white"}', '""']}}
 setblock 205 64 -66 air
 #bottom row (navigation)
 function pudge:lobby/settings/display/locked/pages/page_selection/back

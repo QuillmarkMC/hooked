@@ -1,6 +1,6 @@
 # @s = attacker
 #debug message
-execute if score $Debug var matches 1.. run say entity_hit_matching/reward.mcfunction
+execute if score $Debug var matches 1.. run say entity_hit_matching:reward
 
 # attacker = tempAttackerTag, receiver = tempReceiverTag
 tag @s add tempAttackerTag

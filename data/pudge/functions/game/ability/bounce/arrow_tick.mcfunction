@@ -1,4 +1,4 @@
-#called every tick from game/tick.mcfunction by arrows that have bounces left
+#called every tick from pudge:game/tick by arrows that have bounces left
 # @s = arrow
 scoreboard players set #Temp bounceCount 0
 

@@ -5,7 +5,7 @@ scoreboard objectives add health dummy
 scoreboard objectives add maxHealth dummy
 scoreboard objectives add displayHealth dummy "Health"
 scoreboard players set $Default maxHealth 200
-scoreboard objectives setdisplay belowName displayHealth
+scoreboard objectives setdisplay below_name displayHealth
 scoreboard objectives add healthRegen dummy
 scoreboard players set $RegenTime healthRegen 20
 scoreboard objectives add resist minecraft.custom:minecraft.damage_resisted
@@ -137,10 +137,6 @@ scoreboard objectives add shopItem.Retract dummy
 scoreboard objectives add shopItem.Grab dummy
 scoreboard objectives add gold dummy {"text": "Gold","color": "gold"}
 scoreboard objectives add totalGold dummy
-#scoreboard players set $IncomeCycle gold 80
-#scoreboard players set $IncomeAmount gold 1
-#scoreboard players set $StartingGold gold 30
-#scoreboard players set $TeamkillPunishment gold 10
 scoreboard objectives add dropBedrock minecraft.dropped:minecraft.bedrock
 scoreboard objectives add dropPotion minecraft.dropped:minecraft.potion
 #raycasting
@@ -148,7 +144,6 @@ scoreboard objectives add raycast dummy
 
 #kill bounty
 scoreboard objectives add bounty dummy
-#scoreboard players set $BaseBounty var 20
 #killstreak
 scoreboard objectives add killstreak dummy
 #kill combos
@@ -242,7 +237,6 @@ team modify random friendlyFire true
 team add spectator
 team modify spectator color dark_gray
 team modify spectator friendlyFire false
-#team modify spectator prefix {"text":"[Spectator] ","color":"dark_gray"}
 #extra teams used by river powerups for glowing effect
 team add gold
 team modify gold color gold
@@ -278,7 +272,6 @@ gamerule keepInventory true
 gamerule mobGriefing false
 gamerule naturalRegeneration true
 gamerule playersSleepingPercentage 101
-# ?
 gamerule reducedDebugInfo false
 gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks true

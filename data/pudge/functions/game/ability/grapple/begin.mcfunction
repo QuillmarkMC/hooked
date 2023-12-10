@@ -1,5 +1,5 @@
 #debug message
-execute if score $Debug var matches 1.. run say game/ability/grapple/begin.mcfunction
+execute if score $Debug var matches 1.. run say pudge:game/ability/grapple/begin
 
 # @s = attacker
 #if receiver is already in a grapple effect, end first one before beginning new one

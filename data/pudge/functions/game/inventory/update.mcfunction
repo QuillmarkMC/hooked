@@ -1,5 +1,5 @@
 #debug message
-#execute if score $Debug var matches 1.. run say game/inventory/update.mcfunction
+execute if score $Debug var matches 3.. run say pudge:game/inventory/update
 
 scoreboard players set $DelayInventory var 0
 #item shop logic

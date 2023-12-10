@@ -1,5 +1,5 @@
 #debug message
-execute if score $Debug var matches 1.. run say game/ability/hook/begin.mcfunction
+execute if score $Debug var matches 1.. run say pudge:game/ability/hook/begin
 
 # @s = attacker
 #tag hit target with ID of source player
