@@ -1,5 +1,5 @@
-execute if score @s cdTotem matches ..0 run item replace entity @s hotbar.3 with bedrock{CustomModelData:105}
-execute if score @s cdTotem matches 1.. run item replace entity @s hotbar.3 with shears{CustomModelData:105}
+execute if score @s cdTotem matches ..0 run item replace entity @s hotbar.3 with bedrock[custom_model_data=105]
+execute if score @s cdTotem matches 1.. run item replace entity @s hotbar.3 with shears[custom_model_data=105]
 
 #dynamic item lore
 item modify entity @s hotbar.3 pudge:lore/totem/totem_name

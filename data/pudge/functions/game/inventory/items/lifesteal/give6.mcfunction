@@ -1,4 +1,4 @@
-item replace entity @s hotbar.6 with bedrock{CustomModelData:104}
+item replace entity @s hotbar.6 with bedrock[custom_model_data=104]
 
 #dynamic item lore
 item modify entity @s hotbar.6 pudge:lore/lifesteal/lifesteal_name
