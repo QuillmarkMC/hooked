@@ -1,7 +1,7 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:music_disc_otherside"
+        "id": "minecraft:music_disc_otherside"
       },
       "title": "Avast Your Ass",
       "description": "by Kitsune^2",

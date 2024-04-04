@@ -19,7 +19,7 @@
           }
         ]
       ],
-      "replace": false
+      "mode": "append"
     }
   ]
   

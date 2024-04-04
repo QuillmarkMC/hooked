@@ -24,7 +24,7 @@
           }
         ]
       ],
-      "replace": false
+      "mode": "append"
     }
   ]
   

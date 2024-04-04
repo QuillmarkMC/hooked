@@ -1,7 +1,7 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:music_disc_wait"
+        "id": "minecraft:music_disc_wait"
       },
       "title": "Wait",
       "description": "C418",

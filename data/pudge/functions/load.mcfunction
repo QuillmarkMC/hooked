@@ -276,3 +276,4 @@ gamerule reducedDebugInfo false
 gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks true
 gamerule sendCommandFeedback false
+gamerule spawnChunkRadius 0

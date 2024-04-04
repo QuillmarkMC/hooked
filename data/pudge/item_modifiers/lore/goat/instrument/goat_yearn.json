@@ -16,7 +16,7 @@
           }
         ]
       ],
-      "replace": false
+      "mode": "append"
     }
   ]
   
