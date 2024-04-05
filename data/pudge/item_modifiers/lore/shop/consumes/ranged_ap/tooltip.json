@@ -1,0 +1,45 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          [
+            {
+              "text": "Immediate effect!",
+              "color": "dark_red",
+              "italic": false,
+              "bold": true
+            }
+          ],
+          [
+            {
+              "text": "Instantly increases the damage of your",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "Hookshot by 50% for 20 seconds upon purchasing.",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "Lose your Hatchet for the same amount of time.",
+              "color": "dark_red",
+              "italic": true
+            }
+          ],
+          [
+            {
+              "text": "",
+              "color": "gray",
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_all"
+      }
+]

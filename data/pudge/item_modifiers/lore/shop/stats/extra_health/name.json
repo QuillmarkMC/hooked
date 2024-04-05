@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "text": "Upgrade Max Health",
+            "color": "#BD4D4D",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

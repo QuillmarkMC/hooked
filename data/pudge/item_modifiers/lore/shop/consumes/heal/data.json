@@ -1,0 +1,16 @@
+[
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:hide_additional_tooltip": {},
+        "minecraft:custom_data": {
+          "HealConsumes": 1,
+          "Shop": 1
+        }
+      }
+    },
+    {
+      "function": "minecraft:set_potion",
+      "id": "minecraft:healing"
+    }
+]

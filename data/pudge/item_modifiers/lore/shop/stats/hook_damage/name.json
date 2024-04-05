@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "text": "Upgrade Hook Damage",
+            "color": "dark_red",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

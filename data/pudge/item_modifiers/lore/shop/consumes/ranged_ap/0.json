@@ -1,0 +1,19 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/consumes/ranged_ap/tooltip"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/consumes/ranged_ap/name"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/gold"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/consumes/ranged_ap/data"
+    }
+  ]
+  

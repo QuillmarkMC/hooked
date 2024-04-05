@@ -1,0 +1,38 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/grapple/tooltip"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Cooldown: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "12s",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/grapple/name"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/gold"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/grapple/data"
+    }
+  ]
+  

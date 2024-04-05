@@ -1,0 +1,50 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/stats/hook_cd/tooltip"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Current Cooldown: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "5.0s",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "Upgraded Cooldown: ",
+            "color": "dark_purple",
+            "italic": false
+          },
+          {
+            "text": "4.6s",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/stats/hook_cd/name"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/gold"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/stats/hook_cd/data"
+    }
+  ]
+  

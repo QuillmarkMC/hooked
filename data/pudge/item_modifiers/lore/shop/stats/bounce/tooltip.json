@@ -1,0 +1,30 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          [
+            {
+              "text": "Allows the arrows you shoot to bounce",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "off of walls!",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "",
+              "color": "gray",
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_all"
+      }
+]

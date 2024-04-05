@@ -1,0 +1,37 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          [
+            {
+              "text": "Attaches to the ground or a player and",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "pulls you to its location.",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "Grappling hook does not ricochet!",
+              "color": "dark_red",
+              "italic": true
+            }
+          ],
+          [
+            {
+              "text": "",
+              "color": "gray",
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_all"
+      }
+]

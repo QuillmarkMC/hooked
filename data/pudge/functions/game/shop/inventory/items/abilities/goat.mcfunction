@@ -1,11 +1,15 @@
-execute if score @s shopItem.Goat matches 0 if score $GoatCost shop matches 1.. run item replace entity @s enderchest.5 with bedrock{GoatAbility:1,Shop:1,display:{Name:'{"text":"The Lion Horn of Stormwind","color":"#A335EE","bold":true,"italic":false}',Lore:['{"text":"Blow into the horn to strike fear","color":"gray","italic":false}','{"text":"into your enemies.","color":"gray","italic":false}','{"text":""}']},CustomModelData:106}
-execute if score @s shopItem.Goat matches 1 run item replace entity @s enderchest.5 with bedrock{GoatAbility:1,Shop:1,display:{Name:'{"text":"The Lion Horn of Stormwind","color":"#A335EE","bold":true,"italic":false}',Lore:['{"text":"Blow into the horn to strike fear","color":"gray","italic":false}','{"text":"into your enemies.","color":"gray","italic":false}','{"text":""}','[{"text":"Upgraded: ","color":"dark_purple","italic":false},{"text":"No effect","color":"dark_red","italic":true}]']},CustomModelData:106}
-execute if score @s shopItem.Goat matches 2 run item replace entity @s enderchest.5 with bedrock{GoatAbility:1,Shop:1,display:{Name:'{"text":"The Lion Horn of Stormwind","color":"#A335EE","bold":true,"italic":false}',Lore:['{"text":"Blow into the horn to strike fear","color":"gray","italic":false}','{"text":"into your enemies.","color":"gray","italic":false}','{"text":""}','[{"text":"Upgraded: ","color":"dark_purple","italic":false},{"text":"No effect","color":"dark_red","italic":true}]']},CustomModelData:106}
-execute if score @s shopItem.Goat matches 3 run item replace entity @s enderchest.5 with bedrock{GoatAbility:1,Shop:1,display:{Name:'{"text":"The Lion Horn of Stormwind","color":"#A335EE","bold":true,"italic":false}',Lore:['{"text":"Blow into the horn to strike fear","color":"gray","italic":false}','{"text":"into your enemies.","color":"gray","italic":false}','{"text":""}','[{"text":"Upgraded: ","color":"dark_purple","italic":false},{"text":"No effect","color":"dark_red","italic":true}]']},CustomModelData:106}
-execute if score @s shopItem.Goat matches 4 run item replace entity @s enderchest.5 with bedrock{GoatAbility:1,Shop:1,display:{Name:'{"text":"The Lion Horn of Stormwind","color":"#A335EE","bold":true,"italic":false}',Lore:['{"text":"Blow into the horn to strike fear","color":"gray","italic":false}','{"text":"into your enemies.","color":"gray","italic":false}','{"text":""}','[{"text":"Upgraded: ","color":"dark_purple","italic":false},{"text":"No effect","color":"dark_red","italic":true}]']},CustomModelData:106}
-execute if score @s shopItem.Goat matches 5.. run item replace entity @s enderchest.5 with bedrock{GoatAbility:1,Shop:1,display:{Name:'[{"text":"The Lion Horn of Stormwind","color":"#A335EE","bold":true,"italic":false},{"text":" (maxed)","color":"dark_gray","bold":false,"italic":true}]',Lore:['{"text":"Blow into the horn to strike fear","color":"gray","italic":false}','{"text":"into your enemies.","color":"gray","italic":false}']},Enchantments:[{}],CustomModelData:106}
+item replace entity @s enderchest.5 with bedrock
+
 #set dynamic gold cost lore
 scoreboard players operation $TempGoldDisplay shop = $GoatCost shop
-execute if score $GoatCost shop matches 1.. if score @s shopItem.Goat matches 0..4 run item modify entity @s enderchest.5 pudge:lore/shop/gold
 
-execute if score $GoatCost shop matches ..0 run item replace entity @s enderchest.5 with bedrock{UnavailableItem:1,Shop:1,display:{Name:'{"text":"Item Unavailable","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"This item has been disabled","color":"gray","italic":false}','{"text":"from the lobby settings.","color":"gray","italic":false}']},CustomModelData:7}
+#set all item data based on purchase state
+execute if score @s shopItem.Goat matches 0 if score $GoatCost shop matches 1.. run item modify entity @s enderchest.5 pudge:lore/shop/abilities/goat/0
+execute if score @s shopItem.Goat matches 1 run item modify entity @s enderchest.5 pudge:lore/shop/abilities/goat/1
+execute if score @s shopItem.Goat matches 2 run item modify entity @s enderchest.5 pudge:lore/shop/abilities/goat/2
+execute if score @s shopItem.Goat matches 3 run item modify entity @s enderchest.5 pudge:lore/shop/abilities/goat/3
+execute if score @s shopItem.Goat matches 4 run item modify entity @s enderchest.5 pudge:lore/shop/abilities/goat/4
+execute if score @s shopItem.Goat matches 5.. run item modify entity @s enderchest.5 pudge:lore/shop/abilities/goat/5
+
+#if item is disabled
+execute if score $GoatCost shop matches ..0 run item modify entity @s enderchest.5 pudge:lore/shop/unavailable

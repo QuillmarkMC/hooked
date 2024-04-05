@@ -1,0 +1,50 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/totem/tooltip"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Success chance: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "10%",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "Cooldown: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "30s",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/totem/name"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/gold"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/totem/data"
+    }
+  ]
+  

@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "text": "Anchor Arms",
+            "color": "#CCCA99",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

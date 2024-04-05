@@ -1,0 +1,38 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/knockback/tooltip"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Knockback: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "2",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/knockback/name"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/gold"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/knockback/data"
+    }
+  ]
+  

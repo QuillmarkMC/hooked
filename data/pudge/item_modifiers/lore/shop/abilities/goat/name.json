@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "text": "The Lion Horn of Stormwind",
+            "color": "#A335EE",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

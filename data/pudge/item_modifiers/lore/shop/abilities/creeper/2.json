@@ -1,0 +1,74 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/creeper/tooltip"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Current Cooldown: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "15s",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "Current Damage: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "2.0 hearts",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "Current Knockback: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "x1",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "Upgraded Knockback: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "x2",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/creeper/name"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/gold"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/creeper/data"
+    }
+  ]
+  

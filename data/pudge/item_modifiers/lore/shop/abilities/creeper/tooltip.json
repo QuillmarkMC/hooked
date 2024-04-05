@@ -1,0 +1,30 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          [
+            {
+              "text": "When thrown, this egg will deal damage",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "and knockback to all surrounding players.",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "",
+              "color": "gray",
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_all"
+      }
+]

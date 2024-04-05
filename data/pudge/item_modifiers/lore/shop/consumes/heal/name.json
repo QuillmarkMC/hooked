@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "text": "Instant Health",
+            "color": "#FF4E4B",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "text": "Lifestealing",
+            "color": "#911919",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]
