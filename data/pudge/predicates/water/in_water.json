@@ -5,8 +5,7 @@
       "predicate": {
         "location": {
           "fluid": {
-            "fluid": "minecraft:water",
-            "tag": "minecraft:water"
+            "fluids": "minecraft:water"
           }
         }
       }
