@@ -1,7 +1,7 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:music_disc_otherside"
+        "id": "minecraft:music_disc_otherside"
       },
       "title": "You Give Love a Bad Name",
       "description": "Remix by Turbo",

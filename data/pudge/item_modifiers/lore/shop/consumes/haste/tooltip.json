@@ -1,0 +1,38 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          [
+            {
+              "text": "Immediate effect!",
+              "color": "dark_red",
+              "italic": false,
+              "bold": true
+            }
+          ],
+          [
+            {
+              "text": "Instantly grants Speed and Dolphin's",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "Grace for 20 seconds upon purchasing.",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "",
+              "color": "gray",
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_all"
+      }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "text": "Stick of Suffering",
+            "color": "#C69B6D",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

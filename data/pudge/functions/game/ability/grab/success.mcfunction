@@ -1,6 +1,9 @@
-#called from pudge:game/ability/grab/raycast/hit
+#called from pudge:game/ability/grab/attempt
 # @s = player to be grabbed
 # @a[tag=GrabbingPlayerTag] = player who is grabbing
+
+#debug message
+execute if score $Debug var matches 1.. run say pudge:game/ability/grab/success
 
 scoreboard players operation @s grabID = @a[tag=GrabbingPlayerTag,limit=1] entityid
 tag @s add InitialGrabMountTag

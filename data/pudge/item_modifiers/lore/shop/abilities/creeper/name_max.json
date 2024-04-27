@@ -1,0 +1,20 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "text": "Throwable Creeper",
+            "color": "dark_green",
+            "bold": true,
+            "italic": false
+          },
+          {
+            "text": " (maxed)",
+            "color": "dark_gray",
+            "bold": false,
+            "italic": true
+          }
+        ]
+      }
+]

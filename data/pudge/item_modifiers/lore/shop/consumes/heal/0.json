@@ -1,0 +1,19 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/consumes/heal/tooltip"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/consumes/heal/name"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/gold"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/consumes/heal/data"
+    }
+  ]
+  

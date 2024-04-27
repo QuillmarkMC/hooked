@@ -5,7 +5,7 @@ execute if score $Debug var matches 1.. run say entity_hit_matching:on_hit
 tag @s add tempReceiverTag
 
 #determine what item was used to attack, deal damage/set data accordingly
-execute if data entity @a[tag=tempAttackerTag,limit=1] SelectedItem.tag.Melee run function pudge:game/ability/melee/check_swing
+execute if data entity @a[tag=tempAttackerTag,limit=1] SelectedItem.components.minecraft:custom_data.Melee run function pudge:game/ability/melee/check_swing
 
 scoreboard players set #TotemTest totemChance 0
 execute if entity @a[tag=tempAttackerTag,limit=1,advancements={entity_hit_matching:on_hit={hookarrow=true}}] if score @s totemChance matches 1.. run function pudge:game/ability/totem/try

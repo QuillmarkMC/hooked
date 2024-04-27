@@ -1,0 +1,50 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/grapple/tooltip"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Current Cooldown: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "9s",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "Upgraded Cooldown: ",
+            "color": "dark_purple",
+            "italic": false
+          },
+          {
+            "text": "8s",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/grapple/name"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/gold"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/grapple/data"
+    }
+  ]
+  

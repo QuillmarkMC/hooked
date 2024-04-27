@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "text": "Totem of Protection",
+            "color": "#FF8707",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

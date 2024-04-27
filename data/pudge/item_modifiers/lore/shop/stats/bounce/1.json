@@ -1,0 +1,50 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/stats/bounce/tooltip"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Current bounce count: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "1",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "Upgraded bounce count: ",
+            "color": "dark_purple",
+            "italic": false
+          },
+          {
+            "text": "2",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/stats/bounce/name"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/gold"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/stats/bounce/data"
+    }
+  ]
+  

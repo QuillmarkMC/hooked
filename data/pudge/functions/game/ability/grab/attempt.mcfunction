@@ -1,6 +1,9 @@
 # @s = grabbing player
 # @a[tag=TempGrabbedTag] = grabbed player
 
+#debug message
+execute if score $Debug var matches 1.. run say pudge:game/ability/grab/attempt
+
 scoreboard players set $AllowGrab grabID 1
 tag @s add GrabbingPlayerTag
 execute at @s as @a[distance=..4,sort=nearest,limit=1,tag=!GrabbingPlayerTag] run tag @s add TempGrabbedTag

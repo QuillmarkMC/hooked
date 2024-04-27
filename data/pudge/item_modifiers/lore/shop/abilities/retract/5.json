@@ -1,0 +1,40 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/retract/tooltip"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Current Speed: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "20 blocks per second",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/retract/name_max"
+    },
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/retract/data"
+    }
+  ]
+  

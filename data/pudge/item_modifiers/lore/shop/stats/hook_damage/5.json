@@ -1,0 +1,40 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/stats/hook_damage/tooltip"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Current Damage: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "4.5 hearts",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/stats/hook_damage/name_max"
+    },
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/stats/hook_damage/data"
+    }
+  ]
+  

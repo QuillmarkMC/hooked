@@ -1,0 +1,30 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          [
+            {
+              "text": "Blow into the horn to strike fear",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "into your enemies.",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "",
+              "color": "gray",
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_all"
+      }
+]

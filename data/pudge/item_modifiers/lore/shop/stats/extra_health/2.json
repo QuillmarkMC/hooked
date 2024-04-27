@@ -1,0 +1,50 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/stats/extra_health/tooltip"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Current Max Health: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "14 hearts",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "Upgraded Max Health: ",
+            "color": "dark_purple",
+            "italic": false
+          },
+          {
+            "text": "16 hearts",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/stats/extra_health/name"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/gold"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/stats/extra_health/data"
+    }
+  ]
+  

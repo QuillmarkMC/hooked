@@ -1,7 +1,7 @@
 {
     "display": {
       "icon": {
-        "item": "minecraft:music_disc_blocks"
+        "id": "minecraft:music_disc_blocks"
       },
       "title": "Blocks",
       "description": "C418",

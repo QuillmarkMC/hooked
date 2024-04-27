@@ -1,6 +1,7 @@
 ##Scoreboards
 scoreboard objectives add var dummy
 execute unless score $State var matches 1.. run scoreboard players set $State var 0
+execute unless score $RealmsRelease var matches 1.. run scoreboard players set $RealmsRelease var 0
 scoreboard objectives add health dummy
 scoreboard objectives add maxHealth dummy
 scoreboard objectives add displayHealth dummy "Health"
@@ -276,3 +277,4 @@ gamerule reducedDebugInfo false
 gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks true
 gamerule sendCommandFeedback false
+gamerule spawnChunkRadius 0

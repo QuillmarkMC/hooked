@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "text": "Ranged Attack Power",
+            "color": "#8000E5",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

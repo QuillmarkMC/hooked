@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "text": "Speed",
+            "color": "#7ECAFF",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

@@ -1,8 +1,4 @@
 #update the state of all items in the ender chest inventory for @s (player)
-#execute unless slot is correct run function reset_slot (repeat for every item in shop)
-#execute unless data entity @s EnderItems[{Slot:0b,id:"minecraft:potion",tag:{HealConsumes:1}}] run function pudge:game/shop/inventory/items/consumes/heal
-#execute unless data entity @s EnderItems[{Slot:1b,id:"minecraft:potion",tag:{HasteConsumes:1}}] run function pudge:game/shop/inventory/items/consumes/haste
-#execute unless data entity @s EnderItems[{Slot:2b,id:"minecraft:potion",tag:{RangedAPConsumes:1}}] run function pudge:game/shop/inventory/items/consumes/ranged_ap
 function pudge:game/shop/inventory/items/consumes/heal
 function pudge:game/shop/inventory/items/consumes/haste
 function pudge:game/shop/inventory/items/consumes/ranged_ap
@@ -29,4 +25,4 @@ item replace entity @s enderchest.22 with air
 item replace entity @s enderchest.23 with air
 item replace entity @s enderchest.24 with air
 item replace entity @s enderchest.25 with air
-execute unless data entity @s EnderItems[{Slot:26b,id:"minecraft:bedrock",tag:{BackPage:1}}] run item replace entity @s enderchest.26 with bedrock{BackPage:1,Shop:1,display:{Name:'{"text":"Previous Page","color":"dark_red","bold":true,"italic":false}',Lore:['{"text":"Go back to the previous page.","color":"gray","italic":false}']},HideFlags:127,CustomModelData:7}
+item replace entity @s enderchest.26 with bedrock[custom_name='{"text":"Previous Page","color":"dark_red","bold":true,"italic":false}',lore=['{"text":"Go back to the previous page.","color":"gray","italic":false}'],custom_model_data=7,custom_data={BackPage:1b,Shop:1b},hide_additional_tooltip={}]

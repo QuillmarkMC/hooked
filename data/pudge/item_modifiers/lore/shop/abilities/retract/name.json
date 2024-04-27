@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "text": "Gyro-Balanced Retraction Coils",
+            "color": "#33FFB8",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

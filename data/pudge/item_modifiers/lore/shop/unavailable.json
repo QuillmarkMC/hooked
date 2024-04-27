@@ -1,0 +1,46 @@
+[
+    {
+      "function": "minecraft:set_name",
+      "entity": "this",
+      "name": [
+        {
+          "text": "Item Unavailable",
+          "color": "dark_red",
+          "bold": true,
+          "italic": false
+        }
+      ]
+    },
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          [
+            {
+              "text": "This item has been disabled",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "from the lobby settings.",
+              "color": "gray",
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_all"
+      },
+      {
+        "function": "minecraft:set_components",
+        "components": {
+          "minecraft:custom_model_data": 7,
+          "minecraft:custom_data": {
+            "UnavailableItem": 1,
+            "Shop": 1
+          }
+        }
+      }
+  ]
+    

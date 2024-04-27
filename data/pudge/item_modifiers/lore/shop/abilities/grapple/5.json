@@ -1,0 +1,40 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/grapple/tooltip"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Current Cooldown: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "8s",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/grapple/name_max"
+    },
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/grapple/data"
+    }
+  ]
+  

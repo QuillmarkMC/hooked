@@ -1,0 +1,38 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          [
+            {
+              "text": "Immediate effect!",
+              "color": "dark_red",
+              "italic": false,
+              "bold": true
+            }
+          ],
+          [
+            {
+              "text": "Instantly restores 2 hearts upon",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "purchasing.",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "",
+              "color": "gray",
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_all"
+      }
+]

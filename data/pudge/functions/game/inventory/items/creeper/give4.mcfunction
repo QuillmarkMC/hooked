@@ -1,5 +1,5 @@
-execute if score @s cdCreeper matches ..0 run item replace entity @s hotbar.4 with snowball{CustomModelData:100,CreeperSnowball:1b,CustomSnowball:1b}
-execute if score @s cdCreeper matches 1.. run item replace entity @s hotbar.4 with shears{CustomModelData:100}
+execute if score @s cdCreeper matches ..0 run item replace entity @s hotbar.4 with snowball[custom_model_data=100,custom_data={CreeperSnowball:1b,CustomSnowball:1b}]
+execute if score @s cdCreeper matches 1.. run item replace entity @s hotbar.4 with shears[custom_model_data=100]
 
 #dynamic item lore
 item modify entity @s hotbar.4 pudge:lore/creeper/creeper_name

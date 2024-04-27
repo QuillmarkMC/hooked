@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "text": "Upgrade Hook Cooldown",
+            "color": "yellow",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

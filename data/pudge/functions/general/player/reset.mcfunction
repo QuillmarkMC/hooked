@@ -49,7 +49,8 @@ scoreboard players reset @s stupidTotemFix
 scoreboard players reset @s clearTotemEffects
 scoreboard players reset @s surrender
 scoreboard players reset @s grabDropDelay
-scoreboard players operation @s announcer = $Default announcer
+execute unless score $RealmsRelease var matches 1 run scoreboard players operation @s announcer = $Default announcer
+execute if score $RealmsRelease var matches 1 run scoreboard players operation @s announcer = $Redmage announcer
 advancement revoke @s from pudge:music/root
 
 #state-based reset

@@ -1,0 +1,40 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/knockback/tooltip"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Current Knockback: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "6",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/knockback/name_max"
+    },
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:enchantment_glint_override": true
+      }
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/knockback/data"
+    }
+  ]
+  

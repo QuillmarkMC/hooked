@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "text": "Grappling Hook",
+            "color": "#9871FF",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "text": "Ricochet Arrows",
+            "color": "#FCC272",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

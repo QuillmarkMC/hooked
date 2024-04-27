@@ -1,0 +1,30 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          [
+            {
+              "text": "Grants instant health on Hookshot",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "hits, and regeneration on any kill.",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "",
+              "color": "gray",
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_all"
+      }
+]

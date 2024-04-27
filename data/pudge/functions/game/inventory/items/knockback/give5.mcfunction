@@ -1,8 +1,8 @@
-execute if score @s knockbackLevel matches 2 run item replace entity @s hotbar.5 with bedrock{CustomModelData:102,Enchantments:[{id:"knockback",lvl:2}],HideFlags:127}
-execute if score @s knockbackLevel matches 3 run item replace entity @s hotbar.5 with bedrock{CustomModelData:102,Enchantments:[{id:"knockback",lvl:3}],HideFlags:127}
-execute if score @s knockbackLevel matches 4 run item replace entity @s hotbar.5 with bedrock{CustomModelData:102,Enchantments:[{id:"knockback",lvl:4}],HideFlags:127}
-execute if score @s knockbackLevel matches 5 run item replace entity @s hotbar.5 with bedrock{CustomModelData:102,Enchantments:[{id:"knockback",lvl:5}],HideFlags:127}
-execute if score @s knockbackLevel matches 6.. run item replace entity @s hotbar.5 with bedrock{CustomModelData:102,Enchantments:[{id:"knockback",lvl:6}],HideFlags:127}
+execute if score @s knockbackLevel matches 2 run item replace entity @s hotbar.5 with bedrock[custom_model_data=102,enchantments={levels:{"minecraft:knockback":2},show_in_tooltip:false},hide_additional_tooltip={}]
+execute if score @s knockbackLevel matches 3 run item replace entity @s hotbar.5 with bedrock[custom_model_data=102,enchantments={levels:{"minecraft:knockback":3},show_in_tooltip:false},hide_additional_tooltip={}]
+execute if score @s knockbackLevel matches 4 run item replace entity @s hotbar.5 with bedrock[custom_model_data=102,enchantments={levels:{"minecraft:knockback":4},show_in_tooltip:false},hide_additional_tooltip={}]
+execute if score @s knockbackLevel matches 5 run item replace entity @s hotbar.5 with bedrock[custom_model_data=102,enchantments={levels:{"minecraft:knockback":5},show_in_tooltip:false},hide_additional_tooltip={}]
+execute if score @s knockbackLevel matches 6.. run item replace entity @s hotbar.5 with bedrock[custom_model_data=102,enchantments={levels:{"minecraft:knockback":6},show_in_tooltip:false},hide_additional_tooltip={}]
 
 #dynamic item lore
 item modify entity @s hotbar.5 pudge:lore/knockback/knockback_name

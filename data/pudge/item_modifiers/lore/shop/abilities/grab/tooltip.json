@@ -1,0 +1,30 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          [
+            {
+              "text": "Allows you to pick up other players and",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "throw them using your Hookshot.",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "",
+              "color": "gray",
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_all"
+      }
+]

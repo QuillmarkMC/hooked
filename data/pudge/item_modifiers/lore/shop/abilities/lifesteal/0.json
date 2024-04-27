@@ -1,0 +1,50 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/lifesteal/tooltip"
+    },
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "text": "Health on hit: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "0.5 hearts",
+            "color": "gray",
+            "italic": false
+          }
+        ],
+        [
+          {
+            "text": "Regeneration: ",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "1.0 hearts",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/lifesteal/name"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/gold"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/abilities/lifesteal/data"
+    }
+  ]
+  
