@@ -5,7 +5,7 @@
       "lore": [
         [
           {
-            "text": "Hit people to send them flying!",
+            "translate": "text.game.lore.knockback.tooltip",
             "color": "gray",
             "italic": true
           }          

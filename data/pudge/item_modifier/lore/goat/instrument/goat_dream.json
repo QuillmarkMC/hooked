@@ -5,12 +5,12 @@
       "lore": [
         [
           {
-            "text": "Instrument: ",
+            "translate": "text.game.lore.goat.instrument",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "Dream",
+            "translate": "text.game.lore.goat.instrument.dream",
             "color": "gray",
             "italic": false
           }

@@ -5,7 +5,7 @@
         "lore": [
           [
             {
-              "text": "Increases the damage of your Hookshot.",
+              "translate": "text.game.lore.shop.hook_damage.tooltip",
               "color": "gray",
               "italic": false
             }

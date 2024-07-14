@@ -5,18 +5,18 @@
       "lore": [
         [
           {
-            "text": "Your hookshot will heal you when it deals",
+            "translate": "text.game.lore.lifesteal.tooltip.1",
             "color": "gray",
             "italic": true
           }          
         ],
         {
-          "text": "damage and you will gain regeneration when",
+          "translate": "text.game.lore.lifesteal.tooltip.2",
           "color": "gray",
           "italic": true
         },
         {
-          "text": "you kill an enemy.",
+          "translate": "text.game.lore.lifesteal.tooltip.3",
           "color": "gray",
           "italic": true
         },

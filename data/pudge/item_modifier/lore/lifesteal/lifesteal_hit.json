@@ -5,7 +5,7 @@
       "lore": [
         [
           {
-            "text": "Health restored on hit: ",
+            "translate": "text.game.lore.lifesteal.hit",
             "color": "dark_green",
             "italic": false
           },
@@ -39,7 +39,7 @@
             "italic": false
           },
           {
-            "text": " hearts",
+            "translate": "text.game.lore.hearts",
             "color": "gray",
             "italic": false
           }

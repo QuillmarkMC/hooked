@@ -4,7 +4,7 @@
         "entity": "this",
         "name": [
           {
-            "text": "Lifestealing",
+            "translate": "text.game.lore.lifesteal.name",
             "color": "#911919",
             "bold": true,
             "italic": false

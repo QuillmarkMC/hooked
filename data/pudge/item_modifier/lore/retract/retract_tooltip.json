@@ -5,24 +5,24 @@
       "lore": [
         [
           {
-            "text": "Your Hookshot and Grappling hook have",
+            "translate": "text.game.lore.retract.tooltip.1",
             "color": "gray",
             "italic": true
           }          
         ],
         {
-          "text": "been equipped with advanced retraction coils,",
+          "translate": "text.game.lore.retract.tooltip.2",
           "color": "gray",
           "italic": true
         },
         {
-          "text": "causing them to pull with extra strength.",
+          "translate": "text.game.lore.retract.tooltip.3",
           "color": "gray",
           "italic": true
         },
         [
           {
-            "text": "Press \"",
+            "translate": "text.game.lore.retract.tooltip.4",
             "color": "yellow",
             "italic": true
           },
@@ -32,13 +32,13 @@
             "italic": true
           },
           {
-            "text": "\" to temporarily",
+            "translate": "text.game.lore.retract.tooltip.5",
             "color": "yellow",
             "italic": true
           }  
         ],
         {
-          "text": "disengage the coils.",
+          "translate": "text.game.lore.retract.tooltip.6",
           "color": "yellow",
           "italic": true
         },

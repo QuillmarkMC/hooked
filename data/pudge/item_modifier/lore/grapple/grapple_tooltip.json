@@ -5,19 +5,19 @@
       "lore": [
         [
           {
-            "text": "Will latch onto the ground or a player,",
+            "translate": "text.game.lore.grapple.tooltip.1",
             "color": "gray",
             "italic": true
           }          
         ],
         {
-          "text": "pulling you toward its location.",
+          "translate": "text.game.lore.grapple.tooltip.2",
           "color": "gray",
           "italic": true
         },
         [
           {
-            "text": "Press \"",
+            "translate": "text.game.lore.grapple.tooltip.3",
             "color": "yellow",
             "italic": true
           },
@@ -27,18 +27,18 @@
             "italic": true
           },
           {
-            "text": "\" to instantly release",
+            "translate": "text.game.lore.grapple.tooltip.4",
             "color": "yellow",
             "italic": true
           }  
         ],
         {
-          "text": "the Grappling hook.",
+          "translate": "text.game.lore.grapple.tooltip.5",
           "color": "yellow",
           "italic": true
         } ,
         {
-          "text": "Does not ricochet!",
+          "translate": "text.game.lore.grapple.tooltip.6",
           "color": "dark_red",
           "italic": true
         },

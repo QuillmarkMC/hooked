@@ -9,7 +9,7 @@
       "lore": [
         [
           {
-            "text": "Knockback: ",
+            "translate": "text.game.lore.shop.knockback",
             "color": "dark_green",
             "italic": false
           },

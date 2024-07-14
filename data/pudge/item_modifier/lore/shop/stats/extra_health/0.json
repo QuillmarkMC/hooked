@@ -9,24 +9,34 @@
       "lore": [
         [
           {
-            "text": "Current Max Health: ",
+            "translate": "text.game.lore.shop.extra_health.health.current",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "10 hearts",
+            "text": "10",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.hearts",
             "color": "gray",
             "italic": false
           }
         ],
         [
           {
-            "text": "Upgraded Max Health: ",
+            "translate": "text.game.lore.shop.extra_health.health.upgraded",
             "color": "dark_purple",
             "italic": false
           },
           {
-            "text": "12 hearts",
+            "text": "12",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.hearts",
             "color": "gray",
             "italic": false
           }

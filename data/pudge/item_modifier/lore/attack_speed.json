@@ -5,7 +5,7 @@
       "lore": [
         [
           {
-            "text": "Attack Speed: ",
+            "translate": "text.game.lore.attack_speed",
             "color": "dark_green",
             "italic": false
           },

@@ -5,7 +5,7 @@
       "lore": [
         [
           {
-            "text": "Damage: ",
+            "translate": "text.game.lore.damage",
             "color": "dark_green",
             "italic": false
           },

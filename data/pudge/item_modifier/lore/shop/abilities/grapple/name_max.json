@@ -4,13 +4,13 @@
         "entity": "this",
         "name": [
           {
-            "text": "Grappling Hook",
+            "translate": "text.game.lore.grapple.name",
             "color": "#9871FF",
             "bold": true,
             "italic": false
           },
           {
-            "text": " (maxed)",
+            "translate": "text.game.lore.shop.name.maxed",
             "color": "dark_gray",
             "bold": false,
             "italic": true

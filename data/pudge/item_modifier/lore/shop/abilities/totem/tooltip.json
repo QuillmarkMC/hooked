@@ -5,14 +5,14 @@
         "lore": [
           [
             {
-              "text": "Gives you a chance to avoid getting pulled",
+              "translate": "text.game.lore.shop.totem.tooltip.1",
               "color": "gray",
               "italic": false
             }
           ],
           [
             {
-              "text": "or taking damage when hooked by an enemy.",
+              "translate": "text.game.lore.shop.totem.tooltip.2",
               "color": "gray",
               "italic": false
             }

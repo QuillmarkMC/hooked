@@ -2,7 +2,7 @@ schedule clear pudge:game/maps/forest/river/power/hell/red
 schedule clear pudge:game/maps/forest/river/power/hell/music_loop
 
 tag @a[gamemode=adventure,tag=isGamer] add hellWinner
-execute store result score #Temp3 river if entity @a[tag=hellWinner] 
+execute store result score #Temp3 river if entity @a[tag=hellWinner]
 
 scoreboard players operation #Temp gold = $HellReward river
 scoreboard players operation #Temp gold /= #Temp3 river

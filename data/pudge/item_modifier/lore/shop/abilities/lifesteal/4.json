@@ -9,36 +9,51 @@
       "lore": [
         [
           {
-            "text": "Current health on hit: ",
+            "translate": "text.game.lore.shop.lifesteal.on_hit.current",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "1.5 hearts",
+            "text": "1.5",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.hearts",
             "color": "gray",
             "italic": false
           }
         ],
         [
           {
-            "text": "Current Regeneration: ",
+            "translate": "text.game.lore.shop.lifesteal.regeneration.current",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "2.0 hearts",
+            "text": "2.0",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.hearts",
             "color": "gray",
             "italic": false
           }
         ],
         [
           {
-            "text": "Upgraded Regeneration: ",
+            "translate": "text.game.lore.shop.lifesteal.regeneration.upgraded",
             "color": "dark_purple",
             "italic": false
           },
           {
-            "text": "3.0 hearts",
+            "text": "3.0",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.hearts",
             "color": "gray",
             "italic": false
           }

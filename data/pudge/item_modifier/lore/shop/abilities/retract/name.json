@@ -4,7 +4,7 @@
         "entity": "this",
         "name": [
           {
-            "text": "Gyro-Balanced Retraction Coils",
+            "translate": "text.game.lore.retract.name",
             "color": "#33FFB8",
             "bold": true,
             "italic": false

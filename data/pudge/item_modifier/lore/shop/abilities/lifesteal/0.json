@@ -9,24 +9,34 @@
       "lore": [
         [
           {
-            "text": "Health on hit: ",
+            "translate": "text.game.lore.shop.lifesteal.on_hit",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "0.5 hearts",
+            "text": "0.5",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.hearts",
             "color": "gray",
             "italic": false
           }
         ],
         [
           {
-            "text": "Regeneration: ",
+            "translate": "text.game.lore.shop.lifesteal.regeneration",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "1.0 hearts",
+            "text": "1.0",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.hearts",
             "color": "gray",
             "italic": false
           }

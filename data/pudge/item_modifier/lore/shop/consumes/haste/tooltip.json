@@ -5,7 +5,7 @@
         "lore": [
           [
             {
-              "text": "Immediate effect!",
+              "translate": "text.game.lore.shop.consume.instant_effect",
               "color": "dark_red",
               "italic": false,
               "bold": true
@@ -13,14 +13,14 @@
           ],
           [
             {
-              "text": "Instantly grants Speed and Dolphin's",
+              "translate": "text.game.lore.shop.haste.tooltip.1",
               "color": "gray",
               "italic": false
             }
           ],
           [
             {
-              "text": "Grace for 20 seconds upon purchasing.",
+              "translate": "text.game.lore.shop.haste.tooltip.2",
               "color": "gray",
               "italic": false
             }

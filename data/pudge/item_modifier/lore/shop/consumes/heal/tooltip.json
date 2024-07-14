@@ -5,7 +5,7 @@
         "lore": [
           [
             {
-              "text": "Immediate effect!",
+              "translate": "text.game.lore.shop.consume.instant_effect",
               "color": "dark_red",
               "italic": false,
               "bold": true
@@ -13,14 +13,14 @@
           ],
           [
             {
-              "text": "Instantly restores 2 hearts upon",
+              "translate": "text.game.lore.shop.heal.tooltip.1",
               "color": "gray",
               "italic": false
             }
           ],
           [
             {
-              "text": "purchasing.",
+              "translate": "text.game.lore.shop.heal.tooltip.2",
               "color": "gray",
               "italic": false
             }
