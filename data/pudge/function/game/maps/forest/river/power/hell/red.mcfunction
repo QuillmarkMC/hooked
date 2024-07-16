@@ -9,11 +9,10 @@ scoreboard players add $HellTimer river 1
 
 title @a subtitle "\uE009"
 title @a times 0 100 0
-execute if score $HellTimer river matches ..100 run title @a[gamemode=adventure] title {"text": "Last team standing!","color": "white"}
+execute if score $HellTimer river matches ..100 run title @a[gamemode=adventure] title {"translate": "text.game.river.deathmatch.title","color": "white"}
 execute unless score $HellTimer river matches ..100 run title @a[gamemode=adventure] title ""
-title @a[gamemode=spectator,tag=isGamer] title {"text": "You cannot respawn.","color": "white"}
+title @a[gamemode=spectator,tag=isGamer] title {"translate": "text.game.river.deathmatch.title.dead","color": "white"}
 title @a[gamemode=spectator,tag=!isGamer] title ""
-
 
 #slowly drain health, increasing in frequency as hell timer increases
 scoreboard players operation #Temp math = $HellTimer river

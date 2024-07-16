@@ -3,8 +3,8 @@ scoreboard players set $RedSurrender surrender 0
 execute if score $RedVotes surrender = $RedVotesNeeded surrender run scoreboard players set $RedSurrender surrender 1
 
 #tellraw depending on outcome
-execute if score $RedSurrender surrender matches 0 run tellraw @a[team=red] [{"text": ""},{"text":"[!] ","color":"#9E01FE","bold": true},{"text":"The surrender vote has failed."}]
-execute if score $RedSurrender surrender matches 1 run tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"text":"The "},{"text": "Red Team","color": "red"},{"text": " has voted to surrender."}]
+execute if score $RedSurrender surrender matches 0 run tellraw @a[team=red] [{"text": ""},{"text":"[!] ","color":"#9E01FE","bold": true},{"translate":"text.game.surrender.fail"}]
+execute if score $RedSurrender surrender matches 1 run tellraw @a [{"text": ""},{"text":"[!] ","color":"yellow","bold": true},{"translate":"text.game.surrender.red.1"},{"translate": "text.game.surrender.red.2","color": "red"},{"translate": "text.game.surrender.red.3"}]
 
 #reset trigger if failure
 scoreboard players reset @a[team=red] surrender

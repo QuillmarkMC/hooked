@@ -1,5 +1,5 @@
 function pudge:game/maps/forest/river/kill_power
-tellraw @s [{"text": "[!] ","color": "yellow","bold": true},{"text": "You just Mass Hooked the entire enemy team!","color": "white","bold": false}]
+tellraw @s [{"text": "[!] ","color": "yellow","bold": true},{"translate": "text.game.river.hook","color": "white","bold": false}]
 execute at @s run playsound entity.ender_dragon.growl ambient @s
 
 tag @s add tempAttackerTag

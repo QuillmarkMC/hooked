@@ -1,4 +1,4 @@
-tellraw @s {"text": "You bought the Hook Cooldown Upgrade level 3!","color": "green"}
+tellraw @s {"translate": "text.game.shop.purchase.hook_cd.3","color": "green"}
 scoreboard players set @s shopItem.Hook.CD 3
 scoreboard players operation @s gold -= $HookCDCost shop
 function pudge:game/gold/update_display

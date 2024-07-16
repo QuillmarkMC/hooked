@@ -1,4 +1,4 @@
-tellraw @s {"text": "You bought Lifesteal level 1!","color": "green"}
+tellraw @s {"translate": "text.game.shop.purchase.lifesteal.1","color": "green"}
 scoreboard players set @s shopItem.Lifesteal 1
 scoreboard players set @s lifestealAmount 10
 scoreboard players set @s lifestealRegen 20

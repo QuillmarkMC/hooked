@@ -1,4 +1,4 @@
-tellraw @s {"text": "You bought The Lion Horn of Stormwind level 1!","color": "green"}
+tellraw @s {"translate": "text.game.shop.purchase.goat.1","color": "green"}
 scoreboard players set @s shopItem.Goat 1
 scoreboard players operation @s gold -= $GoatCost shop
 function pudge:game/gold/update_display

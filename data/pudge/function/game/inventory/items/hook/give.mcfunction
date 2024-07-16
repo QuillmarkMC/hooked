@@ -1,5 +1,5 @@
-execute if entity @s[scores={cdHook=..0}] run item replace entity @s hotbar.0 with crossbow[custom_name='{"text":"Hookshot","color":"gray","bold":true,"italic":false}',lore=['{"text":" "}'],unbreakable={show_in_tooltip:false},custom_data={Hook:1,Cooldown:0},hide_additional_tooltip={},charged_projectiles=[{id:"minecraft:arrow",count:1}]]
-execute if entity @s[scores={cdHook=1..}] run item replace entity @s hotbar.0 with shears[custom_name='{"text":"Hookshot","color":"gray","bold":true,"italic":false}',lore=['{"text":" "}'],custom_model_data=99,custom_data={Cooldown:1},hide_additional_tooltip={}]
+execute if entity @s[scores={cdHook=..0}] run item replace entity @s hotbar.0 with crossbow[custom_name='{"translate":"text.game.inventory.hook.name","color":"gray","bold":true,"italic":false}',lore=['{"text":" "}'],unbreakable={show_in_tooltip:false},custom_data={Hook:1,Cooldown:0},hide_additional_tooltip={},charged_projectiles=[{id:"minecraft:arrow",count:1}]]
+execute if entity @s[scores={cdHook=1..}] run item replace entity @s hotbar.0 with shears[custom_name='{"translate":"text.game.inventory.hook.name","color":"gray","bold":true,"italic":false}',lore=['{"text":" "}'],custom_model_data=99,custom_data={Cooldown:1},hide_additional_tooltip={}]
 
 #dynamic item lore
 item modify entity @s hotbar.0 pudge:lore/hook_tooltip

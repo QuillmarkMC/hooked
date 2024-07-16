@@ -12,6 +12,6 @@ execute if score #Temp gold matches 1 if score @s shopItem.Goat matches 1 run fu
 execute if score #Temp gold matches 1 if score @s shopItem.Goat matches 0 run function pudge:game/shop/click_logic/abilities/goat/buy1
 
 #if not enough, display error
-execute if score #Temp gold matches 0 run tellraw @s {"text": "You don't have enough gold!","color": "red"}
+execute if score #Temp gold matches 0 run tellraw @s {"translate": "text.game.shop.purchase.error.gold","color": "red"}
 #if too many items, display error
-execute if score #Temp gold matches -1 run tellraw @s {"text": "You can't buy additional abilities!","color": "red"}
+execute if score #Temp gold matches -1 run tellraw @s {"translate": "text.game.shop.purchase.error.slots","color": "red"}

@@ -1,4 +1,4 @@
-tellraw @s {"text": "You bought Stick of Suffering level 1!","color": "green"}
+tellraw @s {"translate": "text.game.shop.purchase.knockback.1","color": "green"}
 scoreboard players set @s shopItem.Knockback 1
 scoreboard players operation @s gold -= $KnockbackCost shop
 function pudge:game/gold/update_display

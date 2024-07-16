@@ -1,4 +1,4 @@
-tellraw @s {"text": "You bought Totem of Protection level 1!","color": "green"}
+tellraw @s {"translate": "text.game.shop.purchase.totem.1","color": "green"}
 scoreboard players set @s shopItem.Totem 1
 scoreboard players set @s totemChance 10
 scoreboard players operation @s gold -= $TotemCost shop
