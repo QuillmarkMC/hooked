@@ -9,8 +9,8 @@ spectate @e[type=armor_stand,tag=tempArmorStandTPTag,limit=1]
 tag @e[type=armor_stand,tag=tempArmorStandTPTag,limit=1] remove tempArmorStandTPTag
 
 execute unless score $HellActive river matches 1.. unless score $Winner cutscene matches 1.. run title @s times 0 10 0
-execute unless score $HellActive river matches 1.. unless score $Winner cutscene matches 1.. run title @s subtitle {"text": "You will respawn shortly.","color": "white"}
-execute unless score $HellActive river matches 1.. unless score $Winner cutscene matches 1.. run title @s title {"text": "You died.","color": "dark_red"}
+execute unless score $HellActive river matches 1.. unless score $Winner cutscene matches 1.. run title @s subtitle {"translate": "text.general.death.respawn.subtitle","color": "white"}
+execute unless score $HellActive river matches 1.. unless score $Winner cutscene matches 1.. run title @s title {"translate": "text.general.death.respawn","color": "dark_red"}
 
 execute if score @s deathTimer matches ..0 unless score $HellActive river matches 1.. run function pudge:general/death/revive
 execute if score @s deathTimer matches ..0 if score $HellActive river matches 1.. run function pudge:general/death/hell_revive
