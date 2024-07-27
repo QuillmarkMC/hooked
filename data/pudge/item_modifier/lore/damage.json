@@ -39,7 +39,7 @@
             "italic": false
           },
           {
-            "text": " hearts",
+            "translate": "text.game.lore.hearts",
             "color": "gray",
             "italic": false
           }

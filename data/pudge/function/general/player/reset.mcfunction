@@ -13,7 +13,6 @@ function pudge:general/player/remove_game_tags
 function pudge:general/player/remove_lobby_tags
 
 #inventory slot management
-scoreboard players set @s hotbar.1.ID 0
 scoreboard players set @s hotbar.2.ID 0
 scoreboard players set @s hotbar.3.ID 0
 scoreboard players set @s hotbar.4.ID 0

@@ -39,7 +39,7 @@ scoreboard objectives add lobbysigns trigger
 scoreboard objectives add lobbysigns.default dummy "Default Settings"
 scoreboard objectives add value trigger
 scoreboard objectives add customValueTimer dummy
-scoreboard players set $CustomTimeoutLength customValueTimer 300
+scoreboard players set $CustomTimeoutLength customValueTimer 400
 scoreboard objectives add lastDamagedBy dummy
 scoreboard objectives add cutscene dummy
 scoreboard objectives add surrender trigger

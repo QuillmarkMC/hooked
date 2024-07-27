@@ -7,3 +7,4 @@ execute if score @s lobbysigns matches 945 run function pudge:lobby/triggers/inf
 execute if score @s lobbysigns matches 946 run function pudge:lobby/triggers/info/river/page7
 execute if score @s lobbysigns matches 947 run function pudge:lobby/triggers/info/river/page8
 execute if score @s lobbysigns matches 948 run function pudge:lobby/triggers/info/river/page9
+execute if score @s lobbysigns matches 949 run function pudge:lobby/triggers/info/river/page10

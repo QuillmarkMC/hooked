@@ -9,7 +9,7 @@ function pudge:game/catchup/reward/calculate
 execute store result score $Num2 math if entity @a[team=blue]
 scoreboard players operation $CatchupReward timers /= $Num2 math
 #tellraw
-tellraw @a [{"text": "[!] ","color": "yellow","bold": true},{"translate": "text.game.catchup.blue.1","color": "white","bold": false},{"translate":"text.game.catchup.blue.2","bold": true,"color": "blue"},{"translate": "text.game.catchup.blue.1","color": "white","bold": false},{"score":{"name":"$CatchupReward","objective":"timers"},"color": "gold","bold": false},{"translate": "text.game.catchup.blue.4","color": "gold","bold": false}]
+tellraw @a [{"text": "[!] ","color": "yellow","bold": true},{"translate": "text.game.catchup.blue.1","color": "white","bold": false},{"translate":"text.game.catchup.blue.2","bold": true,"color": "blue"},{"translate": "text.game.catchup.blue.3","color": "white","bold": false},{"score":{"name":"$CatchupReward","objective":"timers"},"color": "gold","bold": false},{"translate": "text.game.catchup.blue.4","color": "gold","bold": false}]
 #give gold
 scoreboard players operation @a[team=blue] gold += $CatchupReward timers
 execute as @a[team=blue] run function pudge:game/gold/update_display
