@@ -5,14 +5,14 @@
         "lore": [
           [
             {
-              "text": "Blow into the horn to strike fear",
+              "translate": "text.game.lore.shop.goat.tooltip.1",
               "color": "gray",
               "italic": false
             }
           ],
           [
             {
-              "text": "into your enemies.",
+              "translate": "text.game.lore.shop.goat.tooltip.2",
               "color": "gray",
               "italic": false
             }
