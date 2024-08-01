@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "Sandstorm",
+      "title": {
+        "translate": "text.game.music.classic.sandstorm"
+      },
       "description": "by Darude",
       "show_toast": true,
       "announce_to_chat": false,

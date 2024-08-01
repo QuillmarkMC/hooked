@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "Deja Vu",
+      "title": {
+        "translate": "text.game.music.eurobeat.deja_vu"
+      },
       "description": "",
       "show_toast": true,
       "announce_to_chat": false,

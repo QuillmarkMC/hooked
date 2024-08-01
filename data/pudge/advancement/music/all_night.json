@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "Stonebank - All Night",
+      "title": {
+        "translate": "text.game.music.classic.all_night"
+      },
       "description": "Monstercat ver.",
       "show_toast": true,
       "announce_to_chat": false,

@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "I Won't Fall Apart",
+      "title": {
+        "translate": "text.game.music.eurobeat.wont_fall_apart"
+      },
       "description": "",
       "show_toast": true,
       "announce_to_chat": false,

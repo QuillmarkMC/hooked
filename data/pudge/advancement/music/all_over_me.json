@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "All Over Me",
+      "title": {
+        "translate": "text.game.music.eurobeat.all_over_me"
+      },
       "description": "",
       "show_toast": true,
       "announce_to_chat": false,

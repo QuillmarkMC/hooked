@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_mall"
       },
-      "title": "Mall",
+      "title": {
+        "translate": "text.game.music.minecraft.mall"
+      },
       "description": "C418",
       "show_toast": true,
       "announce_to_chat": false,
