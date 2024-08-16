@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "Revenge",
+      "title": {
+        "translate": "text.game.music.eurobeat.revenge"
+      },
       "description": "Remix by Turbo",
       "show_toast": true,
       "announce_to_chat": false,

@@ -5,14 +5,14 @@
         "lore": [
           [
             {
-              "text": "Allows you to pick up other players and",
+              "translate": "text.game.lore.shop.grab.tooltip.1",
               "color": "gray",
               "italic": false
             }
           ],
           [
             {
-              "text": "throw them using your Hookshot.",
+              "translate": "text.game.lore.shop.grab.tooltip.2",
               "color": "gray",
               "italic": false
             }

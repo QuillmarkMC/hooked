@@ -13,8 +13,8 @@ scoreboard players operation $KillTime timers = $MaxLengthPerKillSeconds timers
 #tag @a[tag=tempReceiverTag,limit=1] add teamCheckPlayer2
 #function pudge:general/teams/check_teams
 #display kill message to attacker
-execute unless score #SkipDeath death matches 1 unless score @s teamID = @a[tag=tempReceiverTag,limit=1] teamID run tellraw @s [{"text": "(+) ","color": "green"},{"text": "You just killed ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempReceiverTag,limit=1]"}]},{"text": " and got ","color": "white"},{"score":{"name":"@a[tag=tempReceiverTag,limit=1]","objective":"bounty"},"color": "gold"},{"text": " gold!","color": "gold"}]
-execute if score @s teamID = @a[tag=tempReceiverTag,limit=1] teamID unless entity @s[tag=tempReceiverTag] run tellraw @s [{"text": "(+) ","color": "green"},{"text": "You just killed ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempReceiverTag,limit=1]"}]}]
+execute unless score #SkipDeath death matches 1 unless score @s teamID = @a[tag=tempReceiverTag,limit=1] teamID run tellraw @s [{"text": "(+) ","color": "green"},{"translate": "text.general.kill.enemy.1","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempReceiverTag,limit=1]"}]},{"translate": "text.general.kill.enemy.2","color": "white"},{"score":{"name":"@a[tag=tempReceiverTag,limit=1]","objective":"bounty"},"color": "gold"},{"translate": "text.general.kill.enemy.3","color": "gold"}]
+execute if score @s teamID = @a[tag=tempReceiverTag,limit=1] teamID unless entity @s[tag=tempReceiverTag] run tellraw @s [{"text": "(+) ","color": "green"},{"translate": "text.general.kill.teammate","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempReceiverTag,limit=1]"}]}]
 #check receiver's kill streak, set variable if ending streak
 execute unless score @s teamID = @a[tag=tempReceiverTag,limit=1] teamID if score @a[tag=tempReceiverTag,limit=1] killstreak matches 3.. run scoreboard players set $Temp killstreak 17
 #handle lifesteal ability's regen effect

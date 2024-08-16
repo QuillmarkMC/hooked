@@ -15,9 +15,9 @@ tag @a[tag=tempAttackerTag,limit=1] add teamCheckPlayer2
 function pudge:general/teams/check_teams
 
 #display death message to receiver
-execute if score #TempTeams var matches 0 run tellraw @s [{"text": "(-) ","color": "red"},{"text": "You were killed by ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempAttackerTag,limit=1]"}]},{"text": " and gave ","color": "white"},{"score":{"name":"@s","objective":"bounty"},"color": "gold"},{"text": " gold.","color": "gold"}]
-execute if score #TempTeams var matches 1 run tellraw @s [{"text": "(-) ","color": "red"},{"text": "You died!","color": "white"}]
-execute if score #TempTeams var matches 2 unless entity @s[tag=tempAttackerTag] run tellraw @s [{"text": "(-) ","color": "red"},{"text": "You were killed by ","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempAttackerTag,limit=1]"}]}]
+execute if score #TempTeams var matches 0 run tellraw @s [{"text": "(-) ","color": "red"},{"translate": "text.general.death.enemy.1","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempAttackerTag,limit=1]"}]},{"translate": "text.general.death.enemy.2","color": "white"},{"score":{"name":"@s","objective":"bounty"},"color": "gold"},{"translate": "text.general.death.enemy.3","color": "gold"}]
+execute if score #TempTeams var matches 1 run tellraw @s [{"text": "(-) ","color": "red"},{"translate": "text.general.death","color": "white"}]
+execute if score #TempTeams var matches 2 unless entity @s[tag=tempAttackerTag] run tellraw @s [{"text": "(-) ","color": "red"},{"translate": "text.general.death.teammate","color": "white"},{"text":"","extra":[{"selector":"@a[tag=tempAttackerTag,limit=1]"}]}]
 
 #if player killed themselves, give kill credit to last attacker
 execute unless score #Impressive var matches 1 if entity @s[tag=tempAttackerTag,scores={lastDamagedBy=-2147483648..2147483647}] run function pudge:general/death/handle_self_kill

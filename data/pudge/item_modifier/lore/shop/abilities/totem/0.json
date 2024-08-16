@@ -9,7 +9,7 @@
       "lore": [
         [
           {
-            "text": "Success chance: ",
+            "translate": "text.game.lore.shop.totem.success",
             "color": "dark_green",
             "italic": false
           },
@@ -21,12 +21,17 @@
         ],
         [
           {
-            "text": "Cooldown: ",
+            "translate": "text.game.lore.shop.cooldown",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "30s",
+            "text": "30",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.cooldown.seconds",
             "color": "gray",
             "italic": false
           }

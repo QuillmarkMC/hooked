@@ -9,31 +9,41 @@
       "lore": [
         [
           {
-            "text": "Current Cooldown: ",
+            "translate": "text.game.lore.shop.cooldown.current",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "15s",
+            "text": "15",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.cooldown.seconds",
             "color": "gray",
             "italic": false
           }
         ],
         [
           {
-            "text": "Current Damage: ",
+            "translate": "text.game.lore.shop.damage.current",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "2.0 hearts",
+            "text": "2.0",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.hearts",
             "color": "gray",
             "italic": false
           }
         ],
         [
           {
-            "text": "Current Knockback: ",
+            "translate": "text.game.lore.shop.knockback.current",
             "color": "dark_green",
             "italic": false
           },
@@ -45,8 +55,8 @@
         ],
         [
           {
-            "text": "Upgraded Knockback: ",
-            "color": "dark_green",
+            "translate": "text.game.lore.shop.knockback.upgraded",
+            "color": "dark_purple",
             "italic": false
           },
           {

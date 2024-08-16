@@ -9,31 +9,41 @@
       "lore": [
         [
           {
-            "text": "Cooldown: ",
+            "translate": "text.game.lore.shop.cooldown",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "15s",
+            "text": "15",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.cooldown.seconds",
             "color": "gray",
             "italic": false
           }
         ],
         [
           {
-            "text": "Damage: ",
+            "translate": "text.game.lore.shop.damage",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "1.0 hearts",
+            "text": "1.0",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.hearts",
             "color": "gray",
             "italic": false
           }
         ],
         [
           {
-            "text": "Knockback: ",
+            "translate": "text.game.lore.shop.knockback",
             "color": "dark_green",
             "italic": false
           },

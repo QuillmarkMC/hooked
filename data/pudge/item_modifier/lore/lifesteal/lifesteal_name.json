@@ -4,13 +4,13 @@
     "entity": "this",
     "name": [
       {
-        "text": "Lifesteal",
+        "translate": "text.game.lore.lifesteal.name",
         "color": "#911919",
         "bold": true,
         "italic": false
       },
       {
-        "text": " (lvl ",
+        "translate": "text.game.lore.lvl_1",
         "color": "gray",
         "bold": false,
         "italic": true
@@ -25,7 +25,7 @@
         "italic": true
       },
       {
-        "text": ")",
+        "translate": "text.game.lore.lvl_2",
         "color": "gray",
         "bold": false,
         "italic": true

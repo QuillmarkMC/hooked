@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_ward"
       },
-      "title": "Ward",
+      "title": {
+        "translate": "text.game.music.minecraft.ward"
+      },
       "description": "C418",
       "show_toast": true,
       "announce_to_chat": false,

@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "Brain Power",
+      "title": {
+        "translate": "text.game.music.classic.brain_power"
+      },
       "description": "by NOMA",
       "show_toast": true,
       "announce_to_chat": false,

@@ -9,24 +9,34 @@
       "lore": [
         [
           {
-            "text": "Current Cooldown: ",
+            "translate": "text.game.lore.shop.cooldown.current",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "4.2s",
+            "text": "4.2",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.cooldown.seconds",
             "color": "gray",
             "italic": false
           }
         ],
         [
           {
-            "text": "Upgraded Cooldown: ",
+            "translate": "text.game.lore.shop.cooldown.upgraded",
             "color": "dark_purple",
             "italic": false
           },
           {
-            "text": "3.8s",
+            "text": "3.8",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.cooldown.seconds",
             "color": "gray",
             "italic": false
           }

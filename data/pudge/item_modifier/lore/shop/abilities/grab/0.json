@@ -9,12 +9,17 @@
       "lore": [
         [
           {
-            "text": "Cooldown: ",
+            "translate": "text.game.lore.shop.cooldown",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "20s",
+            "text": "20",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.cooldown.seconds",
             "color": "gray",
             "italic": false
           }

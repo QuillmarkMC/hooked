@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "Can You Feel My Heart",
+      "title": {
+        "translate": "text.game.music.classic.can_you_feel_my_heart"
+      },
       "description": "Bring Me The Horizon",
       "show_toast": true,
       "announce_to_chat": false,

@@ -4,7 +4,7 @@
         "entity": "this",
         "name": [
           {
-            "text": "Throwable Creeper",
+            "translate": "text.game.lore.creeper.name",
             "color": "dark_green",
             "bold": true,
             "italic": false

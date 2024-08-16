@@ -9,11 +9,6 @@ execute if score $Debug var matches 1.. run say pudge:game/ability/grab/launch/s
 scoreboard players operation $Temp_Player grabID = @a[tag=tempArrowOwnerTag,limit=1] entityid
 execute as @a[tag=isGamer] if score @s grabID = $Temp_Player grabID run tag @s add tempLaunchTag
 
-#check teams
-#tag @a[tag=tempArrowOwnerTag,limit=1] add teamCheckPlayer1
-#tag @a[tag=tempLaunchTag,limit=1] add teamCheckPlayer2
-#function pudge:general/teams/check_teams
-
 #tag arrow to be ridden
 scoreboard players operation @e[type=arrow,tag=tempArrowTag,limit=1] launchID = @a[tag=tempLaunchTag,limit=1] entityid
 #make player ride arrow

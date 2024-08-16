@@ -5,21 +5,21 @@
         "lore": [
           [
             {
-              "text": "Attaches to the ground or a player and",
+              "translate": "text.game.lore.shop.grapple.tooltip.1",
               "color": "gray",
               "italic": false
             }
           ],
           [
             {
-              "text": "pulls you to its location.",
+              "translate": "text.game.lore.shop.grapple.tooltip.2",
               "color": "gray",
               "italic": false
             }
           ],
           [
             {
-              "text": "Grappling hook does not ricochet!",
+              "translate": "text.game.lore.shop.grapple.tooltip.3",
               "color": "dark_red",
               "italic": true
             }

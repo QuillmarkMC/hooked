@@ -9,7 +9,7 @@
       "lore": [
         [
           {
-            "text": "Current bounce count: ",
+            "translate": "text.game.lore.shop.bounce.count.current",
             "color": "dark_green",
             "italic": false
           },

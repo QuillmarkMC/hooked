@@ -4,13 +4,13 @@
         "entity": "this",
         "name": [
           {
-            "text": "Upgrade Hook Cooldown",
+            "translate": "text.game.lore.shop.hook_cd.name",
             "color": "yellow",
             "bold": true,
             "italic": false
           },
           {
-            "text": " (maxed)",
+            "translate": "text.game.lore.shop.name.maxed",
             "color": "dark_gray",
             "bold": false,
             "italic": true

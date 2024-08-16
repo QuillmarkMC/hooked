@@ -4,13 +4,13 @@
         "entity": "this",
         "name": [
           {
-            "text": "Stick of Suffering",
+            "translate": "text.game.lore.knockback.name",
             "color": "#C69B6D",
             "bold": true,
             "italic": false
           },
           {
-            "text": " (maxed)",
+            "translate": "text.game.lore.shop.name.maxed",
             "color": "dark_gray",
             "bold": false,
             "italic": true

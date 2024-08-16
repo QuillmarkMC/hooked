@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_strad"
       },
-      "title": "Strad",
+      "title": {
+        "translate": "text.game.music.minecraft.strad"
+      },
       "description": "C418",
       "show_toast": true,
       "announce_to_chat": false,

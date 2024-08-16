@@ -4,7 +4,7 @@
     "entity": "this",
     "name": [
       {
-        "text": "Drop Player",
+        "translate": "text.game.lore.grab.drop.name",
         "color": "dark_red",
         "bold": true,
         "italic": false

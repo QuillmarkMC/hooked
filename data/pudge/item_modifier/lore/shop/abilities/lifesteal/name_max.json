@@ -4,13 +4,13 @@
         "entity": "this",
         "name": [
           {
-            "text": "Lifestealing",
+            "translate": "text.game.lore.lifesteal.name",
             "color": "#911919",
             "bold": true,
             "italic": false
           },
           {
-            "text": " (maxed)",
+            "translate": "text.game.lore.shop.name.maxed",
             "color": "dark_gray",
             "bold": false,
             "italic": true

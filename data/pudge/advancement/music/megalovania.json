@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "Megalovania",
+      "title": {
+        "translate": "text.game.music.classic.megalovania"
+      },
       "description": "Undertale",
       "show_toast": true,
       "announce_to_chat": false,

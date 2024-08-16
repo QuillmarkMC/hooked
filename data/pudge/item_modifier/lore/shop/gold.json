@@ -5,7 +5,7 @@
       "lore": [
         [
           {
-            "text": "Gold: ",
+            "translate": "text.game.lore.shop.gold",
             "color": "gold",
             "italic": false
           },

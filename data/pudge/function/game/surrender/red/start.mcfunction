@@ -3,7 +3,7 @@ execute store result score $RedVotesNeeded surrender if entity @a[team=red]
 execute unless score $RedVotesNeeded surrender matches 1 run scoreboard players remove $RedVotesNeeded surrender 1
 
 #tellraw
-execute unless score $RedVotesNeeded surrender matches 1 run tellraw @a[team=red] [{"text": ""},{"text":"[!] ","color":"#9E01FE","bold": true},{"selector":"@s"},{"text":" has initiated a surrender vote. "},{"text":"Click here","color":"yellow","underlined": true,"clickEvent": {"action":"run_command","value": "/trigger surrender"},"hoverEvent":{"action":"show_text","contents":[{"text":"Click to vote to surrender","italic":true,"color":"gray"}]}},{"text": " to vote to surrender. "},{"score":{"name":"$RedVotesNeeded","objective":"surrender"},"color": "green"},{"text": " votes ","color": "green"},{"text": "in total are needed to surrender."}]
+execute unless score $RedVotesNeeded surrender matches 1 run tellraw @a[team=red] [{"text": ""},{"text":"[!] ","color":"#9E01FE","bold": true},{"selector":"@s"},{"translate":"text.game.surrender.start.1"},{"translate":"text.game.surrender.start.2","color":"yellow","underlined": true,"clickEvent": {"action":"run_command","value": "/trigger surrender"},"hoverEvent":{"action":"show_text","contents":[{"translate":"text.game.surrender.start.3","italic":true,"color":"gray"}]}},{"translate": "text.game.surrender.start.4"},{"score":{"name":"$RedVotesNeeded","objective":"surrender"},"color": "green"},{"translate": "text.game.surrender.start.5","color": "green"},{"translate": "text.game.surrender.start.6"}]
 
 #schedule conclusion of surrender vote
 schedule function pudge:game/surrender/red/conclude 30s

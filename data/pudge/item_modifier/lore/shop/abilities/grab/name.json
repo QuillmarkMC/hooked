@@ -4,7 +4,7 @@
         "entity": "this",
         "name": [
           {
-            "text": "Anchor Arms",
+            "translate": "text.game.lore.grab.name",
             "color": "#CCCA99",
             "bold": true,
             "italic": false

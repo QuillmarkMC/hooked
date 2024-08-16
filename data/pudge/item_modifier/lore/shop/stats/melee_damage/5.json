@@ -9,12 +9,17 @@
       "lore": [
         [
           {
-            "text": "Current Damage: ",
+            "translate": "text.game.lore.shop.damage.current",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "2.5 hearts",
+            "text": "2.5",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.hearts",
             "color": "gray",
             "italic": false
           }

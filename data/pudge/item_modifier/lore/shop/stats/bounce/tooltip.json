@@ -5,14 +5,14 @@
         "lore": [
           [
             {
-              "text": "Allows the arrows you shoot to bounce",
+              "translate": "text.game.lore.shop.bounce.tooltip.1",
               "color": "gray",
               "italic": false
             }
           ],
           [
             {
-              "text": "off of walls!",
+              "translate": "text.game.lore.shop.bounce.tooltip.2",
               "color": "gray",
               "italic": false
             }

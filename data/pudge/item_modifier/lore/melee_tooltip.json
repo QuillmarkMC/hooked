@@ -5,7 +5,7 @@
       "lore": [
         [
           {
-            "text": "Basic melee weapon.",
+            "translate": "text.game.lore.melee.tooltip",
             "color": "gray",
             "italic": true
           }

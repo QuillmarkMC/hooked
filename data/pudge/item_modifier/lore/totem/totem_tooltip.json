@@ -5,13 +5,13 @@
       "lore": [
         [
           {
-            "text": "You have a chance to avoid incoming",
+            "translate": "text.game.lore.totem.tooltip.1",
             "color": "gray",
             "italic": true
           }          
         ],
         {
-          "text": "enemy hooks.",
+          "translate": "text.game.lore.totem.tooltip.2",
           "color": "gray",
           "italic": true
         },

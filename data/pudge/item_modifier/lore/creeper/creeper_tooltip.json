@@ -5,7 +5,7 @@
       "lore": [
         [
           {
-            "text": "Throw me! I explode!",
+            "translate": "text.game.lore.creeper.tooltip",
             "color": "gray",
             "italic": true
           }          

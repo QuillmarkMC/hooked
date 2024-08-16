@@ -1,1 +1,1 @@
-tellraw @s {"text": "You can't buy any more of those!","color": "red"}
+tellraw @s {"translate": "text.game.shop.purchase.error.max","color": "red"}

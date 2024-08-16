@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "The Top",
+      "title": {
+        "translate": "text.game.music.eurobeat.the_top"
+      },
       "description": "",
       "show_toast": true,
       "announce_to_chat": false,

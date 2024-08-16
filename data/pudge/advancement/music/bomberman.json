@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "Bomberman Boss Theme",
+      "title": {
+        "translate": "text.game.music.classic.bomberman"
+      },
       "description": "Ugo Vite Remix",
       "show_toast": true,
       "announce_to_chat": false,

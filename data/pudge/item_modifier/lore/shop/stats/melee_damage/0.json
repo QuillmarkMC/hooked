@@ -9,24 +9,34 @@
       "lore": [
         [
           {
-            "text": "Current Damage: ",
+            "translate": "text.game.lore.shop.damage.current",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "1.0 hearts",
+            "text": "1.0",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.hearts",
             "color": "gray",
             "italic": false
           }
         ],
         [
           {
-            "text": "Upgraded Damage: ",
+            "translate": "text.game.lore.shop.damage.upgraded",
             "color": "dark_purple",
             "italic": false
           },
           {
-            "text": "1.3 hearts",
+            "text": "1.3",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.hearts",
             "color": "gray",
             "italic": false
           }

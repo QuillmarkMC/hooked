@@ -5,7 +5,7 @@
         "lore": [
           [
             {
-              "text": "Increases the damage of your melee weapon.",
+              "translate": "text.game.lore.shop.melee_damage.tooltip",
               "color": "gray",
               "italic": false
             }

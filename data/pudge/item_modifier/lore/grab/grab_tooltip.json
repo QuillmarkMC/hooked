@@ -5,7 +5,7 @@
       "lore": [
         [
           {
-            "text": "Press \"",
+            "translate": "text.game.lore.grab.tooltip.1",
             "color": "gray",
             "italic": true
           },
@@ -15,30 +15,30 @@
             "italic": true
           },
           {
-            "text": "\" while looking at",
+            "translate": "text.game.lore.grab.tooltip.2",
             "color": "gray",
             "italic": true
           }  
         ],
         {
-            "text": "another player to pick them up.",
+            "translate": "text.game.lore.grab.tooltip.3",
             "color": "gray",
             "italic": true
         },
         [
           {
-            "text": "Use your ",
+            "translate": "text.game.lore.grab.tooltip.4",
             "color": "gray",
             "italic": true
           },
           {
-            "text": "Hookshot",
+            "translate": "text.game.lore.grab.tooltip.5",
             "color": "gray",
             "italic": true,
             "bold": true
           },
           {
-            "text": " to launch that player.",
+            "translate": "text.game.lore.grab.tooltip.6",
             "color": "gray",
             "italic": true
           }  

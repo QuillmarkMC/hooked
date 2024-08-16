@@ -4,13 +4,13 @@
         "entity": "this",
         "name": [
           {
-            "text": "Upgrade Max Health",
+            "translate": "text.game.lore.shop.extra_health.name",
             "color": "#BD4D4D",
             "bold": true,
             "italic": false
           },
           {
-            "text": " (maxed)",
+            "translate": "text.game.lore.shop.name.maxed",
             "color": "dark_gray",
             "bold": false,
             "italic": true

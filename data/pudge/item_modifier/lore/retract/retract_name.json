@@ -4,13 +4,13 @@
     "entity": "this",
     "name": [
       {
-        "text": "Gyro-Balanced Retraction Coils",
+        "translate": "text.game.lore.retract.name",
         "color": "#33FFB8",
         "bold": true,
         "italic": false
       },
       {
-        "text": " (lvl ",
+        "translate": "text.game.lore.lvl_1",
         "color": "gray",
         "bold": false,
         "italic": true
@@ -25,7 +25,7 @@
         "italic": true
       },
       {
-        "text": ")",
+        "translate": "text.game.lore.lvl_2",
         "color": "gray",
         "bold": false,
         "italic": true

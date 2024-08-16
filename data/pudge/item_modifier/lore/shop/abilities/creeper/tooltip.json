@@ -5,14 +5,14 @@
         "lore": [
           [
             {
-              "text": "When thrown, this egg will deal damage",
+              "translate": "text.game.lore.shop.creeper.tooltip.1",
               "color": "gray",
               "italic": false
             }
           ],
           [
             {
-              "text": "and knockback to all surrounding players.",
+              "translate": "text.game.lore.shop.creeper.tooltip.2",
               "color": "gray",
               "italic": false
             }

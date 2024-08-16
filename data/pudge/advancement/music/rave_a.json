@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "Stadium Rave",
+      "title": {
+        "translate": "text.game.music.classic.rave_a"
+      },
       "description": "by Spongebob Squarepants",
       "show_toast": true,
       "announce_to_chat": false,

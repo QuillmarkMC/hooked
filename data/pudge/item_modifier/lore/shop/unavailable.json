@@ -4,7 +4,7 @@
       "entity": "this",
       "name": [
         {
-          "text": "Item Unavailable",
+          "translate": "text.game.lore.shop.unavailable.1",
           "color": "dark_red",
           "bold": true,
           "italic": false
@@ -17,14 +17,14 @@
         "lore": [
           [
             {
-              "text": "This item has been disabled",
+              "translate": "text.game.lore.shop.unavailable.2",
               "color": "gray",
               "italic": false
             }
           ],
           [
             {
-              "text": "from the lobby settings.",
+              "translate": "text.game.lore.shop.unavailable.3",
               "color": "gray",
               "italic": false
             }

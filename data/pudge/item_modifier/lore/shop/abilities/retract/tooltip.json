@@ -5,14 +5,14 @@
         "lore": [
           [
             {
-              "text": "Increases the speed that your Hookshot",
+              "translate": "text.game.lore.shop.retract.tooltip.1",
               "color": "gray",
               "italic": false
             }
           ],
           [
             {
-              "text": "and Grappling Hook pull their targets.",
+              "translate": "text.game.lore.shop.retract.tooltip.2",
               "color": "gray",
               "italic": false
             }

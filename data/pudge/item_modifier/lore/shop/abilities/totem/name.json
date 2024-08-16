@@ -4,7 +4,7 @@
         "entity": "this",
         "name": [
           {
-            "text": "Totem of Protection",
+            "translate": "text.game.lore.totem.name",
             "color": "#FF8707",
             "bold": true,
             "italic": false

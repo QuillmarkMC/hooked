@@ -4,7 +4,7 @@
         "entity": "this",
         "name": [
           {
-            "text": "Upgrade Melee Damage",
+            "translate": "text.game.lore.shop.melee_damage.name",
             "color": "dark_red",
             "bold": true,
             "italic": false

@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "Nitrofire",
+      "title": {
+        "translate": "text.game.music.eurobeat.nitrofire"
+      },
       "description": "",
       "show_toast": true,
       "announce_to_chat": false,

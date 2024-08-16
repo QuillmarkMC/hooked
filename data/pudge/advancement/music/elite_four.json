@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "Elite Four Battle Music",
+      "title": {
+        "translate": "text.game.music.classic.elite_four"
+      },
       "description": "Pokemon Black & White",
       "show_toast": true,
       "announce_to_chat": false,

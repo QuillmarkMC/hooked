@@ -5,7 +5,7 @@
         "lore": [
           [
             {
-              "text": "Increases your maximum health.",
+              "translate": "text.game.lore.shop.extra_health.tooltip",
               "color": "gray",
               "italic": false
             }

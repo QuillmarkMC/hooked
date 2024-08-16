@@ -5,7 +5,7 @@
       "lore": [
         [
           {
-            "text": "Knockback: ",
+            "translate": "text.game.lore.creeper.knockback",
             "color": "dark_green",
             "italic": false
           },

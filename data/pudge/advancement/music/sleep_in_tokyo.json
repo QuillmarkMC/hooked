@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "No One Sleep in Tokyo",
+      "title": {
+        "translate": "text.game.music.eurobeat.sleep_in_tokyo"
+      },
       "description": "",
       "show_toast": true,
       "announce_to_chat": false,

@@ -3,7 +3,9 @@
       "icon": {
         "id": "minecraft:music_disc_otherside"
       },
-      "title": "A Perfect Hero",
+      "title": {
+        "translate": "text.game.music.eurobeat.perfect_hero"
+      },
       "description": "",
       "show_toast": true,
       "announce_to_chat": false,

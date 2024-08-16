@@ -5,14 +5,14 @@
       "lore": [
         [
           {
-            "text": "A very good use of an ability slot!",
+            "translate": "text.game.lore.goat.tooltip.1",
             "color": "gray",
             "italic": true
           }          
         ],
         [
           {
-            "text": "Press \"",
+            "translate": "text.game.lore.goat.tooltip.2",
             "color": "yellow",
             "italic": true
           },
@@ -22,7 +22,7 @@
             "italic": true
           },
           {
-            "text": "\" to change the horn sound!",
+            "translate": "text.game.lore.goat.tooltip.3",
             "color": "yellow",
             "italic": true
           }  

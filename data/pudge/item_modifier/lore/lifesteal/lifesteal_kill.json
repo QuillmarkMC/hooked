@@ -5,7 +5,7 @@
       "lore": [
         [
           {
-            "text": "Regeneration on kill: ",
+            "translate": "text.game.lore.lifesteal.kill",
             "color": "dark_green",
             "italic": false
           },
@@ -39,7 +39,7 @@
             "italic": false
           },
           {
-            "text": " hearts",
+            "translate": "text.game.lore.hearts",
             "color": "gray",
             "italic": false
           }

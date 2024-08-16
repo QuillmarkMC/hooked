@@ -5,7 +5,7 @@
         "lore": [
           [
             {
-              "text": "A melee weapon that only deals knockback.",
+              "translate": "text.game.lore.shop.knockback.tooltip",
               "color": "gray",
               "italic": false
             }

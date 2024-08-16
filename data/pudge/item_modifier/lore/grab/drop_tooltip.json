@@ -5,7 +5,7 @@
       "lore": [
         [
           {
-            "text": "Press \"",
+            "translate": "text.game.lore.grab.drop.lore.1",
             "color": "gray",
             "italic": true
           },
@@ -15,13 +15,13 @@
             "italic": true
           },
           {
-            "text": "\" to drop the",
+            "translate": "text.game.lore.grab.drop.lore.2",
             "color": "gray",
             "italic": true
           }  
         ],
         {
-            "text": "player you are holding.",
+            "translate": "text.game.lore.grab.drop.lore.3",
             "color": "gray",
             "italic": true
         },

@@ -9,12 +9,12 @@
       "lore": [
         [
           {
-            "text": "Upgraded: ",
+            "translate": "text.game.lore.shop.goat.upgraded",
             "color": "dark_purple",
             "italic": false
           },
           {
-            "text": "No effect",
+            "translate": "text.game.lore.shop.goat.upgraded.effect",
             "color": "dark_red",
             "italic": false
           }

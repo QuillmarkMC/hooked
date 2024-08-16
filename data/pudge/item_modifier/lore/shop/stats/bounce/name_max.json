@@ -4,13 +4,13 @@
         "entity": "this",
         "name": [
           {
-            "text": "Ricochet Arrows",
+            "translate": "text.game.lore.shop.bounce.name",
             "color": "#FCC272",
             "bold": true,
             "italic": false
           },
           {
-            "text": " (maxed)",
+            "translate": "text.game.lore.shop.name.maxed",
             "color": "dark_gray",
             "bold": false,
             "italic": true

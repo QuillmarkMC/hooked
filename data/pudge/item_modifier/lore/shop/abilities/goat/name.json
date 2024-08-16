@@ -4,7 +4,7 @@
         "entity": "this",
         "name": [
           {
-            "text": "The Lion Horn of Stormwind",
+            "translate": "text.game.lore.goat.name",
             "color": "#A335EE",
             "bold": true,
             "italic": false

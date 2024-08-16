@@ -9,12 +9,17 @@
       "lore": [
         [
           {
-            "text": "Current Speed: ",
+            "translate": "text.game.lore.shop.retract.speed.current",
             "color": "dark_green",
             "italic": false
           },
           {
-            "text": "20 blocks per second",
+            "text": "20",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "translate": "text.game.lore.shop.retract.blocks",
             "color": "gray",
             "italic": false
           }

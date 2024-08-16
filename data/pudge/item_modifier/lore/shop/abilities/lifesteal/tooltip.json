@@ -5,14 +5,14 @@
         "lore": [
           [
             {
-              "text": "Grants instant health on Hookshot",
+              "translate": "text.game.lore.shop.lifesteal.tooltip.1",
               "color": "gray",
               "italic": false
             }
           ],
           [
             {
-              "text": "hits, and regeneration on any kill.",
+              "translate": "text.game.lore.shop.lifesteal.tooltip.2",
               "color": "gray",
               "italic": false
             }
