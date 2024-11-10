@@ -15,7 +15,7 @@ tag @s add arrowInit
 #execute if score $Temp crossbow matches 2 as @e[type=arrow,tag=tempArrowTag,sort=nearest,limit=1] run function entity_hit_matching:assign_id
 execute if score $Temp crossbow matches 1 run tag @s add hookArrow
 execute if score $Temp crossbow matches 2 run tag @s add grappleArrow
-execute if score $Temp crossbow matches 2 run function entity_hit_matching:assign_id
+function entity_hit_matching:assign_id
 
 #check for bounce ability on arrow owner, dont bounce grappling hooks
 execute if score @a[tag=tempArrowOwnerTag,limit=1] bounceCount matches 1.. run scoreboard players operation @s[tag=!grappleArrow] bounceCount = @a[tag=tempArrowOwnerTag,limit=1] bounceCount
