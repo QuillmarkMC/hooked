@@ -7,9 +7,9 @@ function pudge:game/inventory/default_clear
 #head
 item replace entity @s armor.head with air
 #chest
-execute unless score @s elytraTimer matches 1.. if entity @s[team=red] run item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{id:"armor",type:"generic.armor",amount:0,operation:"add_value"}],show_in_tooltip:false},dyed_color={rgb:16725044,show_in_tooltip:false}]
-execute unless score @s elytraTimer matches 1.. if entity @s[team=blue] run item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{id:"armor",type:"generic.armor",amount:0,operation:"add_value"}],show_in_tooltip:false},dyed_color={rgb:3618047,show_in_tooltip:false}]
-execute if score @s elytraTimer matches 1.. run item replace entity @s armor.chest with elytra[unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{id:"armor",type:"generic.armor",amount:0,operation:"add_value"}],show_in_tooltip:false},custom_name='{"translate":"text.game.inventory.elytra","color":"light_purple","bold":true,"italic":false}']
+execute unless score @s elytraTimer matches 1.. if entity @s[team=red] run item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{id:"armor",type:"armor",amount:0,operation:"add_value"}],show_in_tooltip:false},dyed_color={rgb:16725044,show_in_tooltip:false}]
+execute unless score @s elytraTimer matches 1.. if entity @s[team=blue] run item replace entity @s armor.chest with leather_chestplate[unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{id:"armor",type:"armor",amount:0,operation:"add_value"}],show_in_tooltip:false},dyed_color={rgb:3618047,show_in_tooltip:false}]
+execute if score @s elytraTimer matches 1.. run item replace entity @s armor.chest with elytra[unbreakable={show_in_tooltip:false},attribute_modifiers={modifiers:[{id:"armor",type:"armor",amount:0,operation:"add_value"}],show_in_tooltip:false},custom_name='{"translate":"text.game.inventory.elytra","color":"light_purple","bold":true,"italic":false}']
 #legs
 item replace entity @s armor.legs with air
 #boots

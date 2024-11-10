@@ -276,5 +276,5 @@ gamerule playersSleepingPercentage 101
 gamerule reducedDebugInfo false
 gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks true
-gamerule sendCommandFeedback false
+execute unless score $Debug var matches 1.. run gamerule sendCommandFeedback false
 gamerule spawnChunkRadius 0

@@ -49,7 +49,7 @@ execute as @a[scores={clearTotemEffects=1..}] run function pudge:game/ability/to
 #tick damage check
 scoreboard players set @a resist 0
 #arrows
-execute as @e[type=arrow] unless entity @s[nbt={pickup:0b}] run data modify entity @s pickup set value 0
+execute as @e[type=arrow] run function pudge:game/ability/arrows/tick
 #snowballs
 function pudge:game/ability/snowball_generic/tick
 

@@ -9,6 +9,9 @@ execute anchored eyes positioned ^ ^ ^ run summon minecraft:arrow ~ ~ ~ {Tags:["
 data modify entity @e[type=minecraft:arrow,tag=tempArrowTag,limit=1] Motion set from storage pudge:motion Motion
 data modify entity @e[type=minecraft:arrow,tag=tempArrowTag,limit=1] Owner set from entity @s UUID
 data modify entity @e[type=minecraft:arrow,tag=tempArrowTag,limit=1] crit set value 1b
+execute as @e[type=minecraft:arrow,tag=tempArrowTag,limit=1] unless score @s entityid matches 0.. run function entity_hit_matching:assign_id
+#MC-112474 lol
+#execute rotated as @s run rotate @e[type=minecraft:arrow,tag=tempArrowTag,limit=1] ~ ~
 execute if score @s bounceCount matches 1.. run scoreboard players operation @e[type=minecraft:arrow,tag=tempArrowTag,limit=1] bounceCount = @s bounceCount
 
 tag @e[type=minecraft:arrow,tag=tempArrowTag] remove tempArrowTag
