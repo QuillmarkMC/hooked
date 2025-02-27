@@ -2,7 +2,7 @@
     {
       "function": "minecraft:set_components",
       "components": {
-        "minecraft:custom_model_data": 100,
+        "minecraft:item_model": "pudge:ability/creeper",
         "minecraft:custom_data": {
           "CreeperAbility": 1,
           "Shop": 1

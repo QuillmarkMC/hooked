@@ -2,7 +2,7 @@
     {
       "function": "minecraft:set_components",
       "components": {
-        "minecraft:custom_model_data": 107,
+        "minecraft:item_model": "chain",
         "minecraft:custom_data": {
           "RetractAbility": 1,
           "Shop": 1

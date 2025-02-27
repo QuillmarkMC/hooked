@@ -2,7 +2,7 @@
     {
       "function": "minecraft:set_components",
       "components": {
-        "minecraft:custom_model_data": 102,
+        "minecraft:item_model": "stick",
         "minecraft:custom_data": {
           "KnockbackAbility": 1,
           "Shop": 1

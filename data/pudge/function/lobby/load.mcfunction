@@ -7,7 +7,7 @@ scoreboard players set $NPCLoad lobbyvar 0
 scoreboard players set $NPCTimerCheck lobbyvar 0
 
 #reset entityid
-scoreboard players reset * entityid
+#scoreboard players reset * entityid
 scoreboard players set $highest entityid 0
 
 #unlock teams

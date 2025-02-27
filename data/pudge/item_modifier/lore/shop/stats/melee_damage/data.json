@@ -2,7 +2,7 @@
     {
       "function": "minecraft:set_components",
       "components": {
-        "minecraft:custom_model_data": 5,
+        "minecraft:item_model": "wooden_axe",
         "minecraft:custom_data": {
           "MeleeDamageStats": 1,
           "Shop": 1

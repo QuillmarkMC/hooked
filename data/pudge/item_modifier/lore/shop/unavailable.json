@@ -35,7 +35,7 @@
       {
         "function": "minecraft:set_components",
         "components": {
-          "minecraft:custom_model_data": 7,
+          "minecraft:item_model": "barrier",
           "minecraft:custom_data": {
             "UnavailableItem": 1,
             "Shop": 1

@@ -44,22 +44,18 @@
             "conditions": {
                 "entity": [
                     {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                            "condition": "minecraft:damage_source_properties",
-                            "entity": "this",
-                            "predicate": {
-                                
-                                    "direct_entity": {
-                                        "type": "minecraft:arrow",
-                                        "nbt": "{Tags:[\"hookArrow\"]}"
-                                        
-                                    }
-                                
-                            }
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "minecraft:damage_source_properties",
+                        "predicate": {
+                          "direct_entity": {
+                            "type": "minecraft:arrow",
+                            "nbt": "{Tags:[\"hookArrow\"]}"
+                          }
                         }
+                      }
                     }
-                ]
+                  ]
             }
         },
         "grapplearrow": {
@@ -81,22 +77,18 @@
             "conditions": {
                 "entity": [
                     {
-                        "condition": "minecraft:inverted",
-                        "term": {
-                            "condition": "minecraft:damage_source_properties",
-                            "entity": "this",
-                            "predicate": {
-                                
-                                    "direct_entity": {
-                                        "type": "minecraft:arrow",
-                                        "nbt": "{Tags:[\"grappleArrow\"]}"
-                                        
-                                    }
-                                
-                            }
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "minecraft:damage_source_properties",
+                        "predicate": {
+                          "direct_entity": {
+                            "type": "minecraft:arrow",
+                            "nbt": "{Tags:[\"grappleArrow\"]}"
+                          }
                         }
+                      }
                     }
-                ]
+                  ]
             }
         },
         "bit0": {

@@ -25,4 +25,4 @@ item replace entity @s enderchest.22 with air
 item replace entity @s enderchest.23 with air
 item replace entity @s enderchest.24 with air
 item replace entity @s enderchest.25 with air
-item replace entity @s enderchest.26 with bedrock[custom_name='{"translate":"text.game.shop.navigation.back.name","color":"dark_red","bold":true,"italic":false}',lore=['{"translate":"text.game.shop.navigation.back.tooltip","color":"gray","italic":false}'],custom_model_data=7,custom_data={BackPage:1b,Shop:1b},hide_additional_tooltip={}]
+item replace entity @s enderchest.26 with bedrock[custom_name='{"translate":"text.game.shop.navigation.back.name","color":"dark_red","bold":true,"italic":false}',lore=['{"translate":"text.game.shop.navigation.back.tooltip","color":"gray","italic":false}'],item_model=barrier,custom_data={BackPage:1b,Shop:1b},hide_additional_tooltip={}]

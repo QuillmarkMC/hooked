@@ -2,7 +2,7 @@
     {
       "function": "minecraft:set_components",
       "components": {
-        "minecraft:custom_model_data": 108,
+        "minecraft:item_model": "pudge:ability/anchor_arms",
         "minecraft:custom_data": {
           "GrabAbility": 1,
           "Shop": 1
