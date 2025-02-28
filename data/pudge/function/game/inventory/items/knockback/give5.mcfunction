@@ -1,8 +1,8 @@
-execute if score @s knockbackLevel matches 2 run item replace entity @s hotbar.5 with bedrock[item_model="stick",enchantments={levels:{"minecraft:knockback":2},show_in_tooltip:false},hide_additional_tooltip={}]
-execute if score @s knockbackLevel matches 3 run item replace entity @s hotbar.5 with bedrock[item_model="stick",enchantments={levels:{"minecraft:knockback":3},show_in_tooltip:false},hide_additional_tooltip={}]
-execute if score @s knockbackLevel matches 4 run item replace entity @s hotbar.5 with bedrock[item_model="stick",enchantments={levels:{"minecraft:knockback":4},show_in_tooltip:false},hide_additional_tooltip={}]
-execute if score @s knockbackLevel matches 5 run item replace entity @s hotbar.5 with bedrock[item_model="stick",enchantments={levels:{"minecraft:knockback":5},show_in_tooltip:false},hide_additional_tooltip={}]
-execute if score @s knockbackLevel matches 6.. run item replace entity @s hotbar.5 with bedrock[item_model="stick",enchantments={levels:{"minecraft:knockback":6},show_in_tooltip:false},hide_additional_tooltip={}]
+execute if score @s knockbackLevel matches 2 run item replace entity @s hotbar.5 with bedrock[item_model="stick",enchantments={knockback:2},tooltip_display={hidden_components:["enchantments"]}]
+execute if score @s knockbackLevel matches 3 run item replace entity @s hotbar.5 with bedrock[item_model="stick",enchantments={knockback:3},tooltip_display={hidden_components:["enchantments"]}]
+execute if score @s knockbackLevel matches 4 run item replace entity @s hotbar.5 with bedrock[item_model="stick",enchantments={knockback:4},tooltip_display={hidden_components:["enchantments"]}]
+execute if score @s knockbackLevel matches 5 run item replace entity @s hotbar.5 with bedrock[item_model="stick",enchantments={knockback:5},tooltip_display={hidden_components:["enchantments"]}]
+execute if score @s knockbackLevel matches 6.. run item replace entity @s hotbar.5 with bedrock[item_model="stick",enchantments={knockback:6},tooltip_display={hidden_components:["enchantments"]}]
 
 #dynamic item lore
 item modify entity @s hotbar.5 pudge:lore/knockback/knockback_name

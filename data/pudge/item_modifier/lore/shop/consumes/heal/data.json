@@ -2,7 +2,7 @@
     {
       "function": "minecraft:set_components",
       "components": {
-        "minecraft:hide_additional_tooltip": {},
+        "minecraft:tooltip_display": {"hidden_components": ["potion_contents"]},
         "minecraft:custom_data": {
           "HealConsumes": 1,
           "Shop": 1
