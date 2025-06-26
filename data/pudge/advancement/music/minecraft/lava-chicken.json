@@ -1,12 +1,12 @@
 {
     "display": {
       "icon": {
-        "id": "minecraft:music_disc_blocks"
+        "id": "minecraft:music_disc_lava_chicken"
       },
       "title": {
-        "translate": "text.game.music.minecraft.blocks"
+        "translate": "text.game.music.minecraft.lava-chicken"
       },
-      "description": "C418",
+      "description": "Hyper Potions",
       "show_toast": true,
       "announce_to_chat": false,
       "hidden": true

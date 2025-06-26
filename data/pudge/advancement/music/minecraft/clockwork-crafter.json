@@ -1,12 +1,12 @@
 {
     "display": {
       "icon": {
-        "id": "minecraft:music_disc_ward"
+        "id": "minecraft:music_disc_mall"
       },
       "title": {
-        "translate": "text.game.music.minecraft.ward"
+        "translate": "text.game.music.minecraft.clockwork-crafter"
       },
-      "description": "C418",
+      "description": "Gareth Coker",
       "show_toast": true,
       "announce_to_chat": false,
       "hidden": true

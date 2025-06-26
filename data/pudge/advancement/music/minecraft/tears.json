@@ -1,12 +1,12 @@
 {
     "display": {
       "icon": {
-        "id": "minecraft:music_disc_mall"
+        "id": "minecraft:music_disc_tears"
       },
       "title": {
-        "translate": "text.game.music.minecraft.mall"
+        "translate": "text.game.music.minecraft.tears"
       },
-      "description": "C418",
+      "description": "Amos Roddy",
       "show_toast": true,
       "announce_to_chat": false,
       "hidden": true

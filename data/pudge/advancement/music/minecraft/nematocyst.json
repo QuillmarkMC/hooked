@@ -1,12 +1,12 @@
 {
     "display": {
       "icon": {
-        "id": "minecraft:music_disc_wait"
+        "id": "minecraft:music_disc_mall"
       },
       "title": {
-        "translate": "text.game.music.minecraft.wait"
+        "translate": "text.game.music.minecraft.nematocyst"
       },
-      "description": "C418",
+      "description": "Gareth Coker",
       "show_toast": true,
       "announce_to_chat": false,
       "hidden": true

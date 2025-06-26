@@ -2,20 +2,25 @@
 function pudge:game/music/playlist/minecraft/stop_all
 
 #play song based on rng
-execute if score $out rng matches 0 as @a at @s run playsound pudge:game.music.blocks record @s
-execute if score $out rng matches 1 as @a at @s run playsound pudge:game.music.chirp record @s
-execute if score $out rng matches 2 as @a at @s run playsound pudge:game.music.far record @s
-execute if score $out rng matches 3 as @a at @s run playsound pudge:game.music.mall record @s
-execute if score $out rng matches 4 as @a at @s run playsound pudge:game.music.otherside record @s
-execute if score $out rng matches 5 as @a at @s run playsound pudge:game.music.pigstep record @s
-execute if score $out rng matches 6 as @a at @s run playsound pudge:game.music.strad record @s
-execute if score $out rng matches 7 as @a at @s run playsound pudge:game.music.wait record @s
-execute if score $out rng matches 8 as @a at @s run playsound pudge:game.music.ward record @s
+execute if score $out rng matches 0 as @a at @s run playsound pudge:game.music.ascension record @s
+execute if score $out rng matches 1 as @a at @s run playsound pudge:game.music.broken-heart-of-ender record @s
+execute if score $out rng matches 2 as @a at @s run playsound pudge:game.music.clockwork-crafter record @s
+execute if score $out rng matches 3 as @a at @s run playsound pudge:game.music.hastilude record @s
+execute if score $out rng matches 4 as @a at @s run playsound pudge:game.music.lava-chicken record @s
+execute if score $out rng matches 5 as @a at @s run playsound pudge:game.music.nematocyst record @s
+execute if score $out rng matches 6 as @a at @s run playsound pudge:game.music.otherside record @s
+execute if score $out rng matches 7 as @a at @s run playsound pudge:game.music.pigstep record @s
+execute if score $out rng matches 8 as @a at @s run playsound pudge:game.music.summit record @s
+execute if score $out rng matches 9 as @a at @s run playsound pudge:game.music.tears record @s
+execute if score $out rng matches 10 as @a at @s run playsound pudge:game.music.the-arch-illager record @s
+execute if score $out rng matches 11 as @a at @s run playsound pudge:game.music.the-four-horsemen record @s
 
 #advancement display
 function pudge:game/music/playlist/minecraft/display
 
 #update last played variables
+scoreboard players operation $LastPlayed10 music = $LastPlayed9 music
+scoreboard players operation $LastPlayed9 music = $LastPlayed8 music
 scoreboard players operation $LastPlayed8 music = $LastPlayed7 music
 scoreboard players operation $LastPlayed7 music = $LastPlayed6 music
 scoreboard players operation $LastPlayed6 music = $LastPlayed5 music

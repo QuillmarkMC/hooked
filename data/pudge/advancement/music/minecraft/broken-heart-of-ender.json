@@ -1,12 +1,12 @@
 {
     "display": {
       "icon": {
-        "id": "minecraft:music_disc_chirp"
+        "id": "minecraft:music_disc_13"
       },
       "title": {
-        "translate": "text.game.music.minecraft.chirp"
+        "translate": "text.game.music.minecraft.broken-heart-of-ender"
       },
-      "description": "C418",
+      "description": "Peter Hont",
       "show_toast": true,
       "announce_to_chat": false,
       "hidden": true

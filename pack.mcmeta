@@ -1,8 +1,8 @@
 {
     "pack": {
-        "pack_format": 71,
+        "pack_format": 80,
         "description": "Datapack for Hook, Line, & Creeper",
-        "supported_formats": [71,71]
+        "supported_formats": [80,80]
     },
     "filter": {
         "block": [

@@ -1,12 +1,12 @@
 {
     "display": {
       "icon": {
-        "id": "minecraft:music_disc_strad"
+        "id": "minecraft:music_disc_13"
       },
       "title": {
-        "translate": "text.game.music.minecraft.strad"
+        "translate": "text.game.music.minecraft.ascension"
       },
-      "description": "C418",
+      "description": "Peter Hont",
       "show_toast": true,
       "announce_to_chat": false,
       "hidden": true
