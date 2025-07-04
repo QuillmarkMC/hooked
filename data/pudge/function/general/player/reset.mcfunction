@@ -9,6 +9,8 @@ gamemode adventure
 team leave @s
 tag @s remove playerReset
 tag @s remove admin
+tag @s remove entityidset
+scoreboard players reset @s entityid
 function pudge:general/player/remove_game_tags
 function pudge:general/player/remove_lobby_tags
 

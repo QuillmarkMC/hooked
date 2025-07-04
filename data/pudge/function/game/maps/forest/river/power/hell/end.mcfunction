@@ -18,7 +18,7 @@ scoreboard players set $HellActive river 0
 #enable shops
 execute at @e[type=marker,tag=redShop,limit=1] run setblock ~ ~ ~ ender_chest[facing=east]
 execute at @e[type=marker,tag=blueShop,limit=1] run setblock ~ ~ ~ ender_chest[facing=west]
-execute as @e[type=armor_stand,tag=shopName] run data merge entity @s {CustomName:"{\"translate\":\"text.game.shop.floating_text\",\"color\":\"green\"}"}
+execute as @e[type=armor_stand,tag=shopName] run data merge entity @s {CustomName:{"translate":"text.game.shop.floating_text","color":"green"}}
 
 execute as @a[tag=deadHell] run function pudge:general/death/revive
 tag @a remove deadHell

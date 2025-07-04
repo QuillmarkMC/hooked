@@ -3,7 +3,7 @@
 setblock 199 66 -66 dark_oak_wall_sign[facing=south]
 setblock 200 66 -66 dark_oak_wall_sign[facing=south]
 setblock 201 66 -66 dark_oak_wall_sign[facing=south]
-setblock 202 66 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"blue",messages:['""', '{"translate":"text.lobby.settings.signs.gameplay.title.1","color":"dark_green"}', '{"translate":"text.lobby.settings.signs.gameplay.title.2","color":"white"}', '{"text":"","color":"white"}']}}
+setblock 202 66 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"blue",messages:[{"text":""}, {"translate":"text.lobby.settings.signs.gameplay.title.1","color":"dark_green"}, {"translate":"text.lobby.settings.signs.gameplay.title.2","color":"white"}, {"text":"","color":"white"}]}}
 setblock 203 66 -66 dark_oak_wall_sign[facing=south]
 setblock 204 66 -66 dark_oak_wall_sign[facing=south]
 setblock 205 66 -66 dark_oak_wall_sign[facing=south]

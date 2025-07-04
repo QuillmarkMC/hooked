@@ -2,7 +2,7 @@
     {
       "function": "minecraft:set_components",
       "components": {
-        "minecraft:custom_model_data": 106,
+        "minecraft:item_model": "goat_horn",
         "minecraft:custom_data": {
           "GoatAbility": 1,
           "Shop": 1

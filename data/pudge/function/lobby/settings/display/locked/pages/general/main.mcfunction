@@ -3,7 +3,7 @@
 setblock 199 66 -66 dark_oak_wall_sign[facing=south]
 setblock 200 66 -66 dark_oak_wall_sign[facing=south]
 setblock 201 66 -66 dark_oak_wall_sign[facing=south]
-setblock 202 66 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"blue",messages:['""', '{"translate":"text.lobby.settings.signs.general.title.1","color":"dark_green"}', '{"translate":"text.lobby.settings.signs.general.title.2","color":"white"}', '""']}}
+setblock 202 66 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"blue",messages:[{"text":""}, {"translate":"text.lobby.settings.signs.general.title.1","color":"dark_green"}, {"translate":"text.lobby.settings.signs.general.title.2","color":"white"}, {"text":""}]}}
 setblock 203 66 -66 dark_oak_wall_sign[facing=south]
 setblock 204 66 -66 dark_oak_wall_sign[facing=south]
 setblock 205 66 -66 dark_oak_wall_sign[facing=south]
@@ -11,16 +11,16 @@ setblock 205 66 -66 dark_oak_wall_sign[facing=south]
 #setblock 199 65 -66 air
 function pudge:lobby/settings/display/locked/pages/general/victory_type
 function pudge:lobby/settings/display/locked/pages/general/victory_condition
-setblock 202 65 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"blue",messages:['{"clickEvent":{"action":"run_command","value": "/trigger lobbysigns set 1001"},"text": ""}', '{"translate":"text.lobby.settings.signs.general.start","color":"dark_green"}', '[{"text":"[","color": "white"},{"keybind":"key.use","color":"white"},{"text":"]","color": "white"}]', '""']}}
+setblock 202 65 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"blue",messages:[{"click_event":{"action":"run_command","command": "/trigger lobbysigns set 1001"},"text": ""}, {"translate":"text.lobby.settings.signs.general.start","color":"dark_green"}, [{"text":"[","color": "white"},{"keybind":"key.use","color":"white"},{"text":"]","color": "white"}], {"text":""}]}}
 function pudge:lobby/settings/display/locked/pages/general/gamemode
 function pudge:lobby/settings/display/locked/pages/general/soundtrack
 #setblock 205 65 -66 air
 #3rd row
 #setblock 199 64 -66 air
 #setblock 200 64 -66 air
-setblock 201 64 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"red",messages:['{"clickEvent":{"action":"run_command","value": "/trigger lobbysigns set 1103"},"text": ""}', '{"translate":"text.lobby.settings.signs.general.reset.1","color":"white"}', '{"translate":"text.lobby.settings.signs.general.reset.2","color":"red"}', '""']}}
+setblock 201 64 -66 dark_oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"red",messages:[{"click_event":{"action":"run_command","command": "/trigger lobbysigns set 1103"},"text": ""}, {"translate":"text.lobby.settings.signs.general.reset.1","color":"white"}, {"translate":"text.lobby.settings.signs.general.reset.2","color":"red"}, {"text":""}]}}
 #setblock 202 64 -66 air
-setblock 203 64 -66 oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"blue",messages:['{"clickEvent":{"action":"run_command","value": "/trigger lobbysigns set 107"},"text": ""}', '{"translate":"text.lobby.settings.signs.general.unlock","color":"yellow"}', '{"translate":"text.lobby.settings.signs.general.lock.admin","color":"white"}', '""']}}
+setblock 203 64 -66 oak_wall_sign[facing=south]{front_text:{has_glowing_text:true,color:"blue",messages:[{"click_event":{"action":"run_command","command": "/trigger lobbysigns set 107"},"text": ""}, {"translate":"text.lobby.settings.signs.general.unlock","color":"yellow"}, {"translate":"text.lobby.settings.signs.general.lock.admin","color":"white"}, {"text":""}]}}
 #setblock 204 64 -66 air
 #setblock 205 64 -66 air
 #bottom row (navigation)

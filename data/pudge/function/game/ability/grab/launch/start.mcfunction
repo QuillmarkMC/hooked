@@ -10,7 +10,7 @@ scoreboard players operation $Temp_Player grabID = @a[tag=tempArrowOwnerTag,limi
 execute as @a[tag=isGamer] if score @s grabID = $Temp_Player grabID run tag @s add tempLaunchTag
 
 #tag arrow to be ridden
-scoreboard players operation @e[type=arrow,tag=tempArrowTag,limit=1] launchID = @a[tag=tempLaunchTag,limit=1] entityid
+scoreboard players operation @s launchID = @a[tag=tempLaunchTag,limit=1] entityid
 #make player ride arrow
 execute as @a[tag=tempLaunchTag,limit=1] run function pudge:game/ability/grab/launch/mount_arrow
 #kill armor stand they were previously riding, unlink players

@@ -2,7 +2,7 @@
     {
       "function": "minecraft:set_components",
       "components": {
-        "minecraft:custom_model_data": 104,
+        "minecraft:item_model": "redstone",
         "minecraft:custom_data": {
           "LifestealAbility": 1,
           "Shop": 1

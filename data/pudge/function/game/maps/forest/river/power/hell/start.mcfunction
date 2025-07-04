@@ -8,7 +8,7 @@ schedule function pudge:game/maps/forest/river/power/hell/start_delayed 17t
 #disable shops
 execute at @e[type=marker,tag=redShop,limit=1] run setblock ~ ~ ~ air
 execute at @e[type=marker,tag=blueShop,limit=1] run setblock ~ ~ ~ air
-execute as @e[type=armor_stand,tag=shopName] run data merge entity @s {CustomName:"{\"translate\":\"text.game.shop.floating_text.deathmatch\",\"color\":\"red\"}"}
+execute as @e[type=armor_stand,tag=shopName] run data merge entity @s {CustomName:{"translate":"text.game.shop.floating_text.deathmatch","color":"red"}}
 
 #revive dead players for start of hell
 execute as @a[tag=dead] run function pudge:general/death/revive

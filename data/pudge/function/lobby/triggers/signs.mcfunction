@@ -15,6 +15,6 @@ execute if score @s lobbysigns matches 900..999 run function pudge:lobby/trigger
 
 execute unless score @s lobbysigns matches 1..2 unless score @s lobbysigns matches 900..999 at @s run playsound block.wooden_button.click_on ambient @s ~ ~ ~ 0.75 0.75
 
-execute if score @s lobbysigns matches 1000.. run tellraw @s [{"text": ""},{"text": "[!] ","color": "dark_red","bold": true},{"translate":"text.lobby.settings.actions.unlock.click.1"},{"hoverEvent":{"action":"show_text","contents":[{"translate":"text.lobby.settings.actions.unlock.click.2","italic":true,"color":"yellow"}]},"clickEvent":{"action":"run_command","value": "/function pudge:lobby/settings/actions/general/unlock/grant_permission"},"translate": "text.lobby.settings.actions.unlock.click.3","underlined": true,"color": "gold"},{"translate": "text.lobby.settings.actions.unlock.click.4"}]
+execute if score @s lobbysigns matches 1000.. run tellraw @s [{"text": ""},{"text": "[!] ","color": "dark_red","bold": true},{"translate":"text.lobby.settings.actions.unlock.click.1"},{"hover_event":{"action":"show_text","value":[{"translate":"text.lobby.settings.actions.unlock.click.2","italic":true,"color":"yellow"}]},"click_event":{"action":"run_command","command": "/function pudge:lobby/settings/actions/general/unlock/grant_permission"},"translate": "text.lobby.settings.actions.unlock.click.3","underlined": true,"color": "gold"},{"translate": "text.lobby.settings.actions.unlock.click.4"}]
 function pudge:lobby/settings/display/update
 scoreboard players set @s lobbysigns 0

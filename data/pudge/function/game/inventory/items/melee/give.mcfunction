@@ -1,4 +1,4 @@
-item replace entity @s hotbar.1 with wooden_axe[custom_name='{"translate":"text.game.inventory.melee.name","color":"yellow","bold":true,"italic":false}',lore=['{"text":" "}'],unbreakable={show_in_tooltip:false},custom_data={Melee:1},attribute_modifiers={modifiers:[{id:"armor",type:"generic.attack_damage",amount:10.0,operation:"add_value",slot:"mainhand"},{id:"armor",type:"generic.attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand"}],show_in_tooltip:false},hide_additional_tooltip={}]
+item replace entity @s hotbar.1 with wooden_axe[custom_name={"translate":"text.game.inventory.melee.name","color":"yellow","bold":true,"italic":false},lore=[{"text":" "}],unbreakable={},custom_data={Melee:1},attribute_modifiers=[{id:"armor",type:"attack_damage",amount:10.0,operation:"add_value",slot:"mainhand"},{id:"armor",type:"attack_speed",amount:-2.4,operation:"add_value",slot:"mainhand"}],tooltip_display={hidden_components:["attribute_modifiers","unbreakable"]}]
 
 #dynamic item lore
 item modify entity @s hotbar.1 pudge:lore/melee_tooltip

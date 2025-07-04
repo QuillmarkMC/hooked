@@ -1,12 +1,12 @@
 {
     "display": {
       "icon": {
-        "id": "minecraft:music_disc_far"
+        "id": "minecraft:music_disc_13"
       },
       "title": {
-        "translate": "text.game.music.minecraft.far"
+        "translate": "text.game.music.minecraft.summit"
       },
-      "description": "C418",
+      "description": "Peter Hont",
       "show_toast": true,
       "announce_to_chat": false,
       "hidden": true

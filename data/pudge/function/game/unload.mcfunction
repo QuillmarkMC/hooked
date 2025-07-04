@@ -10,6 +10,7 @@ scoreboard players set $Winner cutscene 0
 scoreboard players reset #Impressive var
 execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/uninit
 function pudge:game/music/stop_all
+data remove storage pudge:arrow Arrows
 schedule clear pudge:game/music/generate
 schedule clear pudge:game/scheduled_timers/seconds
 schedule clear pudge:game/catchup/seconds

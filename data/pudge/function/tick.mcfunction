@@ -1,3 +1,6 @@
+#assign entities an id (place before all other logic)
+function entity_hit_matching:tick
+
 #handle leavers
 execute as @a[scores={leave=1..}] run function pudge:general/player/check_dc
 

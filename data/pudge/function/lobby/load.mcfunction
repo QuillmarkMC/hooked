@@ -2,9 +2,12 @@
 function pudge:general/change_state
 #set state
 scoreboard players set $State var 0
-#set values for summoning npcs
-scoreboard players set $NPCLoad lobbyvar 0
-scoreboard players set $NPCTimerCheck lobbyvar 0
+#summon entities
+function pudge:lobby/npc/load_chunks
+
+#reset entityid
+#scoreboard players reset * entityid
+#scoreboard players set $highest entityid 0
 
 #unlock teams
 scoreboard players set $LockTeams lobbyvar 0
