@@ -210,8 +210,8 @@ function pudge:general/rng/init
 bossbar add score {"text":""}
 
 ##Forceload
-#lobby
-forceload add 185 -39 218 -71
+#lobby spawn
+forceload add 199 -56
 
 #match ID for handling DCs
 scoreboard objectives add matchID dummy

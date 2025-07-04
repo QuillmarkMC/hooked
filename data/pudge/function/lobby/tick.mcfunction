@@ -10,11 +10,6 @@ execute as @a[predicate=!pudge:lobby/lobby,gamemode=adventure] run tp @s @e[type
 #unlock settings if admins dc
 execute if score $Locked lobbysigns matches 1 unless entity @a[tag=admin] run function pudge:lobby/settings/actions/general/unlock/auto_unlock
 
-#check npc load condition
-execute unless score $NPCLoad lobbyvar matches 1 if score $NPCTimerCheck lobbyvar matches 100.. run function pudge:lobby/npc/summon_markers
-execute unless score $NPCLoad lobbyvar matches 1 run scoreboard players add $NPCTimerCheck lobbyvar 1
-execute unless score $NPCLoad lobbyvar matches 1 if entity @e[type=marker,tag=NPCLoadCheck] run function pudge:lobby/npc/summon_markers
-
 #automatically refresh sign display
 scoreboard players remove $SignUpdateTimer lobbyvar 1
 execute if score $SignUpdateTimer lobbyvar matches ..0 run function pudge:lobby/settings/display/update
