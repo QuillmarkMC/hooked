@@ -278,4 +278,3 @@ gamerule reducedDebugInfo false
 gamerule showDeathMessages false
 gamerule spectatorsGenerateChunks true
 execute unless score $Debug var matches 1.. run gamerule sendCommandFeedback false
-gamerule spawnChunkRadius 0
