@@ -250,33 +250,31 @@ team modify yellow color yellow
 
 ##Gamerules
 difficulty easy
-gamerule show_advancement_messages false
-gamerule command_block_output false
-gamerule raids false
-gamerule advance_time false
-gamerule entity_drops false
-gamerule fire_spread_radius_around_player -1
-gamerule spawn_phantoms false
-gamerule immediate_respawn true
-gamerule limited_crafting true
-gamerule mob_drops false
-gamerule spawn_mobs false
-gamerule spawn_patrols false
-gamerule block_drops false
-gamerule spawn_wandering_traders false
-gamerule advance_weather false
-gamerule drowning_damage false
-gamerule fall_damage false
-gamerule fire_damage true
-gamerule freeze_damage true
-gamerule keep_inventory true
-gamerule locator_bar false
-gamerule mob_griefing false
-gamerule natural_health_regeneration true
-gamerule players_sleeping_percentage 101
-gamerule reduced_debug_info false
-gamerule show_death_messages false
-gamerule spectators_generate_chunks true
-gamerule pvp true
-gamerule respawn_radius 0
-execute unless score $Debug var matches 1.. run gamerule send_command_feedback false
+gamerule announceAdvancements false
+gamerule commandBlockOutput false
+gamerule disableRaids true
+gamerule doDaylightCycle false
+gamerule doEntityDrops false
+gamerule doFireTick false
+gamerule doInsomnia false
+gamerule doImmediateRespawn true
+gamerule doLimitedCrafting true
+gamerule doMobLoot false
+gamerule doMobSpawning false
+gamerule doPatrolSpawning false
+gamerule doTileDrops false
+gamerule doTraderSpawning false
+gamerule doWeatherCycle false
+gamerule drowningDamage false
+gamerule fallDamage false
+gamerule fireDamage true
+gamerule freezeDamage true
+gamerule keepInventory true
+gamerule locatorBar false
+gamerule mobGriefing false
+gamerule naturalRegeneration true
+gamerule playersSleepingPercentage 101
+gamerule reducedDebugInfo false
+gamerule showDeathMessages false
+gamerule spectatorsGenerateChunks true
+execute unless score $Debug var matches 1.. run gamerule sendCommandFeedback false
