@@ -6,6 +6,6 @@ execute if score @s rangedAPTimer matches 1.. run scoreboard players set #Temp g
 #if not enough gold, display error
 execute if score #Temp gold matches 0 run tellraw @s {"translate": "text.game.shop.purchase.error.gold","color": "red"}
 #if another potion is already active, display error
-execute if score #Temp gold matches -1 run tellraw @s {"text": "You already have a Ranged Attack Power Potion active! Wait for it to expire before buying another!","color": "red"}
+execute if score #Temp gold matches -1 run tellraw @s {"translate": "text.game.shop.purchase.error.ranged_ap.already_active","color": "red"}
 #if enough, run
 execute if score #Temp gold matches 1 run function pudge:game/shop/click_logic/consumes/ranged_ap/buy
