@@ -1,4 +1,4 @@
-item replace entity @s hotbar.7 with bedrock[item_model="chain"]
+item replace entity @s hotbar.7 with bedrock[item_model="iron_chain"]
 
 #dynamic item lore
 item modify entity @s hotbar.7 pudge:lore/retract/retract_name
