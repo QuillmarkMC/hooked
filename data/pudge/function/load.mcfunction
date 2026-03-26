@@ -6,7 +6,6 @@ scoreboard objectives add health dummy
 scoreboard objectives add maxHealth dummy
 scoreboard objectives add displayHealth dummy "Health"
 scoreboard players set $Default maxHealth 200
-scoreboard objectives setdisplay below_name displayHealth
 scoreboard objectives add healthRegen dummy
 scoreboard players set $RegenTime healthRegen 20
 scoreboard objectives add resist minecraft.custom:minecraft.damage_resisted
@@ -255,7 +254,7 @@ gamerule command_block_output false
 gamerule raids false
 gamerule advance_time false
 gamerule entity_drops false
-gamerule fire_spread_radius_around_player -1
+gamerule fire_spread_radius_around_player 0
 gamerule spawn_phantoms false
 gamerule immediate_respawn true
 gamerule limited_crafting true
@@ -279,4 +278,5 @@ gamerule show_death_messages false
 gamerule spectators_generate_chunks true
 gamerule pvp true
 gamerule respawn_radius 0
+gamerule random_tick_speed 0
 execute unless score $Debug var matches 1.. run gamerule send_command_feedback false

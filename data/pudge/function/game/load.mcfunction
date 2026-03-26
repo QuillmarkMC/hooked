@@ -4,6 +4,8 @@ function pudge:general/change_state
 scoreboard players set $State var 2
 scoreboard players set $StartGame var 1
 
+scoreboard objectives setdisplay below_name displayHealth
+
 #init map
 execute if score $LoadMap var matches 1 run function pudge:game/maps/forest/init
 
