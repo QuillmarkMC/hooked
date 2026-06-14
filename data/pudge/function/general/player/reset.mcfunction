@@ -23,8 +23,8 @@ scoreboard players set @s hotbar.6.ID 0
 scoreboard players set @s hotbar.7.ID 0
 
 tag @s add initSpawned
-tp @s @e[type=marker,tag=lobbySpawn,limit=1]
-execute at @e[type=marker,tag=lobbySpawn,limit=1] run spawnpoint @s ~ ~ ~
+tp @s 202.5 64.0 -58.5 180 6.5
+spawnpoint @s 202 64 -59 180 6.5
 clear @s
 effect clear @s
 xp set @s 0 points

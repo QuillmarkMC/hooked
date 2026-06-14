@@ -2,9 +2,6 @@
 #kill existing npcs first
 function pudge:lobby/npc/kill_markers
 
-#player spawn
-summon marker 202.5 64.0 -58.5 {Tags:["lobbySpawn","lobbyMarker"],Rotation:[180.0f,6.5f]}
-
 #team select npcs
 #blue
 summon villager 215.0 63.0 -53.0 {Tags:["teamSelect","lobbyVillager","blueTeamSelect"],Silent:1b,Invulnerable:1b,PersistenceRequired:1b,NoAI:1b,VillagerData:{level:99,profession:"minecraft:fletcher",type:"minecraft:taiga"},Rotation:[90.0f,0.0f]}

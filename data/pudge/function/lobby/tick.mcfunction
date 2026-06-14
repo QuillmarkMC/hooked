@@ -5,7 +5,7 @@ execute as @a[scores={value=-2147483648..2147483647}] unless score @s value matc
 execute as @a[scores={customValueTimer=1..}] run function pudge:lobby/triggers/value_timer
 
 #border check
-execute as @a[predicate=!pudge:lobby/lobby,gamemode=adventure] run tp @s @e[type=marker,tag=lobbySpawn,limit=1]
+execute as @a[predicate=!pudge:lobby/lobby,gamemode=adventure] run tp @s 202.5 64.0 -58.5 180 6.5
 
 #unlock settings if admins dc
 execute if score $Locked lobbysigns matches 1 unless entity @a[tag=admin] run function pudge:lobby/settings/actions/general/unlock/auto_unlock
