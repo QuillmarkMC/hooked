@@ -4,13 +4,13 @@
             "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
                 "entity": {
-                    "entity_type": "minecraft:villager",
-                    "nbt": "{Tags:[\"blueTeamSelect\"]}"
+                    "type": "minecraft:interaction",
+                    "nbt": "{Tags:[\"redmageCredits\"]}"
                 }
             }
         }
     },
     "rewards": {
-        "function": "pudge:lobby/teams/try_join_blue"
+        "function": "pudge:lobby/easter_egg/redmage"
     }
 }

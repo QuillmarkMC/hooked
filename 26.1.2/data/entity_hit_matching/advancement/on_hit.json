@@ -4,7 +4,7 @@
             "trigger": "minecraft:player_hurt_entity",
             "conditions": {
                 "entity": {
-                    "entity_type": "#entity_hit_matching:targets"
+                    "type": "#entity_hit_matching:targets"
                 }
             }
         },
@@ -18,7 +18,7 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                                "entity_type": "#entity_hit_matching:targets"
+                                "type": "#entity_hit_matching:targets"
                             }
                         }
                     }
@@ -31,7 +31,7 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "entity_type": "minecraft:arrow",
+                            "type": "minecraft:arrow",
                             "nbt": "{Tags:[\"hookArrow\"]}"
                             
                         }
@@ -49,7 +49,7 @@
                         "condition": "minecraft:damage_source_properties",
                         "predicate": {
                           "direct_entity": {
-                            "entity_type": "minecraft:arrow",
+                            "type": "minecraft:arrow",
                             "nbt": "{Tags:[\"hookArrow\"]}"
                           }
                         }
@@ -64,7 +64,7 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "entity_type": "minecraft:arrow",
+                            "type": "minecraft:arrow",
                             "nbt": "{Tags:[\"grappleArrow\"]}"
                             
                         }
@@ -82,7 +82,7 @@
                         "condition": "minecraft:damage_source_properties",
                         "predicate": {
                           "direct_entity": {
-                            "entity_type": "minecraft:arrow",
+                            "type": "minecraft:arrow",
                             "nbt": "{Tags:[\"grappleArrow\"]}"
                           }
                         }

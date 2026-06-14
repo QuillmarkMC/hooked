@@ -6,14 +6,14 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "entity_type": "minecraft:arrow",
+                            "type": "minecraft:arrow",
                             "nbt": "{Tags:[\"hookArrow\"]}"
                             
                         }
                     }
                 },
                 "entity": {
-                    "entity_type": "slime",
+                    "type": "slime",
                     "nbt": "{Tags:[\"hellPower\"]}"
                 }
             }
@@ -25,7 +25,7 @@
               "damage": {
                 "type": {
                   "direct_entity": {
-                    "entity_type": "arrow",
+                    "type": "arrow",
                     "nbt": "{Tags:[\"hookArrow\"]}"
                   }
                 }
@@ -37,7 +37,7 @@
                     "condition": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
-                      "entity_type": "minecraft:slime",
+                      "type": "minecraft:slime",
                       "nbt": "{Tags:[\"hellPower\"]}"
                     }
                   }
@@ -51,14 +51,14 @@
                 "damage": {
                     "type": {
                         "direct_entity": {
-                            "entity_type": "minecraft:arrow",
+                            "type": "minecraft:arrow",
                             "nbt": "{Tags:[\"hookArrow\"]}"
                             
                         }
                     }
                 },
                 "entity": {
-                    "entity_type": "slime",
+                    "type": "slime",
                     "nbt": "{Tags:[\"goldPower\"]}"
                 }
             }
@@ -70,7 +70,7 @@
               "damage": {
                 "type": {
                   "direct_entity": {
-                    "entity_type": "arrow",
+                    "type": "arrow",
                     "nbt": "{Tags:[\"hookArrow\"]}"
                   }
                 }
@@ -82,7 +82,7 @@
                     "condition": "minecraft:entity_properties",
                     "entity": "this",
                     "predicate": {
-                      "entity_type": "minecraft:slime",
+                      "type": "minecraft:slime",
                       "nbt": "{Tags:[\"goldPower\"]}"
                     }
                   }
@@ -96,14 +96,14 @@
                   "damage": {
                       "type": {
                           "direct_entity": {
-                              "entity_type": "minecraft:arrow",
+                              "type": "minecraft:arrow",
                               "nbt": "{Tags:[\"hookArrow\"]}"
                               
                           }
                       }
                   },
                   "entity": {
-                      "entity_type": "slime",
+                      "type": "slime",
                       "nbt": "{Tags:[\"hookPower\"]}"
                   }
               }
@@ -115,7 +115,7 @@
               "damage": {
                 "type": {
                   "direct_entity": {
-                    "entity_type": "arrow",
+                    "type": "arrow",
                     "nbt": "{Tags:[\"hookArrow\"]}"
                   }
                 }
@@ -127,7 +127,7 @@
                       "condition": "minecraft:entity_properties",
                       "entity": "this",
                       "predicate": {
-                        "entity_type": "minecraft:slime",
+                        "type": "minecraft:slime",
                         "nbt": "{Tags:[\"hookPower\"]}"
                       }
                     }
@@ -141,14 +141,14 @@
                     "damage": {
                         "type": {
                             "direct_entity": {
-                                "entity_type": "minecraft:arrow",
+                                "type": "minecraft:arrow",
                                 "nbt": "{Tags:[\"hookArrow\"]}"
                                 
                             }
                         }
                     },
                     "entity": {
-                        "entity_type": "slime",
+                        "type": "slime",
                         "nbt": "{Tags:[\"elytraPower\"]}"
                     }
                 }
@@ -160,7 +160,7 @@
               "damage": {
                 "type": {
                   "direct_entity": {
-                    "entity_type": "arrow",
+                    "type": "arrow",
                     "nbt": "{Tags:[\"hookArrow\"]}"
                   }
                 }
@@ -172,7 +172,7 @@
                         "condition": "minecraft:entity_properties",
                         "entity": "this",
                         "predicate": {
-                          "entity_type": "minecraft:slime",
+                          "type": "minecraft:slime",
                           "nbt": "{Tags:[\"elytraPower\"]}"
                         }
                       }
@@ -186,14 +186,14 @@
                       "damage": {
                           "type": {
                               "direct_entity": {
-                                  "entity_type": "minecraft:arrow",
+                                  "type": "minecraft:arrow",
                                   "nbt": "{Tags:[\"hookArrow\"]}"
                                   
                               }
                           }
                       },
                       "entity": {
-                          "entity_type": "slime",
+                          "type": "slime",
                           "nbt": "{Tags:[\"suicidePower\"]}"
                       }
                   }
@@ -205,7 +205,7 @@
               "damage": {
                 "type": {
                   "direct_entity": {
-                    "entity_type": "arrow",
+                    "type": "arrow",
                     "nbt": "{Tags:[\"hookArrow\"]}"
                   }
                 }
@@ -217,7 +217,7 @@
                           "condition": "minecraft:entity_properties",
                           "entity": "this",
                           "predicate": {
-                            "entity_type": "minecraft:slime",
+                            "type": "minecraft:slime",
                             "nbt": "{Tags:[\"suicidePower\"]}"
                           }
                         }
@@ -231,14 +231,14 @@
                         "damage": {
                             "type": {
                                 "direct_entity": {
-                                    "entity_type": "minecraft:arrow",
+                                    "type": "minecraft:arrow",
                                     "nbt": "{Tags:[\"hookArrow\"]}"
                                     
                                 }
                             }
                         },
                         "entity": {
-                            "entity_type": "slime",
+                            "type": "slime",
                             "nbt": "{Tags:[\"rapidFirePower\"]}"
                         }
                     }
@@ -250,7 +250,7 @@
               "damage": {
                 "type": {
                   "direct_entity": {
-                    "entity_type": "arrow",
+                    "type": "arrow",
                     "nbt": "{Tags:[\"hookArrow\"]}"
                   }
                 }
@@ -262,7 +262,7 @@
                             "condition": "minecraft:entity_properties",
                             "entity": "this",
                             "predicate": {
-                              "entity_type": "minecraft:slime",
+                              "type": "minecraft:slime",
                               "nbt": "{Tags:[\"rapidFirePower\"]}"
                             }
                           }
@@ -276,14 +276,14 @@
                           "damage": {
                               "type": {
                                   "direct_entity": {
-                                      "entity_type": "minecraft:arrow",
+                                      "type": "minecraft:arrow",
                                       "nbt": "{Tags:[\"hookArrow\"]}"
                                       
                                   }
                               }
                           },
                           "entity": {
-                              "entity_type": "slime",
+                              "type": "slime",
                               "nbt": "{Tags:[\"adrenalinePower\"]}"
                           }
                       }
@@ -295,7 +295,7 @@
                 "damage": {
                   "type": {
                     "direct_entity": {
-                      "entity_type": "arrow",
+                      "type": "arrow",
                       "nbt": "{Tags:[\"hookArrow\"]}"
                     }
                   }
@@ -307,7 +307,7 @@
                               "condition": "minecraft:entity_properties",
                               "entity": "this",
                               "predicate": {
-                                "entity_type": "minecraft:slime",
+                                "type": "minecraft:slime",
                                 "nbt": "{Tags:[\"adrenalinePower\"]}"
                               }
                             }
