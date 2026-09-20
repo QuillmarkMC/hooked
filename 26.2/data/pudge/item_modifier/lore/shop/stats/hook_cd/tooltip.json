@@ -1,0 +1,23 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          [
+            {
+              "translate": "text.game.lore.shop.hook_cd.tooltip",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "",
+              "color": "gray",
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_all"
+      }
+]

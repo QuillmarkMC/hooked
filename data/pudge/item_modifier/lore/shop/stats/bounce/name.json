@@ -1,14 +1,12 @@
-[
-    {
-        "function": "minecraft:set_name",
-        "entity": "this",
-        "name": [
-          {
+{
+    "type": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+        {
             "translate": "text.game.lore.shop.bounce.name",
             "color": "#FCC272",
             "bold": true,
             "italic": false
-          }
-        ]
-      }
-]
+        }
+    ]
+}

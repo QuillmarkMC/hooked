@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "translate": "text.game.lore.shop.heal.name",
+            "color": "#FF4E4B",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

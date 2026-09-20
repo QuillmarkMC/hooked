@@ -1,0 +1,19 @@
+[
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/consumes/haste/tooltip"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/consumes/haste/name"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/gold"
+    },
+    {
+      "function": "minecraft:reference",
+      "name": "pudge:lore/shop/consumes/haste/data"
+    }
+  ]
+  

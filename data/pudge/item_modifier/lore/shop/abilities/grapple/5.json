@@ -1,45 +1,38 @@
-[
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/abilities/grapple/tooltip"
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "translate": "text.game.lore.shop.cooldown.current",
-            "color": "dark_green",
-            "italic": false
-          },
-          {
-            "text": "8",
-            "color": "gray",
-            "italic": false
-          },
-          {
-            "translate": "text.game.lore.cooldown.seconds",
-            "color": "gray",
-            "italic": false
-          }
-        ]
-      ],
-      "mode": "append"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/abilities/grapple/name_max"
-    },
-    {
-      "function": "minecraft:set_components",
-      "components": {
-        "minecraft:enchantment_glint_override": true
-      }
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/abilities/grapple/data"
-    }
-  ]
-  
+{
+    "type": "sequence",
+    "functions": [
+        "pudge:lore/shop/abilities/grapple/tooltip",
+        {
+            "type": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+                [
+                    {
+                        "translate": "text.game.lore.shop.cooldown.current",
+                        "color": "dark_green",
+                        "italic": false
+                    },
+                    {
+                        "text": "8",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "translate": "text.game.lore.cooldown.seconds",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            ],
+            "mode": "append"
+        },
+        "pudge:lore/shop/abilities/grapple/name_max",
+        {
+            "type": "minecraft:set_components",
+            "components": {
+                "minecraft:enchantment_glint_override": true
+            }
+        },
+        "pudge:lore/shop/abilities/grapple/data"
+    ]
+}

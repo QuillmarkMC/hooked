@@ -1,0 +1,352 @@
+{
+    "criteria": {
+        "hell": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "entity_type": "minecraft:arrow",
+                            "nbt": "{Tags:[\"hookArrow\"]}"
+                            
+                        }
+                    }
+                },
+                "entity": {
+                    "entity_type": "slime",
+                    "nbt": "{Tags:[\"hellPower\"]}"
+                }
+            }
+        },
+        "not_hell": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+              "player": [],
+              "damage": {
+                "type": {
+                  "direct_entity": {
+                    "entity_type": "arrow",
+                    "nbt": "{Tags:[\"hookArrow\"]}"
+                  }
+                }
+              },
+              "entity": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "entity_type": "minecraft:slime",
+                      "nbt": "{Tags:[\"hellPower\"]}"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+        "gold": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "direct_entity": {
+                            "entity_type": "minecraft:arrow",
+                            "nbt": "{Tags:[\"hookArrow\"]}"
+                            
+                        }
+                    }
+                },
+                "entity": {
+                    "entity_type": "slime",
+                    "nbt": "{Tags:[\"goldPower\"]}"
+                }
+            }
+        },
+        "not_gold": {
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+              "player": [],
+              "damage": {
+                "type": {
+                  "direct_entity": {
+                    "entity_type": "arrow",
+                    "nbt": "{Tags:[\"hookArrow\"]}"
+                  }
+                }
+              },
+              "entity": [
+                {
+                  "condition": "minecraft:inverted",
+                  "term": {
+                    "condition": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                      "entity_type": "minecraft:slime",
+                      "nbt": "{Tags:[\"goldPower\"]}"
+                    }
+                  }
+                }
+              ]
+            }
+          },
+          "hook": {
+              "trigger": "minecraft:player_hurt_entity",
+              "conditions": {
+                  "damage": {
+                      "type": {
+                          "direct_entity": {
+                              "entity_type": "minecraft:arrow",
+                              "nbt": "{Tags:[\"hookArrow\"]}"
+                              
+                          }
+                      }
+                  },
+                  "entity": {
+                      "entity_type": "slime",
+                      "nbt": "{Tags:[\"hookPower\"]}"
+                  }
+              }
+          },
+          "not_hook": {
+              "trigger": "minecraft:player_hurt_entity",
+              "conditions": {
+                "player": [],
+              "damage": {
+                "type": {
+                  "direct_entity": {
+                    "entity_type": "arrow",
+                    "nbt": "{Tags:[\"hookArrow\"]}"
+                  }
+                }
+              },
+                "entity": [
+                  {
+                    "condition": "minecraft:inverted",
+                    "term": {
+                      "condition": "minecraft:entity_properties",
+                      "entity": "this",
+                      "predicate": {
+                        "entity_type": "minecraft:slime",
+                        "nbt": "{Tags:[\"hookPower\"]}"
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "elytra": {
+                "trigger": "minecraft:player_hurt_entity",
+                "conditions": {
+                    "damage": {
+                        "type": {
+                            "direct_entity": {
+                                "entity_type": "minecraft:arrow",
+                                "nbt": "{Tags:[\"hookArrow\"]}"
+                                
+                            }
+                        }
+                    },
+                    "entity": {
+                        "entity_type": "slime",
+                        "nbt": "{Tags:[\"elytraPower\"]}"
+                    }
+                }
+            },
+            "not_elytra": {
+                "trigger": "minecraft:player_hurt_entity",
+                "conditions": {
+                  "player": [],
+              "damage": {
+                "type": {
+                  "direct_entity": {
+                    "entity_type": "arrow",
+                    "nbt": "{Tags:[\"hookArrow\"]}"
+                  }
+                }
+              },
+                  "entity": [
+                    {
+                      "condition": "minecraft:inverted",
+                      "term": {
+                        "condition": "minecraft:entity_properties",
+                        "entity": "this",
+                        "predicate": {
+                          "entity_type": "minecraft:slime",
+                          "nbt": "{Tags:[\"elytraPower\"]}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "suicide": {
+                  "trigger": "minecraft:player_hurt_entity",
+                  "conditions": {
+                      "damage": {
+                          "type": {
+                              "direct_entity": {
+                                  "entity_type": "minecraft:arrow",
+                                  "nbt": "{Tags:[\"hookArrow\"]}"
+                                  
+                              }
+                          }
+                      },
+                      "entity": {
+                          "entity_type": "slime",
+                          "nbt": "{Tags:[\"suicidePower\"]}"
+                      }
+                  }
+              },
+              "not_suicide": {
+                  "trigger": "minecraft:player_hurt_entity",
+                  "conditions": {
+                    "player": [],
+              "damage": {
+                "type": {
+                  "direct_entity": {
+                    "entity_type": "arrow",
+                    "nbt": "{Tags:[\"hookArrow\"]}"
+                  }
+                }
+              },
+                    "entity": [
+                      {
+                        "condition": "minecraft:inverted",
+                        "term": {
+                          "condition": "minecraft:entity_properties",
+                          "entity": "this",
+                          "predicate": {
+                            "entity_type": "minecraft:slime",
+                            "nbt": "{Tags:[\"suicidePower\"]}"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "rapid_fire": {
+                    "trigger": "minecraft:player_hurt_entity",
+                    "conditions": {
+                        "damage": {
+                            "type": {
+                                "direct_entity": {
+                                    "entity_type": "minecraft:arrow",
+                                    "nbt": "{Tags:[\"hookArrow\"]}"
+                                    
+                                }
+                            }
+                        },
+                        "entity": {
+                            "entity_type": "slime",
+                            "nbt": "{Tags:[\"rapidFirePower\"]}"
+                        }
+                    }
+                },
+                "not_rapid_fire": {
+                    "trigger": "minecraft:player_hurt_entity",
+                    "conditions": {
+                      "player": [],
+              "damage": {
+                "type": {
+                  "direct_entity": {
+                    "entity_type": "arrow",
+                    "nbt": "{Tags:[\"hookArrow\"]}"
+                  }
+                }
+              },
+                      "entity": [
+                        {
+                          "condition": "minecraft:inverted",
+                          "term": {
+                            "condition": "minecraft:entity_properties",
+                            "entity": "this",
+                            "predicate": {
+                              "entity_type": "minecraft:slime",
+                              "nbt": "{Tags:[\"rapidFirePower\"]}"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  "adrenaline": {
+                      "trigger": "minecraft:player_hurt_entity",
+                      "conditions": {
+                          "damage": {
+                              "type": {
+                                  "direct_entity": {
+                                      "entity_type": "minecraft:arrow",
+                                      "nbt": "{Tags:[\"hookArrow\"]}"
+                                      
+                                  }
+                              }
+                          },
+                          "entity": {
+                              "entity_type": "slime",
+                              "nbt": "{Tags:[\"adrenalinePower\"]}"
+                          }
+                      }
+                  },
+                  "not_adrenaline": {
+                      "trigger": "minecraft:player_hurt_entity",
+                      "conditions": {
+                        "player": [],
+                "damage": {
+                  "type": {
+                    "direct_entity": {
+                      "entity_type": "arrow",
+                      "nbt": "{Tags:[\"hookArrow\"]}"
+                    }
+                  }
+                },
+                        "entity": [
+                          {
+                            "condition": "minecraft:inverted",
+                            "term": {
+                              "condition": "minecraft:entity_properties",
+                              "entity": "this",
+                              "predicate": {
+                                "entity_type": "minecraft:slime",
+                                "nbt": "{Tags:[\"adrenalinePower\"]}"
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+        },
+    "requirements": [
+        [
+            "hell",
+            "not_hell"
+        ],
+        [
+            "gold",
+            "not_gold"
+        ],
+        [
+            "hook",
+            "not_hook"
+        ],
+        [
+            "elytra",
+            "not_elytra"
+        ],
+        [
+            "suicide",
+            "not_suicide"
+        ],
+        [
+            "rapid_fire",
+            "not_rapid_fire"
+        ],
+        [
+            "adrenaline",
+            "not_adrenaline"
+        ]
+    ],
+    "rewards": {
+        "function": "pudge:game/maps/forest/river/power/check_power"
+    }
+}

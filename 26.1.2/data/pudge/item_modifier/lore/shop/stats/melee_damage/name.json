@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "translate": "text.game.lore.shop.melee_damage.name",
+            "color": "dark_red",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

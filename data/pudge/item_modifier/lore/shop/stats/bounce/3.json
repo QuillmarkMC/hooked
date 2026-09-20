@@ -1,50 +1,40 @@
-[
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/stats/bounce/tooltip"
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "translate": "text.game.lore.shop.bounce.count.current",
-            "color": "dark_green",
-            "italic": false
-          },
-          {
-            "text": "3",
-            "color": "gray",
-            "italic": false
-          }
-        ],
-        [
-          {
-            "translate": "text.game.lore.shop.bounce.count.upgraded",
-            "color": "dark_purple",
-            "italic": false
-          },
-          {
-            "text": "4",
-            "color": "gray",
-            "italic": false
-          }
-        ]
-      ],
-      "mode": "append"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/stats/bounce/name"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/gold"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/stats/bounce/data"
-    }
-  ]
-  
+{
+    "type": "sequence",
+    "functions": [
+        "pudge:lore/shop/stats/bounce/tooltip",
+        {
+            "type": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+                [
+                    {
+                        "translate": "text.game.lore.shop.bounce.count.current",
+                        "color": "dark_green",
+                        "italic": false
+                    },
+                    {
+                        "text": "3",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ],
+                [
+                    {
+                        "translate": "text.game.lore.shop.bounce.count.upgraded",
+                        "color": "dark_purple",
+                        "italic": false
+                    },
+                    {
+                        "text": "4",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            ],
+            "mode": "append"
+        },
+        "pudge:lore/shop/stats/bounce/name",
+        "pudge:lore/shop/gold",
+        "pudge:lore/shop/stats/bounce/data"
+    ]
+}

@@ -1,0 +1,35 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "translate": "text.game.lore.grab.drop.lore.1",
+            "color": "gray",
+            "italic": true
+          },
+          {
+            "keybind":"key.use",
+            "color": "yellow",
+            "italic": true
+          },
+          {
+            "translate": "text.game.lore.grab.drop.lore.2",
+            "color": "gray",
+            "italic": true
+          }  
+        ],
+        {
+            "translate": "text.game.lore.grab.drop.lore.3",
+            "color": "gray",
+            "italic": true
+        },
+        {
+          "text": ""
+        }
+      ],
+      "mode": "replace_all"
+    }
+  ]
+  

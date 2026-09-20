@@ -1,12 +1,10 @@
-[
-    {
-      "function": "minecraft:set_components",
-      "components": {
+{
+    "type": "minecraft:set_components",
+    "components": {
         "minecraft:item_model": "totem_of_undying",
         "minecraft:custom_data": {
-          "TotemAbility": 1,
-          "Shop": 1
+            "TotemAbility": 1,
+            "Shop": 1
         }
-      }
     }
-]
+}

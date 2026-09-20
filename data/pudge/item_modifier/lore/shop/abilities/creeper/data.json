@@ -1,6 +1,5 @@
-[
     {
-      "function": "minecraft:set_components",
+      "type": "minecraft:set_components",
       "components": {
         "minecraft:item_model": "pudge:ability/creeper",
         "minecraft:custom_data": {
@@ -9,4 +8,3 @@
         }
       }
     }
-]

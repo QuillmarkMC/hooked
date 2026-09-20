@@ -1,0 +1,22 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "translate": "text.game.lore.crit_multiply",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "x1.5",
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    }
+  ]
+  

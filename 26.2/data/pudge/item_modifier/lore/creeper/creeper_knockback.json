@@ -1,0 +1,30 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "translate": "text.game.lore.creeper.knockback",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "text": "x",
+            "color": "gray",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "@s",
+              "objective": "creeperExplosion"
+            },
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    }
+  ]
+  

@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "translate": "text.game.lore.shop.hook_cd.name",
+            "color": "yellow",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

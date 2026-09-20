@@ -1,0 +1,37 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "translate": "text.game.lore.goat.tooltip.1",
+            "color": "gray",
+            "italic": true
+          }          
+        ],
+        [
+          {
+            "translate": "text.game.lore.goat.tooltip.2",
+            "color": "yellow",
+            "italic": true
+          },
+          {
+            "keybind":"key.swapOffhand",
+            "color": "yellow",
+            "italic": true
+          },
+          {
+            "translate": "text.game.lore.goat.tooltip.3",
+            "color": "yellow",
+            "italic": true
+          }  
+        ],
+        {
+          "text": ""
+        }
+      ],
+      "mode": "replace_all"
+    }
+  ]
+  

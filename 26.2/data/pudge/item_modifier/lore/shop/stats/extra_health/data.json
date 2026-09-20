@@ -1,0 +1,12 @@
+[
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "pudge:shop/extra_health",
+        "minecraft:custom_data": {
+          "ExtraHealthStats": 1,
+          "Shop": 1
+        }
+      }
+    }
+]

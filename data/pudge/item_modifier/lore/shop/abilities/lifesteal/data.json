@@ -1,12 +1,10 @@
-[
-    {
-      "function": "minecraft:set_components",
-      "components": {
+{
+    "type": "minecraft:set_components",
+    "components": {
         "minecraft:item_model": "redstone",
         "minecraft:custom_data": {
-          "LifestealAbility": 1,
-          "Shop": 1
+            "LifestealAbility": 1,
+            "Shop": 1
         }
-      }
     }
-]
+}

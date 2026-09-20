@@ -1,0 +1,25 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "translate": "text.game.lore.knockback.level",
+            "color": "dark_green",
+            "italic": false
+          },
+          {
+            "score": {
+              "name": "@s",
+              "objective": "knockbackLevel"
+            },
+            "color": "gray",
+            "italic": false
+          }
+        ]
+      ],
+      "mode": "append"
+    }
+  ]
+  

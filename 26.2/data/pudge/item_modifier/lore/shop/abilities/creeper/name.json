@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "translate": "text.game.lore.creeper.name",
+            "color": "dark_green",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

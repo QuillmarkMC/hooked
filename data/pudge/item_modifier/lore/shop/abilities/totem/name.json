@@ -1,14 +1,12 @@
-[
-    {
-        "function": "minecraft:set_name",
-        "entity": "this",
-        "name": [
-          {
+{
+    "type": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+        {
             "translate": "text.game.lore.totem.name",
             "color": "#FF8707",
             "bold": true,
             "italic": false
-          }
-        ]
-      }
-]
+        }
+    ]
+}
