@@ -1,0 +1,15 @@
+[
+  {
+    "function": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+      {
+        "translate": "text.game.lore.grab.drop.name",
+        "color": "dark_red",
+        "bold": true,
+        "italic": false
+      }
+    ]
+  }
+]
+  

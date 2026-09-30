@@ -1,12 +1,10 @@
-[
-    {
-      "function": "minecraft:set_components",
-      "components": {
+{
+    "type": "minecraft:set_components",
+    "components": {
         "minecraft:item_model": "pudge:ability/anchor_arms",
         "minecraft:custom_data": {
-          "GrabAbility": 1,
-          "Shop": 1
+            "GrabAbility": 1,
+            "Shop": 1
         }
-      }
     }
-]
+}

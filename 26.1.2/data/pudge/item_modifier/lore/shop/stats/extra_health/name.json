@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "translate": "text.game.lore.shop.extra_health.name",
+            "color": "#BD4D4D",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

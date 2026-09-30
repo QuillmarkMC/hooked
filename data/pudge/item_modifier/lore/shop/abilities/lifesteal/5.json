@@ -1,62 +1,55 @@
-[
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/abilities/lifesteal/tooltip"
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "translate": "text.game.lore.shop.lifesteal.on_hit.current",
-            "color": "dark_green",
-            "italic": false
-          },
-          {
-            "text": "1.5",
-            "color": "gray",
-            "italic": false
-          },
-          {
-            "translate": "text.game.lore.hearts",
-            "color": "gray",
-            "italic": false
-          }
-        ],
-        [
-          {
-            "translate": "text.game.lore.shop.lifesteal.regeneration.current",
-            "color": "dark_green",
-            "italic": false
-          },
-          {
-            "text": "3.0",
-            "color": "gray",
-            "italic": false
-          },
-          {
-            "translate": "text.game.lore.hearts",
-            "color": "gray",
-            "italic": false
-          }
-        ]
-      ],
-      "mode": "append"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/abilities/lifesteal/name_max"
-    },
-    {
-      "function": "minecraft:set_components",
-      "components": {
-        "minecraft:enchantment_glint_override": true
-      }
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/abilities/lifesteal/data"
-    }
-  ]
-  
+{
+    "type": "sequence",
+    "functions": [
+        "pudge:lore/shop/abilities/lifesteal/tooltip",
+        {
+            "type": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+                [
+                    {
+                        "translate": "text.game.lore.shop.lifesteal.on_hit.current",
+                        "color": "dark_green",
+                        "italic": false
+                    },
+                    {
+                        "text": "1.5",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "translate": "text.game.lore.hearts",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ],
+                [
+                    {
+                        "translate": "text.game.lore.shop.lifesteal.regeneration.current",
+                        "color": "dark_green",
+                        "italic": false
+                    },
+                    {
+                        "text": "3.0",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "translate": "text.game.lore.hearts",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            ],
+            "mode": "append"
+        },
+        "pudge:lore/shop/abilities/lifesteal/name_max",
+        {
+            "type": "minecraft:set_components",
+            "components": {
+                "minecraft:enchantment_glint_override": true
+            }
+        },
+        "pudge:lore/shop/abilities/lifesteal/data"
+    ]
+}

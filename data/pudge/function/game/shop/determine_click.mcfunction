@@ -47,7 +47,4 @@ execute if score $TempRetract shop matches 1.. run function pudge:game/shop/clic
 execute if score $TempGrab shop matches 1.. run function pudge:game/shop/click_logic/abilities/grab/click
 #execute if score $TempUnavailable shop matches 1.. run function 
 
-#update ender chest inventory
-function pudge:game/shop/inventory/update
-
 tag @s remove shopInteractDetect

@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "translate": "text.game.lore.shop.haste.name",
+            "color": "#7ECAFF",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

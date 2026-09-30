@@ -1,15 +1,21 @@
-[
-  {
-    "function": "minecraft:set_damage",
-    "damage": {
-      "type": "minecraft:score",
-      "target": {
-        "type": "minecraft:fixed",
-        "name": "$final_damage"
+{
+  "type": "minecraft:set_damage",
+  "damage": {
+    "type": "minecraft:mul",
+    "inputs": [
+      {
+        "type": "minecraft:from_int",
+        "input": {
+          "type": "minecraft:score",
+          "target": {
+            "type": "minecraft:fixed",
+            "name": "$final_damage"
+          },
+          "score": "durability"
+        }
       },
-      "score": "durability",
-      "scale": 0.00215053763
-    },
-    "add": false
-  }
-]
+      0.00215053763
+    ]
+  },
+  "add": false
+}

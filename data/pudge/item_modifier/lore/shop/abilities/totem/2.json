@@ -1,67 +1,57 @@
-[
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/abilities/totem/tooltip"
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "translate": "text.game.lore.shop.totem.success.current",
-            "color": "dark_green",
-            "italic": false
-          },
-          {
-            "text": "15%",
-            "color": "gray",
-            "italic": false
-          }
-        ],
-        [
-          {
-            "translate": "text.game.lore.shop.totem.success.upgraded",
-            "color": "dark_purple",
-            "italic": false
-          },
-          {
-            "text": "20%",
-            "color": "gray",
-            "italic": false
-          }
-        ],
-        [
-          {
-            "translate": "text.game.lore.shop.cooldown.current",
-            "color": "dark_green",
-            "italic": false
-          },
-          {
-            "text": "30",
-            "color": "gray",
-            "italic": false
-          },
-          {
-            "translate": "text.game.lore.cooldown.seconds",
-            "color": "gray",
-            "italic": false
-          }
-        ]
-      ],
-      "mode": "append"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/abilities/totem/name"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/gold"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/abilities/totem/data"
-    }
-  ]
-  
+{
+    "type": "sequence",
+    "functions": [
+        "pudge:lore/shop/abilities/totem/tooltip",
+        {
+            "type": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+                [
+                    {
+                        "translate": "text.game.lore.shop.totem.success.current",
+                        "color": "dark_green",
+                        "italic": false
+                    },
+                    {
+                        "text": "15%",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ],
+                [
+                    {
+                        "translate": "text.game.lore.shop.totem.success.upgraded",
+                        "color": "dark_purple",
+                        "italic": false
+                    },
+                    {
+                        "text": "20%",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ],
+                [
+                    {
+                        "translate": "text.game.lore.shop.cooldown.current",
+                        "color": "dark_green",
+                        "italic": false
+                    },
+                    {
+                        "text": "30",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "translate": "text.game.lore.cooldown.seconds",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            ],
+            "mode": "append"
+        },
+        "pudge:lore/shop/abilities/totem/name",
+        "pudge:lore/shop/gold",
+        "pudge:lore/shop/abilities/totem/data"
+    ]
+}

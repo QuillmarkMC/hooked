@@ -1,6 +1,5 @@
-[
   {
-    "function": "minecraft:set_name",
+    "type": "minecraft:set_name",
     "entity": "this",
     "name": [
       {
@@ -11,5 +10,4 @@
       }
     ]
   }
-]
   

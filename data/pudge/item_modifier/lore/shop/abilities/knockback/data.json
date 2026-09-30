@@ -1,12 +1,10 @@
-[
-    {
-      "function": "minecraft:set_components",
-      "components": {
+{
+    "type": "minecraft:set_components",
+    "components": {
         "minecraft:item_model": "stick",
         "minecraft:custom_data": {
-          "KnockbackAbility": 1,
-          "Shop": 1
+            "KnockbackAbility": 1,
+            "Shop": 1
         }
-      }
     }
-]
+}

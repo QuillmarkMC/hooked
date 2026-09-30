@@ -1,89 +1,79 @@
-[
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/abilities/creeper/tooltip"
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "translate": "text.game.lore.shop.cooldown.current",
-            "color": "dark_green",
-            "italic": false
-          },
-          {
-            "text": "15",
-            "color": "gray",
-            "italic": false
-          },
-          {
-            "translate": "text.game.lore.cooldown.seconds",
-            "color": "gray",
-            "italic": false
-          }
-        ],
-        [
-          {
-            "translate": "text.game.lore.shop.damage.current",
-            "color": "dark_green",
-            "italic": false
-          },
-          {
-            "text": "1.0",
-            "color": "gray",
-            "italic": false
-          },
-          {
-            "translate": "text.game.lore.hearts",
-            "color": "gray",
-            "italic": false
-          }
-        ],
-        [
-          {
-            "translate": "text.game.lore.shop.damage.upgraded",
-            "color": "dark_purple",
-            "italic": false
-          },
-          {
-            "text": "2.0",
-            "color": "gray",
-            "italic": false
-          },
-          {
-            "translate": "text.game.lore.hearts",
-            "color": "gray",
-            "italic": false
-          }
-        ],
-        [
-          {
-            "translate": "text.game.lore.shop.knockback.current",
-            "color": "dark_green",
-            "italic": false
-          },
-          {
-            "text": "x1",
-            "color": "gray",
-            "italic": false
-          }
-        ]
-      ],
-      "mode": "append"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/abilities/creeper/name"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/gold"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/abilities/creeper/data"
-    }
-  ]
-  
+{
+    "type": "sequence",
+    "functions": [
+        "pudge:lore/shop/abilities/creeper/tooltip",
+        {
+            "type": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+                [
+                    {
+                        "translate": "text.game.lore.shop.cooldown.current",
+                        "color": "dark_green",
+                        "italic": false
+                    },
+                    {
+                        "text": "15",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "translate": "text.game.lore.cooldown.seconds",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ],
+                [
+                    {
+                        "translate": "text.game.lore.shop.damage.current",
+                        "color": "dark_green",
+                        "italic": false
+                    },
+                    {
+                        "text": "1.0",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "translate": "text.game.lore.hearts",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ],
+                [
+                    {
+                        "translate": "text.game.lore.shop.damage.upgraded",
+                        "color": "dark_purple",
+                        "italic": false
+                    },
+                    {
+                        "text": "2.0",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "translate": "text.game.lore.hearts",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ],
+                [
+                    {
+                        "translate": "text.game.lore.shop.knockback.current",
+                        "color": "dark_green",
+                        "italic": false
+                    },
+                    {
+                        "text": "x1",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            ],
+            "mode": "append"
+        },
+        "pudge:lore/shop/abilities/creeper/name",
+        "pudge:lore/shop/gold",
+        "pudge:lore/shop/abilities/creeper/data"
+    ]
+}

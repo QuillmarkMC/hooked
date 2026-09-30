@@ -1,60 +1,50 @@
-[
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/stats/hook_cd/tooltip"
-    },
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
-        [
-          {
-            "translate": "text.game.lore.shop.cooldown.current",
-            "color": "dark_green",
-            "italic": false
-          },
-          {
-            "text": "3.8",
-            "color": "gray",
-            "italic": false
-          },
-          {
-            "translate": "text.game.lore.cooldown.seconds",
-            "color": "gray",
-            "italic": false
-          }
-        ],
-        [
-          {
-            "translate": "text.game.lore.shop.cooldown.upgraded",
-            "color": "dark_purple",
-            "italic": false
-          },
-          {
-            "text": "3.4",
-            "color": "gray",
-            "italic": false
-          },
-          {
-            "translate": "text.game.lore.cooldown.seconds",
-            "color": "gray",
-            "italic": false
-          }
-        ]
-      ],
-      "mode": "append"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/stats/hook_cd/name"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/gold"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/stats/hook_cd/data"
-    }
-  ]
-  
+{
+    "type": "sequence",
+    "functions": [
+        "pudge:lore/shop/stats/hook_cd/tooltip",
+        {
+            "type": "minecraft:set_lore",
+            "entity": "this",
+            "lore": [
+                [
+                    {
+                        "translate": "text.game.lore.shop.cooldown.current",
+                        "color": "dark_green",
+                        "italic": false
+                    },
+                    {
+                        "text": "3.8",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "translate": "text.game.lore.cooldown.seconds",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ],
+                [
+                    {
+                        "translate": "text.game.lore.shop.cooldown.upgraded",
+                        "color": "dark_purple",
+                        "italic": false
+                    },
+                    {
+                        "text": "3.4",
+                        "color": "gray",
+                        "italic": false
+                    },
+                    {
+                        "translate": "text.game.lore.cooldown.seconds",
+                        "color": "gray",
+                        "italic": false
+                    }
+                ]
+            ],
+            "mode": "append"
+        },
+        "pudge:lore/shop/stats/hook_cd/name",
+        "pudge:lore/shop/gold",
+        "pudge:lore/shop/stats/hook_cd/data"
+    ]
+}

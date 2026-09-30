@@ -1,0 +1,12 @@
+[
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "pudge:ability/grapple_loaded",
+        "minecraft:custom_data": {
+          "GrappleAbility": 1,
+          "Shop": 1
+        }
+      }
+    }
+]

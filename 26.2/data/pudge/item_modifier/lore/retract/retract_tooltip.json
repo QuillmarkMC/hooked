@@ -1,0 +1,52 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "translate": "text.game.lore.retract.tooltip.1",
+            "color": "gray",
+            "italic": true
+          }          
+        ],
+        {
+          "translate": "text.game.lore.retract.tooltip.2",
+          "color": "gray",
+          "italic": true
+        },
+        {
+          "translate": "text.game.lore.retract.tooltip.3",
+          "color": "gray",
+          "italic": true
+        },
+        [
+          {
+            "translate": "text.game.lore.retract.tooltip.4",
+            "color": "yellow",
+            "italic": true
+          },
+          {
+            "keybind":"key.sneak",
+            "color": "yellow",
+            "italic": true
+          },
+          {
+            "translate": "text.game.lore.retract.tooltip.5",
+            "color": "yellow",
+            "italic": true
+          }  
+        ],
+        {
+          "translate": "text.game.lore.retract.tooltip.6",
+          "color": "yellow",
+          "italic": true
+        },
+        {
+          "text": ""
+        }
+      ],
+      "mode": "replace_all"
+    }
+  ]
+  

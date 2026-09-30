@@ -1,0 +1,20 @@
+[
+    {
+      "function": "minecraft:set_lore",
+      "entity": "this",
+      "lore": [
+        [
+          {
+            "translate": "text.game.lore.knockback.tooltip",
+            "color": "gray",
+            "italic": true
+          }          
+        ],
+        {
+          "text": ""
+        }
+      ],
+      "mode": "replace_all"
+    }
+  ]
+  

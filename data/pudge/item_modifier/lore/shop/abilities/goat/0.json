@@ -1,19 +1,9 @@
-[
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/abilities/goat/tooltip"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/abilities/goat/name"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/gold"
-    },
-    {
-      "function": "minecraft:reference",
-      "name": "pudge:lore/shop/abilities/goat/data"
-    }
-  ]
-  
+{
+    "type": "sequence",
+    "functions": [
+        "pudge:lore/shop/abilities/goat/tooltip",
+        "pudge:lore/shop/abilities/goat/name",
+        "pudge:lore/shop/gold",
+        "pudge:lore/shop/abilities/goat/data"
+    ]
+}

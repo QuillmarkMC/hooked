@@ -1,12 +1,10 @@
-[
-    {
-      "function": "minecraft:set_components",
-      "components": {
+{
+    "type": "minecraft:set_components",
+    "components": {
         "minecraft:item_model": "crossbow",
         "minecraft:custom_data": {
-          "HookCDStats": 1,
-          "Shop": 1
+            "HookCDStats": 1,
+            "Shop": 1
         }
-      }
     }
-]
+}

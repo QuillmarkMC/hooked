@@ -1,30 +1,27 @@
-[
-    {
-      "function": "minecraft:set_lore",
-      "entity": "this",
-      "lore": [
+{
+    "type": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
         [
-          {
-            "translate": "text.game.lore.totem.chance",
-            "color": "dark_green",
-            "italic": false
-          },
-          {
-            "score": {
-              "name": "@s",
-              "objective": "totemChance"
+            {
+                "translate": "text.game.lore.totem.chance",
+                "color": "dark_green",
+                "italic": false
             },
-            "color": "gray",
-            "italic": false
-          },
-          {
-            "text": "%",
-            "color": "gray",
-            "italic": false
-          }
+            {
+                "score": {
+                    "name": "@s",
+                    "objective": "totemChance"
+                },
+                "color": "gray",
+                "italic": false
+            },
+            {
+                "text": "%",
+                "color": "gray",
+                "italic": false
+            }
         ]
-      ],
-      "mode": "append"
-    }
-  ]
-  
+    ],
+    "mode": "append"
+}

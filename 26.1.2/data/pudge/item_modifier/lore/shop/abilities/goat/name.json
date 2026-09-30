@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "translate": "text.game.lore.goat.name",
+            "color": "#A335EE",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "function": "minecraft:set_name",
+        "entity": "this",
+        "name": [
+          {
+            "translate": "text.game.lore.grapple.name",
+            "color": "#9871FF",
+            "bold": true,
+            "italic": false
+          }
+        ]
+      }
+]

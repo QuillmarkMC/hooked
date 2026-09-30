@@ -4,7 +4,8 @@ execute if score $Debug var matches 3.. run say pudge:game/inventory/update
 scoreboard players set $DelayInventory var 0
 #item shop logic
 execute if entity @s[tag=shopInteractDetect] run function pudge:game/shop/determine_click
-execute if entity @s[nbt={Inventory:[{tag:{Shop:1}}]}] run scoreboard players set $DelayInventory var 1
+#update ender chest inventory
+function pudge:game/shop/inventory/update
 
 ##State 2
 #execute if not dead

@@ -1,14 +1,12 @@
-[
-    {
-        "function": "minecraft:set_name",
-        "entity": "this",
-        "name": [
-          {
+{
+    "type": "minecraft:set_name",
+    "entity": "this",
+    "name": [
+        {
             "translate": "text.game.lore.grab.name",
             "color": "#CCCA99",
             "bold": true,
             "italic": false
-          }
-        ]
-      }
-]
+        }
+    ]
+}

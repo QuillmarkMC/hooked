@@ -1,0 +1,30 @@
+[
+    {
+        "function": "minecraft:set_lore",
+        "entity": "this",
+        "lore": [
+          [
+            {
+              "translate": "text.game.lore.shop.totem.tooltip.1",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "translate": "text.game.lore.shop.totem.tooltip.2",
+              "color": "gray",
+              "italic": false
+            }
+          ],
+          [
+            {
+              "text": "",
+              "color": "gray",
+              "italic": false
+            }
+          ]
+        ],
+        "mode": "replace_all"
+      }
+]

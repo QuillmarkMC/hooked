@@ -1,0 +1,12 @@
+[
+    {
+      "function": "minecraft:set_components",
+      "components": {
+        "minecraft:item_model": "spectral_arrow",
+        "minecraft:custom_data": {
+          "BounceAbility": 1,
+          "Shop": 1
+        }
+      }
+    }
+]
